@@ -1,6 +1,6 @@
 import { MouseEvent, useCallback } from "react";
 
-import { items } from "../data/data";
+import { items } from "../data/catalogue";
 import { GItemName, Quantity } from "../flavours";
 
 export type ItemCardClickHandler = (name: GItemName, qty: Quantity) => void;

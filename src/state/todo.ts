@@ -2,7 +2,7 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 import { GItemName, Quantity } from "../flavours";
 
-export type TodoState = Record<GItemName, number>;
+export type TodoState = Record<GItemName, Quantity>;
 const initialState: TodoState = {};
 
 const todoSlice = createSlice({

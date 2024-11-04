@@ -1,6 +1,6 @@
 import { useCallback } from "react";
 
-import { items as allItems } from "../data/data";
+import { items as allItems } from "../data/catalogue";
 import { useAppDispatch } from "../state/hooks";
 import { saveSoon } from "../state/thunks";
 import { addTodo } from "../state/todo";

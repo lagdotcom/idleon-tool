@@ -42,7 +42,7 @@ const cards = [
   i("Crystal Carrot Card", crystalCarrot),
 
   i("Baba Yaga Card", babaYaga),
-  i("Amarok Card", amarok),
   i("Dr Defecaus Card", drDefecaus),
+  i("Amarok Card", amarok),
 ];
 export default cards;

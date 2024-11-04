@@ -10,6 +10,7 @@ export type GItemCategory =
   | "leaf"
   | "log"
   | "monster drop"
+  | "production"
   | "ore"
   | "shirt"
   | "statue";
