@@ -1,0 +1,44 @@
+{
+  "name": "idleon-tool",
+  "version": "1.0.0",
+  "description": "It's a tool for IdleOn.",
+  "author": "Paul Davies <lagdotcom@gmail.com>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "lint": "eslint src",
+    "build": "node scripts/build.mjs",
+    "watch": "node scripts/watch.mjs",
+    "start": "node scripts/watch.mjs",
+    "start-prod": "node scripts/watch.mjs production"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@reduxjs/toolkit": "^2.3.0",
+    "react": "^18.3.1",
+    "react-aria-components": "^1.4.1",
+    "react-dom": "^18.3.1",
+    "react-redux": "^9.1.2",
+    "redux": "^5.0.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.14.0",
+    "@types/eslint__js": "^8.42.3",
+    "@types/node": "^22.8.7",
+    "@types/react-dom": "^18.3.1",
+    "classnames": "^2.5.1",
+    "dotenv": "^16.4.5",
+    "esbuild": "^0.24.0",
+    "esbuild-sass-plugin": "^3.3.1",
+    "eslint": "^9.14.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^5.1.0-rc-7c8e5e7a-20241101",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "postcss": "^8.4.47",
+    "postcss-modules": "^6.0.0",
+    "prettier": "^3.3.3",
+    "typescript": "^5.6.3",
+    "typescript-eslint": "^8.12.2"
+  }
+}
