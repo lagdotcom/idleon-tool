@@ -4,6 +4,7 @@ import { Button } from "react-aria-components";
 import { GItemName } from "../flavours";
 import { useAppDispatch, useAppSelector } from "../state/hooks";
 import { selectTodo } from "../state/selectors";
+import { saveSoon } from "../state/thunks";
 import { addTodo } from "../state/todo";
 import styles from "./App.module.scss";
 import ItemPicker from "./ItemPicker";
@@ -16,6 +17,7 @@ export default function App() {
   const clearTodo = useCallback(
     (name: GItemName) => () => {
       dispatch(addTodo({ name, qty: -Infinity }));
+      dispatch(saveSoon());
     },
     [dispatch],
   );
