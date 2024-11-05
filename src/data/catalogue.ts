@@ -45,5 +45,6 @@ export const droppers = [...monsters, ...nodes, ...trees].map((d) => ({
   ...d,
   drops: expandDropTable(d.drops),
 }));
+export type GExpandedDropper = (typeof droppers)[number];
 
 export const recipes = [...forge, ...smithing];

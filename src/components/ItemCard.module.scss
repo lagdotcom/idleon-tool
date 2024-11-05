@@ -1,0 +1,15 @@
+.card {
+  display: inline-flex;
+  margin: 2px;
+  padding: 2px;
+  border: 1px solid black;
+  background: white;
+
+  &:hover {
+    background-color: silver;
+  }
+
+  img {
+    max-height: 32px;
+  }
+}

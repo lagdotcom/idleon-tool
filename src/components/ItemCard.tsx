@@ -2,6 +2,7 @@ import { MouseEvent, useCallback } from "react";
 
 import { items } from "../data/catalogue";
 import { GItemName, Quantity } from "../flavours";
+import styles from "./ItemCard.module.scss";
 
 export type ItemCardClickHandler = (name: GItemName, qty: Quantity) => void;
 
@@ -30,7 +31,12 @@ export default function ItemCard({
   );
 
   return (
-    <button onClick={clicked} onContextMenu={clicked} title={name}>
+    <button
+      className={styles.card}
+      onClick={clicked}
+      onContextMenu={clicked}
+      title={name}
+    >
       <img src={item?.img} alt={name} />
     </button>
   );
