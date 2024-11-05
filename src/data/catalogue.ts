@@ -4,6 +4,7 @@ import { choppinItems } from "./choppin";
 import { trees } from "./choppin";
 import food from "./food";
 import forge from "./forge";
+import helmets from "./helmets";
 import { miningItems, nodes } from "./mining";
 import monsterDrops from "./monsterDrops";
 import monsters from "./monsters";
@@ -12,6 +13,7 @@ import shirts from "./shirts";
 import smithing from "./smithing";
 import statues from "./statue";
 import { GDrop, GItemDrop } from "./types";
+import unlocks from "./unlocks";
 
 // https://idleon.wiki/wiki/The_Slab
 export const items = [
@@ -20,8 +22,10 @@ export const items = [
   ...food,
   ...monsterDrops,
   ...productionItems,
+  ...helmets,
   ...shirts,
   ...statues,
+  ...unlocks,
   ...questItems,
   ...cards,
 ];

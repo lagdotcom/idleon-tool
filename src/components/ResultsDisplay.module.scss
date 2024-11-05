@@ -10,6 +10,10 @@
   }
 }
 
+.section {
+  margin: 10px 0;
+}
+
 .dropper {
   margin: 10px 0;
   display: grid;
@@ -19,7 +23,7 @@
     "wanted wanted extra";
   grid-template-columns: 1fr 1fr 2fr;
 
-  img {
+  > img {
     grid-area: img;
     max-height: 32px;
   }
@@ -50,22 +54,5 @@
     img {
       max-height: 32px;
     }
-  }
-}
-
-.mini {
-  display: flex;
-  align-items: center;
-  column-gap: 4px;
-
-  img {
-    max-height: 16px;
-  }
-
-  .placeholder {
-    width: 16px;
-    line-height: 16px;
-    text-align: center;
-    background-color: silver;
   }
 }

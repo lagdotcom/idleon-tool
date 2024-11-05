@@ -1,0 +1,16 @@
+.mini {
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+
+  img {
+    max-height: 16px;
+  }
+
+  .placeholder {
+    width: 16px;
+    line-height: 16px;
+    text-align: center;
+    background-color: silver;
+  }
+}

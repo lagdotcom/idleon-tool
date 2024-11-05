@@ -1,5 +1,7 @@
 import { getRecipeMaker, mkInput as n } from "./tools";
 
+// https://idleon.wiki/wiki/Smithing
+
 const r = getRecipeMaker("smithing");
 
 const recipes = [
@@ -59,8 +61,88 @@ const recipes = [
   r("Iron Hatchet", n("Jungle Logs", 200), n("Boring Brick", 100)),
   r("Small Choppin Pouch", n("Bleach Logs", 800)),
 
+  r("Iron Helmet", n("Iron Bar", 125), n("Glublin Ear", 300)),
+  r("Iron Platebody", n("Iron Bar", 150), n("Jungle Logs", 600)),
+  r("Iron Platelegs", n("Iron Bar", 170), n("Boring Brick", 225)),
+  r(
+    "Anvil Tab 2",
+    n("Iron Bar", 250),
+    n("Chain Link", 200),
+    n("Forest Fibres", 400),
+    n("Bullfrog Horn", 250),
+  ),
+
+  r("Blue Tee", n("Orange Tee"), n("Spore Cap", 25), n("Oak Logs", 50)),
+  r(
+    "Sleek Shank",
+    n("Wooden Bow"),
+    n("Gnarled Wand"),
+    n("Wooden Spear", 2),
+    n("Thread", 300),
+  ),
+  r(
+    "Iron Boots",
+    n("Copper Boots"),
+    n("Trusty Nails", 500),
+    n("Iron Bar", 125),
+  ),
+  r("Steel Band", n("Iron Bar", 600)),
+
+  r(
+    "Purple Tupacband",
+    n("Bleach Logs", 100),
+    n("Iron Ore", 50),
+    n("Crude Oil", 60),
+  ),
+  r("Icing Ironbite", n("Iron Ore", 5), n("Small Mana Potion", 2)),
+  r("Saucy Logfries", n("Jungle Logs", 6), n("Small Life Potion", 3)),
+  r(
+    "Goo Galoshes",
+    n("Copper Boots"),
+    n("Slime Sludge", 600),
+    n("Jungle Logs", 1000),
+  ),
+
+  r("Fur Shirt", n("Glublin Ear", 500), n("Iron Bar", 500)),
+  r("Hide Shirt", n("Copper Platebody"), n("Steel Axe"), n("Bleach Logs", 325)),
+  r("Eco Friendly Oil", n("Crude Oil"), n("Grass Leaf")),
+  r("Dooble Goopi", n("Copper Band"), n("Steel Band"), n("Slime Sludge", 1000)),
+
+  r(
+    "Bleached Designer Wode Patch Pants",
+    n("Torn Jeans", 3),
+    n("Plank", 275),
+    n("Bleach Logs", 700),
+  ),
+  r(
+    "Dirty Coal Miner Baggy Soot Pants",
+    n("Torn Jeans", 3),
+    n("Iron Ore", 200),
+  ),
   r("Peanut", n("Hot Dog", 2), n("Copper Ore"), n("Bleach Logs")),
   r("Golden Peanut", n("Peanut", 100), n("Gold Bar", 50)),
-  r("Fur Shirt", n("Glublin Ear", 500), n("Iron Bar", 500)),
+
+  r(
+    "Blunderbag",
+    n("Spore Tee", 2),
+    n("Green Headband", 2),
+    n("Spore Cap", 150),
+  ),
+  r(
+    "Purple Tee",
+    n("Orange Tee"),
+    n("Red Spore Cap", 40),
+    n("Bleach Logs", 100),
+  ),
+  r("Green Tee", n("Spore Tee"), n("Orange Tee"), n("Thread", 150)),
+  r(
+    "Black Tee",
+    n("Orange Tee", 5),
+    n("Blue Tee", 2),
+    n("Purple Tee", 2),
+    n("Green Tee", 2),
+  ),
+
+  // TODO 57-84
 ];
 export default recipes;

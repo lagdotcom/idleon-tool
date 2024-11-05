@@ -7,6 +7,7 @@ export type GItemCategory =
   | "golden food"
   | "hatchet"
   | "health food"
+  | "helmet"
   | "leaf"
   | "log"
   | "monster drop"
@@ -14,7 +15,8 @@ export type GItemCategory =
   | "quest item"
   | "ore"
   | "shirt"
-  | "statue";
+  | "statue"
+  | "unlock";
 
 export interface GItem {
   category: GItemCategory;

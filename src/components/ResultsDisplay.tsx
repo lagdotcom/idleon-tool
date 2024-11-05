@@ -1,30 +1,11 @@
-import { PropsWithChildren, useCallback, useState } from "react";
+import { useCallback, useState } from "react";
 import { Button } from "react-aria-components";
 
-import { GExpandedDropper, items } from "../data/catalogue";
+import { GExpandedDropper } from "../data/catalogue";
 import { GRecipe } from "../data/types";
 import { GItemName, Quantity } from "../flavours";
+import MiniItem from "./MiniItem";
 import styles from "./ResultsDisplay.module.scss";
-
-function MiniItem({
-  name,
-  children,
-  Tag = "li",
-}: PropsWithChildren<{ name: GItemName; Tag?: "li" | "h3" }>) {
-  const item = items.find((i) => i.name === name);
-
-  return (
-    <Tag className={styles.mini}>
-      {item ? (
-        <img src={item.img} alt={name} />
-      ) : (
-        <div className={styles.placeholder}>?</div>
-      )}
-      <span className={styles.name}>{name}</span>
-      <span className={styles.extra}>{children}</span>
-    </Tag>
-  );
-}
 
 function DropperDisplay({
   dropper: { name, img, drops, area },
@@ -47,7 +28,7 @@ function DropperDisplay({
       <ul className={styles.wanted}>
         {big.map((d, n) => (
           <MiniItem key={n} name={d.item}>
-            1/{Math.round(d.chance)}
+            {isNaN(d.chance) ? "(skill)" : `1/${Math.round(d.chance)}`}
           </MiniItem>
         ))}
       </ul>
@@ -58,7 +39,7 @@ function DropperDisplay({
             <ul>
               {small.map((d, n) => (
                 <MiniItem key={n} name={d.item}>
-                  1/{Math.round(d.chance)}
+                  {isNaN(d.chance) ? "(skill)" : `1/${Math.round(d.chance)}`}
                 </MiniItem>
               ))}
             </ul>
@@ -112,6 +93,18 @@ export default function ResultsDisplay({
 }) {
   return (
     <div className={styles.results}>
+      {wanted.length > 0 && (
+        <div className={styles.section}>
+          <h2>Total Wanted</h2>
+          <ul>
+            {wanted.map(([name, qty]) => (
+              <MiniItem key={name} name={name}>
+                x{qty}
+              </MiniItem>
+            ))}
+          </ul>
+        </div>
+      )}
       {unknown.length > 0 && (
         <div className={styles.section}>
           <h2>Unknown</h2>
