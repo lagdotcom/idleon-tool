@@ -1,6 +1,12 @@
-.section {
+.results {
   h2 {
     margin: 0;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
   }
 }
 
@@ -33,12 +39,6 @@
     padding: 4px;
     font-size: 0.8em;
   }
-
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
 }
 
 .recipe {
@@ -50,12 +50,6 @@
     img {
       max-height: 32px;
     }
-  }
-
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
   }
 }
 

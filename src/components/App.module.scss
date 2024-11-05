@@ -1,14 +1,8 @@
 .layout {
   display: grid;
-  grid-template-areas:
-    "top top"
-    "left right";
+  grid-template-areas: "left right";
   grid-template-rows: 32px auto;
   height: 100vh;
-}
-
-.top {
-  grid-area: top;
 }
 
 .left {

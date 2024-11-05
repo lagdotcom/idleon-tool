@@ -11,6 +11,7 @@ export type GItemCategory =
   | "log"
   | "monster drop"
   | "production"
+  | "quest item"
   | "ore"
   | "shirt"
   | "statue";

@@ -7,6 +7,7 @@ import forge from "./forge";
 import { miningItems, nodes } from "./mining";
 import monsterDrops from "./monsterDrops";
 import monsters from "./monsters";
+import questItems from "./questItems";
 import shirts from "./shirts";
 import smithing from "./smithing";
 import statues from "./statue";
@@ -21,6 +22,7 @@ export const items = [
   ...productionItems,
   ...shirts,
   ...statues,
+  ...questItems,
   ...cards,
 ];
 

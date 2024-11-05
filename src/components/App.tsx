@@ -90,9 +90,6 @@ export default function App() {
 
   return (
     <div className={styles.layout}>
-      <div className={styles.top}>
-        <SavingIndicator />
-      </div>
       <div className={styles.left}>
         <ItemPicker />
       </div>
@@ -106,6 +103,7 @@ export default function App() {
           </div>
         ))}
       </div>
+      <SavingIndicator />
     </div>
   );
 }

@@ -111,17 +111,29 @@ export default function ResultsDisplay({
   wanted: [GItemName, Quantity][];
 }) {
   return (
-    <div>
+    <div className={styles.results}>
       {unknown.length > 0 && (
         <div className={styles.section}>
           <h2>Unknown</h2>
-          {unknown.map(([name, qty]) => `${name} x${qty}`).join(", ")}
+          <ul>
+            {unknown.map(([name, qty]) => (
+              <MiniItem key={name} name={name}>
+                x{qty}
+              </MiniItem>
+            ))}
+          </ul>
         </div>
       )}
       {produce.length > 0 && (
         <div className={styles.section}>
           <h2>Produce</h2>
-          {produce.map(([name, qty]) => `${name} x${qty}`).join(", ")}
+          <ul>
+            {produce.map(([name, qty]) => (
+              <MiniItem key={name} name={name}>
+                x{qty}
+              </MiniItem>
+            ))}
+          </ul>
         </div>
       )}
       {recipes.length > 0 && (
