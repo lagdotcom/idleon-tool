@@ -1,5 +1,7 @@
 import boringBrick from "../img/Boring_Brick.png";
 import chainLink from "../img/Chain_Link.png";
+import denseWater from "../img/Dense_Water.png";
+import distilledWater from "../img/Distilled_Water.png";
 import leatherHide from "../img/Leather_Hide.png";
 import lugiBracket from "../img/Lugi_Bracket.png";
 import pinionSpur from "../img/Pinion_Spur.png";
@@ -11,9 +13,9 @@ import thread from "../img/Thread.png";
 import trustyNails from "../img/Trusty_Nails.png";
 import { getItemMaker } from "./tools";
 
-const i = getItemMaker("production");
+const i = getItemMaker("materials");
 
-const productionItems = [
+const materials = [
   i("Thread", thread),
   i("Trusty Nails", trustyNails),
   i("Boring Brick", boringBrick),
@@ -25,5 +27,8 @@ const productionItems = [
   i("Thingymabob", thingymabob),
   i("Tangled Cords", tangledCords),
   i("PVC Pipe", pvcPipe),
+
+  i("Distilled Water", distilledWater),
+  i("Dense Water", denseWater),
 ];
-export default productionItems;
+export default materials;

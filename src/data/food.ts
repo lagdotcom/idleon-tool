@@ -35,14 +35,16 @@ const food = getItemMaker("health food");
 const boost = getItemMaker("boost food");
 const golden = getItemMaker("golden food");
 
-const foodItems = [
+export const healthFood = [
   food("Nomwich", nomwich),
   food("Hot Dog", hotDog),
   food("Cheezy Pizza", cheezyPizza),
   food("Saucy Weiner", saucyWeiner),
   food("Kebab Sticks", kebabSticks),
   food("Peanut", peanut),
+];
 
+export const boostFood = [
   boost("Small Strength Potion", smallStrengthPotion),
   boost("Average Strength Potion", averageStrengthPotion),
   boost("Small Life Potion", smallLifePotion),
@@ -53,7 +55,9 @@ const foodItems = [
   boost("Average Mana Potion", averageManaPotion),
   boost("Small EXP Potion", smallEXPPotion),
   boost("Average EXP Potion", averageEXPPotion),
+];
 
+export const goldenFood = [
   golden("Golden Peanut", goldenPeanut),
   golden("Golden Jam", goldenJam),
   golden("Golden Kebabs", goldenKebabs),
@@ -70,4 +74,3 @@ const foodItems = [
   golden("Golden Cake", goldenCake),
   golden("Butter Bar", butterBar),
 ];
-export default foodItems;

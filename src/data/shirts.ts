@@ -34,7 +34,7 @@ import trollishGarb from "../img/Trollish_Garb.png";
 import voidImperiumPlatebody from "../img/Void_Imperium_Platebody.png";
 import { getItemMaker } from "./tools";
 
-const i = getItemMaker("shirt");
+const i = getItemMaker("shirts");
 
 const shirts = [
   i("Spore Tee", sporeTee),

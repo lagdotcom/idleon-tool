@@ -20,7 +20,7 @@ import wodeBoard from "../img/Wode_Board_Card.png";
 import woodMushroom from "../img/Wood_Mushroom_Card.png";
 import { getItemMaker } from "./tools";
 
-const i = getItemMaker("card");
+const i = getItemMaker("cards");
 
 const cards = [
   i("Green Mushroom Card", greenMushroom),

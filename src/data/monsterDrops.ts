@@ -18,7 +18,7 @@ import stick from "../img/Stick.png";
 import woodularCircle from "../img/Woodular_Circle.png";
 import { getItemMaker } from "./tools";
 
-const i = getItemMaker("monster drop");
+const i = getItemMaker("monster drops");
 
 const monsterDrops = [
   i("Spore Cap", sporeCap),

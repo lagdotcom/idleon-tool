@@ -53,7 +53,7 @@ import witchHat from "../img/Witch_Hat.png";
 import yellowHeadband from "../img/Yellow_Headband.png";
 import { getItemMaker } from "./tools";
 
-const i = getItemMaker("helmet");
+const i = getItemMaker("helmets");
 
 const helmets = [
   i("Grey Beret", greyBeret),

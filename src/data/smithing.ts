@@ -1,4 +1,4 @@
-import { getRecipeMaker, mkInput as n } from "./tools";
+import { getRecipeMaker, mkIQ as n } from "./tools";
 
 // https://idleon.wiki/wiki/Smithing
 
@@ -143,6 +143,110 @@ const recipes = [
     n("Green Tee", 2),
   ),
 
-  // TODO 57-84
+  r(
+    "Blunderhills NPC Completion Token",
+    n("Easy Blunderhills NPC Token"),
+    n("Med Blunderhills NPC Token"),
+    n("Hard Blunderhills NPC Token"),
+  ),
+  r(
+    "Blunder Skills Completion Token",
+    n("Amarok Helmet"),
+    n("Platinum Bar", 1000),
+    n("Veiny Logs", 2000),
+  ),
+  r(
+    "Blunderhills Misc Completion Token",
+    n("Carrot Launcher"),
+    n("Golden Peanut", 30),
+    n("Golden Plop", 12),
+    n("Bolt Cutters"),
+  ),
+  r("Acorn Topper", n("Acorn", 25000), n("Woodular Circle", 15)),
+
+  r(
+    "Easy Blunderhills NPC Token",
+    n("Woodsman Token"),
+    n("Glumlee Token"),
+    n("Stiltzcho Token"),
+    n("Funguy Token"),
+  ),
+  r(
+    "Med Blunderhills NPC Token",
+    n("Krunk Token"),
+    n("Tiki Chief Token"),
+    n("Dog Bone Token"),
+    n("Papua Piggea Token"),
+  ),
+  r(
+    "Hard Blunderhills NPC Token",
+    n("Picnic Token"),
+    n("TP Pete Token"),
+    n("Sproutinald Token"),
+    n("Dazey Token"),
+  ),
+  r("Serrated Rex Ring", n("Rex Ring"), n("Iron Bar", 1000)),
+
+  r(
+    "Amarok Helmet",
+    n("Amarok Slab", 20),
+    n("Forest Fibres", 2500),
+    n("Woodular Circle", 5),
+  ),
+  r(
+    "Amarok Bodyplate",
+    n("Amarok Slab", 10),
+    n("Iron Bar", 300),
+    n("Corn Kernels", 600),
+  ),
+  r(
+    "Amarok Hinds",
+    n("Amarok Slab", 6),
+    n("Chain Link", 300),
+    n("Bullfrog Horn", 500),
+  ),
+  r("Amarok Paws", n("Amarok Slab", 5), n("Iron Boots"), n("Grass Leaf", 125)),
+
+  r(
+    "Fishing Overalls",
+    n("Bleached Designer Wode Patch Pants", 2),
+    n("Goldfish", 500),
+  ),
+  r(
+    "Bandito Pantaloon",
+    n("Dirty Coal Miner Baggy Soot Pants", 2),
+    n("Fly", 500),
+  ),
+  r(
+    "Chaotic Amarok Pendant",
+    n("Chaotic Amarok Slab", 4),
+    n("Amarok Slab", 10),
+    n("Distilled Water", 25),
+  ),
+
+  r("Copper Fish Rod", n("Copper Bar", 200), n("Goldfish", 180)),
+  r("Cramped Fish Pouch", n("Goldfish", 180)),
+  r("Copper Netted Net", n("Jungle Logs", 500), n("Fly", 400)),
+  r("Cramped Bug Pouch", n("Fly", 180)),
+
+  r(
+    "Iron Fishing Rod",
+    n("Iron Bar", 300),
+    n("Hermit Can", 650),
+    n("Distilled Water", 3),
+  ),
+  r("Small Fish Pouch", n("Hermit Can", 425), n("Distilled Water", 2)),
+  r(
+    "Reinforced Net",
+    n("Forest Fibres", 800),
+    n("Butterfly", 850),
+    n("Distilled Water", 3),
+  ),
+  r("Small Bug Pouch", n("Butterfly", 425), n("Distilled Water", 2)),
+
+  r("Silkskin Traps", n("Poison Froge"), n("Redox Salts", 5)),
+  r("Small Critter Pouch", n("Froge", 200), n("Redox Salts", 3)),
+  r("Ceramic Skull", n("Forest Soul", 250), n("Redox Salts", 5)),
+  r("Small Soul Pouch", n("Forest Soul", 200), n("Redox Salts", 3)),
 ];
 export default recipes;

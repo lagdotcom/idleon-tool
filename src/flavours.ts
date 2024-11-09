@@ -5,6 +5,7 @@ interface Flavouring<FlavourT> {
 type Flavour<T, FlavourT> = T & Flavouring<FlavourT>;
 
 export type Chance = Flavour<number, "Chance">;
+export type Coins = Flavour<number, "Coins">;
 export type Quantity = Flavour<number, "Quantity">;
 
 export type GItemName = Flavour<string, "GItemName">;

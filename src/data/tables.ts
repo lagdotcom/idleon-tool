@@ -24,6 +24,40 @@ export const SuperDropTable2 = [
   d("Mystery Upgrade Stone I", 1.43, 3),
 ];
 
+export const SuperDropTable3 = [
+  d("Silver Pen", 11.1),
+  d("Saw Stamp", 66.7),
+  d("Lucky Lad", 3330),
+  d("Talent Point Reset Fragment", 6.67),
+  d("Golden Ham", 2),
+  d("Golden Cheese", 2.5),
+  d("Bronze Obol of Multikill", 32.8),
+  d("Mystery Upgrade Stone II", 1.43, 3),
+];
+
+export const SuperDropTable4 = [
+  d("Silver Pen", 11.1),
+  d("Lucky Lad", 3330),
+  d("Talent Point Reset Fragment", 6.67),
+  d("Golden Ribs", 2),
+  d("Mystery Upgrade Stone II", 1.43, 3),
+];
+
+export const SuperDropTable5 = [
+  d("Silver Pen", 11.1),
+  d("Lucky Lad", 3330),
+  d("Talent Point Reset Fragment", 6.67),
+  d("Golden Grilled Cheese Nomwich", 2),
+  d("Mystery Upgrade Stone III", 4),
+];
+
+export const SuperDropTable6 = [
+  d("Silver Pen", 11.1),
+  d("Atomic Stamp", 1110),
+  d("Lucky Lad", 3330),
+  d("Mystery Upgrade Stone IV", 66.7),
+];
+
 export const DropTable1 = [
   d("Copper Band (Recipe)", 125),
   d("Nomwich", 4, 10),
@@ -116,3 +150,23 @@ export const DropTable11 = [
   d("Alch Go Brrr Stamp", 3330),
   t(SuperDropTable2, 167),
 ];
+
+export const DropTable17 = [
+  d("Arctic Leaf", 2, 3),
+  d("Hidey Box Stamp", 833),
+  t(SuperDropTable3, 167),
+];
+
+export const DropTable22 = [
+  d("Galactic Leaf", 2, 3),
+  d("Dualhook Prongs", 1250),
+  t(SuperDropTable4, 167),
+];
+
+export const DropTable28 = [
+  d("Magma Leaf", 2, 3),
+  d("Platinum Twine", 1250),
+  t(SuperDropTable5, 167),
+];
+
+export const DropTable33 = [d("Spirit Leaf", 2, 3), t(SuperDropTable6, 167)];

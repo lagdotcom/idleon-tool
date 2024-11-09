@@ -1,36 +1,80 @@
-import productionItems from "./anvil";
 import cards from "./cards";
-import { choppinItems } from "./choppin";
+import bugs from "./catching";
+import { hatchets, logsAndLeaves } from "./choppin";
 import { trees } from "./choppin";
-import food from "./food";
+import { boostFood, goldenFood, healthFood } from "./food";
 import forge from "./forge";
 import helmets from "./helmets";
-import { miningItems, nodes } from "./mining";
+import materials from "./materials";
+import { nodes, oresAndBars, pickaxes } from "./mining";
 import monsterDrops from "./monsterDrops";
 import monsters from "./monsters";
 import pants from "./pants";
+import { pendants } from "./pendants";
 import questItems from "./questItems";
+import rings from "./rings";
 import shirts from "./shirts";
 import shoes from "./shoes";
 import smithing from "./smithing";
 import statues from "./statue";
 import { GDrop, GItemDrop } from "./types";
-import unlocks from "./unlocks";
+import {
+  anvilExpansions,
+  capacityPouches,
+  inventoryBags,
+  storageChests,
+} from "./unlocks";
+import weapons from "./weapons";
 
 // https://idleon.wiki/wiki/The_Slab
 export const items = [
-  ...choppinItems,
-  ...miningItems,
-  ...food,
-  ...monsterDrops,
-  ...productionItems,
+  ...weapons,
   ...helmets,
   ...shirts,
   ...pants,
   ...shoes,
-  ...statues,
-  ...unlocks,
+  ...pendants,
+  ...rings,
+  // ...premiumHelmets,
+  // ...trophies,
+  // ...keychains,
+  // ...chatRings,
+  // ...capes,
+  // ...nameTags,
+  ...pickaxes,
+  ...hatchets,
+  // ...fishingRods,
+  // ...bugCatchingNets,
+  // ...trapBoxSets,
+  // ...worshipSkulls,
+  // ...dnaSplicers,
+  ...monsterDrops,
   ...questItems,
+  ...materials,
+  ...oresAndBars,
+  ...logsAndLeaves,
+  // ...fish,
+  ...bugs,
+  // ...critters,
+  // ...souls,
+  // ...refinerySalts,
+  ...healthFood,
+  ...boostFood,
+  ...goldenFood,
+  // ...timeCandy,
+  // ...expBalloons,
+  // ...character,
+  // ...account,
+  // ...misc,
+  ...inventoryBags,
+  ...capacityPouches,
+  ...storageChests,
+  // ...upgradeStones,
+  // ...premiumStones,
+  ...anvilExpansions,
+  // ...stamps,
+  ...statues,
+  // ...obols,
   ...cards,
 ];
 

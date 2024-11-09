@@ -1,4 +1,4 @@
-import { getRecipeMaker, mkInput as n } from "./tools";
+import { getRecipeMaker, mkIQ as n } from "./tools";
 
 const r = getRecipeMaker("forge");
 

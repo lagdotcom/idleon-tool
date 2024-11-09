@@ -28,7 +28,7 @@ import thiccSkin from "../img/Thicc_Skin_Statue.png";
 import twosoul from "../img/Twosoul_Statue.png";
 import { getItemMaker } from "./tools";
 
-const i = getItemMaker("statue");
+const i = getItemMaker("statues");
 
 const statues = [
   i("Power Statue", power),

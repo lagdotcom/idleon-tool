@@ -6,8 +6,9 @@ import {
   GItem,
   GItemCategory,
   GItemDrop,
+  GItemQty,
+  GQuest,
   GRecipe,
-  GRecipeInput,
   GRecipeType,
   GTableDrop,
 } from "./types";
@@ -28,7 +29,7 @@ export const getRecipeMaker =
     output,
   });
 
-export const mkInput = (item: GItemName, qty: Quantity = 1): GRecipeInput => ({
+export const mkIQ = (item: GItemName, qty: Quantity = 1): GItemQty => ({
   item,
   qty,
 });
@@ -64,3 +65,10 @@ export const getDropperMaker =
     area,
     drops,
   });
+
+export const mkQuest = (
+  npc: string,
+  name: string,
+  inputs: GItemQty[],
+  outputs: GItemQty[],
+): GQuest => ({ npc, name, inputs, outputs });
