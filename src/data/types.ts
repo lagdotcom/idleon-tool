@@ -14,7 +14,9 @@ export type GItemCategory =
   | "production"
   | "quest item"
   | "ore"
+  | "pants"
   | "shirt"
+  | "shoes"
   | "statue"
   | "unlock";
 

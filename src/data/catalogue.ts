@@ -8,8 +8,10 @@ import helmets from "./helmets";
 import { miningItems, nodes } from "./mining";
 import monsterDrops from "./monsterDrops";
 import monsters from "./monsters";
+import pants from "./pants";
 import questItems from "./questItems";
 import shirts from "./shirts";
+import shoes from "./shoes";
 import smithing from "./smithing";
 import statues from "./statue";
 import { GDrop, GItemDrop } from "./types";
@@ -24,6 +26,8 @@ export const items = [
   ...productionItems,
   ...helmets,
   ...shirts,
+  ...pants,
+  ...shoes,
   ...statues,
   ...unlocks,
   ...questItems,
