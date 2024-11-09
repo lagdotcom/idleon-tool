@@ -120,7 +120,7 @@ function ShopDisplay({
       <ul className={styles.wanted}>
         {big.map((e, n) => (
           <MiniItem key={n} name={e.item}>
-            {e.cost}g {e.stock}/day
+            {e.cost}c {e.stock}/day
           </MiniItem>
         ))}
       </ul>

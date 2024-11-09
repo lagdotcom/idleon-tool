@@ -2,6 +2,7 @@ import cards from "./cards";
 import bugs from "./catching";
 import { hatchets, logsAndLeaves } from "./choppin";
 import { trees } from "./choppin";
+import { expBalloons, timeCandy } from "./consumables";
 import { boostFood, goldenFood, healthFood } from "./food";
 import forge from "./forge";
 import helmets from "./helmets";
@@ -61,8 +62,8 @@ export const items = [
   ...healthFood,
   ...boostFood,
   ...goldenFood,
-  // ...timeCandy,
-  // ...expBalloons,
+  ...timeCandy,
+  ...expBalloons,
   // ...character,
   // ...account,
   // ...misc,
