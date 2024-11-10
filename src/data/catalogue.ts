@@ -1,8 +1,9 @@
 import cards from "./cards";
-import bugs from "./catching";
+import { bugNests, bugs } from "./catching";
 import { hatchets, logsAndLeaves } from "./choppin";
 import { trees } from "./choppin";
 import { expBalloons, timeCandy } from "./consumables";
+import { fish, fishingSpots } from "./fishing";
 import { boostFood, goldenFood, healthFood } from "./food";
 import forge from "./forge";
 import helmets from "./helmets";
@@ -54,7 +55,7 @@ export const items = [
   ...materials,
   ...oresAndBars,
   ...logsAndLeaves,
-  // ...fish,
+  ...fish,
   ...bugs,
   // ...critters,
   // ...souls,
@@ -96,7 +97,13 @@ function expandDropTable(table: GDrop[], multiplier = 1): GItemDrop[] {
   });
 }
 
-export const droppers = [...monsters, ...nodes, ...trees].map((d) => ({
+export const droppers = [
+  ...monsters,
+  ...nodes,
+  ...trees,
+  ...fishingSpots,
+  ...bugNests,
+].map((d) => ({
   ...d,
   drops: expandDropTable(d.drops),
 }));

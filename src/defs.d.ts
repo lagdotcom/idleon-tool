@@ -3,6 +3,11 @@ declare module "*.module.scss" {
   export default styles;
 }
 
+declare module "*.gif" {
+  const url: import("./flavours").URLString;
+  export default url;
+}
+
 declare module "*.png" {
   const url: import("./flavours").URLString;
   export default url;

@@ -141,6 +141,51 @@ export const DropTable5b = [
   d("Beholder Statue", 20),
 ];
 
+export const DropTable6 = [
+  d("Inventory Bag G", 556),
+  d("Kebab Sticks", 2.38, 15),
+  d("Average Speed Potion", 2.5, 25),
+  d("Drippy Drop Stamp", 1670),
+  d("Anvil Statue", 14.3),
+  d("Monster Rating", 1.67),
+  d("Cloudsound Follower", 2, 7),
+  d("Instablab Follower", 3.33, 3),
+  d("Silver AGI Obol", 1360),
+  t(SuperDropTable2, 167),
+];
+
+export const DropTable7 = [
+  d("Storage Chest 14", 833),
+  d("Armor Upgrade Stone B", 200),
+  d("Meat Pie", 2.38, 15),
+  d("Droplots Stamp", 2500),
+  d("Exp Book Statue", 15),
+  d("Monster Rating", 1.11),
+  d("Cloudsound Follower", 2, 8),
+  d("Instablab Follower", 3.33, 3),
+  d("Silver WIS Obol", 1360),
+  t(SuperDropTable2, 167),
+];
+
+export const DropTable8 = [
+  d("Midnight Cookie", 333),
+  d("Bullseye Stamp", 100),
+  d("Decent Life Potion", 2.5, 25),
+  d("Buzz Buzz Stamp", 6670),
+  d("Cauldron Statue", 14.3),
+  d("Cloudsound Follower", 2, 8),
+  d("Instablab Follower", 3.33, 3),
+  d("Silver LUK Obol", 1360),
+  t(SuperDropTable2, 167),
+];
+
+export const DropTable9 = [
+  d("Bugsack Stamp", 1000),
+  d("Ol Reliable Statue", 9.8),
+  d("Paper Boat", 10000),
+  t(SuperDropTable2, 167),
+];
+
 export const DropTable11 = [
   d("Twisty Leaf", 2, 4),
   d("Weapon Upgrade Stone II", 500),
@@ -148,6 +193,16 @@ export const DropTable11 = [
   d("Thicc Skin Statue", 20),
   d("Small Strength Potion", 14.3, 5),
   d("Alch Go Brrr Stamp", 3330),
+  t(SuperDropTable2, 167),
+];
+
+export const DropTable12 = [
+  d("Tool Upgrade Stone II", 500),
+  d("Tool Upgrade Stone I", 33.3),
+  d("Oceanman Statue", 11.8),
+  d("Agile Stamp", 5000),
+  d("Small Strength Potion", 14.3, 5),
+  d("Bag o Heads Stamp", 10000),
   t(SuperDropTable2, 167),
 ];
 

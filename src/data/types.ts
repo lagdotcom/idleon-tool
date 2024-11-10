@@ -87,7 +87,12 @@ export interface GTableDrop {
 
 export type GDrop = GItemDrop | GTableDrop;
 
-export type GDropperType = "monster" | "tree" | "node";
+export type GDropperType =
+  | "bug nest"
+  | "fishing spot"
+  | "monster"
+  | "node"
+  | "tree";
 
 export interface GDropper {
   type: GDropperType;

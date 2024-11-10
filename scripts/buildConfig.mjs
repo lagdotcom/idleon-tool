@@ -43,8 +43,7 @@ export default function getBuildConfig(nodeEnv = "development") {
       }),
     ],
     loader: {
-      ".json": "file",
-      ".ogg": "file",
+      ".gif": "file",
       ".png": "file",
     },
   };

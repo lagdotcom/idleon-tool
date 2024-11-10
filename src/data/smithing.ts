@@ -248,5 +248,98 @@ const recipes = [
   r("Small Critter Pouch", n("Froge", 200), n("Redox Salts", 3)),
   r("Ceramic Skull", n("Forest Soul", 250), n("Redox Salts", 5)),
   r("Small Soul Pouch", n("Forest Soul", 200), n("Redox Salts", 3)),
+
+  // Tab 2
+  r("Gold Helmet", n("Copper Helmet"), n("Fly", 2000), n("Gold Bar", 200)),
+  r(
+    "Gold Platebody",
+    n("Copper Platebody"),
+    n("Pocket Sand", 1500),
+    n("Gold Bar", 250),
+  ),
+  r(
+    "Gold Platelegs",
+    n("Copper Platelegs"),
+    n("Goldfish", 500),
+    n("Gold Bar", 300),
+  ),
+  r("Gold Boots", n("Iron Boots"), n("Gold Bar", 600), n("Distilled Water", 4)),
+
+  r(
+    "Bandage Wraps",
+    n("The Stingers", 3),
+    n("Cue Tape", 5000),
+    n("Potty Rolls", 2000),
+  ),
+  r(
+    "Royal Bayonet",
+    n("Forest Fibres", 1250),
+    n("Steel Axe"),
+    n("Distilled Water", 8),
+  ),
+  r(
+    "Spiked Menace",
+    n("Birch Longbow"),
+    n("Gold Bar", 250),
+    n("Distilled Water", 8),
+  ),
+  r(
+    "Starlight",
+    n("Quarterstaff"),
+    n("Chain Link", 1000),
+    n("Distilled Water", 8),
+  ),
+
+  r(
+    "Gold Pickaxe",
+    n("Iron Pickaxe"),
+    n("Megalodon Tooth", 2500),
+    n("Gold Bar", 400),
+  ),
+  r("Average Mining Pouch", n("Gold Ore", 2000)),
+  r(
+    "Golden Axe",
+    n("Iron Hatchet"),
+    n("Golden Dubloon", 5),
+    n("Crabby Cakey", 2000),
+  ),
+  r("Average Choppin Pouch", n("Forest Fibres", 2000)),
+
+  r(
+    "Gold Fishing Rod",
+    n("Hermit Can", 2500),
+    n("Leather Hide", 1000),
+    n("Iron Fishing Rod"),
+  ),
+  r("Average Fish Pouch", n("Hermit Can", 2000)),
+  r(
+    "Golden Net",
+    n("Golden Dubloon", 5),
+    n("Butterfly", 2500),
+    n("Reinforced Net"),
+  ),
+  r("Average Bug Pouch", n("Butterfly", 2000)),
+
+  r(
+    "Defenders Dignity",
+    n("Goldfish", 10000),
+    n("Golden Plop", 4),
+    n("Distilled Water", 15),
+  ),
+  r(
+    "Strung Bludgeon",
+    n("Sleek Shank"),
+    n("Glass Shard", 4),
+    n("Distilled Water", 20),
+  ),
+  r(
+    "Average Food Pouch",
+    n("Meat Pie", 400),
+    n("Icing Ironbite", 700),
+    n("Saucy Logfries", 700),
+  ),
+  r("Average Material Pouch", n("Glass Shard"), n("Chain Link", 1700)),
+
+  // TODO 21-
 ];
 export default recipes;

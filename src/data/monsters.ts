@@ -4,17 +4,25 @@ import babyBoa from "../img/Baby_Boa_Card.png";
 import boop from "../img/Boop_Card.png";
 import boredBean from "../img/Bored_Bean_Card.png";
 import carrotman from "../img/Carrotman_Card.png";
+import crabcake from "../img/Crabcake_Card.png";
 import crystalCarrot from "../img/Crystal_Carrot_Card.png";
 import drDefecaus from "../img/Dr_Defecaus_Card.png";
 import frog from "../img/Frog_Card.png";
 import gigafrog from "../img/Gigafrog_Card.png";
 import glublin from "../img/Glublin_Card.png";
 import greenMushroom from "../img/Green_Mushroom_Card.png";
+import mafioso from "../img/Mafioso_Card.png";
+import mashedPotato from "../img/Mashed_Potato_Card.png";
+import mimic from "../img/Mimic_Card.png";
 import nutto from "../img/Nutto_Card.png";
+import pincermin from "../img/Pincermin_Card.png";
 import poop from "../img/Poop_Card.png";
 import rat from "../img/Rat_Card.png";
 import redMushroom from "../img/Red_Mushroom_Card.png";
+import sandCastle from "../img/Sand_Castle_Card.png";
+import sandyPot from "../img/Sandy_Pot_Card.png";
 import slime from "../img/Slime_Card.png";
+import tyson from "../img/Tyson_Card.png";
 import walkingStick from "../img/Walking_Stick_Card.png";
 import wodeBoard from "../img/Wode_Board_Card.png";
 import woodMushroom from "../img/Wood_Mushroom_Card.png";
@@ -27,6 +35,9 @@ import {
   DropTable4,
   DropTable5,
   DropTable5b,
+  DropTable6,
+  DropTable7,
+  DropTable8,
 } from "./tables";
 import { getDropperMaker, mkDrop as d, mkTableDrop as t } from "./tools";
 
@@ -241,6 +252,83 @@ const monsters = [
     t(DropTable1, 0.5),
     t(DropTable2, 0.5),
     t(DropTable3, 0.5),
+  ),
+
+  m(
+    "Sandy Pot",
+    sandyPot,
+    "Jar Bridge",
+    d("Pocket Sand", 4.55),
+    d("Sandy Pot Card", 10000),
+    d("Yellow Headband", 10000),
+    d("Glass Shard", 20000),
+    t(DropTable6, 333),
+  ),
+  m(
+    "Mimic",
+    mimic,
+    "The Mimic Hole",
+    d("Megalodon Tooth", 4.72),
+    d("Sesame Seed", 100),
+    d("Casual Confidante", 10),
+    d("Mimic Card", 10000),
+    d("Totally Normal and not fake Bag", 40000),
+    d("Defenders Dignity (Recipe)", 200000),
+    t(DropTable6, 313),
+  ),
+  m(
+    "Crabcake",
+    crabcake,
+    "Dessert Dunes",
+    d("Crabby Cakey", 4.88),
+    d("Crabcake Card", 10000),
+    d("Nuget Cake", 20000),
+    d("Googley Eyes (Recipe)", 40000),
+    t(DropTable6, 278),
+  ),
+  m(
+    "Mafioso",
+    mafioso,
+    "The Grandioso Canyon",
+    d("Coconotnotto", 5),
+    d("Triumphant Treason", 13.3),
+    d("Mafioso Card", 10000),
+    d("Strung Bludgeon (Recipe)", 500000),
+    t(DropTable7, 313),
+  ),
+  m(
+    "Sand Castle",
+    sandCastle,
+    "Shifty Sandbox",
+    d("Furled Flag", 5.26),
+    d("Claiming Cashe", 20),
+    d("Sand Castle Card", 10000),
+    t(DropTable7, 286),
+  ),
+  m(
+    "Pincermin",
+    pincermin,
+    "Pincer Plateau",
+    d("Pincer Arm", 5.56),
+    d("Pincermin Card", 10000),
+    d("Bolstered DNA Splicer (Recipe)", 333000),
+    t(DropTable7, 270),
+  ),
+  m(
+    "Mashed Potato",
+    mashedPotato,
+    "Slamabam Straightaway",
+    d("Potato Remains", 5.88),
+    d("Mashed Potato Card", 10000),
+    t(DropTable7, 256),
+  ),
+  m(
+    "Tyson",
+    tyson,
+    "The Ring",
+    d("High Steaks", 5.56),
+    d("Tyson Card", 10000),
+    t(DropTable8, 313),
   ),
 ];
 export default monsters;
