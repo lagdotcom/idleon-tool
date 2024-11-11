@@ -28,7 +28,7 @@ function DropperDisplay({
       <ul className={styles.wanted}>
         {big.map((d, n) => (
           <MiniItem key={n} name={d.item}>
-            {isNaN(d.chance) ? "(skill)" : `1/${Math.round(d.chance)}`}
+            {isNaN(d.chance) ? "???" : `1/${Math.round(d.chance)}`}
           </MiniItem>
         ))}
       </ul>
@@ -39,7 +39,7 @@ function DropperDisplay({
             <ul>
               {small.map((d, n) => (
                 <MiniItem key={n} name={d.item}>
-                  {isNaN(d.chance) ? "(skill)" : `1/${Math.round(d.chance)}`}
+                  {isNaN(d.chance) ? "???" : `1/${Math.round(d.chance)}`}
                 </MiniItem>
               ))}
             </ul>

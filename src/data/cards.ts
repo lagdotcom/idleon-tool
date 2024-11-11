@@ -211,7 +211,7 @@ import thermisterCard from "../img/Thermister_Card.png";
 import tremorWurmCard from "../img/Tremor_Wurm_Card.png";
 import tropilogsCard from "../img/Tropilogs_Card.png";
 import tundraLogsCard from "../img/Tundra_Logs_Card.png";
-import tVCard from "../img/TV_Card.png";
+import tvCard from "../img/TV_Card.png";
 import tysonCard from "../img/Tyson_Card.png";
 import valentslimeCard from "../img/Valentslime_Card.png";
 import veinyLogsCard from "../img/Veiny_Logs_Card.png";
@@ -343,7 +343,7 @@ export const cards = [
   i("Jumbo Shrimp Card", jumboShrimpCard),
   i("Caulifish Card", caulifishCard),
   i("Purp Mushroom Card", purpMushroomCard),
-  i("TV Card", tVCard),
+  i("TV Card", tvCard),
   i("Donut Card", donutCard),
   i("Demon Genie Card", demonGenieCard),
   i("Soda Can Card", sodaCanCard),

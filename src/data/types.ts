@@ -90,6 +90,7 @@ export type GDrop = GItemDrop | GTableDrop;
 
 export type GDropperType =
   | "bug nest"
+  | "colosseum chest"
   | "fishing spot"
   | "monster"
   | "node"

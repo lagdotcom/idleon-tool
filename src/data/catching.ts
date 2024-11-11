@@ -9,6 +9,7 @@ import dustMote from "../img/Dust_Mote.png";
 import fairy from "../img/Fairy.png";
 import fairyHovel from "../img/Fairy_Hovel.png";
 import firefly from "../img/Firefly.png";
+import fireflyNest from "../img/Firefly_Nest.png";
 import fly from "../img/Fly.png";
 import flyNest from "../img/Fly_Nest.png";
 import flycicle from "../img/Flycicle.png";
@@ -17,6 +18,7 @@ import goldenNet from "../img/Golden_Net.png";
 import groceryBag from "../img/Grocery_Bag.png";
 import icicleNest from "../img/Icicle_Nest.png";
 import ladybug from "../img/Ladybug.png";
+import ladybugNest from "../img/Ladybug_Nest.png";
 import lustreNetting from "../img/Lustre_Netting.png";
 import marbiglassNetting from "../img/Marbiglass_Netting.png";
 import mosquisnow from "../img/Mosquisnow.png";
@@ -32,7 +34,13 @@ import starfireTrimNetting from "../img/Starfire_Trim_Netting.png";
 import voidImperiumNet from "../img/Void_Imperium_Net.png";
 import workerBee from "../img/Worker_Bee.png";
 import wranglerOfTheQoxzul from "../img/Wrangler_of_the_Qoxzul.png";
-import { DropTable12 } from "./tables";
+import {
+  DropTable12,
+  DropTable18,
+  DropTable23,
+  DropTable25,
+  DropTable26,
+} from "./tables";
 import {
   getDropperMaker,
   getItemMaker,
@@ -106,4 +114,60 @@ export const bugNests = [
     d("Fruitfly Card", 7140),
     t(DropTable12, 66.7),
   ),
+  nest(
+    "Snowden",
+    snowden,
+    "Mamooooth Mountain",
+    d("Mosquisnow", NaN),
+    d("Mosquisnow Card", 7140),
+    t(DropTable18, 66.7),
+  ),
+  nest(
+    "Icicle Nest",
+    icicleNest,
+    "Overpass of Sound",
+    d("Flycicle", NaN),
+    d("Flycicle Card", 7140),
+    t(DropTable18, 66.7),
+  ),
+  nest(
+    "Bee Hive",
+    beeHive,
+    "Jelly Cube Bridge",
+    d("Worker Bee", NaN),
+    d("Worker Bee Card", 20000),
+    t(DropTable23, 66.7),
+  ),
+  nest(
+    "Fairy Hovel",
+    fairyHovel,
+    "Shelled Shores",
+    d("Fairy", NaN),
+    d("Fairy Card", 50000),
+    t(DropTable23, 66.7),
+  ),
+  nest(
+    "Scarab Nest",
+    scarabNest,
+    "The Great Molehill",
+    d("Scarab", NaN),
+    d("Scarab Card", 50000),
+    t(DropTable25, 66.7),
+  ),
+  nest(
+    "Mote Hovel",
+    moteHovel,
+    "Mount Doomish",
+    d("Dust Mote", NaN),
+    d("Dust Mote Card", 50000),
+    t(DropTable26, 66.7),
+  ),
+  nest(
+    "Dream Particulate",
+    dreamParticulate,
+    "Equinox Valley",
+    d("Dream Particulate", NaN),
+  ),
+  nest("Ladybug Nest", ladybugNest, "Troll Playground", d("Ladybug", NaN)),
+  nest("Firefly Nest", fireflyNest, "Lightway Path", d("Firefly", NaN)),
 ];

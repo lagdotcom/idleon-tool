@@ -3,6 +3,7 @@ import { cards } from "./cards";
 import { bugCatchingNets, bugNests, bugs } from "./catching";
 import { hatchets, logsAndLeaves } from "./choppin";
 import { trees } from "./choppin";
+import { colosseumChests } from "./colosseum";
 import { refinerySalts } from "./construction";
 import {
   accountConsumables,
@@ -116,6 +117,7 @@ function expandDropTable(table: GDrop[], multiplier = 1): GItemDrop[] {
 
 export const droppers = [
   ...monsters,
+  ...colosseumChests,
   ...nodes,
   ...trees,
   ...fishingSpots,

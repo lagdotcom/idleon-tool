@@ -325,10 +325,67 @@ export const DropTable25 = [
   t(SuperDropTable5, 200),
 ];
 
+export const DropTable26 = [
+  d("Boat Statue", 66.7),
+  d("Intellectostampo", 6670),
+  d("Golden Grilled Cheese Nomwich", 66.7),
+  d("Quotient EXP Potion", 7.14, 20),
+  d("Storage Chest 25", 3330),
+  d("Cloudsound Follower", 2, 8),
+  d("Corporatube Sub", 5, 3),
+  t(SuperDropTable5, 200),
+];
+
+export const DropTable27 = [
+  d("Spiral Statue", 66.7),
+  d("Valve Patented Circle Thingies", 4350),
+  d("Golden Grilled Cheese Nomwich", 40),
+  d("Golden Hampter Gummy Candy", 120),
+  d("Quotient EXP Potion", 5.26, 20),
+  d("Cloudsound Follower", 2, 8),
+  d("Corporatube Sub", 5, 3),
+  t(SuperDropTable5, 200),
+];
+
 export const DropTable28 = [
   d("Magma Leaf", 2, 3),
   d("Platinum Twine", 1250),
   t(SuperDropTable5, 167),
+];
+
+export const DropTable29 = [
+  d("Golden Dumpling", 250),
+  d("White Essence Stamp", 7690),
+  d("Compost Statue", 100),
+  d("Jade Mint Stamp", 4000),
+  d("Cloudsound Follower", 2, 8),
+  d("Corporatube Sub", 5, 3),
+  t(SuperDropTable6, 200),
+];
+
+export const DropTable30 = [
+  d("Stealth Statue", 125),
+  d("Golden Nigiri", 159),
+  d("Sneaky Peeky Stamp", 5880),
+  d("Cloudsound Follower", 2, 8),
+  d("Corporatube Sub", 5, 3),
+  t(SuperDropTable6, 200),
+];
+
+export const DropTable31 = [
+  d("Essence Statue", 143),
+  d("Capitalist Stats Stamp", 8330),
+  d("Cloudsound Follower", 2, 8),
+  d("Corporatube Sub", 5, 3),
+  t(SuperDropTable6, 200),
+];
+
+export const DropTable32 = [
+  d("Golden Dumpling", 154),
+  d("Dark Triad Essence Stamp", 12500),
+  d("Cloudsound Follower", 2, 8),
+  d("Corporatube Sub", 5, 3),
+  t(SuperDropTable6, 200),
 ];
 
 export const DropTable33 = [d("Spirit Leaf", 2, 3), t(SuperDropTable6, 167)];

@@ -9,10 +9,12 @@ import basketball from "../img/Basketball.png";
 import blackPearl from "../img/Black_Pearl.png";
 import bottledTownTeleport from "../img/Bottled_Town_Teleport.png";
 import bottledWorldTownTeleport from "../img/Bottled_World_Town_Teleport.png";
+import chizoarsCavernKey from "../img/Chizoar-s_Cavern_Key.png";
 import colosseumTicket from "../img/Colosseum_Ticket.png";
 import cosmicTimeCandy from "../img/Cosmic_Time_Candy.png";
 import cropTransferTicket from "../img/Crop_Transfer_Ticket.png";
 import divinityPearl from "../img/Divinity_Pearl.png";
+import efauntsTombKey from "../img/Efaunt-s_Tomb_Key.png";
 import eliteClassSwapToken from "../img/Elite_Class_Swap_Token.png";
 import eventPoint from "../img/Event_Point.png";
 import forestVillaKey from "../img/Forest_Villa_Key.png";
@@ -21,7 +23,9 @@ import goldFoodCoupon from "../img/Gold_Food_Coupon.png";
 import goldPocketwatch from "../img/Gold_Pocketwatch.png";
 import hatPremiumifier from "../img/Hat_Premiumifier.png";
 import holyPearl from "../img/Holy_Pearl.png";
+import kruksVolcanoKey from "../img/Kruk-s_Volcano_Key.png";
 import largeExperienceBalloon from "../img/Large_Experience_Balloon.png";
+import loomisRoomKey from "../img/Loomi-s_Room_Key.png";
 import mediumExperienceBalloon from "../img/Medium_Experience_Balloon.png";
 import postOfficeBoxResetoMagnifico from "../img/Post_Office_Box_Reseto_Magnifico.png";
 import premiumBonusSwapper from "../img/Premium_Bonus_Swapper.png";
@@ -43,6 +47,7 @@ import talentPointTab1 from "../img/Talent_Point_Tab_1.png";
 import talentPointTab2 from "../img/Talent_Point_Tab_2.png";
 import talentPointTab3 from "../img/Talent_Point_Tab_3.png";
 import talentPointTab4 from "../img/Talent_Point_Tab_4.png";
+import trollsEnclaveKey from "../img/Troll-s_Enclave_Key.png";
 import { getItemMaker } from "./tools";
 
 const candy = getItemMaker("time candy");
@@ -96,6 +101,11 @@ export const characterConsumables = [
 const acc = getItemMaker("account");
 export const accountConsumables = [
   acc("Forest Villa Key", forestVillaKey),
+  acc("Efaunt's Tomb Key", efauntsTombKey),
+  acc("Chizoar's Cavern Key", chizoarsCavernKey),
+  acc("Troll's Enclave Key", trollsEnclaveKey),
+  acc("Kruk's Volcano Key", kruksVolcanoKey),
+  acc("Loomi's Room Key", loomisRoomKey),
   acc("Colosseum Ticket", colosseumTicket),
   acc("Silver Pen", silverPen),
   acc("Gem", gem),

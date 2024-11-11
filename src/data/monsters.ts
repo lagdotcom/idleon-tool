@@ -1,27 +1,40 @@
 import amarok from "../img/Amarok_Card.png";
 import babaYaga from "../img/Baba_Yaga_Card.png";
 import babyBoa from "../img/Baby_Boa_Card.png";
+import biggieHours from "../img/Biggie_Hours_Card.png";
 import boop from "../img/Boop_Card.png";
 import boredBean from "../img/Bored_Bean_Card.png";
 import carrotman from "../img/Carrotman_Card.png";
+import chaoticAmarok from "../img/Chaotic_Amarok_Card.png";
+import chaoticEfaunt from "../img/Chaotic_Efaunt_Card.png";
 import crabcake from "../img/Crabcake_Card.png";
 import crystalCarrot from "../img/Crystal_Carrot_Card.png";
+import crystalCrabal from "../img/Crystal_Crabal_Card.png";
+import digDoug from "../img/Dig_Doug_Card.png";
 import drDefecaus from "../img/Dr_Defecaus_Card.png";
+import efaunt from "../img/Efaunt_Card.png";
 import frog from "../img/Frog_Card.png";
 import gigafrog from "../img/Gigafrog_Card.png";
+import gildedEfaunt from "../img/Gilded_Efaunt_Card.png";
 import glublin from "../img/Glublin_Card.png";
 import greenMushroom from "../img/Green_Mushroom_Card.png";
+import kingDoot from "../img/King_Doot_Card.png";
 import mafioso from "../img/Mafioso_Card.png";
 import mashedPotato from "../img/Mashed_Potato_Card.png";
 import mimic from "../img/Mimic_Card.png";
+import moonmoon from "../img/Moonmoon_Card.png";
 import nutto from "../img/Nutto_Card.png";
 import pincermin from "../img/Pincermin_Card.png";
 import poop from "../img/Poop_Card.png";
+import radiantAmarok from "../img/Radiant_Amarok_Card.png";
 import rat from "../img/Rat_Card.png";
 import redMushroom from "../img/Red_Mushroom_Card.png";
 import sandCastle from "../img/Sand_Castle_Card.png";
+import sandGiant from "../img/Sand_Giant_Card.png";
 import sandyPot from "../img/Sandy_Pot_Card.png";
+import sheepie from "../img/Sheepie_Card.png";
 import slime from "../img/Slime_Card.png";
+import snelbie from "../img/Snelbie_Card.png";
 import tyson from "../img/Tyson_Card.png";
 import walkingStick from "../img/Walking_Stick_Card.png";
 import wodeBoard from "../img/Wode_Board_Card.png";
@@ -38,6 +51,10 @@ import {
   DropTable6,
   DropTable7,
   DropTable8,
+  DropTable9,
+  DropTable11,
+  DropTable13,
+  DropTable14,
 } from "./tables";
 import { getDropperMaker, mkDrop as d, mkTableDrop as t } from "./tools";
 
@@ -221,6 +238,8 @@ const monsters = [
     "Baba Yaga",
     babaYaga,
     "Birch Enclave",
+    d("Just Exp (Special Talent Book)", NaN),
+    d("Frothy Malk (Special Talent Book)", NaN),
     d("Baba Yaga Card", 33.3),
     d("Baba Yaga Baby Eggs", 167),
     d("Serrated Rex Ring (Recipe)", 16.7),
@@ -233,6 +252,8 @@ const monsters = [
     "Dr Defecaus",
     drDefecaus,
     "The Office",
+    d("Just Exp (Special Talent Book)", NaN),
+    d("Frothy Malk (Special Talent Book)", NaN),
     d("Dr Defecaus Card", 33.3),
     d("Job Application", 1),
     d("Polished Bludgeon (Recipe)", 16.7),
@@ -252,6 +273,35 @@ const monsters = [
     d("Granite Obol of Amarok's Stare", 1430),
     d("Amarok Slab", 3.33),
     t(DropTable1, 0.5),
+    t(DropTable2, 0.5),
+    t(DropTable3, 0.5),
+  ),
+  m(
+    "Chaotic Amarok",
+    chaoticAmarok,
+    "Amarok Arena",
+    d("Magic Meatloaf", 10, 3),
+    d("Chaotic Amarok Card", 50),
+    d("Grandma Disguise", 250),
+    d("Granite Obol of Amarok's Stare", 303),
+    d("Amarok Slab", 2.5, 3),
+    d("Chaotic Amarok Slab", 5),
+    t(DropTable1, 0.25),
+    t(DropTable2, 0.25),
+    t(DropTable3, 0.25),
+  ),
+  m(
+    "Radiant Amarok",
+    radiantAmarok,
+    "Amarok Arena",
+    d("Magic Meatloaf", 20, 10),
+    d("Radiant Amarok Card", 50),
+    d("Grandma Disguise", 83.3),
+    d("Granite Obol of Amarok's Stare", 118),
+    d("Radiant Amarok Backstabber", 1000),
+    d("Mystery Upgrade Stone I", 4),
+    d("Amarok Slab", 2, 6),
+    d("Chaotic Amarok Slab", 2, 2),
     t(DropTable2, 0.5),
     t(DropTable3, 0.5),
   ),
@@ -331,6 +381,140 @@ const monsters = [
     d("High Steaks", 5.56),
     d("Tyson Card", 10000),
     t(DropTable8, 313),
+  ),
+  m(
+    "Moonmoon",
+    moonmoon,
+    "Up Up Down Down",
+    d("Wakka Cherry", 6.06),
+    d("Ghost", 2000),
+    d("Moonmoon Card", 10000),
+    d("Loomi's Room Key", 10000),
+    d("Baseball Hat", 6670000),
+    t(DropTable8, 286),
+  ),
+  m(
+    "Sand Giant",
+    sandGiant,
+    "Sands of Time",
+    d("Singlecle", 6.58),
+    d("Sand Giant Card", 10000),
+    d("Dootjat Eye (Recipe)", 58800),
+    t(DropTable8, 270),
+  ),
+  m(
+    "Snelbie",
+    snelbie,
+    "Djonnuttown",
+    d("Shrapshell", 7.14),
+    d("Snelbie Card", 10000),
+    d("Fuscismatia", 500000),
+    t(DropTable8, 256),
+  ),
+  m(
+    "Dig Doug",
+    digDoug,
+    "Sandstone Colosseum",
+    d("Dig Doug Card", 25),
+    t(DropTable7, 313),
+  ),
+  m(
+    "Crystal Crabal",
+    crystalCrabal,
+    "Yum Yum Desert",
+    d("Crystal Crabal Card", 125),
+    d("Crystallin", 10),
+    d("Quest Chungus (Special Talent Book)", 200),
+    t(DropTable6, 1.67),
+    t(DropTable7, 2),
+    t(DropTable8, 2.5),
+    t(DropTable9, 1.67),
+    t(DropTable11, 2),
+    t(DropTable5b, 1),
+  ),
+
+  m(
+    "Biggie Hours",
+    biggieHours,
+    "The Mimic Hole / Sandstone Colosseum",
+    d("Pulsation (Special Talent Book)", NaN),
+    d("Cardiovascular! (Special Talent Book)", NaN),
+    d("Biggie Hours Card", 41.7),
+    d("Minuteglass", 3.33),
+    d("Mystery Upgrade Stone I", 2.5, 2),
+    d("Skullfish Pendant (Recipe)", 16.7),
+    d("Armor Upgrade Stone C", 125),
+    d("Star Talent Reset Potion (Recipe)", 16.7),
+    t(DropTable6, 2),
+    t(DropTable13, 2.5),
+  ),
+  m(
+    "King Doot",
+    kingDoot,
+    "Sands of Time",
+    d("Pulsation (Special Talent Book)", NaN),
+    d("Cardiovascular! (Special Talent Book)", NaN),
+    d("King Doot Card", 25),
+    d("Efaunt's Tomb Key", 1.25),
+    d("Protectors Pride (Recipe)", 16.7),
+    d("Gem", 1.33, 5),
+    d("Mystery Upgrade Stone I", 1),
+    d("Armor Upgrade Stone C", 25),
+    d("Trimmed Rune Platelegs", 25),
+    d("Midnight Cookie", 5, 2),
+    d("Dootophone", 1),
+    t(DropTable13, 2),
+  ),
+  m(
+    "Efaunt",
+    efaunt,
+    "Efaunts Tomb",
+    d("Efaunt Card", 40),
+    d("Midnight Cookie", 14.3),
+    d("Skeletal Obol of Efaunt's Gaze", 1000),
+    d("Royal Turban", 1500),
+    d("Star Talent Reset Potion (Recipe)", 25),
+    d("Ripped Tunic", 3.33),
+    t(DropTable6, 0.5),
+    t(DropTable7, 0.5),
+    t(DropTable8, 0.5),
+  ),
+  m(
+    "Chaotic Efaunt",
+    chaoticEfaunt,
+    "Efaunts Tomb",
+    d("Chaotic Efaunt Card", 62.5),
+    d("Midnight Cookie", 14.3),
+    d("Skeletal Obol of Efaunt's Gaze", 333),
+    d("Royal Turban", 500),
+    d("Ripped Tunic", 2.5),
+    d("Ribbed Tunic", 5),
+    t(DropTable7, 0.5),
+    t(DropTable8, 0.5),
+  ),
+  m(
+    "Gilded Efaunt",
+    gildedEfaunt,
+    "Efaunts Tomb",
+    d("Gilded Efaunt Card", 50),
+    d("Midnight Cookie", 14.3),
+    d("Skeletal Obol of Efaunt's Gaze", 55.6),
+    d("Royal Turban", 66.7),
+    d("Ripped Tunic", 1.11, 12),
+    d("Ribbed Tunic", 2, 4),
+    d("Gilded Efaunt Dislodged Tusks", 1430),
+    t(DropTable8, 0.5),
+  ),
+
+  m(
+    "Sheepie",
+    sheepie,
+    "Steep Sheep Ledge",
+    d("Floof Ploof", 6.25),
+    d("Sheepie Card", 10000),
+    d("Box Statue", 5000),
+    d("Twin Ores Stamp", 12500),
+    t(DropTable14, 400),
   ),
 ];
 export default monsters;
