@@ -20,6 +20,7 @@ export type GItemCategory =
   | "pickaxes"
   | "hatchets"
   | "fishing rods"
+  | "fishing accessories"
   | "bug catching nets"
   | "trap box sets"
   | "worship skulls"

@@ -186,6 +186,13 @@ export const DropTable9 = [
   t(SuperDropTable2, 167),
 ];
 
+export const DropTable10 = [
+  d("Armor Upgrade Stone II", 500),
+  d("Tool Upgrade Stone I", 33.3),
+  d("Small Speed Potion", 5, 5),
+  t(SuperDropTable2, 167),
+];
+
 export const DropTable11 = [
   d("Twisty Leaf", 2, 4),
   d("Weapon Upgrade Stone II", 500),
@@ -206,16 +213,116 @@ export const DropTable12 = [
   t(SuperDropTable2, 167),
 ];
 
+export const DropTable13 = [
+  d("Small Experience Balloon", 2),
+  d("Gem", 1, 4),
+  d("1 HR Time Candy", 2.5),
+  d("2 HR Time Candy", 5),
+  d("4 HR Time Candy", 20),
+  d("12 HR Time Candy", 100),
+  d("24 HR Time Candy", 333),
+  d("72 HR Time Candy", 3330),
+];
+
+export const DropTable14 = [
+  d("Stample Stamp", 1000),
+  d("Distilled Water", 45.5),
+  d("Banked Pts Stamp", 1670),
+  d("EhExPee Statue", 20),
+  d("Speed Statue", 33.3),
+  d("Decent Strength Potion", 6.67, 25),
+  d("Cloudsound Follower", 2, 8),
+  d("Instablab Follower", 3.33, 5),
+  d("Corporatube Sub", 5, 3),
+  d("Bronze Obol of Worship", 1060),
+  t(SuperDropTable3, 167),
+];
+
+export const DropTable15 = [
+  d("Multikill Stamp", 3330),
+  d("Distilled Water", 40),
+  d("Violence Stamp", 6670),
+  d("Mountain Bread", 2, 15),
+  d("Bucket of Slush (Recipe)", 500),
+  d("EhExPee Statue", 25),
+  d("Cloudsound Follower", 2, 9),
+  d("Instablab Follower", 3.33, 5),
+  d("Corporatube Sub", 5, 3),
+  d("Bronze Obol of Trapping", 1060),
+  t(SuperDropTable3, 167),
+];
+
+export const DropTable16 = [
+  d("Flowin Stamp", 10000),
+  d("Distilled Water", 37),
+  d("Blover Stamp", 12500),
+  d("Average EXP Potion", 10, 25),
+  d("Feasty Statue", 33.3),
+  d("Cloudsound Follower", 2, 10),
+  d("Corporatube Sub", 5, 3),
+  d("Instablab Follower", 3.33, 5),
+  d("Bronze Obol of Construction", 1060),
+  t(SuperDropTable3, 167),
+];
+
 export const DropTable17 = [
   d("Arctic Leaf", 2, 3),
   d("Hidey Box Stamp", 833),
   t(SuperDropTable3, 167),
 ];
 
+export const DropTable18 = [
+  d("Spikemouth Stamp", 833),
+  t(SuperDropTable3, 167),
+];
+
+export const DropTable19 = [
+  d("Pecunia Statue", 40),
+  d("Tripleshot Stamp", 3700),
+  d("Massless Unit for Physics Questions", 4350),
+  d("Cloudsound Follower", 2, 8),
+  d("Corporatube Sub", 5, 3),
+  t(SuperDropTable4, 167),
+];
+
+export const DropTable20 = [
+  d("Mutton Statue", 40),
+  d("Wiener Links", 6670),
+  d("Potent Mana Potion", 6.67, 50),
+  d("Cloudsound Follower", 2, 8),
+  d("Corporatube Sub", 5, 3),
+  t(SuperDropTable4, 167),
+];
+
+export const DropTable21 = [
+  d("Egg Statue", 40),
+  d("Blackheart Stamp", 5560),
+  d("Crash Box", 20000),
+  d("Cloudsound Follower", 2, 8),
+  d("Corporatube Sub", 5, 3),
+  t(SuperDropTable4, 167),
+];
+
 export const DropTable22 = [
   d("Galactic Leaf", 2, 3),
   d("Dualhook Prongs", 1250),
   t(SuperDropTable4, 167),
+];
+
+export const DropTable23 = [
+  d("Its a Girl Celebration", 1250),
+  t(SuperDropTable4, 167),
+];
+
+export const DropTable25 = [
+  d("Battleaxe Statue", 66.7),
+  d("Maxo Slappo Stamp", 5880),
+  d("Golden Hampter Gummy Candy", 159),
+  d("Quotient EXP Potion", 10, 20),
+  d("Storage Chest 24", 833),
+  d("Cloudsound Follower", 2, 8),
+  d("Corporatube Sub", 5, 3),
+  t(SuperDropTable5, 200),
 ];
 
 export const DropTable28 = [

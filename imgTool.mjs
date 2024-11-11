@@ -6,7 +6,7 @@ let processing = true;
 
 while (processing) {
   const name = rl.question("Item Name: ");
-  if (name) names.push(name);
+  if (name) names.push(name.trim());
   else processing = false;
 }
 
@@ -28,7 +28,7 @@ writeFileSync(
   "imgTool.ts",
   `${names.map((n) => `import ${camel(n)} from "../img/${n.replaceAll(" ", "_")}.png";`).join("\n")}
 
-  const items = [
+  export const items = [
 ${names.map((n) => `i("${n}", ${camel(n)}),`).join("\n")}
   ];`
 );

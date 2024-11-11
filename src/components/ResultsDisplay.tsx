@@ -172,11 +172,13 @@ export default function ResultsDisplay({
         <div className={styles.section}>
           <h2>Total Wanted</h2>
           <ul>
-            {wanted.map(([name, qty]) => (
-              <MiniItem key={name} name={name}>
-                x{qty}
-              </MiniItem>
-            ))}
+            {wanted
+              .sort((a, b) => a[0].localeCompare(b[0]))
+              .map(([name, qty]) => (
+                <MiniItem key={name} name={name}>
+                  x{qty}
+                </MiniItem>
+              ))}
           </ul>
         </div>
       )}

@@ -70,6 +70,8 @@ const monsters = [
     "Froggy Fields",
     d("Frog Leg", 4.76),
     d("Frog Card", 10000),
+    d("Ketchup Bottle", 2),
+    d("Mustard Bottle", 3.33),
     d("Small Mana Potion", 500),
     d("Dank Paypay Chest", 10000),
     d("Green Headband", 4000),

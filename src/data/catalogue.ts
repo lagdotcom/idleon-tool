@@ -1,24 +1,38 @@
-import cards from "./cards";
-import { bugNests, bugs } from "./catching";
+import { dnaSplicers } from "./breeding";
+import { cards } from "./cards";
+import { bugCatchingNets, bugNests, bugs } from "./catching";
 import { hatchets, logsAndLeaves } from "./choppin";
 import { trees } from "./choppin";
-import { expBalloons, timeCandy } from "./consumables";
-import { fish, fishingSpots } from "./fishing";
+import { refinerySalts } from "./construction";
+import {
+  accountConsumables,
+  characterConsumables,
+  expBalloons,
+  timeCandy,
+} from "./consumables";
+import { fish, fishingAccessories, fishingRods, fishingSpots } from "./fishing";
 import { boostFood, goldenFood, healthFood } from "./food";
 import forge from "./forge";
 import helmets from "./helmets";
+import { keychains } from "./keychains";
 import materials from "./materials";
 import { nodes, oresAndBars, pickaxes } from "./mining";
-import monsterDrops from "./monsterDrops";
+import { misc } from "./misc";
+import { monsterDrops } from "./monsterDrops";
 import monsters from "./monsters";
+import { obols } from "./obols";
 import pants from "./pants";
 import { pendants } from "./pendants";
-import questItems from "./questItems";
+import { capes, chatRings, nameTags, premiumHelmets } from "./premium";
+import { questItems } from "./questItems";
 import rings from "./rings";
 import shirts from "./shirts";
 import shoes from "./shoes";
 import smithing from "./smithing";
+import { stamps } from "./stamps";
 import statues from "./statue";
+import { critters, trapBoxSets } from "./trapping";
+import { trophies } from "./trophies";
 import { GDrop, GItemDrop } from "./types";
 import {
   anvilExpansions,
@@ -26,9 +40,11 @@ import {
   inventoryBags,
   storageChests,
 } from "./unlocks";
+import { premiumStones, upgradeStones } from "./upgrades";
 import weapons from "./weapons";
+import { souls, worshipSkulls } from "./worship";
 
-// https://idleon.wiki/wiki/The_Slab
+// https://idleon.wiki/wiki/Items
 export const items = [
   ...weapons,
   ...helmets,
@@ -37,19 +53,20 @@ export const items = [
   ...shoes,
   ...pendants,
   ...rings,
-  // ...premiumHelmets,
-  // ...trophies,
-  // ...keychains,
-  // ...chatRings,
-  // ...capes,
-  // ...nameTags,
+  ...premiumHelmets,
+  ...trophies,
+  ...keychains,
+  ...chatRings,
+  ...capes,
+  ...nameTags,
   ...pickaxes,
   ...hatchets,
-  // ...fishingRods,
-  // ...bugCatchingNets,
-  // ...trapBoxSets,
-  // ...worshipSkulls,
-  // ...dnaSplicers,
+  ...fishingRods,
+  ...fishingAccessories,
+  ...bugCatchingNets,
+  ...trapBoxSets,
+  ...worshipSkulls,
+  ...dnaSplicers,
   ...monsterDrops,
   ...questItems,
   ...materials,
@@ -57,26 +74,26 @@ export const items = [
   ...logsAndLeaves,
   ...fish,
   ...bugs,
-  // ...critters,
-  // ...souls,
-  // ...refinerySalts,
+  ...critters,
+  ...souls,
+  ...refinerySalts,
   ...healthFood,
   ...boostFood,
   ...goldenFood,
   ...timeCandy,
   ...expBalloons,
-  // ...character,
-  // ...account,
-  // ...misc,
+  ...characterConsumables,
+  ...accountConsumables,
+  ...misc,
   ...inventoryBags,
   ...capacityPouches,
   ...storageChests,
-  // ...upgradeStones,
-  // ...premiumStones,
+  ...upgradeStones,
+  ...premiumStones,
   ...anvilExpansions,
-  // ...stamps,
+  ...stamps,
   ...statues,
-  // ...obols,
+  ...obols,
   ...cards,
 ];
 
