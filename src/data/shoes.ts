@@ -35,9 +35,9 @@ const i = getItemMaker("shoes");
 
 const shoes = [
   i("Flip Flops", flipFlops),
-  i("Copper Boots", copperBoots),
+  i("Copper Boots", copperBoots, "EquipmentShoes1"),
   i("Goo Galoshes", gooGaloshes),
-  i("Iron Boots", ironBoots),
+  i("Iron Boots", ironBoots, "EquipmentShoes15"),
   i("Cavern Trekkers", cavernTrekkers),
   i("Logger Heels", loggerHeels),
   i("Angler Boots", anglerBoots),

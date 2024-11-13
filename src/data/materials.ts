@@ -16,11 +16,11 @@ import { getItemMaker } from "./tools";
 const i = getItemMaker("materials");
 
 const materials = [
-  i("Thread", thread),
-  i("Trusty Nails", trustyNails),
-  i("Boring Brick", boringBrick),
-  i("Chain Link", chainLink),
-  i("Leather Hide", leatherHide),
+  i("Thread", thread, "CraftMat1"),
+  i("Trusty Nails", trustyNails, "CraftMat5"),
+  i("Boring Brick", boringBrick, "CraftMat6"),
+  i("Chain Link", chainLink, "CraftMat7"),
+  i("Leather Hide", leatherHide, "CraftMat9"),
   i("Pinion Spur", pinionSpur),
   i("Lugi Bracket", lugiBracket),
   i("Purple Screw", purpleScrew),
@@ -28,7 +28,7 @@ const materials = [
   i("Tangled Cords", tangledCords),
   i("PVC Pipe", pvcPipe),
 
-  i("Distilled Water", distilledWater),
+  i("Distilled Water", distilledWater, "PureWater"),
   i("Dense Water", denseWater),
 ];
 export default materials;

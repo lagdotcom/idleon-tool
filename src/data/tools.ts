@@ -1,4 +1,5 @@
 import { Chance, GItemName, Quantity, URLString } from "../flavours";
+import { ItemCode } from "../toolbox/IdleonToolbox";
 import {
   GDrop,
   GDropper,
@@ -15,10 +16,11 @@ import {
 
 export const getItemMaker =
   (category: GItemCategory) =>
-  (name: string, img: URLString): GItem => ({
+  (name: string, img: URLString, code?: ItemCode): GItem => ({
     category,
     name,
     img,
+    code,
   });
 
 export const getRecipeMaker =

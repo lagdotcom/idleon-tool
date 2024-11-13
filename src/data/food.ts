@@ -76,17 +76,14 @@ import yetiHam from "../img/Yeti_Ham.png";
 import { getItemMaker } from "./tools";
 
 const food = getItemMaker("health food");
-const boost = getItemMaker("boost food");
-const golden = getItemMaker("golden food");
-
 export const healthFood = [
-  food("Nomwich", nomwich),
-  food("Hot Dog", hotDog),
-  food("Cheezy Pizza", cheezyPizza),
+  food("Nomwich", nomwich, "FoodHealth1"),
+  food("Hot Dog", hotDog, "FoodHealth3"),
+  food("Cheezy Pizza", cheezyPizza, "FoodHealth2"),
   food("Peanut", peanut),
   food("Saucy Weiner", saucyWeiner),
-  food("Kebab Sticks", kebabSticks),
-  food("Meat Pie", meatPie),
+  food("Kebab Sticks", kebabSticks, "FoodHealth6"),
+  food("Meat Pie", meatPie, "FoodHealth7"),
   food("Mountain Bread", mountainBread),
   food("Yeti Ham", yetiHam),
   food("Sheepie Dairy", sheepieDairy),
@@ -98,26 +95,27 @@ export const healthFood = [
   food("Dumpling", dumpling),
   food("Cranberry Jam", cranberryJam),
   food("Milk Choco", milkChoco),
-  food("Magic Meatloaf", magicMeatloaf),
+  food("Magic Meatloaf", magicMeatloaf, "Meatloaf"),
 ];
 
+const boost = getItemMaker("boost food");
 export const boostFood = [
-  boost("Small Strength Potion", smallStrengthPotion),
-  boost("Average Strength Potion", averageStrengthPotion),
-  boost("Decent Strength Potion", decentStrengthPotion),
-  boost("Potent Strength Potion", potentStrengthPotion),
-  boost("Small Life Potion", smallLifePotion),
-  boost("Average Life Potion", averageLifePotion),
-  boost("Decent Life Potion", decentLifePotion),
-  boost("Potent Life Potion", potentLifePotion),
-  boost("Small Speed Potion", smallSpeedPotion),
-  boost("Average Speed Potion", averageSpeedPotion),
-  boost("Decent Speed Potion", decentSpeedPotion),
-  boost("Potent Speed Potion", potentSpeedPotion),
-  boost("Small Mana Potion", smallManaPotion),
-  boost("Average Mana Potion", averageManaPotion),
-  boost("Decent Mana Potion", decentManaPotion),
-  boost("Potent Mana Potion", potentManaPotion),
+  boost("Small Strength Potion", smallStrengthPotion, "FoodPotPor1"),
+  boost("Average Strength Potion", averageStrengthPotion, "FoodPotOr2"),
+  boost("Decent Strength Potion", decentStrengthPotion, "FoodPotOr3"),
+  boost("Potent Strength Potion", potentStrengthPotion, "FoodPotOr4"),
+  boost("Small Life Potion", smallLifePotion, "FoodPotRe1"),
+  boost("Average Life Potion", averageLifePotion, "FoodPotRe2"),
+  boost("Decent Life Potion", decentLifePotion, "FoodPotRe3"),
+  boost("Potent Life Potion", potentLifePotion, "FoodPotRe4"),
+  boost("Small Speed Potion", smallSpeedPotion, "FoodPotGr1"),
+  boost("Average Speed Potion", averageSpeedPotion, "FoodPotGr2"),
+  boost("Decent Speed Potion", decentSpeedPotion, "FoodPotGr3"),
+  boost("Potent Speed Potion", potentSpeedPotion, "FoodPotGr4"),
+  boost("Small Mana Potion", smallManaPotion, "FoodPotMana1"),
+  boost("Average Mana Potion", averageManaPotion, "FoodPotMana2"),
+  boost("Decent Mana Potion", decentManaPotion, "FoodPotMana3"),
+  boost("Potent Mana Potion", potentManaPotion, "FoodPotMana4"),
   boost("Small EXP Potion", smallEXPPotion),
   boost("Average EXP Potion", averageEXPPotion),
   boost("Minto Choco", mintoChoco),
@@ -126,7 +124,7 @@ export const boostFood = [
   boost("Quotient EXP Potion", quotientEXPPotion),
   boost("Lemony Choco", lemonyChoco),
   boost("Shiny Pearl", shinyPearl),
-  boost("Icing Ironbite", icingIronbite),
+  boost("Icing Ironbite", icingIronbite, "FoodMining1"),
   boost("Giftybread Man", giftybreadMan),
   boost("Stained Pearl", stainedPearl),
   boost("Saucy Logfries", saucyLogfries),
@@ -145,12 +143,13 @@ export const boostFood = [
   boost("Cherry Choco", cherryChoco),
 ];
 
+const golden = getItemMaker("golden food");
 export const goldenFood = [
   golden("Golden Peanut", goldenPeanut),
-  golden("Golden Jam", goldenJam),
+  golden("Golden Jam", goldenJam, "FoodG1"),
   golden("Golden Kebabs", goldenKebabs),
-  golden("Golden Meat Pie", goldenMeatPie),
-  golden("Golden Nomwich", goldenNomwich),
+  golden("Golden Meat Pie", goldenMeatPie, "FoodG3"),
+  golden("Golden Nomwich", goldenNomwich, "FoodG4"),
   golden("Golden Ham", goldenHam),
   golden("Golden Bread", goldenBread),
   golden("Golden Ribs", goldenRibs),
@@ -160,5 +159,5 @@ export const goldenFood = [
   golden("Golden Nigiri", goldenNigiri),
   golden("Golden Dumpling", goldenDumpling),
   golden("Golden Cake", goldenCake),
-  golden("Butter Bar", butterBar),
+  golden("Butter Bar", butterBar, "ButterBar"),
 ];

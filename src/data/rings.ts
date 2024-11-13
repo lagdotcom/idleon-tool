@@ -32,9 +32,9 @@ const i = getItemMaker("rings");
 
 const rings = [
   i("Copper Band", copperBand),
-  i("Pugilist Demise", pugilistDemise),
-  i("Steel Band", steelBand),
-  i("Elf Twist Ring", elfTwistRing),
+  i("Pugilist Demise", pugilistDemise, "EquipmentRings7"),
+  i("Steel Band", steelBand, "EquipmentRings3"),
+  i("Elf Twist Ring", elfTwistRing, "EquipmentRings21"),
   i("Silver Stopwatch", silverStopwatch),
   i("Dooble Goopi", doobleGoopi),
   i("Rex Ring", rexRing),

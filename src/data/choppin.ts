@@ -70,8 +70,8 @@ const ll = getItemMaker("logs & leaves");
 
 export const hatchets = [
   hatchet("Old Hatchet", oldHatchet),
-  hatchet("Copper Chopper", copperChopper),
-  hatchet("Iron Hatchet", ironHatchet),
+  hatchet("Copper Chopper", copperChopper, "EquipmentToolsHatchet3"),
+  hatchet("Iron Hatchet", ironHatchet, "EquipmentToolsHatchet1"),
   hatchet("Grumbie the Hatchet Hammer", grumbieTheHatchetHammer),
   hatchet("Golden Axe", goldenAxe),
   hatchet("Stinky Axe", stinkyAxe),
@@ -86,20 +86,20 @@ export const hatchets = [
 ];
 
 export const logsAndLeaves = [
-  ll("Grass Leaf", grassLeaf),
-  ll("Twisty Leaf", twistyLeaf),
+  ll("Grass Leaf", grassLeaf, "Leaf1"),
+  ll("Twisty Leaf", twistyLeaf, "Leaf2"),
   ll("Arctic Leaf", arcticLeaf),
   ll("Galactic Leaf", galacticLeaf),
   ll("Magma Leaf", magmaLeaf),
   ll("Spirit Leaf", spiritLeaf),
 
-  ll("Oak Logs", oakLogs),
-  ll("Bleach Logs", bleachLogs),
-  ll("Jungle Logs", jungleLogs),
-  ll("Forest Fibres", forestFibres),
-  ll("Tropilogs", tropilogs),
-  ll("Potty Rolls", pottyRolls),
-  ll("Veiny Logs", veinyLogs),
+  ll("Oak Logs", oakLogs, "OakTree"),
+  ll("Bleach Logs", bleachLogs, "BirchTree"),
+  ll("Jungle Logs", jungleLogs, "JungleTree"),
+  ll("Forest Fibres", forestFibres, "ForestTree"),
+  ll("Potty Rolls", pottyRolls, "ToiletTree"),
+  ll("Tropilogs", tropilogs, "PalmTree"),
+  ll("Veiny Logs", veinyLogs, "StumpTree"),
   ll("Tundra Logs", tundraLogs),
   ll("Wispy Lumber", wispyLumber),
   ll("Alien Hive Chunk", alienHiveChunk),

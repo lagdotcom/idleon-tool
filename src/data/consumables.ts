@@ -52,12 +52,12 @@ import { getItemMaker } from "./tools";
 
 const candy = getItemMaker("time candy");
 export const timeCandy = [
-  candy("1 HR Time Candy", _1HRTimeCandy),
-  candy("2 HR Time Candy", _2HRTimeCandy),
-  candy("4 HR Time Candy", _4HRTimeCandy),
-  candy("12 HR Time Candy", _12HRTimeCandy),
-  candy("24 HR Time Candy", _24HRTimeCandy),
-  candy("72 HR Time Candy", _72HRTimeCandy),
+  candy("1 HR Time Candy", _1HRTimeCandy, "Timecandy1"),
+  candy("2 HR Time Candy", _2HRTimeCandy, "Timecandy2"),
+  candy("4 HR Time Candy", _4HRTimeCandy, "Timecandy3"),
+  candy("12 HR Time Candy", _12HRTimeCandy, "Timecandy4"),
+  candy("24 HR Time Candy", _24HRTimeCandy, "Timecandy5"),
+  candy("72 HR Time Candy", _72HRTimeCandy, "Timecandy6"),
   candy("Steamy Time Candy", steamyTimeCandy),
   candy("Spooky Time Candy", spookyTimeCandy),
   candy("Cosmic Time Candy", cosmicTimeCandy),
@@ -65,7 +65,7 @@ export const timeCandy = [
 
 const balloon = getItemMaker("exp balloons");
 export const expBalloons = [
-  balloon("Small Experience Balloon", smallExperienceBalloon),
+  balloon("Small Experience Balloon", smallExperienceBalloon, "ExpBalloon1"),
   balloon("Medium Experience Balloon", mediumExperienceBalloon),
   balloon("Large Experience Balloon", largeExperienceBalloon),
 ];
@@ -75,9 +75,9 @@ export const characterConsumables = [
   char("Basketball", basketball),
   char("Secret Map", secretMap),
   char("Event Point", eventPoint),
-  char("Talent Point Reset Fragment", talentPointResetFragment),
-  char("Talent Point Reset Potion", talentPointResetPotion),
-  char("Star Talent Reset Potion", starTalentResetPotion),
+  char("Talent Point Reset Fragment", talentPointResetFragment, "ResetFrag"),
+  char("Talent Point Reset Potion", talentPointResetPotion, "ResetCompleted"),
+  char("Star Talent Reset Potion", starTalentResetPotion, "ResetCompletedS"),
   char("Sub Class Swap Token", subClassSwapToken),
   char("Elite Class Swap Token", eliteClassSwapToken),
   char("Post Office Box Reseto Magnifico", postOfficeBoxResetoMagnifico),
@@ -94,7 +94,7 @@ export const characterConsumables = [
   char("Gold Pocketwatch", goldPocketwatch),
   char("Crop Transfer Ticket", cropTransferTicket),
   char("Anvil Reset Whetstone", anvilResetWhetstone),
-  char("Bottled Town Teleport", bottledTownTeleport),
+  char("Bottled Town Teleport", bottledTownTeleport, "rtt0"),
   char("Bottled World Town Teleport", bottledWorldTownTeleport),
 ];
 

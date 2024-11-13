@@ -24,7 +24,7 @@ const i = getItemMaker("trophies");
 export const trophies = [
   i("King of Food", kingOfFood),
   i("Lucky Lad", luckyLad),
-  i("Club Member", clubMember),
+  i("Club Member", clubMember, "Trophy3"),
   i("Dice Dynamo", diceDynamo),
   i("Blunder Hero", blunderHero),
   i("Trailblazer", trailblazer),

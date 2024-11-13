@@ -50,8 +50,8 @@ import {
 
 const bug = getItemMaker("bugs");
 export const bugs = [
-  bug("Fly", fly),
-  bug("Butterfly", butterfly),
+  bug("Fly", fly, "Bug1"),
+  bug("Butterfly", butterfly, "Bug2"),
   bug("Sentient Cereal", sentientCereal),
   bug("Fruitfly", fruitfly),
   bug("Mosquisnow", mosquisnow),
@@ -67,8 +67,8 @@ export const bugs = [
 
 const net = getItemMaker("bug catching nets");
 export const bugCatchingNets = [
-  net("Copper Netted Net", copperNettedNet),
-  net("Reinforced Net", reinforcedNet),
+  net("Copper Netted Net", copperNettedNet, "CatchingNet2"),
+  net("Reinforced Net", reinforcedNet, "CatchingNet3"),
   net("Golden Net", goldenNet),
   net("Platinet", platinet),
   net("Dementia Net", dementiaNet),

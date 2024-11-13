@@ -1,4 +1,5 @@
 import { Chance, Coins, GItemName, Quantity, URLString } from "../flavours";
+import { ItemCode } from "../toolbox/IdleonToolbox";
 
 export type GItemCategory =
   | "fisticuffs"
@@ -55,6 +56,7 @@ export type GItemCategory =
   | "cards";
 
 export interface GItem {
+  code?: ItemCode;
   category: GItemCategory;
   name: GItemName;
   img: URLString;

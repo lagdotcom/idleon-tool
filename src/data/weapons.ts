@@ -55,7 +55,7 @@ const wand = getItemMaker("wands");
 
 const weapons = [
   fist("Boxing Gloves", boxingGloves),
-  fist("The Stingers", theStingers),
+  fist("The Stingers", theStingers, "EquipmentPunching2"),
   fist("Bandage Wraps", bandageWraps),
   fist("Uninflated Glove", uninflatedGlove),
   fist("Eclectic Ordeal", eclecticOrdeal),
@@ -67,7 +67,7 @@ const weapons = [
   fist("Mittens of the Gods", mittensOfTheGods),
 
   warrior("Wooden Spear", woodenSpear),
-  warrior("Steel Axe", steelAxe),
+  warrior("Steel Axe", steelAxe, "TestObj7"),
   warrior("Royal Bayonet", royalBayonet),
   warrior("Enforced Slasher", enforcedSlasher),
   warrior("The Ice Breaker", theIceBreaker),
@@ -81,8 +81,8 @@ const weapons = [
 
   bow("Wooden Bow", woodenBow),
   bow("Birch Longbow", birchLongbow),
-  bow("Carrot Launcher", carrotLauncher),
-  bow("Spiked Menace", spikedMenace),
+  bow("Carrot Launcher", carrotLauncher, "EquipmentBows4"),
+  bow("Spiked Menace", spikedMenace, "EquipmentBows5"),
   bow("Pharaoh Bow", pharaohBow),
   bow("Blizzard Bow", blizzardBow),
   bow("Blackhole Bow", blackholeBow),
@@ -95,7 +95,7 @@ const weapons = [
 
   wand("Gnarled Wand", gnarledWand),
   wand("Quarterstaff", quarterstaff),
-  wand("Starlight", starlight),
+  wand("Starlight", starlight, "EquipmentWands5"),
   wand("Crows Nest", crowsNest),
   wand("Spriggly Storm", sprigglyStorm),
   wand("Grey Gatsby", greyGatsby),

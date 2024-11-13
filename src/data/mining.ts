@@ -56,8 +56,8 @@ import {
 const pick = getItemMaker("pickaxes");
 export const pickaxes = [
   pick("Junk Pickaxe", junkPickaxe),
-  pick("Copper Pickaxe", copperPickaxe),
-  pick("Iron Pickaxe", ironPickaxe),
+  pick("Copper Pickaxe", copperPickaxe, "EquipmentTools2"),
+  pick("Iron Pickaxe", ironPickaxe, "EquipmentTools3"),
   pick("Skewered Snek", skeweredSnek),
   pick("Poopy Pickaxe", poopyPickaxe),
   pick("Gold Pickaxe", goldPickaxe),
@@ -73,9 +73,9 @@ export const pickaxes = [
 
 const ob = getItemMaker("ores & bars");
 export const oresAndBars = [
-  ob("Copper Ore", copperOre),
-  ob("Iron Ore", ironOre),
-  ob("Gold Ore", goldOre),
+  ob("Copper Ore", copperOre, "Copper"),
+  ob("Iron Ore", ironOre, "Iron"),
+  ob("Gold Ore", goldOre, "Gold"),
   ob("Platinum Ore", platinumOre),
   ob("Dementia Ore", dementiaOre),
   ob("Void Ore", voidOre),
@@ -85,9 +85,9 @@ export const oresAndBars = [
   ob("Godshard Ore", godshardOre),
   ob("Marble Ore", marbleOre),
 
-  ob("Copper Bar", copperBar),
-  ob("Iron Bar", ironBar),
-  ob("Gold Bar", goldBar),
+  ob("Copper Bar", copperBar, "CopperBar"),
+  ob("Iron Bar", ironBar, "IronBar"),
+  ob("Gold Bar", goldBar, "GoldBar"),
   ob("Platinum Bar", platinumBar),
   ob("Dementia Bar", dementiaBar),
   ob("Void Bar", voidBar),

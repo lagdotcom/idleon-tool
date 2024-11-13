@@ -24,13 +24,13 @@ const i = getItemMaker("pendants");
 
 export const pendants = [
   i("Little Wooden Katana", littleWoodenKatana),
-  i("Sleek Shank", sleekShank),
+  i("Sleek Shank", sleekShank, "EquipmentPendant10"),
   i("Crescent Moon Pendant", crescentMoonPendant),
   i("Deathbloom Flower Pendant", deathbloomFlowerPendant),
-  i("Carrot Horror", carrotHorror),
+  i("Carrot Horror", carrotHorror, "EquipmentPendant11"),
   i("Strung Bludgeon", strungBludgeon),
-  i("Tarantulight", tarantulight),
-  i("Cedar Pendant", cedarPendant),
+  i("Tarantulight", tarantulight, "EquipmentPendant12"),
+  i("Cedar Pendant", cedarPendant, "EquipmentPendant19"),
   i("Chaotic Amarok Pendant", chaoticAmarokPendant),
   i("Polished Bludgeon", polishedBludgeon),
   i("Fishhead Pendant", fishheadPendant),

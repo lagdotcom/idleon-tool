@@ -63,10 +63,10 @@ import {
 
 const f = getItemMaker("fish");
 export const fish = [
-  f("Goldfish", goldfish),
-  f("Hermit Can", hermitCan),
-  f("Jellyfish", jellyfish),
-  f("Bloach", bloach),
+  f("Goldfish", goldfish, "Fish1"),
+  f("Hermit Can", hermitCan, "Fish2"),
+  f("Jellyfish", jellyfish, "Fish3"),
+  f("Bloach", bloach, "Fish4"),
   f("Skelefish", skelefish),
   f("Sand Shark", sandShark),
   f("Manta Ray", mantaRay),
@@ -80,7 +80,7 @@ export const fish = [
 
 const rod = getItemMaker("fishing rods");
 export const fishingRods = [
-  rod("Copper Fish Rod", copperFishRod),
+  rod("Copper Fish Rod", copperFishRod, "FishingRod2"),
   rod("Iron Fishing Rod", ironFishingRod),
   rod("Gold Fishing Rod", goldFishingRod),
   rod("Plat Fishing Rod", platFishingRod),
