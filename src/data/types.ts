@@ -50,10 +50,12 @@ export type GItemCategory =
   | "upgrade stones"
   | "premium stones"
   | "anvil expansions"
+  | "anvil recipes"
   | "stamps"
   | "statues"
   | "obols"
-  | "cards";
+  | "cards"
+  | "special talent books";
 
 export interface GItem {
   code?: ItemCode;

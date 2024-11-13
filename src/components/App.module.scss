@@ -14,12 +14,14 @@
   grid-area: right;
   overflow-y: auto;
   width: 20vw;
+  min-width: 400px;
 }
 
 .todo {
   grid-area: todo;
   overflow-y: auto;
   display: flex;
+  flex-wrap: wrap;
   border-top: 2px solid black;
   border-right: 2px solid black;
   padding-top: 4px;

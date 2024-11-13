@@ -26,12 +26,14 @@ import pants from "./pants";
 import { pendants } from "./pendants";
 import { capes, chatRings, nameTags, premiumHelmets } from "./premium";
 import { questItems } from "./questItems";
+import { recipeItems } from "./recipes";
 import rings from "./rings";
 import shirts from "./shirts";
 import shoes from "./shoes";
 import smithing from "./smithing";
 import { stamps } from "./stamps";
 import statues from "./statue";
+import { specialTalentBooks } from "./talentBooks";
 import { critters, trapBoxSets } from "./trapping";
 import { trophies } from "./trophies";
 import { GDrop, GItemDrop } from "./types";
@@ -92,10 +94,12 @@ export const items = [
   ...upgradeStones,
   ...premiumStones,
   ...anvilExpansions,
+  ...recipeItems,
   ...stamps,
   ...statues,
   ...obols,
   ...cards,
+  ...specialTalentBooks,
 ];
 
 function expandDropTable(table: GDrop[], multiplier = 1): GItemDrop[] {
