@@ -12,6 +12,7 @@ import { saveSoon } from "../state/thunks";
 import { addTodo, TodoState } from "../state/todo";
 import styles from "./App.module.scss";
 import ItemPicker from "./ItemPicker";
+import MiniItem from "./MiniItem";
 import ResultsDisplay from "./ResultsDisplay";
 import SavingIndicator from "./SavingIndicator";
 
@@ -113,11 +114,14 @@ export default function App() {
       </div>
       <div className={styles.right}>
         <ResultsDisplay {...results} />
-        <hr />
+      </div>
+      <div className={styles.todo}>
         {Object.entries(todo).map(([name, qty]) => (
-          <div key={name}>
+          <div key={name} className={styles.entry}>
             <Button onPress={clearTodo(name)}>X</Button>
-            {name} x{qty}
+            <MiniItem name={name} Tag="span">
+              x{qty}
+            </MiniItem>
           </div>
         ))}
       </div>

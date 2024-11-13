@@ -8,7 +8,7 @@ const MiniItem = memo(function MiniItem({
   name,
   children,
   Tag = "li",
-}: PropsWithChildren<{ name: GItemName; Tag?: "li" | "h3" }>) {
+}: PropsWithChildren<{ name: GItemName; Tag?: "li" | "h3" | "span" }>) {
   const item = items.find((i) => i.name === name);
 
   return (
@@ -19,7 +19,7 @@ const MiniItem = memo(function MiniItem({
         <div className={styles.placeholder}>?</div>
       )}
       <span className={styles.name}>{name}</span>
-      <span className={styles.extra}>{children}</span>
+      {children && <span className={styles.extra}>{children}</span>}
     </Tag>
   );
 });

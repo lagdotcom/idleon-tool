@@ -1,14 +1,32 @@
 .layout {
   display: grid;
-  grid-template-areas: "left right";
-  grid-template-rows: 32px auto;
+  grid-template-areas: "left right" "todo right";
+  grid-template-rows: 1fr 100px;
   height: 100vh;
 }
 
 .left {
   grid-area: left;
+  overflow-y: scroll;
 }
 
 .right {
   grid-area: right;
+  overflow-y: auto;
+  width: 20vw;
+}
+
+.todo {
+  grid-area: todo;
+  overflow-y: auto;
+  display: flex;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  padding-top: 4px;
+  align-items: flex-start;
+  column-gap: 8px;
+
+  .entry {
+    display: flex;
+  }
 }
