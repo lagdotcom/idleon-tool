@@ -206,6 +206,164 @@ const quests = [
   ),
 
   q(
+    "Rocklyte",
+    "How It's Made, Episode 7. The Super Peanut",
+    [n("Stone Peanut"), n("Peanut", 500)],
+    [n("Golden Peanut (Recipe)")],
+  ),
+  q(
+    "Rocklyte",
+    "If Life Gives you Peanuts, make Shiny Peanuts!",
+    [n("Golden Peanut", 5)],
+    [n("Mystery Upgrade Stone I")],
+  ),
+  q(
+    "Rocklyte",
+    "Becoming the Best Beginner",
+    [],
+    [n("Beginner Best Class (Special Talent Book)"), n("Club Member")],
+  ),
+
+  q(
+    "Toadstall",
+    "Creating a Party!",
+    [n("create a party"), n("invite someone")],
+    [n("Dungeon Credits", 10)],
+  ),
+  q(
+    "Toadstall",
+    "Bigger Party Better Party!",
+    [n("be in a party of 3")],
+    [n("Dungeon Credits", 15), n("Dungeon Loot Dice", 2)],
+  ),
+  q(
+    "Toadstall",
+    "Bother the Frogger!",
+    [n("defeat Grandfrogger")],
+    [n("Dungeon Credits", 20), n("Dungeon Loot Dice", 2)],
+  ),
+
+  q(
+    "Promotheus",
+    "I'm Ready, Promotion!",
+    [n("achieve level 10")],
+    [n("Bottled Town Teleport", 5)],
+  ),
+  q(
+    "Promotheus",
+    "Three Right Answers",
+    [n("select a new class")],
+    [
+      n("Class Certificate"),
+      n("Talent Point Reset Potion", 3),
+      n("Talent Point Reset Fragment"),
+    ],
+  ),
+  q(
+    "Promotheus",
+    "Slovakian Scare",
+    [n("house monster found")],
+    [n("Alien Headband"), n("Talent Point Reset Potion")],
+  ),
+  q(
+    "Promotheus",
+    "The Witcher, but not Really",
+    [n("defeat Baba Yaga")],
+    [n("Inventory Bag D"), n("Small Experience Balloon", 2)],
+  ),
+
+  q(
+    "Stiltzcho",
+    "Outta the Way Slimes",
+    [n("slimes defeated", 10)],
+    [n("Speed Statue", 3), n("Average Speed Potion", 25)],
+  ),
+  q(
+    "Stiltzcho",
+    "No Stone Unturned",
+    [n("Strange Rock", 4)],
+    [n("Speed Statue", 2), n("Small Experience Balloon")],
+  ),
+  q(
+    "Stiltzcho",
+    "Investigator by Day, Prankster by Night",
+    [n("Carrot Cube", 2), n("Bleach Logs")],
+    [n("Scouting Report"), n("Carrot Horror")],
+  ),
+  q(
+    "Stiltzcho",
+    "Time Crime Episode 1",
+    [n("afk at Spores", 14400)],
+    [n("2 HR Time Candy")],
+  ),
+  q(
+    "Stiltzcho",
+    "Time Crime Episode 2",
+    [n("afk at Frogs", 28800)],
+    [n("4 HR Time Candy")],
+  ),
+  q(
+    "Stiltzcho",
+    "Time Crime Season Finale",
+    [n("afk at Slimes", 57600)],
+    [n("Stiltzcho Token"), n("24 HR Time Candy")],
+  ),
+
+  q(
+    "Funguy",
+    "Mushroom Munchies",
+    [
+      n("Peanut", 100),
+      n("Cheezy Pizza", 25),
+      n("Average Strength Potion", 100),
+    ],
+    [n("Small Food Pouch"), n("Talent Point Reset Potion")],
+  ),
+  q(
+    "Funguy",
+    "Videogame Highscores are COOL!",
+    [n("choppin score", 35)],
+    [n("Fur Shirt (Recipe)")],
+  ),
+  q(
+    "Funguy",
+    "Partycrastination",
+    [n("Time Thingy", 250)],
+    [n("Silver Stopwatch")],
+  ),
+  q(
+    "Funguy",
+    "Party Crashin'",
+    [n("meet new people", 35), n("make some friends")],
+    [n("Gem", 4)],
+  ),
+  q(
+    "Funguy",
+    "Wicked Party Cleanup",
+    [n("Potty Rolls", 10000)],
+    [n("Funguy Token"), n("Warped Weapon Upgrade Stone", 4)],
+  ),
+
+  q(
+    "Bushlyte",
+    "A Peanut for your Thoughts",
+    [n("Peanut", 50)],
+    [n("Mystery Upgrade Stone I")],
+  ),
+  q(
+    "Bushlyte",
+    "Honk if you Love Peanuts!",
+    [n("Peanut", 200)],
+    [n("Mystery Upgrade Stone I", 2)],
+  ),
+  q(
+    "Bushlyte",
+    "A Peanut Saved",
+    [n("Peanut", 400)],
+    [n("Mystery Upgrade Stone I", 3), n("Stone Peanut")],
+  ),
+
+  q(
     "Mutton",
     "Beatboxing Starterpack",
     [n("White Headband"), n("Give Up On Life Pants"), n("Flip Flops")],

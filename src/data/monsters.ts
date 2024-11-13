@@ -13,10 +13,12 @@ import crystalCrabal from "../img/Crystal_Crabal_Card.png";
 import digDoug from "../img/Dig_Doug_Card.png";
 import drDefecaus from "../img/Dr_Defecaus_Card.png";
 import efaunt from "../img/Efaunt_Card.png";
+import forlornGrandfrogger from "../img/Forlorn_Grandfrogger_Card.png";
 import frog from "../img/Frog_Card.png";
 import gigafrog from "../img/Gigafrog_Card.png";
 import gildedEfaunt from "../img/Gilded_Efaunt_Card.png";
 import glublin from "../img/Glublin_Card.png";
+import grandfrogger from "../img/Grandfrogger_Card.png";
 import greenMushroom from "../img/Green_Mushroom_Card.png";
 import kingDoot from "../img/King_Doot_Card.png";
 import mafioso from "../img/Mafioso_Card.png";
@@ -29,6 +31,7 @@ import poop from "../img/Poop_Card.png";
 import radiantAmarok from "../img/Radiant_Amarok_Card.png";
 import rat from "../img/Rat_Card.png";
 import redMushroom from "../img/Red_Mushroom_Card.png";
+import rottingGrandfrogger from "../img/Rotting_Grandfrogger_Card.png";
 import sandCastle from "../img/Sand_Castle_Card.png";
 import sandGiant from "../img/Sand_Giant_Card.png";
 import sandyPot from "../img/Sandy_Pot_Card.png";
@@ -36,6 +39,7 @@ import sheepie from "../img/Sheepie_Card.png";
 import slime from "../img/Slime_Card.png";
 import snelbie from "../img/Snelbie_Card.png";
 import tyson from "../img/Tyson_Card.png";
+import vengefulGrandfrogger from "../img/Vengeful_Grandfrogger_Card.png";
 import walkingStick from "../img/Walking_Stick_Card.png";
 import wodeBoard from "../img/Wode_Board_Card.png";
 import woodMushroom from "../img/Wood_Mushroom_Card.png";
@@ -515,6 +519,39 @@ const monsters = [
     d("Box Statue", 5000),
     d("Twin Ores Stamp", 12500),
     t(DropTable14, 400),
+  ),
+
+  m(
+    "Grandfrogger",
+    grandfrogger,
+    "Grandfrog's Gazebo",
+    d("Dungeon Credits", 1.25),
+    d("Flurbo", 2),
+    d("Grandfrogger Card", 25),
+  ),
+  m(
+    "Rotting Grandfrogger",
+    rottingGrandfrogger,
+    "Grandfrog's Gazebo",
+    d("Dungeon Credits", 1.25),
+    d("Flurbo", 2),
+    d("Rotting Grandfrogger Card", 40),
+  ),
+  m(
+    "Forlorn Grandfrogger",
+    forlornGrandfrogger,
+    "Grandfrog's Gazebo",
+    d("Dungeon Credits", 1.25),
+    d("Flurbo", 2),
+    d("Forlorn Grandfrogger Card", 40),
+  ),
+  m(
+    "Vengeful Grandfrogger",
+    vengefulGrandfrogger,
+    "Grandfrog's Gazebo",
+    d("Dungeon Credits", 1.25),
+    d("Flurbo", 2),
+    d("Vengeful Grandfrogger Card", 40),
   ),
 ];
 export default monsters;
