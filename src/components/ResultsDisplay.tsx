@@ -4,6 +4,7 @@ import { Button } from "react-aria-components";
 import { GExpandedDropper } from "../data/catalogue";
 import { GQuest, GRecipe, GShop } from "../data/types";
 import { GItemName, Quantity } from "../flavours";
+import CoinsDisplay from "./CoinsDisplay";
 import MiniItem from "./MiniItem";
 import styles from "./ResultsDisplay.module.scss";
 
@@ -106,13 +107,14 @@ function ShopDisplay({
   wanted,
 }: {
   shop: GShop;
-  wanted: GItemName[];
+  wanted: [GItemName, Quantity][];
 }) {
   const [open, setOpen] = useState(false);
   const toggle = useCallback(() => setOpen((x) => !x), []);
 
-  const big = stock.filter((d) => wanted.includes(d.item));
-  const small = stock.filter((d) => !wanted.includes(d.item));
+  const wantedItems = wanted.map((w) => w[0]);
+  const big = stock.filter((d) => wantedItems.includes(d.item));
+  const small = stock.filter((d) => !wantedItems.includes(d.item));
 
   return (
     <div className={styles.dropper}>
@@ -120,7 +122,14 @@ function ShopDisplay({
       <ul className={styles.wanted}>
         {big.map((e, n) => (
           <MiniItem key={n} name={e.item}>
-            {e.cost}c {e.stock}/day
+            <CoinsDisplay amount={e.cost} /> {e.stock}/day (total{" "}
+            <CoinsDisplay
+              amount={
+                e.cost *
+                BigInt((wanted.find((w) => w[0] === e.item) ?? ["", 0])[1])
+              }
+            />
+            )
           </MiniItem>
         ))}
       </ul>
@@ -131,7 +140,16 @@ function ShopDisplay({
             <ul>
               {small.map((e, n) => (
                 <MiniItem key={n} name={e.item}>
-                  {e.cost}g {e.stock}/day
+                  <CoinsDisplay amount={e.cost} /> {e.stock}/day (total{" "}
+                  <CoinsDisplay
+                    amount={
+                      e.cost *
+                      BigInt(
+                        (wanted.find((w) => w[0] === e.item) ?? ["", 0])[1],
+                      )
+                    }
+                  />
+                  )
                 </MiniItem>
               ))}
             </ul>
@@ -230,7 +248,7 @@ export default function ResultsDisplay({
         <div className={styles.section}>
           <h2>Shops</h2>
           {shops.map((shop) => (
-            <ShopDisplay key={shop.name} shop={shop} wanted={wantedItems} />
+            <ShopDisplay key={shop.name} shop={shop} wanted={wanted} />
           ))}
         </div>
       )}
