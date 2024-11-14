@@ -16,7 +16,7 @@ import { boostFood, goldenFood, healthFood } from "./food";
 import forge from "./forge";
 import helmets from "./helmets";
 import { keychains } from "./keychains";
-import materials from "./materials";
+import { materials } from "./materials";
 import { nodes, oresAndBars, pickaxes } from "./mining";
 import { misc } from "./misc";
 import { monsterDrops } from "./monsterDrops";

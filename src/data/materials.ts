@@ -1,5 +1,6 @@
 import boringBrick from "../img/Boring_Brick.png";
 import chainLink from "../img/Chain_Link.png";
+import cueTape from "../img/Cue_Tape.png";
 import denseWater from "../img/Dense_Water.png";
 import distilledWater from "../img/Distilled_Water.png";
 import leatherHide from "../img/Leather_Hide.png";
@@ -15,7 +16,9 @@ import { getItemMaker } from "./tools";
 
 const i = getItemMaker("materials");
 
-const materials = [
+export const materials = [
+  i("Cue Tape", cueTape),
+
   i("Thread", thread, "CraftMat1"),
   i("Trusty Nails", trustyNails, "CraftMat5"),
   i("Boring Brick", boringBrick, "CraftMat6"),
@@ -31,4 +34,20 @@ const materials = [
   i("Distilled Water", distilledWater, "PureWater"),
   i("Dense Water", denseWater),
 ];
-export default materials;
+
+export const materialProduction = [
+  "Thread",
+  "Trusty Nails",
+  "Boring Brick",
+  "Chain Link",
+  "Leather Hide",
+  "Pinion Spur",
+  "Lugi Bracket",
+  "Purple Screw",
+  "Thingymabob",
+  "Tangled Cords",
+  "PVC Pipe",
+
+  "Distilled Water",
+  "Dense Water",
+];

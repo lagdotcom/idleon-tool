@@ -80,5 +80,22 @@ const shops = [
     e("Talent Point Reset Fragment", 800n, 2),
     e("Secret Map", 40000n, 1),
   ),
+
+  s(
+    "Faraway Piers",
+    e("Copper Twine", 14000n, 1),
+    e("Wormie Weight", 20000n, 1),
+    e("Leafy Vines", 30000n, 1),
+    e("One Pound of Steel", 40000n, 1),
+    e("Dynamite", 70000n, 1),
+    e("Needledrop", 60000n, 1),
+    e("Not Dynamite", 220000n, 1),
+    e("Tool Upgrade Stone I", 440n, 2),
+    e("Tool Upgrade Stone II", 5000n, 1),
+    e("Matty Bag Stamp", 26800n, 1),
+    e("Clover Stamp", 48000n, 1),
+    e("Cattleprod Token", 620000n, 1),
+    e("Talent Point Reset Fragment", 800n, 1),
+  ),
 ];
 export default shops;

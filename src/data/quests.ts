@@ -364,6 +364,158 @@ const quests = [
   ),
 
   q(
+    "Dog Bone",
+    "Why he Die???",
+    [n("Dog Bone", 3)],
+    [n("Forest Villa Key", 3)],
+  ),
+  q(
+    "Dog Bone",
+    "Bow Wow going Dow...n!",
+    [n("Amarok Slab", 25)],
+    [n("Dog Bone Token"), n("Forest Villa Key", 5)],
+  ),
+
+  q(
+    "Tiki Chief",
+    "Brochure Building",
+    [n("Plank", 500), n("Trusty Nails", 1000)],
+    [n("Kachow Statue", 5), n("Golden Jam", 3)],
+  ),
+  q(
+    "Tiki Chief",
+    "Three Strikes, you're Out!",
+    [n("guys invited", 3)],
+    [n("Questin Stamp")],
+  ),
+  q(
+    "Tiki Chief",
+    "Blame it on the Glublins",
+    [n("glublins defeated", 5000)],
+    [n("Medium Experience Balloon")],
+  ),
+  q(
+    "Tiki Chief",
+    "Hotel? Tikivago. Sorry, couldn't Help It!",
+    [n("boss kills", 5), n("speedy kill")],
+    [n("Tiki Chief Token"), n("Mystery Upgrade Stone I", 2)],
+  ),
+
+  q("Papua Piggea", "Oinko Boinko", [n("Kapow Stamp")], [n("Gem", 2)]),
+  q(
+    "Papua Piggea",
+    "Crystal Crime Stopper",
+    [n("Crystallin")],
+    [n("Small Experience Balloon", 4), n("4 HR Time Candy", 2)],
+  ),
+  q(
+    "Papua Piggea",
+    "Stamp Collecting",
+    [n("Target Stamp", 3), n("Mana Stamp", 5), n("Vitality Stamp", 2)],
+    [n("Potion Stamp"), n("Small Experience Balloon", 3)],
+  ),
+  q(
+    "Papua Piggea",
+    "This Little Piggy Felt Remorse",
+    [n("total stamp level", 500)],
+    [n("Papua Piggea Token"), n("Polearm Stamp"), n("Speed Statue", 8)],
+  ),
+
+  q(
+    "Sprout",
+    "Sticks and Stone Something Something Bones...",
+    [n("Stick", 500), n("Iron Ore", 1500)],
+    [n("Thicc Skin Statue", 12), n("Small Experience Balloon", 3)],
+  ),
+  q(
+    "Sprout",
+    "Justice Wears No Clothes",
+    [n("unclothed kills", 30)],
+    [n("Adam's Leaf"), n("Small Experience Balloon")],
+  ),
+  q(
+    "Sprout",
+    "Shoe Shopping with Sprout",
+    [n("Iron Boots", 2), n("Goo Galoshes", 2), n("Flip Flops")],
+    [n("MCR Tshirt")],
+  ),
+  q(
+    "Sprout",
+    "Frisbee Fanatic",
+    [n("Red Frisbee")],
+    [n("Sproutinald Token"), n("Frisbee Ring")],
+  ),
+
+  q(
+    "Dazey",
+    "Dressing like a Dork",
+    [n("Forest Fibres", 1000), n("Flowies", 5)],
+    [n("Gem")],
+  ),
+  q(
+    "Dazey",
+    "Literally Physics",
+    [n("Forest Fibres", 1000), n("Flowies", 5), n("Woodular Circle")],
+    [n("Dazey Token"), n("Medium Experience Balloon", 5)],
+  ),
+
+  q(
+    "Glumlee",
+    "Learning to Swing",
+    [n("Copper Ore", 2)],
+    [n("Glumlee's Special Tutorial Oil")],
+  ),
+  q(
+    "Glumlee",
+    "Learning to Smelt",
+    [n("Copper Bar")],
+    [n("Bottled Town Teleport", 10)],
+  ),
+  q(
+    "Glumlee",
+    "Literally Burning your Money",
+    [n("forge upgrades bought", 2)],
+    [n("Mining Certificate"), n("Miniature Mining Pouch")],
+  ),
+  q(
+    "Glumlee",
+    "The Impossible Task",
+    [n("Broken Mic")],
+    [n("Exp Converter (Special Talent Book)")],
+  ),
+  q(
+    "Glumlee",
+    "He's Havin' a Bad Day",
+    [n("Broken Mic")],
+    [n("Glumlee Token")],
+  ),
+
+  q(
+    "Krunk",
+    "A Plot to be Perfect",
+    [n("Iron Ore", 200), n("Small Mana Potion", 50)],
+    [n("Icing Ironbite", 200)],
+  ),
+  q(
+    "Krunk",
+    "The Scientific Method, According to a Rock",
+    [n("Gold Ore", 200), n("Iron Bar", 100), n("Power Statue", 20)],
+    [n("Armor Upgrade Stone G", 5), n("Storage Chest 3")],
+  ),
+  q(
+    "Krunk",
+    "King of the Cavern",
+    [n("Bleach Logs", 1200), n("Trusty Nails", 300), n("Thread", 600)],
+    [n("Speed Statue", 2)],
+  ),
+  q(
+    "Krunk",
+    "(Krunk Token)",
+    [n("complete all of Krunk's quests"), n("mining level", 20)],
+    [n("Krunk Token")],
+  ),
+
+  q(
     "Mutton",
     "Beatboxing Starterpack",
     [n("White Headband"), n("Give Up On Life Pants"), n("Flip Flops")],
@@ -390,6 +542,152 @@ const quests = [
       n("Cloudsound Follower", 500000),
     ],
     [n("Golden Apple Stamp"), n("Steve Sword")],
+  ),
+
+  q(
+    "TP Pete",
+    "Roll of Anger",
+    [n("defeat poops in 200 seconds", 40)],
+    [n("Small Experience Balloon", 2), n("Gem", 2)],
+  ),
+  q(
+    "TP Pete",
+    "The Rats are to Blame!",
+    [n("Employment Statistics", 50)],
+    [n("Tool Upgrade Stone II", 2), n("Small Experience Balloon", 2)],
+  ),
+  q(
+    "TP Pete",
+    "Fired for BS Reasons!",
+    [n("Job Application")],
+    [n("Poopy Pickaxe")],
+  ),
+  q(
+    "TP Pete",
+    "(TP Pete Token)",
+    [n("complete all of TP Pete's quests"), n("reach class level", 60)],
+    [n("TP Pete Token")],
+  ),
+  q(
+    "TP Pete",
+    "(Toilet Paper Postage)",
+    [n('say "More like Poopy Pete"')],
+    [n("Toilet Paper Postage (Special Talent Book)")],
+  ),
+
+  q("Meel", "Spooky Scary Skelepoops", [n("defeat Boops", 30)], [n("Gem", 25)]),
+  q(
+    "Meel",
+    "Waitin' for the Cards to Drop",
+    [n("Bonemeal", 777)],
+    [n("Death Wish"), n("Armor Upgrade Stone C", 6)],
+  ),
+
+  q(
+    "Obol Altar",
+    "Bad Kitty, get off that altar!",
+    [n("BobJoePickle")],
+    [n("Bronze Obol of Puny Damage")],
+  ),
+  q(
+    "Postboy Pablob",
+    "Signed, Sealed and Lost in the Post",
+    [n("Empty Box", 5)],
+    [n("Gem", 75), n("2 HR Time Candy", 5)],
+  ),
+
+  q("Cowbo Jones", "The Grind Begins...?", [n("kill Pots", 10)], [n("Gem", 5)]),
+  q(
+    "Cowbo Jones",
+    "The Hatless Howerhouse!",
+    [n("no-hat kill", 20)],
+    [n("Storage Chest 4")],
+  ),
+  q(
+    "Cowbo Jones",
+    "No Country for One Character",
+    [n("characters created", 4)],
+    [n("1 HR Time Candy", 3)],
+  ),
+  q(
+    "Cowbo Jones",
+    "Say Goodbye to your Dubloon!",
+    [n("Golden Dubloon")],
+    [n("Small Experience Balloon", 5), n("Gem", 5)],
+  ),
+  q(
+    "Cowbo Jones",
+    "Alchemial Apprentice",
+    [n("bubble unlocked"), n("Distilled Water")],
+    [n("Weapon Upgrade Stone II", 2), n("Armor Upgrade Stone II", 3)],
+  ),
+  q(
+    "Cowbo Jones",
+    "Three Vials? Those are Rookie Numbers!",
+    [n("vials unlocked", 2)],
+    [],
+  ),
+  q(
+    "Cowbo Jones",
+    "The Notorious B.O.B",
+    [n("criminal found")],
+    [n("Gem", 3), n("Small Experience Balloon", 2)],
+  ),
+  q(
+    "Cowbo Jones",
+    "Bake Him Away, Toys",
+    [n("Signed Arrest Warrant")],
+    [n("Inventory Bag E")],
+  ),
+  q(
+    "Cowbo Jones",
+    "A Hat in Crime",
+    [n("Leather Hide", 100), n("Trusty Nails", 750)],
+    [n("Cowbo Galloneer"), n("Warped Helmet Upgrade Stone")],
+  ),
+  q(
+    "Cowbo Jones",
+    "Commence Criminal Crimes!",
+    [n("steal from Goldric")],
+    [n("Inventory Bag F")],
+  ),
+  q(
+    "Cowbo Jones",
+    "The Worst Trade Deal in History",
+    [n("resell Dubloons", 10)],
+    [n("Gem", 4), n("Small Experience Balloon", 3)],
+  ),
+  q(
+    "Cowbo Jones",
+    "Children? What'd they ever do for Me...",
+    [n("donations made", 4)],
+    [n("Gem", 6), n("Medium Experience Balloon")],
+  ),
+  q(
+    "Cowbo Jones",
+    "Oh No, not the Elderly!",
+    [n("do Carpetiem's quests")],
+    [n("Inventory Bag H")],
+  ),
+  q(
+    "Cowbo Jones",
+    "Tomb Raid",
+    [n("defeat Efaunt")],
+    [
+      n("24 HR Time Candy"),
+      n("Silver Obol of Experience"),
+      n("Cowbo Jones Token"),
+    ],
+  ),
+  q(
+    "Cowbo Jones",
+    "The New Sheriff",
+    [
+      n("Yumyum Desert NPC Completion Token"),
+      n("Yumyum Skills Completion Token"),
+      n("Yumyum Misc Completion Token"),
+    ],
+    [n("YumYum Sheriff")],
   ),
 ];
 export default quests;

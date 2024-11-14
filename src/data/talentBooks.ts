@@ -14,4 +14,6 @@ export const specialTalentBooks = [
   i("Beginner Best Class (Special Talent Book)", specialTalentBook),
   i("Roll Da Dice (Special Talent Book)", specialTalentBook),
   i("Attacks On Simmer (Special Talent Book)", specialTalentBook),
+  i("Exp Converter (Special Talent Book)", specialTalentBook),
+  i("Toilet Paper Postage (Special Talent Book)", specialTalentBook),
 ];

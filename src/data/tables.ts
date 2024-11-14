@@ -59,7 +59,7 @@ export const SuperDropTable6 = [
 ];
 
 export const DropTable1 = [
-  d("Copper Band (Recipe)", 125),
+  d("Copper Band (Beginner Recipe)", 125),
   d("Nomwich", 4, 10),
   d("Small Mana Potion", 10, 5),
   d("White Headband", 100),
@@ -86,7 +86,7 @@ export const DropTable2 = [
 export const DropTable3 = [
   d("Cheezy Pizza", 2.38, 15),
   d("Health Statue", 8.33),
-  d("Steel Band (Recipe)", 20000),
+  d("Steel Band (Beginner Recipe)", 20000),
   d("Average Mana Potion", 4, 10),
   d("Tool Upgrade Stone II", 33.3),
   d("Bottled Town Teleport", 20),
@@ -243,7 +243,7 @@ export const DropTable15 = [
   d("Distilled Water", 40),
   d("Violence Stamp", 6670),
   d("Mountain Bread", 2, 15),
-  d("Bucket of Slush (Recipe)", 500),
+  d("Bucket of Slush (Apprentice Recipe)", 500),
   d("EhExPee Statue", 25),
   d("Cloudsound Follower", 2, 9),
   d("Instablab Follower", 3.33, 5),

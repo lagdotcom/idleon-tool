@@ -1,7 +1,8 @@
-import { useCallback, useMemo } from "react";
+import { useCallback, useMemo, useState } from "react";
 import { Button } from "react-aria-components";
 
-import { droppers, GExpandedDropper, items, recipes } from "../data/catalogue";
+import { droppers, GExpandedDropper, recipes } from "../data/catalogue";
+import { materialProduction } from "../data/materials";
 import quests from "../data/quests";
 import shops from "../data/shops";
 import { GQuest, GRecipe, GShop } from "../data/types";
@@ -11,6 +12,7 @@ import { selectTodo } from "../state/selectors";
 import { saveSoon } from "../state/thunks";
 import { addTodo, TodoState } from "../state/todo";
 import styles from "./App.module.scss";
+import FilterField from "./FilterField";
 import ItemPicker from "./ItemPicker";
 import MiniItem from "./MiniItem";
 import ResultsDisplay from "./ResultsDisplay";
@@ -59,8 +61,7 @@ class Gatherer {
     );
     for (const shop of sl) this.shops.add(shop);
 
-    const item = items.find((i) => i.name === wantItem);
-    if (item?.category === "materials") {
+    if (materialProduction.includes(wantItem)) {
       this.produce[wantItem] = (this.produce[wantItem] ?? 0) + wantQty;
       return;
     }
@@ -97,6 +98,7 @@ function gather(todo: TodoState) {
 export default function App() {
   const todo = useAppSelector(selectTodo);
   const results = useMemo(() => gather(todo), [todo]);
+  const [filter, setFilter] = useState("");
 
   const dispatch = useAppDispatch();
   const clearTodo = useCallback(
@@ -108,24 +110,27 @@ export default function App() {
   );
 
   return (
-    <div className={styles.layout}>
-      <div className={styles.left}>
-        <ItemPicker />
-      </div>
-      <div className={styles.right}>
-        <ResultsDisplay {...results} />
-      </div>
-      <div className={styles.todo}>
-        {Object.entries(todo).map(([name, qty]) => (
-          <div key={name} className={styles.entry}>
-            <Button onPress={clearTodo(name)}>X</Button>
-            <MiniItem name={name} Tag="span">
-              x{qty}
-            </MiniItem>
-          </div>
-        ))}
+    <>
+      <div className={styles.layout}>
+        <div className={styles.left}>
+          <FilterField onChange={setFilter} />
+          <ItemPicker filter={filter} />
+        </div>
+        <div className={styles.right}>
+          <ResultsDisplay {...results} />
+        </div>
+        <div className={styles.todo}>
+          {Object.entries(todo).map(([name, qty]) => (
+            <div key={name} className={styles.entry}>
+              <Button onPress={clearTodo(name)}>X</Button>
+              <MiniItem name={name} Tag="span">
+                x{qty}
+              </MiniItem>
+            </div>
+          ))}
+        </div>
       </div>
       <SavingIndicator />
-    </div>
+    </>
   );
 }

@@ -1,0 +1,51 @@
+.filter {
+  display: grid;
+  grid-template-areas:
+    "label label"
+    "input button"
+    "help  help";
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  width: fit-content;
+
+  .input {
+    grid-area: input;
+    padding: 0.286rem 1.714rem 0.286rem 0.286rem;
+    margin: 0;
+    border: 1px solid black;
+    border-radius: 6px;
+    font-size: 1.143rem;
+
+    &::-webkit-search-cancel-button,
+    &::-webkit-search-decoration {
+      -webkit-appearance: none;
+    }
+
+    &[data-focused] {
+      outline: 2px solid rebeccapurple;
+      outline-offset: -1px;
+    }
+  }
+
+  .button {
+    grid-area: button;
+    width: 1.143rem;
+    height: 1.143rem;
+    border-radius: 1.143rem;
+    margin-left: -1.429rem;
+    font-size: 0.857rem;
+    line-height: 0.857rem;
+    vertical-align: middle;
+    text-align: center;
+    border: none;
+    padding: 0;
+
+    &[data-pressed] {
+      background: silver;
+    }
+  }
+
+  &[data-empty] .button {
+    display: none;
+  }
+}

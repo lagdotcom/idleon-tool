@@ -1,3 +1,4 @@
+import apprenticeRecipe from "../img/Apprentice_Recipe.png";
 import beginnerRecipe from "../img/Beginner_Recipe.png";
 import noviceRecipe from "../img/Novice_Recipe.png";
 import { getItemMaker } from "./tools";
@@ -24,4 +25,6 @@ export const recipeItems = [
   i("Protectors Pride (Novice Recipe)", noviceRecipe),
   i("Skullfish Pendant (Novice Recipe)", noviceRecipe),
   i("Star Talent Reset Potion (Novice Recipe)", noviceRecipe),
+
+  i("Bucket of Slush (Apprentice Recipe)", apprenticeRecipe),
 ];

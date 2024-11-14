@@ -1,4 +1,4 @@
-import { useCallback } from "react";
+import { useCallback, useMemo } from "react";
 
 import { items as allItems } from "../data/catalogue";
 import { useAppDispatch } from "../state/hooks";
@@ -6,17 +6,25 @@ import { saveSoon } from "../state/thunks";
 import { addTodo } from "../state/todo";
 import ItemCard, { ItemCardClickHandler } from "./ItemCard";
 
-function getCategorisedItems() {
-  const categories = Array.from(new Set(allItems.map((item) => item.category)));
+function getCategorizedItems(filter?: string) {
+  const filteredItems = filter
+    ? allItems.filter(
+        (i) =>
+          i.name.toLocaleLowerCase().includes(filter.toLocaleLowerCase()) ||
+          i.category.toLocaleLowerCase().includes(filter.toLocaleLowerCase()),
+      )
+    : allItems;
+  const categories = Array.from(
+    new Set(filteredItems.map((item) => item.category)),
+  );
 
   return categories.map((category) => ({
     category,
-    items: allItems.filter((i) => i.category === category).sort(),
+    items: filteredItems.filter((i) => i.category === category).sort(),
   }));
 }
-const categorisedItems = getCategorisedItems();
 
-export default function ItemPicker() {
+export default function ItemPicker({ filter }: { filter?: string }) {
   const dispatch = useAppDispatch();
   const clicked = useCallback<ItemCardClickHandler>(
     (name, qty) => {
@@ -25,6 +33,8 @@ export default function ItemPicker() {
     },
     [dispatch],
   );
+
+  const categorisedItems = useMemo(() => getCategorizedItems(filter), [filter]);
 
   return (
     <>

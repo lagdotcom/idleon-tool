@@ -10,6 +10,7 @@ import blunderhillsNPCCompletionToken from "../img/Blunderhills_NPC_Completion_T
 import bobJoePickle from "../img/BobJoePickle.png";
 import boltCutters from "../img/Bolt_Cutters.png";
 import boneJoePickle from "../img/BoneJoePickle.png";
+import brokenMic from "../img/Broken_Mic.png";
 import carpetiemToken from "../img/Carpetiem_Token.png";
 import casualConfidante from "../img/Casual_Confidante.png";
 import cattleprodToken from "../img/Cattleprod_Token.png";
@@ -108,6 +109,7 @@ export const questItems = [
   i("BallJoePickle", ballJoePickle, "BallJoePickle"),
   i("BoneJoePickle", boneJoePickle),
   i("Mining Certificate", miningCertificate),
+  i("Broken Mic", brokenMic),
   i("Desert Topaz", desertTopaz),
   i("Glacier Quartz", glacierQuartz),
   i("Galaxial Amethyst", galaxialAmethyst),
