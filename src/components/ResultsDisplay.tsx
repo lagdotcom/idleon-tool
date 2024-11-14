@@ -23,30 +23,32 @@ function DropperDisplay({
 
   return (
     <div className={styles.dropper}>
-      <img src={img} alt={name} />
-      <div className={styles.name}>{name}</div>
-      <div className={styles.area}>{area}</div>
-      <ul className={styles.wanted}>
-        {big.map((d, n) => (
-          <MiniItem key={n} name={d.item}>
-            {isNaN(d.chance) ? "???" : `1/${Math.round(d.chance)}`}
-          </MiniItem>
-        ))}
-      </ul>
-      {small.length && (
-        <div className={styles.extra}>
-          <Button onPress={toggle}>Show/Hide Extra Drops</Button>
-          {open && (
-            <ul>
-              {small.map((d, n) => (
-                <MiniItem key={n} name={d.item}>
-                  {isNaN(d.chance) ? "???" : `1/${Math.round(d.chance)}`}
-                </MiniItem>
-              ))}
-            </ul>
-          )}
-        </div>
-      )}
+      <div className={styles.header}>
+        <img src={img} role="presentation" /> {name} ({area})
+      </div>
+      <div className={styles.contents}>
+        <ul className={styles.wanted}>
+          {big.map((d, n) => (
+            <MiniItem key={n} name={d.item}>
+              {isNaN(d.chance) ? "???" : `1/${Math.round(d.chance)}`}
+            </MiniItem>
+          ))}
+        </ul>
+        {small.length && (
+          <div className={styles.extra}>
+            <Button onPress={toggle}>Show/Hide Extra Drops</Button>
+            {open && (
+              <ul>
+                {small.map((d, n) => (
+                  <MiniItem key={n} name={d.item}>
+                    {isNaN(d.chance) ? "???" : `1/${Math.round(d.chance)}`}
+                  </MiniItem>
+                ))}
+              </ul>
+            )}
+          </div>
+        )}
+      </div>
     </div>
   );
 }
@@ -76,28 +78,34 @@ function RecipeDisplay({
 
 function QuestDisplay({ quest }: { quest: GQuest }) {
   return (
-    <div>
+    <div className={styles.quest}>
       <h3>
         {quest.name} ({quest.npc})
       </h3>
 
-      <h4>Requirements:</h4>
-      <ul>
-        {quest.inputs.map((ri) => (
-          <MiniItem key={ri.item} name={ri.item}>
-            x{ri.qty}
-          </MiniItem>
-        ))}
-      </ul>
+      <div className={styles.contents}>
+        <div className={styles.requirements}>
+          <h4>Requirements:</h4>
+          <ul>
+            {quest.inputs.map((ri) => (
+              <MiniItem key={ri.item} name={ri.item}>
+                x{ri.qty}
+              </MiniItem>
+            ))}
+          </ul>
+        </div>
 
-      <h4>Rewards:</h4>
-      <ul>
-        {quest.outputs.map((ri) => (
-          <MiniItem key={ri.item} name={ri.item}>
-            x{ri.qty}
-          </MiniItem>
-        ))}
-      </ul>
+        <div className={styles.rewards}>
+          <h4>Rewards:</h4>
+          <ul>
+            {quest.outputs.map((ri) => (
+              <MiniItem key={ri.item} name={ri.item}>
+                x{ri.qty}
+              </MiniItem>
+            ))}
+          </ul>
+        </div>
+      </div>
     </div>
   );
 }

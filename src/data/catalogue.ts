@@ -26,6 +26,7 @@ import pants from "./pants";
 import { pendants } from "./pendants";
 import { capes, chatRings, nameTags, premiumHelmets } from "./premium";
 import { questItems } from "./questItems";
+import { randomEvents } from "./randomEvents";
 import { recipeItems } from "./recipes";
 import rings from "./rings";
 import shirts from "./shirts";
@@ -126,6 +127,7 @@ export const droppers = [
   ...trees,
   ...fishingSpots,
   ...bugNests,
+  ...randomEvents,
 ].map((d) => ({
   ...d,
   drops: expandDropTable(d.drops),

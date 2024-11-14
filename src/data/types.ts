@@ -98,6 +98,7 @@ export type GDropperType =
   | "fishing spot"
   | "monster"
   | "node"
+  | "random event"
   | "tree";
 
 export interface GDropper {

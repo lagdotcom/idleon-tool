@@ -9,6 +9,7 @@ import crudeOil from "../img/Crude_Oil.png";
 import dootjatEye from "../img/Dootjat_Eye.png";
 import driedPaintBlob from "../img/Dried_Paint_Blob.png";
 import dungeonCardPack from "../img/Dungeon_Card_Pack.png";
+import dungeonLootDice from "../img/Dungeon_Loot_Dice.png";
 import ecoFriendlyOil from "../img/Eco_Friendly_Oil.png";
 import eggCapsule from "../img/Egg_Capsule.png";
 import engravedBullet from "../img/Engraved_Bullet.png";
@@ -78,4 +79,5 @@ export const misc = [
   i("Dungeon Card Pack", dungeonCardPack),
   i("Galaxy Card Pack", galaxyCardPack),
   i("Smolderin Card Pack", smolderinCardPack),
+  i("Dungeon Loot Dice", dungeonLootDice),
 ];

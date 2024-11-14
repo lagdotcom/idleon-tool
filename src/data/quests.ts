@@ -689,5 +689,246 @@ const quests = [
     ],
     [n("YumYum Sheriff")],
   ),
+
+  q(
+    "Desert Davey",
+    "U Cool?",
+    [n("Steel Axe"), n("Birch Longbow"), n("Quarterstaff")],
+    [n("Gem", 50), n("4 HR Time Candy", 2), n("1 HR Time Candy", 3)],
+  ),
+
+  q(
+    "Walupiggy",
+    "Treasure Hunt 1",
+    [n("steps completed", 6), n("treasure dug up")],
+    [n("12 HR Time Candy", 2), n("Black Pearl", 5)],
+  ),
+  q(
+    "Walupiggy",
+    "Treasure Hunt 2",
+    [n("steps completed", 7), n("treasure dug up")],
+    [
+      n("24 HR Time Candy", 2),
+      n("Talent Point Special Tab", 4),
+      n("Talent Point Tab 3", 3),
+    ],
+  ),
+  q(
+    "Walupiggy",
+    "Treasure Hunt 3",
+    [n("steps completed", 8), n("treasure dug up")],
+    [
+      n("Warped Helmet Upgrade Stone", 6),
+      n("Black Pearl", 8),
+      n("Talent Point Tab 2", 3),
+    ],
+  ),
+  q(
+    "Walupiggy",
+    "Treasure Hunt 4",
+    [n("steps completed", 8), n("treasure dug up")],
+    [n("Steamy Time Candy", 5), n("Goldegg Capsule"), n("Newbie Card Pack")],
+  ),
+
+  q("Whattso", "Mopey Dick", [n("Goldfish", 20)], [n("Wormie Weight")]),
+  q(
+    "Whattso",
+    "The Whaley Hard Minigame",
+    [n("fish minigame score", 10)],
+    [n("Scripticus Spoons"), n("Gem", 3)],
+  ),
+  q(
+    "Whattso",
+    "Bobbin' Bobbers",
+    [n("fishing score total", 50)],
+    [n("Triple Threat"), n("Whattso Token")],
+  ),
+  q(
+    "Whattso",
+    "The Biggest Fish in the Sea...?",
+    [n("catch the whale")],
+    [n("Electrical Wiring"), n("The Bobber Challenge Scroll")],
+  ),
+
+  q(
+    "Scubidew",
+    "Don't Step to Me, Bro!",
+    [n("Goldfish", 400), n("Hermit Can", 100), n("Jellyfish", 25)],
+    [n("Iron Hook"), n("Gem", 3)],
+  ),
+  q(
+    "Scubidew",
+    "Uncovering the Deep Sea State!!!",
+    [n("fish caught", 5), n("timer", 120)],
+    [n("Basic Bobber"), n("Tool Upgrade Stone II", 2)],
+  ),
+  q("Scubidew", "A Normal Quest.", [n("Goldfish")], [n("Scubidew Token")]),
+
+  q(
+    "Fishpaste97",
+    "'Accidental' Exploit",
+    [n("Butterfly", 1500)],
+    [n("Fishing Rod Stamp"), n("1 HR Time Candy")],
+  ),
+  q(
+    "Fishpaste97",
+    "Can you do the Can Can?",
+    [n("catch cans in a row", 3)],
+    [n("Fishpaste Token"), n("One Pound of Feathers"), n("Talent S Stamp")],
+  ),
+
+  q(
+    "Omar Da Ogar",
+    "Helping Omar",
+    [n("Thread", 20000)],
+    [n("BobJoePickle"), n("Frog Leg", 4)],
+  ),
+  q(
+    "Omar Da Ogar",
+    "Helping Omar Again",
+    [
+      n("fishing level", 35),
+      n("1 HR Time Candy", 24),
+      n("2 HR Time Candy", 10),
+      n("4 HR Time Candy", 5),
+    ],
+    [n("Shallow Watering"), n("Glublin Ear", 3)],
+  ),
+  q(
+    "Omar Da Ogar",
+    "Helping Omar A 3rd Time",
+    [n("fishing level", 40), n("Sand Shark", 40000), n("BobJoePickle")],
+    [n("Large Experience Balloon", 5), n("Bean Slices", 5)],
+  ),
+  q(
+    "Omar Da Ogar",
+    "Helping Omar Some More",
+    [n("fishing level", 50), n("Kraken", 250000), n("BobJoePickle")],
+    [n("Oceanic Ring"), n("Carrot Cube", 4)],
+  ),
+  q(
+    "Omar Da Ogar",
+    "Helping Omar Yet Again Deja Vu",
+    [
+      n("fishing level", 70),
+      n("Fruitfly", 250000),
+      n("Worker Bee", 75000),
+      n("BobJoePickle", 2),
+    ],
+    [n("Aqua Pearl", 100), n("Holy Pearl", 2), n("Snake Skin", 5)],
+  ),
+  q(
+    "Omar Da Ogar",
+    "Helping Omar For The Final Time",
+    [n("fishing level", 90), n("Shellfish", 1000)],
+    [n("Deepwater Trench Ring"), n("Spore Cap", 6)],
+  ),
+
+  q(
+    "Centurion",
+    "Down The Mimic Hole!",
+    [n("mimics defeated quickly")],
+    [n("Colosseum Ticket")],
+  ),
+  q(
+    "Centurion",
+    "Which one of yours is the Mafia?",
+    [n("Coconotnotto", 2500)],
+    [n("1 HR Time Candy", 2), n("Colosseum Ticket", 2)],
+  ),
+  q(
+    "Centurion",
+    "High Scorer",
+    [n("colosseum score", 200000)],
+    [n("2 HR Time Candy", 2)],
+  ),
+  q(
+    "Centurion",
+    "Colosseum Champ!",
+    [
+      n("class level", 65),
+      n("waves completed", 15),
+      n("colosseum score", 350000),
+    ],
+    [n("4 HR Time Candy"), n("2 HR Time Candy", 2)],
+  ),
+  q(
+    "Centurion",
+    "Colosseum GDQ",
+    [
+      n("1st colosseum time left", 180),
+      n("2nd colosseum time left", 180),
+      n("3rd colosseum time left", 180),
+    ],
+    [n("12 HR Time Candy"), n("Gem", 30)],
+  ),
+  q(
+    "Centurion",
+    "Centurio Rank",
+    [n("win w4 colosseum")],
+    [n("12 HR Time Candy"), n("Holy Pearl", 5)],
+  ),
+  q(
+    "Centurion",
+    "Legatus Rank",
+    [n("win w5 colosseum")],
+    [n("24 HR Time Candy"), n("Holy Pearl", 6), n("Divinity Pearl", 8)],
+  ),
+  q(
+    "Centurion",
+    "Glorious Gladiator",
+    [n("win w6 colosseum")],
+    [n("Gladiator")],
+  ),
+
+  q(
+    "Snake Jar",
+    "Lookin' Like a Snack",
+    [n("Megalodon Tooth", 4200)],
+    [n("Warped Helmet Upgrade Stone", 3), n("Gem", 6)],
+  ),
+  q(
+    "Snake Jar",
+    "Red Stuff Bad!",
+    [n("Small Life Potion", 8500)],
+    [n("Storage Chest 11"), n("12 HR Time Candy")],
+  ),
+  q(
+    "Snake Jar",
+    "PSA. You Are Being Eaten!",
+    [n("survive beaing eaten", 4)],
+    [n("Jar"), n("Medium Experience Balloon", 3), n("Gem", 20)],
+  ),
+  q(
+    "Snake Jar",
+    "A Noob, served Medium Rare!",
+    [n("other player lured")],
+    [n("Snake Jar Token"), n("1 HR Time Candy", 3), n("Gem", 10)],
+  ),
+
+  q(
+    "Bandit Bob",
+    "Bullets for Bandit Bob!",
+    [n("Bullet", 30)],
+    [n("Warped Weapon Upgrade Stone", 2), n("Small Experience Balloon", 2)],
+  ),
+  q(
+    "Bandit Bob",
+    "Bob's Brand New Bandana",
+    [n("Yellow Headband")],
+    [n("Power Statue", 7)],
+  ),
+  q(
+    "Bandit Bob",
+    "Bringing Bob's Boxes",
+    [n("plan-it express orders", 2)],
+    [n("Signed Arrest Warrant"), n("Gem", 2)],
+  ),
+  q(
+    "Bandit Bob",
+    "The Desert Dungeon Prequest",
+    [n("Sesame Seed")],
+    [n("Bandit Bob Token")],
+  ),
 ];
 export default quests;

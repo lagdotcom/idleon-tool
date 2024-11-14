@@ -16,43 +16,46 @@
 
 .dropper {
   margin: 10px 0;
-  display: grid;
-  grid-template-areas:
-    "img name name"
-    "img area area"
-    "wanted wanted extra";
-  grid-template-columns: 1fr 1fr 2fr;
 
-  > img {
-    grid-area: img;
-    max-height: 32px;
-  }
-  .name {
-    grid-area: name;
-  }
-  .area {
-    grid-area: area;
-  }
-  .wanted {
-    grid-area: wanted;
-  }
-  > .extra {
-    grid-area: extra;
+  .header {
+    grid-area: header;
+    font-weight: bold;
 
-    border: 1px solid black;
-    padding: 4px;
-    font-size: 0.8em;
+    img {
+      grid-area: img;
+      max-height: 32px;
+    }
+  }
+
+  .contents {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    > .extra {
+      border: 1px solid black;
+      padding: 4px;
+      font-size: 0.8em;
+    }
   }
 }
 
-.recipe {
+.recipe,
+.quest {
   margin: 10px 0;
 
-  h3 {
+  h3,
+  h4 {
     margin: 0;
 
     img {
       max-height: 32px;
     }
+  }
+}
+
+.quest {
+  .contents {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
