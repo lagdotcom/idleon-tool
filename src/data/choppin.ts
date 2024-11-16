@@ -1,55 +1,3 @@
-import alienHiveChunk from "../img/Alien_Hive_Chunk.png";
-import alienTree from "../img/Alien_Tree.png";
-import annihilatorOfTheYggdrasil from "../img/Annihilator_of_the_Yggdrasil.png";
-import arcticLeaf from "../img/Arctic_Leaf.png";
-import bambooLogs from "../img/Bamboo_Logs.png";
-import bambooTree from "../img/Bamboo_Tree.png";
-import birchTree from "../img/Birch_Tree.png";
-import bleachLogs from "../img/Bleach_Logs.png";
-import copperChopper from "../img/Copper_Chopper.png";
-import cubedLogs from "../img/Cubed_Logs.png";
-import cubedTree from "../img/Cubed_Tree.png";
-import dandelioliTree from "../img/Dandelioli_Tree.png";
-import dandielogs from "../img/Dandielogs.png";
-import dementiaDicer from "../img/Dementia_Dicer.png";
-import dreadloHatchet from "../img/Dreadlo_Hatchet.png";
-import effervescentEucalyptusTree from "../img/Effervescent_Eucalyptus_Tree.png";
-import effervescentLogs from "../img/Effervescent_Logs.png";
-import equinoxWillowTree from "../img/Equinox_Willow_Tree.png";
-import forestFibres from "../img/Forest_Fibres.png";
-import forestTree from "../img/Forest_Tree.png";
-import galacticLeaf from "../img/Galactic_Leaf.png";
-import goldenAxe from "../img/Golden_Axe.png";
-import grassLeaf from "../img/Grass_Leaf.png";
-import grumbieTheHatchetHammer from "../img/Grumbie_the_Hatchet_Hammer.png";
-import ironHatchet from "../img/Iron_Hatchet.png";
-import jungleLogs from "../img/Jungle_Logs.png";
-import jungleTree from "../img/Jungle_Tree.png";
-import lustreLogger from "../img/Lustre_Logger.png";
-import magmaLeaf from "../img/Magma_Leaf.png";
-import mapleLogs from "../img/Maple_Logs.png";
-import mapleTree from "../img/Maple_Tree.png";
-import marbiglassHatchet from "../img/Marbiglass_Hatchet.png";
-import oakLogs from "../img/Oak_Logs.png";
-import oakTree from "../img/Oak_Tree.png";
-import oldHatchet from "../img/Old_Hatchet.png";
-import palmTree from "../img/Palm_Tree.png";
-import platHatchet from "../img/Plat_Hatchet.png";
-import pottyRolls from "../img/Potty_Rolls.png";
-import saharanFoal from "../img/Saharan_Foal.png";
-import spiritLeaf from "../img/Spirit_Leaf.png";
-import starfireHatchet from "../img/Starfire_Hatchet.png";
-import stinkyAxe from "../img/Stinky_Axe.png";
-import stumpTree from "../img/Stump_Tree.png";
-import toiletTree from "../img/Toilet_Tree.png";
-import tropilogs from "../img/Tropilogs.png";
-import tundraLogs from "../img/Tundra_Logs.png";
-import twistyLeaf from "../img/Twisty_Leaf.png";
-import veinyLogs from "../img/Veiny_Logs.png";
-import voidImperiumAxe from "../img/Void_Imperium_Axe.png";
-import willowLogs from "../img/Willow_Logs.png";
-import wispyLumber from "../img/Wispy_Lumber.png";
-import wispyTree from "../img/Wispy_Tree.png";
 import {
   DropTable5,
   DropTable11,
@@ -69,46 +17,46 @@ const hatchet = getItemMaker("hatchets");
 const ll = getItemMaker("logs & leaves");
 
 export const hatchets = [
-  hatchet("Old Hatchet", oldHatchet),
-  hatchet("Copper Chopper", copperChopper, "EquipmentToolsHatchet3"),
-  hatchet("Iron Hatchet", ironHatchet, "EquipmentToolsHatchet1"),
-  hatchet("Grumbie the Hatchet Hammer", grumbieTheHatchetHammer),
-  hatchet("Golden Axe", goldenAxe),
-  hatchet("Stinky Axe", stinkyAxe),
-  hatchet("Plat Hatchet", platHatchet),
-  hatchet("Dementia Dicer", dementiaDicer),
-  hatchet("Void Imperium Axe", voidImperiumAxe),
-  hatchet("Lustre Logger", lustreLogger),
-  hatchet("Starfire Hatchet", starfireHatchet),
-  hatchet("Dreadlo Hatchet", dreadloHatchet),
-  hatchet("Marbiglass Hatchet", marbiglassHatchet),
-  hatchet("Annihilator of the Yggdrasil", annihilatorOfTheYggdrasil),
+  hatchet("Old Hatchet"),
+  hatchet("Copper Chopper", "EquipmentToolsHatchet3"),
+  hatchet("Iron Hatchet", "EquipmentToolsHatchet1"),
+  hatchet("Grumbie the Hatchet Hammer"),
+  hatchet("Golden Axe", "EquipmentToolsHatchet2"),
+  hatchet("Stinky Axe"),
+  hatchet("Plat Hatchet"),
+  hatchet("Dementia Dicer"),
+  hatchet("Void Imperium Axe"),
+  hatchet("Lustre Logger"),
+  hatchet("Starfire Hatchet"),
+  hatchet("Dreadlo Hatchet"),
+  hatchet("Marbiglass Hatchet"),
+  hatchet("Annihilator of the Yggdrasil"),
 ];
 
 export const logsAndLeaves = [
-  ll("Grass Leaf", grassLeaf, "Leaf1"),
-  ll("Twisty Leaf", twistyLeaf, "Leaf2"),
-  ll("Arctic Leaf", arcticLeaf),
-  ll("Galactic Leaf", galacticLeaf),
-  ll("Magma Leaf", magmaLeaf),
-  ll("Spirit Leaf", spiritLeaf),
+  ll("Grass Leaf", "Leaf1"),
+  ll("Twisty Leaf", "Leaf2"),
+  ll("Arctic Leaf"),
+  ll("Galactic Leaf"),
+  ll("Magma Leaf"),
+  ll("Spirit Leaf"),
 
-  ll("Oak Logs", oakLogs, "OakTree"),
-  ll("Bleach Logs", bleachLogs, "BirchTree"),
-  ll("Jungle Logs", jungleLogs, "JungleTree"),
-  ll("Forest Fibres", forestFibres, "ForestTree"),
-  ll("Potty Rolls", pottyRolls, "ToiletTree"),
-  ll("Tropilogs", tropilogs, "PalmTree"),
-  ll("Veiny Logs", veinyLogs, "StumpTree"),
-  ll("Tundra Logs", tundraLogs),
-  ll("Wispy Lumber", wispyLumber),
-  ll("Alien Hive Chunk", alienHiveChunk),
-  ll("Cubed Logs", cubedLogs),
-  ll("Maple Logs", mapleLogs),
-  ll("Dandielogs", dandielogs),
-  ll("Willow Logs", willowLogs),
-  ll("Bamboo Logs", bambooLogs),
-  ll("Effervescent Logs", effervescentLogs),
+  ll("Oak Logs", "OakTree"),
+  ll("Bleach Logs", "BirchTree"),
+  ll("Jungle Logs", "JungleTree"),
+  ll("Forest Fibres", "ForestTree"),
+  ll("Potty Rolls", "ToiletTree"),
+  ll("Tropilogs", "PalmTree"),
+  ll("Veiny Logs", "StumpTree"),
+  ll("Tundra Logs"),
+  ll("Wispy Lumber"),
+  ll("Alien Hive Chunk"),
+  ll("Cubed Logs"),
+  ll("Maple Logs"),
+  ll("Dandielogs"),
+  ll("Willow Logs"),
+  ll("Bamboo Logs"),
+  ll("Effervescent Logs"),
 ];
 
 const tree = getDropperMaker("tree");
@@ -116,7 +64,6 @@ const tree = getDropperMaker("tree");
 export const trees = [
   tree(
     "Oak Tree",
-    oakTree,
     "Spore Meadows",
     d("Oak Logs", NaN),
     d("Oak Logs Card", 2500),
@@ -124,7 +71,6 @@ export const trees = [
   ),
   tree(
     "Birch Tree",
-    birchTree,
     "Valley of the Beans",
     d("Bleach Logs", NaN),
     d("Bleach Logs Card", 3450),
@@ -132,7 +78,6 @@ export const trees = [
   ),
   tree(
     "Jungle Tree",
-    jungleTree,
     "Vegetable Patch",
     d("Jungle Logs", NaN),
     d("Jungle Logs Card", 4760),
@@ -140,7 +85,6 @@ export const trees = [
   ),
   tree(
     "Forest Tree",
-    forestTree,
     "Tucked Away",
     d("Forest Fibres", NaN),
     d("Forest Fibres Card", 5880),
@@ -148,7 +92,6 @@ export const trees = [
   ),
   tree(
     "Palm Tree",
-    palmTree,
     "Dessert Dunes",
     d("Tropilogs", NaN),
     d("Tropilogs Card", 9090),
@@ -156,7 +99,6 @@ export const trees = [
   ),
   tree(
     "Toilet Tree",
-    toiletTree,
     "Poopy Sewers",
     d("Potty Rolls", NaN),
     d("Potty Rolls Card", 8330),
@@ -164,7 +106,6 @@ export const trees = [
   ),
   tree(
     "Stump Tree",
-    stumpTree,
     "Hollowed Trunk",
     d("Veiny Logs", NaN),
     d("Veiny Logs Card", 7690),
@@ -172,7 +113,6 @@ export const trees = [
   ),
   tree(
     "Saharan Foal",
-    saharanFoal,
     "Steep Sheep Ledge",
     d("Tundra Logs", NaN),
     d("Tundra Logs Card", 10000),
@@ -180,7 +120,6 @@ export const trees = [
   ),
   tree(
     "Wispy Tree",
-    wispyTree,
     "Waterlogged Entrance",
     d("Wispy Lumber", NaN),
     d("Wispy Lumber Card", 10000),
@@ -188,7 +127,6 @@ export const trees = [
   ),
   tree(
     "Alien Tree",
-    alienTree,
     "Outskirts of Fallstar Isle",
     d("Alien Hive Chunk", NaN),
     d("Alien Hive Chunk Card", 100000),
@@ -196,7 +134,6 @@ export const trees = [
   ),
   tree(
     "Cubed Tree",
-    cubedTree,
     "Standstill Plains",
     d("Cubed Logs", NaN),
     d("Cubed Logs Card", 25000),
@@ -204,7 +141,6 @@ export const trees = [
   ),
   tree(
     "Maple Tree",
-    mapleTree,
     "The Killer Roundabout",
     d("Maple Logs", NaN),
     d("Maple Logs Card", 100000),
@@ -212,7 +148,6 @@ export const trees = [
   ),
   tree(
     "Dandelioli Tree",
-    dandelioliTree,
     "Erruption River",
     d("Dandielogs", NaN),
     d("Dandielogs Card", 200000),
@@ -220,7 +155,6 @@ export const trees = [
   ),
   tree(
     "Equinox Willow Tree",
-    equinoxWillowTree,
     "Equinox Valley",
     d("Willow Logs", NaN),
     d("Dandielogs Card", 100000000),
@@ -228,7 +162,6 @@ export const trees = [
   ),
   tree(
     "Bamboo Tree",
-    bambooTree,
     "Irrigation Station",
     d("Bamboo Logs", NaN),
     d("Bamboo Logs Card", 25000000),
@@ -236,7 +169,6 @@ export const trees = [
   ),
   tree(
     "Effervescent Eucalyptus Tree",
-    effervescentEucalyptusTree,
     "Dozey Dogpark",
     d("Effervescent Logs", NaN),
     d("Effervescent Logs Card", 25000000),

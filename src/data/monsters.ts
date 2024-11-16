@@ -1,48 +1,3 @@
-import amarok from "../img/Amarok_Card.png";
-import babaYaga from "../img/Baba_Yaga_Card.png";
-import babyBoa from "../img/Baby_Boa_Card.png";
-import biggieHours from "../img/Biggie_Hours_Card.png";
-import boop from "../img/Boop_Card.png";
-import boredBean from "../img/Bored_Bean_Card.png";
-import carrotman from "../img/Carrotman_Card.png";
-import chaoticAmarok from "../img/Chaotic_Amarok_Card.png";
-import chaoticEfaunt from "../img/Chaotic_Efaunt_Card.png";
-import crabcake from "../img/Crabcake_Card.png";
-import crystalCarrot from "../img/Crystal_Carrot_Card.png";
-import crystalCrabal from "../img/Crystal_Crabal_Card.png";
-import digDoug from "../img/Dig_Doug_Card.png";
-import drDefecaus from "../img/Dr_Defecaus_Card.png";
-import efaunt from "../img/Efaunt_Card.png";
-import forlornGrandfrogger from "../img/Forlorn_Grandfrogger_Card.png";
-import frog from "../img/Frog_Card.png";
-import gigafrog from "../img/Gigafrog_Card.png";
-import gildedEfaunt from "../img/Gilded_Efaunt_Card.png";
-import glublin from "../img/Glublin_Card.png";
-import grandfrogger from "../img/Grandfrogger_Card.png";
-import greenMushroom from "../img/Green_Mushroom_Card.png";
-import kingDoot from "../img/King_Doot_Card.png";
-import mafioso from "../img/Mafioso_Card.png";
-import mashedPotato from "../img/Mashed_Potato_Card.png";
-import mimic from "../img/Mimic_Card.png";
-import moonmoon from "../img/Moonmoon_Card.png";
-import nutto from "../img/Nutto_Card.png";
-import pincermin from "../img/Pincermin_Card.png";
-import poop from "../img/Poop_Card.png";
-import radiantAmarok from "../img/Radiant_Amarok_Card.png";
-import rat from "../img/Rat_Card.png";
-import redMushroom from "../img/Red_Mushroom_Card.png";
-import rottingGrandfrogger from "../img/Rotting_Grandfrogger_Card.png";
-import sandCastle from "../img/Sand_Castle_Card.png";
-import sandGiant from "../img/Sand_Giant_Card.png";
-import sandyPot from "../img/Sandy_Pot_Card.png";
-import sheepie from "../img/Sheepie_Card.png";
-import slime from "../img/Slime_Card.png";
-import snelbie from "../img/Snelbie_Card.png";
-import tyson from "../img/Tyson_Card.png";
-import vengefulGrandfrogger from "../img/Vengeful_Grandfrogger_Card.png";
-import walkingStick from "../img/Walking_Stick_Card.png";
-import wodeBoard from "../img/Wode_Board_Card.png";
-import woodMushroom from "../img/Wood_Mushroom_Card.png";
 import {
   DropTable1,
   DropTable2,
@@ -63,11 +18,9 @@ import {
 import { getDropperMaker, mkDrop as d, mkTableDrop as t } from "./tools";
 
 const m = getDropperMaker("monster");
-
-const monsters = [
+export const monsters = [
   m(
     "Green Mushroom",
-    greenMushroom,
     "Spore Meadows",
     d("Spore Cap", 4.55),
     d("Green Mushroom Card", 10000),
@@ -79,7 +32,6 @@ const monsters = [
   ),
   m(
     "Red Mushroom",
-    redMushroom,
     "Birch Enclave",
     d("Red Spore Cap", 5),
     d("Red Mushroom Card", 10000),
@@ -87,7 +39,6 @@ const monsters = [
   ),
   m(
     "Frog",
-    frog,
     "Froggy Fields",
     d("Frog Leg", 4.76),
     d("Frog Card", 10000),
@@ -100,7 +51,6 @@ const monsters = [
   ),
   m(
     "Bored Bean",
-    boredBean,
     "Valley of the Beans",
     d("Bean Slices", 5),
     d("Bored Bean Card", 10300),
@@ -110,7 +60,6 @@ const monsters = [
   ),
   m(
     "Slime",
-    slime,
     "Jungle Perimeter",
     d("Slime Sludge", 5.26),
     d("Slime Card", 10500),
@@ -121,7 +70,6 @@ const monsters = [
   ),
   m(
     "Baby Boa",
-    babyBoa,
     "Winding Willows",
     d("Snake Skin", 5.56),
     d("Baby Boa Card", 10600),
@@ -133,7 +81,6 @@ const monsters = [
   ),
   m(
     "Carrotman",
-    carrotman,
     "Vegetable Patch",
     d("Carrot Cube", 5.88),
     d("Carrotman Card", 11100),
@@ -143,7 +90,6 @@ const monsters = [
   ),
   m(
     "Glublin",
-    glublin,
     "Forest Outskirts",
     d("Glublin Ear", 6.25),
     d("Glublin Card", 11600),
@@ -153,7 +99,6 @@ const monsters = [
   ),
   m(
     "Wode Board",
-    wodeBoard,
     "Encroaching Forest Villas",
     d("Plank", 6.67),
     d("Wode Board Card", 12500),
@@ -164,7 +109,6 @@ const monsters = [
   ),
   m(
     "Gigafrog",
-    gigafrog,
     "Tucked Away",
     d("Bullfrog Horn", 7.14),
     d("Gigafrog Card", 14300),
@@ -176,7 +120,6 @@ const monsters = [
   ),
   m(
     "Poop",
-    poop,
     "Poopy Sewers",
     d("Corn Kernels", 4.17),
     d("Poop Card", 16700),
@@ -187,7 +130,6 @@ const monsters = [
   ),
   m(
     "Rat",
-    rat,
     "Rats Nest",
     d("Rats Tail", 5.26),
     d("Rat Card", 20000),
@@ -195,10 +137,9 @@ const monsters = [
     d("Instablab Follower", 6.25),
     t(DropTable3b, 167),
   ),
-  m("Boop", boop, "Meel's Crypt", d("Bonemeal", 2), d("Boop Card", 667)),
+  m("Boop", "Meel's Crypt", d("Bonemeal", 2), d("Boop Card", 667)),
   m(
     "Walking Stick",
-    walkingStick,
     "The Base of the Bark",
     d("Stick", 4.76),
     d("Walking Stick Card", 16700),
@@ -208,7 +149,6 @@ const monsters = [
   ),
   m(
     "Nutto",
-    nutto,
     "Hollowed Trunk",
     d("Acorn", 4.35),
     d("Nutto Card", 20000),
@@ -216,7 +156,6 @@ const monsters = [
   ),
   m(
     "Wood Mushroom",
-    woodMushroom,
     "Where the Branches End",
     d("Red Frisbee", 100000),
     d("Woodular Circle", 13300),
@@ -225,7 +164,6 @@ const monsters = [
   ),
   m(
     "Crystal Carrot",
-    crystalCarrot,
     "Blunder Hills",
     d("Crystal Carrot Card", 100),
     d("Crystallin", 10),
@@ -240,7 +178,6 @@ const monsters = [
 
   m(
     "Baba Yaga",
-    babaYaga,
     "Birch Enclave",
     d("Just Exp (Special Talent Book)", NaN),
     d("Frothy Malk (Special Talent Book)", NaN),
@@ -254,7 +191,6 @@ const monsters = [
   ),
   m(
     "Dr Defecaus",
-    drDefecaus,
     "The Office",
     d("Just Exp (Special Talent Book)", NaN),
     d("Frothy Malk (Special Talent Book)", NaN),
@@ -269,7 +205,6 @@ const monsters = [
   ),
   m(
     "Amarok",
-    amarok,
     "Amarok Arena",
     d("Desert Topaz", NaN),
     d("Magic Meatloaf", 20),
@@ -283,7 +218,6 @@ const monsters = [
   ),
   m(
     "Chaotic Amarok",
-    chaoticAmarok,
     "Amarok Arena",
     d("Magic Meatloaf", 10, 3),
     d("Chaotic Amarok Card", 50),
@@ -297,7 +231,6 @@ const monsters = [
   ),
   m(
     "Radiant Amarok",
-    radiantAmarok,
     "Amarok Arena",
     d("Magic Meatloaf", 20, 10),
     d("Radiant Amarok Card", 50),
@@ -313,7 +246,6 @@ const monsters = [
 
   m(
     "Sandy Pot",
-    sandyPot,
     "Jar Bridge",
     d("Pocket Sand", 4.55),
     d("Sandy Pot Card", 10000),
@@ -323,7 +255,6 @@ const monsters = [
   ),
   m(
     "Mimic",
-    mimic,
     "The Mimic Hole",
     d("Megalodon Tooth", 4.72),
     d("Sesame Seed", 100),
@@ -335,7 +266,6 @@ const monsters = [
   ),
   m(
     "Crabcake",
-    crabcake,
     "Dessert Dunes",
     d("Crabby Cakey", 4.88),
     d("Crabcake Card", 10000),
@@ -345,7 +275,6 @@ const monsters = [
   ),
   m(
     "Mafioso",
-    mafioso,
     "The Grandioso Canyon",
     d("Coconotnotto", 5),
     d("Triumphant Treason", 13.3),
@@ -355,7 +284,6 @@ const monsters = [
   ),
   m(
     "Sand Castle",
-    sandCastle,
     "Shifty Sandbox",
     d("Furled Flag", 5.26),
     d("Claiming Cashe", 20),
@@ -364,7 +292,6 @@ const monsters = [
   ),
   m(
     "Pincermin",
-    pincermin,
     "Pincer Plateau",
     d("Pincer Arm", 5.56),
     d("Pincermin Card", 10000),
@@ -373,7 +300,6 @@ const monsters = [
   ),
   m(
     "Mashed Potato",
-    mashedPotato,
     "Slamabam Straightaway",
     d("Potato Remains", 5.88),
     d("Mashed Potato Card", 10000),
@@ -381,7 +307,6 @@ const monsters = [
   ),
   m(
     "Tyson",
-    tyson,
     "The Ring",
     d("High Steaks", 5.56),
     d("Tyson Card", 10000),
@@ -389,7 +314,6 @@ const monsters = [
   ),
   m(
     "Moonmoon",
-    moonmoon,
     "Up Up Down Down",
     d("Wakka Cherry", 6.06),
     d("Ghost", 2000),
@@ -400,7 +324,6 @@ const monsters = [
   ),
   m(
     "Sand Giant",
-    sandGiant,
     "Sands of Time",
     d("Singlecle", 6.58),
     d("Sand Giant Card", 10000),
@@ -409,7 +332,6 @@ const monsters = [
   ),
   m(
     "Snelbie",
-    snelbie,
     "Djonnuttown",
     d("Shrapshell", 7.14),
     d("Snelbie Card", 10000),
@@ -418,14 +340,12 @@ const monsters = [
   ),
   m(
     "Dig Doug",
-    digDoug,
     "Sandstone Colosseum",
     d("Dig Doug Card", 25),
     t(DropTable7, 313),
   ),
   m(
     "Crystal Crabal",
-    crystalCrabal,
     "Yum Yum Desert",
     d("Crystal Crabal Card", 125),
     d("Crystallin", 10),
@@ -440,7 +360,6 @@ const monsters = [
 
   m(
     "Biggie Hours",
-    biggieHours,
     "The Mimic Hole / Sandstone Colosseum",
     d("Pulsation (Special Talent Book)", NaN),
     d("Cardiovascular! (Special Talent Book)", NaN),
@@ -455,7 +374,6 @@ const monsters = [
   ),
   m(
     "King Doot",
-    kingDoot,
     "Sands of Time",
     d("Pulsation (Special Talent Book)", NaN),
     d("Cardiovascular! (Special Talent Book)", NaN),
@@ -472,7 +390,6 @@ const monsters = [
   ),
   m(
     "Efaunt",
-    efaunt,
     "Efaunts Tomb",
     d("Glacier Quartz", NaN),
     d("Efaunt Card", 40),
@@ -487,7 +404,6 @@ const monsters = [
   ),
   m(
     "Chaotic Efaunt",
-    chaoticEfaunt,
     "Efaunts Tomb",
     d("Chaotic Efaunt Card", 62.5),
     d("Midnight Cookie", 14.3),
@@ -500,7 +416,6 @@ const monsters = [
   ),
   m(
     "Gilded Efaunt",
-    gildedEfaunt,
     "Efaunts Tomb",
     d("Gilded Efaunt Card", 50),
     d("Midnight Cookie", 14.3),
@@ -514,7 +429,6 @@ const monsters = [
 
   m(
     "Sheepie",
-    sheepie,
     "Steep Sheep Ledge",
     d("Floof Ploof", 6.25),
     d("Sheepie Card", 10000),
@@ -525,7 +439,6 @@ const monsters = [
 
   m(
     "Grandfrogger",
-    grandfrogger,
     "Grandfrog's Gazebo",
     d("Dungeon Credits", 1.25),
     d("Flurbo", 2),
@@ -533,7 +446,6 @@ const monsters = [
   ),
   m(
     "Rotting Grandfrogger",
-    rottingGrandfrogger,
     "Grandfrog's Gazebo",
     d("Dungeon Credits", 1.25),
     d("Flurbo", 2),
@@ -541,7 +453,6 @@ const monsters = [
   ),
   m(
     "Forlorn Grandfrogger",
-    forlornGrandfrogger,
     "Grandfrog's Gazebo",
     d("Dungeon Credits", 1.25),
     d("Flurbo", 2),
@@ -549,11 +460,9 @@ const monsters = [
   ),
   m(
     "Vengeful Grandfrogger",
-    vengefulGrandfrogger,
     "Grandfrog's Gazebo",
     d("Dungeon Credits", 1.25),
     d("Flurbo", 2),
     d("Vengeful Grandfrogger Card", 40),
   ),
 ];
-export default monsters;

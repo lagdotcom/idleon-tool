@@ -13,27 +13,27 @@ import {
 } from "./consumables";
 import { fish, fishingAccessories, fishingRods, fishingSpots } from "./fishing";
 import { boostFood, goldenFood, healthFood } from "./food";
-import forge from "./forge";
-import helmets from "./helmets";
+import { forgeRecipes } from "./forge";
+import { helmets } from "./helmets";
 import { keychains } from "./keychains";
 import { materials } from "./materials";
 import { nodes, oresAndBars, pickaxes } from "./mining";
 import { misc } from "./misc";
 import { monsterDrops } from "./monsterDrops";
-import monsters from "./monsters";
+import { monsters } from "./monsters";
 import { obols } from "./obols";
-import pants from "./pants";
+import { pants } from "./pants";
 import { pendants } from "./pendants";
 import { capes, chatRings, nameTags, premiumHelmets } from "./premium";
 import { questItems } from "./questItems";
 import { randomEvents } from "./randomEvents";
 import { recipeItems } from "./recipes";
-import rings from "./rings";
-import shirts from "./shirts";
-import shoes from "./shoes";
-import smithing from "./smithing";
+import { rings } from "./rings";
+import { shirts } from "./shirts";
+import { shoes } from "./shoes";
+import { smithingRecipes } from "./smithing";
 import { stamps } from "./stamps";
-import statues from "./statue";
+import { statues } from "./statue";
 import { specialTalentBooks } from "./talentBooks";
 import { critters, trapBoxSets } from "./trapping";
 import { trophies } from "./trophies";
@@ -45,7 +45,7 @@ import {
   storageChests,
 } from "./unlocks";
 import { premiumStones, upgradeStones } from "./upgrades";
-import weapons from "./weapons";
+import { weapons } from "./weapons";
 import { souls, worshipSkulls } from "./worship";
 
 // https://idleon.wiki/wiki/Items
@@ -134,4 +134,4 @@ export const droppers = [
 }));
 export type GExpandedDropper = (typeof droppers)[number];
 
-export const recipes = [...forge, ...smithing];
+export const recipes = [...forgeRecipes, ...smithingRecipes];

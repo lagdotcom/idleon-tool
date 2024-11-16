@@ -17,6 +17,10 @@
 .dropper {
   margin: 10px 0;
 
+  .name {
+    margin: 0;
+  }
+
   .header {
     grid-area: header;
     font-weight: bold;

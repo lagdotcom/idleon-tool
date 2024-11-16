@@ -1,6 +1,3 @@
-import bronzeChest from "../img/Bronze_Chest.png";
-import goldChest from "../img/Gold_Chest.png";
-import silverChest from "../img/Silver_Chest.png";
 import {
   DropTable1,
   DropTable2,
@@ -16,7 +13,6 @@ const c = getDropperMaker("colosseum chest");
 export const colosseumChests = [
   c(
     "Dewdrop Bronze Chest",
-    bronzeChest,
     "Dewdrop Colosseum",
     d("Gem", 20),
     d("Weapon Upgrade Stone I", 40),
@@ -29,7 +25,6 @@ export const colosseumChests = [
   ),
   c(
     "Dewdrop Silver Chest",
-    silverChest,
     "Dewdrop Colosseum",
     d("Gem", 8.33),
     d("Copper Helmet", 50),
@@ -45,7 +40,6 @@ export const colosseumChests = [
   ),
   c(
     "Dewdrop Gold Chest",
-    goldChest,
     "Dewdrop Colosseum",
     d("Gem", 3.33),
     d("Gem", 1.25),
@@ -61,7 +55,6 @@ export const colosseumChests = [
 
   c(
     "Sandstone Bronze Chest",
-    bronzeChest,
     "Sandstone Colosseum",
     d("Gem", 9.09),
     d("Weapon Upgrade Stone II", 40),
@@ -76,7 +69,6 @@ export const colosseumChests = [
   ),
   c(
     "Sandstone Silver Chest",
-    silverChest,
     "Sandstone Colosseum",
     d("Gem", 5),
     d("Iron Helmet", 50),
@@ -93,7 +85,6 @@ export const colosseumChests = [
   ),
   c(
     "Sandstone Gold Chest",
-    goldChest,
     "Sandstone Colosseum",
     d("Gem", 2.5),
     d("Golden Meat Pie", 2),

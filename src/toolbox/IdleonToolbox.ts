@@ -339,7 +339,7 @@ export interface DataJson {
   [key: `StatueLevels_${CharIndex}`]: EscapedJson<[number, number][]>;
 }
 
-export interface IdleonToolbarJson {
+export interface IdleonToolboxJson {
   data: DataJson;
   charNames: string[];
   companion: {

@@ -1,11 +1,4 @@
-import grumbie from "../img/Grumbie_the_Hatchet_Hammer.png";
-import grumpyObol from "../img/Grumpy_Obol_of_the_Grandfrogger.png";
-import meteorRing from "../img/Meteorite_Ring.png";
-import skeweredSnek from "../img/Skewered_Snek.png";
-import vigilantObol from "../img/Vigilant_Obol_of_Ice_Guard.png";
 import { getDropperMaker, mkDrop as d, mkTableDrop as t } from "./tools";
-
-const e = getDropperMaker("random event");
 
 const pearls = [d("Black Pearl", NaN), d("Holy Pearl", NaN)];
 
@@ -51,10 +44,10 @@ const w3StatueDrop = [
   d("EhExPee Statue", NaN, 5),
 ];
 
+const e = getDropperMaker("random event");
 export const randomEvents = [
   e(
     "Meteorite",
-    meteorRing,
     "Random Event",
     d("Meteorhead", 80),
     d("Meteorite Ring", 100),
@@ -62,35 +55,26 @@ export const randomEvents = [
   ),
   e(
     "Mega Grumblo",
-    grumbie,
     "Random Event",
     d("Grumbie the Hatchet Hammer", 120),
     ...eventDrops,
   ),
   e(
     "Glacial Guild",
-    vigilantObol,
     "Random Event",
     d("Ice Guard Helmet", 60),
     d("Vigilant Obol of Ice Guard", 60),
     ...eventDrops,
   ),
-  e(
-    "Snake Swarm",
-    skeweredSnek,
-    "Random Event",
-    d("Skewered Snek", 120),
-    ...eventDrops,
-  ),
+  e("Snake Swarm", "Random Event", d("Skewered Snek", 120), ...eventDrops),
   e(
     "Angry Frogs",
-    grumpyObol,
     "Random Event",
     d("Grumpy Obol of the Grandfrogger", 60),
     ...eventDrops,
   ),
 
-  e("World 1 Event", "", "Random Event", t(w1StatueDrop, 5)),
-  e("World 2 Event", "", "Random Event", t(w2StatueDrop, 5)),
-  e("World 3 Event", "", "Random Event", t(w3StatueDrop, 5)),
+  e("World 1 Event", "Random Event", t(w1StatueDrop, 5)),
+  e("World 2 Event", "Random Event", t(w2StatueDrop, 5)),
+  e("World 3 Event", "Random Event", t(w3StatueDrop, 5)),
 ];

@@ -3,8 +3,7 @@ import { getRecipeMaker, mkIQ as n } from "./tools";
 // https://idleon.wiki/wiki/Smithing
 
 const r = getRecipeMaker("smithing");
-
-const recipes = [
+export const smithingRecipes = [
   // Tab 1
   r("Boxing Gloves", n("Crimson String"), n("Cue Tape")),
   r("Wooden Spear", n("Copper Bar", 5)),
@@ -591,4 +590,3 @@ const recipes = [
   ),
   // TODO 80
 ];
-export default recipes;

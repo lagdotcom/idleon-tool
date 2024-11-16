@@ -1,8 +1,7 @@
 import { getRecipeMaker, mkIQ as n } from "./tools";
 
 const r = getRecipeMaker("forge");
-
-const recipes = [
+export const forgeRecipes = [
   r("Copper Bar", n("Copper Ore", 2)),
   r("Iron Bar", n("Iron Ore", 4)),
   r("Gold Bar", n("Gold Ore", 7)),
@@ -15,4 +14,3 @@ const recipes = [
   r("Godshard Bar", n("Godshard Ore", 15000)),
   r("Marble Bar", n("Marble Ore", 4000)),
 ];
-export default recipes;

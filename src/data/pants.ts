@@ -1,53 +1,29 @@
-import amarokHinds from "../img/Amarok_Hinds.png";
-import banditoPantaloon from "../img/Bandito_Pantaloon.png";
-import bleachedDesignerWodePatchPants from "../img/Bleached_Designer_Wode_Patch_Pants.png";
-import chizoarScaledLeggings from "../img/Chizoar_Scaled_Leggings.png";
-import copperPlatelegs from "../img/Copper_Platelegs.png";
-import dementiaShins from "../img/Dementia_Shins.png";
-import diabolicalTrimedLegGuards from "../img/Diabolical_Trimed_Leg_Guards.png";
-import dirtyCoalMinerBaggySootPants from "../img/Dirty_Coal_Miner_Baggy_Soot_Pants.png";
-import efauntHipilium from "../img/Efaunt_Hipilium.png";
-import fishingOveralls from "../img/Fishing_Overalls.png";
-import giveUpOnLifePants from "../img/Give_Up_On_Life_Pants.png";
-import goldPlatelegs from "../img/Gold_Platelegs.png";
-import ironPlatelegs from "../img/Iron_Platelegs.png";
-import lustreScales from "../img/Lustre_Scales.png";
-import magmaCoreBattleskirt from "../img/Magma_Core_Battleskirt.png";
-import marbiglassLegplates from "../img/Marbiglass_Legplates.png";
-import platinumShins from "../img/Platinum_Shins.png";
-import spikedLeggingsOfTheDivine from "../img/Spiked_Leggings_of_the_Divine.png";
-import tattersOfTheGods from "../img/Tatters_of_the_Gods.png";
-import tornJeans from "../img/Torn_Jeans.png";
-import trimmedRunePlatelegs from "../img/Trimmed_Rune_Platelegs.png";
-import twistedScales from "../img/Twisted_Scales.png";
-import voidImperiumShardshins from "../img/Void_Imperium_Shardshins.png";
 import { getItemMaker } from "./tools";
 
 const i = getItemMaker("pants");
-
-const pants = [
-  i("Torn Jeans", tornJeans),
-  i("Give Up On Life Pants", giveUpOnLifePants, "EquipmentPants10"),
-  i("Copper Platelegs", copperPlatelegs, "EquipmentPants2"),
-  i("Iron Platelegs", ironPlatelegs, "EquipmentPants3"),
-  i("Dirty Coal Miner Baggy Soot Pants", dirtyCoalMinerBaggySootPants),
-  i("Bleached Designer Wode Patch Pants", bleachedDesignerWodePatchPants),
-  i("Fishing Overalls", fishingOveralls),
-  i("Bandito Pantaloon", banditoPantaloon),
-  i("Gold Platelegs", goldPlatelegs),
-  i("Amarok Hinds", amarokHinds, "EquipmentPants17"),
-  i("Platinum Shins", platinumShins),
-  i("Dementia Shins", dementiaShins),
-  i("Efaunt Hipilium", efauntHipilium),
-  i("Trimmed Rune Platelegs", trimmedRunePlatelegs),
-  i("Void Imperium Shardshins", voidImperiumShardshins),
-  i("Chizoar Scaled Leggings", chizoarScaledLeggings),
-  i("Lustre Scales", lustreScales),
-  i("Diabolical Trimed Leg Guards", diabolicalTrimedLegGuards),
-  i("Twisted Scales", twistedScales),
-  i("Magma Core Battleskirt", magmaCoreBattleskirt),
-  i("Spiked Leggings of the Divine", spikedLeggingsOfTheDivine),
-  i("Marbiglass Legplates", marbiglassLegplates),
-  i("Tatters of the Gods", tattersOfTheGods),
+export const pants = [
+  i("Torn Jeans"),
+  i("Give Up On Life Pants", "EquipmentPants10"),
+  i("Copper Platelegs", "EquipmentPants2"),
+  i("Iron Platelegs", "EquipmentPants3"),
+  i("Dirty Coal Miner Baggy Soot Pants"),
+  i("Bleached Designer Wode Patch Pants"),
+  i("Fishing Overalls"),
+  i("Bandito Pantaloon"),
+  i("Gold Platelegs", "EquipmentPants4"),
+  i("Adam's Leaf", "EquipmentPants16"),
+  i("Amarok Hinds", "EquipmentPants17"),
+  i("Platinum Shins"),
+  i("Dementia Shins"),
+  i("Efaunt Hipilium"),
+  i("Trimmed Rune Platelegs"),
+  i("Void Imperium Shardshins"),
+  i("Chizoar Scaled Leggings"),
+  i("Lustre Scales"),
+  i("Diabolical Trimed Leg Guards"),
+  i("Twisted Scales"),
+  i("Magma Core Battleskirt"),
+  i("Spiked Leggings of the Divine"),
+  i("Marbiglass Legplates"),
+  i("Tatters of the Gods"),
 ];
-export default pants;

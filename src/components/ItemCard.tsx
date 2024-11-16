@@ -1,6 +1,6 @@
 import { MouseEvent, useCallback } from "react";
 
-import { items } from "../data/catalogue";
+import { imageURLs } from "../data/images";
 import { GItemName, Quantity } from "../flavours";
 import styles from "./ItemCard.module.scss";
 
@@ -13,7 +13,8 @@ export default function ItemCard({
   name: GItemName;
   onClick?: ItemCardClickHandler;
 }) {
-  const item = items.find((i) => i.name === name);
+  const img = imageURLs[name];
+
   const clicked = useCallback(
     (e: MouseEvent) => {
       let amount = 1;
@@ -37,7 +38,7 @@ export default function ItemCard({
       onContextMenu={clicked}
       title={name}
     >
-      <img src={item?.img} alt={name} />
+      <img src={img} alt={name} />
     </button>
   );
 }

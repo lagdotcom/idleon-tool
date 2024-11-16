@@ -2,6 +2,7 @@ import { useCallback, useState } from "react";
 import { Button } from "react-aria-components";
 
 import { GExpandedDropper } from "../data/catalogue";
+import { imageURLs } from "../data/images";
 import { GQuest, GRecipe, GShop } from "../data/types";
 import { GItemName, Quantity } from "../flavours";
 import CoinsDisplay from "./CoinsDisplay";
@@ -9,12 +10,13 @@ import MiniItem from "./MiniItem";
 import styles from "./ResultsDisplay.module.scss";
 
 function DropperDisplay({
-  dropper: { name, img, drops, area },
+  dropper: { name, drops, area },
   wanted,
 }: {
   dropper: GExpandedDropper;
   wanted: GItemName[];
 }) {
+  const img = imageURLs[name];
   const [open, setOpen] = useState(false);
   const toggle = useCallback(() => setOpen((x) => !x), []);
 
@@ -126,7 +128,7 @@ function ShopDisplay({
 
   return (
     <div className={styles.dropper}>
-      <div className={styles.name}>{name}</div>
+      <h3 className={styles.name}>{name}</h3>
       <ul className={styles.wanted}>
         {big.map((e, n) => (
           <MiniItem key={n} name={e.item}>
@@ -148,16 +150,7 @@ function ShopDisplay({
             <ul>
               {small.map((e, n) => (
                 <MiniItem key={n} name={e.item}>
-                  <CoinsDisplay amount={e.cost} /> {e.stock}/day (total{" "}
-                  <CoinsDisplay
-                    amount={
-                      e.cost *
-                      BigInt(
-                        (wanted.find((w) => w[0] === e.item) ?? ["", 0])[1],
-                      )
-                    }
-                  />
-                  )
+                  <CoinsDisplay amount={e.cost} /> {e.stock}/day
                 </MiniItem>
               ))}
             </ul>

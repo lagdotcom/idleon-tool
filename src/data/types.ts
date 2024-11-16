@@ -1,4 +1,4 @@
-import { Chance, Coins, GItemName, Quantity, URLString } from "../flavours";
+import { Chance, Coins, GItemName, Quantity } from "../flavours";
 import { ItemCode } from "../toolbox/IdleonToolbox";
 
 export type GItemCategory =
@@ -61,7 +61,6 @@ export interface GItem {
   code?: ItemCode;
   category: GItemCategory;
   name: GItemName;
-  img: URLString;
 }
 
 export type GRecipeType = "forge" | "smithing";
@@ -103,7 +102,6 @@ export type GDropperType =
 
 export interface GDropper {
   type: GDropperType;
-  img: URLString;
   name: string;
   area: string;
   drops: GDrop[];

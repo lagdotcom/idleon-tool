@@ -9,7 +9,8 @@
     "build": "node scripts/build.mjs",
     "watch": "node scripts/watch.mjs",
     "start": "node scripts/watch.mjs",
-    "start-prod": "node scripts/watch.mjs production"
+    "start-prod": "node scripts/watch.mjs production",
+    "codes": "ts-node src/itemCodes.ts"
   },
   "dependencies": {
     "@emotion/react": "^11.13.3",
@@ -39,6 +40,7 @@
     "postcss-modules": "^6.0.0",
     "prettier": "^3.3.3",
     "readline-sync": "^1.4.10",
+    "ts-node": "^10.9.2",
     "typescript": "^5.6.3",
     "typescript-eslint": "^8.13.0"
   }

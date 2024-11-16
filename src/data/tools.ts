@@ -1,4 +1,4 @@
-import { Chance, GItemName, Quantity, URLString } from "../flavours";
+import { Chance, GItemName, Quantity } from "../flavours";
 import { ItemCode } from "../toolbox/IdleonToolbox";
 import {
   GDrop,
@@ -16,10 +16,9 @@ import {
 
 export const getItemMaker =
   (category: GItemCategory) =>
-  (name: string, img: URLString, code?: ItemCode): GItem => ({
+  (name: string, code?: ItemCode): GItem => ({
     category,
     name,
-    img,
     code,
   });
 
@@ -55,15 +54,9 @@ export const mkTableDrop = (drops: GDrop[], chance: Chance): GTableDrop => ({
 
 export const getDropperMaker =
   (type: GDropperType) =>
-  (
-    name: string,
-    img: URLString,
-    area: string,
-    ...drops: GDrop[]
-  ): GDropper => ({
+  (name: string, area: string, ...drops: GDrop[]): GDropper => ({
     type,
     name,
-    img,
     area,
     drops,
   });
