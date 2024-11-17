@@ -2,7 +2,7 @@ import { getItemMaker } from "./tools";
 
 const i = getItemMaker("rings");
 export const rings = [
-  i("Copper Band"),
+  i("Copper Band", "EquipmentRings2"),
   i("Pugilist Demise", "EquipmentRings7"),
   i("Steel Band", "EquipmentRings3"),
   i("Elf Twist Ring", "EquipmentRings21"),

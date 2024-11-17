@@ -1,12 +1,4 @@
-// https://spin.atomicobject.com/typescript-flexible-nominal-typing/
-interface Flavouring<FlavourT> {
-  _type?: FlavourT;
-}
-type Flavour<T, FlavourT> = T & Flavouring<FlavourT>;
-
-export type CharIndex = Flavour<number, "CharIndex">;
-export type CardCode = Flavour<string, "CardCode">;
-export type ItemCode = Flavour<string, "ItemCode">;
+import { BundleCode, CardCode, CharIndex, ClassCode, ItemCode } from "./types";
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 export type EscapedJson<T> = string;
@@ -106,6 +98,20 @@ export interface EMm0 extends EMm1 {
   UQ2val: number;
 }
 
+export interface IMm {
+  Weapon_Power: number;
+  Speed: number;
+  Reach: number;
+  Power: number;
+  Defence: number;
+  STR: number;
+  AGI: number;
+  WIS: number;
+  LUK: number;
+  UQ1txt: number;
+  UQ2txt: number;
+}
+
 export type Guild = [
   number[],
   [number, number, number],
@@ -144,6 +150,29 @@ export type Territory = [
   number,
 ];
 
+export type Gaming = [
+  number,
+  number,
+  number,
+  number,
+  number,
+  number,
+  number,
+  number,
+  number,
+  number,
+  number,
+  number,
+  "",
+  number,
+  number,
+  number,
+  number,
+  number,
+  number,
+  number,
+];
+
 export interface DataJson {
   AchieveReg: EscapedJson<number[]>;
   AnvilCraftStatus: EscapedJson<number[][]>;
@@ -151,14 +180,14 @@ export interface DataJson {
   ArcUnclaim: EscapedJson<unknown>;
   Atoms: number[];
   BGsel: number;
-  BGunlocked: number[];
+  BGunlocked: (0 | 1)[];
   Boats: EscapedJson<number[][]>;
   BossInfo: DataArray<number>[];
   Breeding: EscapedJson<number[][]>;
   BribeStatus: (1 | 0 | -1)[];
   BugInfo: EscapedJson<number[][]>;
   bun_i: number;
-  BundlesReceived: EscapedJson<Record<string, 1>>;
+  BundlesReceived: EscapedJson<Record<BundleCode, 1>>;
   Captains: EscapedJson<number[][]>;
   Cards0: EscapedJson<Record<string, number>>;
   Cards1: EscapedJson<string[]>;
@@ -200,6 +229,7 @@ export interface DataJson {
   FamValColosseumHighscores: number[];
   FamValFishingToolkitOwned: DataArray<number>[];
   FamValMinigameHiscores: number[];
+  FamValWorldSelected: number;
   FarmCrop: EscapedJson<unknown>;
   FarmPlot: EscapedJson<[number[]]>;
   FarmRank: EscapedJson<number[][]>;
@@ -207,24 +237,33 @@ export interface DataJson {
   FlagP: EscapedJson<number[]>;
   FlagU: EscapedJson<number[]>;
   ForgeIntProg: number[];
-  ForgeItemOrder: string[];
+  ForgeItemOrder: (ItemCode | "Blank")[];
   ForgeItemQty: number[];
   ForgeLV: number[];
-  Gaming: (number | "")[];
-  GamingSprout: EscapedJson<number[][]>;
+  Gaming: Gaming;
+  GamingSprout: EscapedJson<[number, number, number, number, number, number][]>;
   GemItemsPurchased: EscapedJson<number[]>;
   GemsOwned: number;
   GemsPacksPurchased: number[];
   Guild: EscapedJson<Guild>;
-  HintStatus: EscapedJson<number[][]>;
+  HintStatus: EscapedJson<(1 | -1)[][]>;
   Holes: EscapedJson<number[][]>;
   InvStorageUsed: EscapedJson<Record<numberQ, numberQ>>;
   KRbest: EscapedJson<Record<string, number>>;
   Lab: EscapedJson<number[][]>;
   Meals: EscapedJson<number[][]>;
+  MoneyBANK: number;
   Ninja: EscapedJson<unknown>;
   ObolEqMAPz1: EscapedJson<unknown>;
   ObolEqMAPz2: EscapedJson<unknown>;
+  ObolEqO1: (
+    | ItemCode
+    | "Blank"
+    | "ObolLocked1"
+    | "ObolLocked2"
+    | "ObolLocked3"
+    | "ObolLocked4"
+  )[];
   ObolEqO2: string[];
   ObolInvOr: DataArray<ItemCode | "Blank" | "LockedInvSpace">[];
   ObolInvOwn: number[];
@@ -251,6 +290,7 @@ export interface DataJson {
   StampLvM: [StampLevel, StampLevel, StampLevel];
   StarSg: EscapedJson<Record<string, 1>>;
   SteamAchieve: EscapedJson<number[]>;
+  StuG: EscapedJson<number[]>;
   Summon: EscapedJson<number[][]>;
   TaskZZ0: EscapedJson<number[][]>;
   TaskZZ1: EscapedJson<number[][]>;
@@ -274,7 +314,7 @@ export interface DataJson {
   [key: `BuffsActive_${CharIndex}`]: DataArray<number>[];
   [key: `CardEquip_${CharIndex}`]: (CardCode | "B")[];
   [key: `CardPreset_${CharIndex}`]: EscapedJson<(CardCode | "B")[][]>;
-  [key: `CharacterClass_${CharIndex}`]: number;
+  [key: `CharacterClass_${CharIndex}`]: ClassCode;
   [key: `CharSAVED_${CharIndex}`]: number;
   [key: `CSetEq_${CharIndex}`]: EscapedJson<Record<string, number>>;
   [key: `CurrentMap_${CharIndex}`]: number;
@@ -288,7 +328,7 @@ export interface DataJson {
   [key: `ExpReq0_${CharIndex}`]: number[];
   [key: `FoodCD_${CharIndex}`]: number[];
   [key: `FoodSlO_${CharIndex}`]: number;
-  [key: `IMm_${CharIndex}`]: EscapedJson<unknown>;
+  [key: `IMm_${CharIndex}`]: EscapedJson<Record<numberQ, IMm>>;
   [key: `IMmLENGTH_${CharIndex}`]: number;
   [key: `InvBagsUsed_${CharIndex}`]: EscapedJson<Record<numberQ, number>>;
   [key: `InventoryOrder_${CharIndex}`]: (
@@ -303,7 +343,7 @@ export interface DataJson {
   [key: `MaxCarryCap_${CharIndex}`]: EscapedJson<CarryCap>;
   [key: `Money_${CharIndex}`]: number;
   [key: `NPCdialogue_${CharIndex}`]: EscapedJson<Record<string, number>>;
-  [key: `ObolEqMAP_${CharIndex}`]: EscapedJson<unknown>;
+  [key: `ObolEqMAP_${CharIndex}`]: EscapedJson<Record<numberQ, unknown>>;
   [key: `ObolEqO0_${CharIndex}`]: (
     | ItemCode
     | "Blank"
@@ -375,61 +415,61 @@ export interface IdleonToolboxJson {
     points: number;
   };
   serverVars: {
-    TestData: string;
-    WhateverKeyYouWant: string;
-    LtdShopNum: number;
-    Dungeon_CardMulti: number;
-    ArcadeBonuses: number[];
-    RemoveVials: number;
-    RandEvntWorld: number;
-    KillroySwap: number;
-    GemBundleOffer: string;
-    StarterBundleReset: number;
-    abc: number;
-    EventActive: "No";
-    DivCostAfter3: number;
-    LetIOSin: number;
-    GameVERSION: number;
-    ArcadeRotation: string;
-    RandEvntHr: number;
-    EventTimerBypass: number;
-    voteCategories: number[];
-    WorldSelRNG: number;
-    PristineCharm: number;
-    GemPopupLvREQ: number;
-    TomeOn: number;
-    NewStuffButton: number;
-    Dungeon_FlurboMulti: number;
-    EventVal1: number;
-    PCpurchases: number;
-    RandomTest: number;
-    "1LavaChat": string;
-    GuildRank: string[];
-    votePercent: number[];
-    AncientArtiPCT: number;
-    RateAgain: number;
-    AncientOddPerIsland: number;
-    HappyHours: number[];
-    OfferBunC: number;
-    Dungeon_CredMulti: number;
-    OGtrophy: number;
     "0TwitchLive": number;
-    Test: string;
-    LavaHacks: number;
-    GemBundleOffer3: string;
-    SteamEvent: number;
-    GemBundleOffer2: string;
-    GemPopupBundle: string;
-    worldCounts: number[];
+    "1LavaChat": string;
+    A_divArc: string;
+    A_empoExpon: number;
+    abc: number;
+    AncientArtiPCT: number;
+    AncientOddPerIsland: number;
+    ArcadeBonuses: number[];
+    ArcadeRotation: string;
+    AutoLoot: number;
+    ChipRepo: number[];
     CompBatch: number;
     DampenServerPlayerMvmt: number;
+    DivCostAfter3: number;
+    Dungeon_CardMulti: number;
+    Dungeon_CredMulti: number;
+    Dungeon_FlurboMulti: number;
     Dungeon1_time: number;
-    ChipRepo: number[];
-    TomePct: number[];
-    A_empoExpon: number;
-    AutoLoot: number;
+    EventActive: "No";
+    EventTimerBypass: number;
+    EventVal1: number;
+    GameVERSION: number;
     GamingFertCostExpA: number;
-    A_divArc: string;
+    GemBundleOffer: string;
+    GemBundleOffer2: string;
+    GemBundleOffer3: string;
+    GemPopupBundle: string;
+    GemPopupLvREQ: number;
+    GuildRank: string[];
+    HappyHours: number[];
+    KillroySwap: number;
+    LavaHacks: number;
+    LetIOSin: number;
+    LtdShopNum: number;
+    NewStuffButton: number;
+    OfferBunC: number;
+    OGtrophy: number;
+    PCpurchases: number;
+    PristineCharm: number;
+    RandEvntHr: number;
+    RandEvntWorld: number;
+    RandomTest: number;
+    RateAgain: number;
+    RemoveVials: number;
+    StarterBundleReset: number;
+    SteamEvent: number;
+    Test: string;
+    TestData: string;
+    TomeOn: number;
+    TomePct: number[];
+    voteCategories: number[];
+    votePercent: number[];
+    WhateverKeyYouWant: string;
+    worldCounts: number[];
+    WorldSelRNG: number;
   };
   accountCreateTime: number;
   lastUpdated: number;
