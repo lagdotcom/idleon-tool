@@ -2,7 +2,7 @@ import { getItemMaker } from "./tools";
 
 const i = getItemMaker("refinery salts");
 export const refinerySalts = [
-  i("Redox Salts"),
+  i("Redox Salts", "Refinery1"),
   i("Explosive Salts"),
   i("Spontaneity Salts"),
   i("Dioxide Synthesis"),

@@ -33,7 +33,7 @@ import { shirts } from "./shirts";
 import { shoes } from "./shoes";
 import { smithingRecipes } from "./smithing";
 import { stamps } from "./stamps";
-import { statues } from "./statue";
+import { statues } from "./statues";
 import { specialTalentBooks } from "./talentBooks";
 import { critters, trapBoxSets } from "./trapping";
 import { trophies } from "./trophies";

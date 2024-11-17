@@ -4,7 +4,7 @@ const i = getItemMaker("statues");
 export const statues = [
   i("Power Statue"),
   i("Speed Statue", "EquipmentStatues2"),
-  i("Mining Statue"),
+  i("Mining Statue", "EquipmentStatues3"),
   i("Feasty Statue", "EquipmentStatues4"),
   i("Health Statue", "EquipmentStatues5"),
   i("Kachow Statue", "EquipmentStatues6"),

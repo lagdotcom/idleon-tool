@@ -2,7 +2,7 @@ import { getItemMaker } from "./tools";
 
 const skull = getItemMaker("worship skulls");
 export const worshipSkulls = [
-  skull("Wax Skull"),
+  skull("Wax Skull", "WorshipSkull1"),
   skull("Ceramic Skull"),
   skull("Slush Skull"),
   skull("Horned Skull"),
@@ -17,7 +17,7 @@ export const worshipSkulls = [
 
 const soul = getItemMaker("souls");
 export const souls = [
-  soul("Forest Soul"),
+  soul("Forest Soul", "Soul1"),
   soul("Dune Soul"),
   soul("Rooted Soul"),
   soul("Frigid Soul"),

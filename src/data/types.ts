@@ -1,5 +1,5 @@
 import { Chance, Coins, GItemName, Quantity } from "../flavours";
-import { ItemCode } from "../toolbox/IdleonToolbox";
+import { ItemCode } from "../toolbox/types";
 
 export type GItemCategory =
   | "fisticuffs"

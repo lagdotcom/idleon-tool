@@ -2,7 +2,7 @@ import { getItemMaker } from "./tools";
 
 const set = getItemMaker("trap box sets");
 export const trapBoxSets = [
-  set("Cardboard Traps"),
+  set("Cardboard Traps", "TrapBoxSet1"),
   set("Silkskin Traps"),
   set("Wooden Traps"),
   set("Natural Traps"),

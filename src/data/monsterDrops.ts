@@ -101,7 +101,7 @@ export const monsterDrops = [
   i("Minuteglass"),
   i("Amarok Slab", "Quest17"),
   i("Chaotic Amarok Slab"),
-  i("Ripped Tunic"),
+  i("Ripped Tunic", "EfauntDrop1"),
   i("Ribbed Tunic"),
   i("Chizoar Spike"),
   i("Chizoar Stalagmite"),
