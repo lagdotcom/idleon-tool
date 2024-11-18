@@ -589,4 +589,31 @@ export const smithingRecipes = [
     n("Wellington Token"),
   ),
   // TODO 80
+
+  r("Dementia Helmet", n("Froge", 5000), n("Dementia Bar", 300)),
+  r("Dementia Body", n("Forest Soul", 1000), n("Dementia Bar", 350)),
+  r("Dementia Shins", n("Floof Ploof", 8000), n("Dementia Bar", 400)),
+  r("Dementia Boots", n("Poison Froge", 3), n("Dementia Bar", 500)),
+
+  r("Uninflated Glove", n("Bandage Wraps", 2), n("Melty Cube", 70000)),
+  r(
+    "The Ice Breaker",
+    n("Enforced Slasher"),
+    n("Melty Cube", 25000),
+    n("Redox Salts", 150),
+  ),
+  r(
+    "Blizzard Bow",
+    n("Pharaoh Bow"),
+    n("Forest Soul", 7000),
+    n("Redox Salts", 150),
+  ),
+  r(
+    "Spriggly Storm",
+    n("Crows Nest"),
+    n("Tundra Logs", 10000),
+    n("Redox Salts", 150),
+  ),
+
+  // TODO 9-72
 ];

@@ -35,7 +35,7 @@ import { smithingRecipes } from "./smithing";
 import { stamps } from "./stamps";
 import { statues } from "./statues";
 import { specialTalentBooks } from "./talentBooks";
-import { critters, trapBoxSets } from "./trapping";
+import { critters, trapBoxSets, trappingLocations } from "./trapping";
 import { trophies } from "./trophies";
 import { GDrop, GItemDrop } from "./types";
 import {
@@ -127,6 +127,7 @@ export const droppers = [
   ...trees,
   ...fishingSpots,
   ...bugNests,
+  ...trappingLocations,
   ...randomEvents,
 ].map((d) => ({
   ...d,

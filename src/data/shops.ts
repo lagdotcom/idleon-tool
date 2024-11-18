@@ -1,15 +1,27 @@
 import { Coins, GItemName, Quantity } from "../flavours";
+import {
+  dementia as d,
+  dreadlo as dr,
+  godshard as go,
+  gold as g,
+  lustre as l,
+  platinum as p,
+  silver as s,
+  starfire,
+  tydal as t,
+  voidC as v,
+} from "./tools";
 import { GShop, GShopEntry } from "./types";
 
-const s = (name: string, ...stock: GShopEntry[]): GShop => ({ name, stock });
-const e = (item: GItemName, cost: Coins, stock: Quantity): GShopEntry => ({
+const shop = (name: string, ...stock: GShopEntry[]): GShop => ({ name, stock });
+const e = (item: GItemName, cost: Coins, stock: Quantity = 1): GShopEntry => ({
   item,
   cost,
   stock,
 });
 
 const shops = [
-  s(
+  shop(
     "Blunder Hills",
     e("Nomwich", 8n, 750),
     e("Hot Dog", 28n, 750),
@@ -38,7 +50,7 @@ const shops = [
     e("Talent Point Reset Fragment", 800n, 1),
   ),
 
-  s(
+  shop(
     "Encroaching Forest Villas",
     e("Hot Dog", 28n, 1000),
     e("Cheezy Pizza", 80n, 1000),
@@ -56,7 +68,7 @@ const shops = [
     e("Talent Point Reset Fragment", 800n, 1),
   ),
 
-  s(
+  shop(
     "YumYum Grotto",
     e("Kebab Sticks", 192n, 25000),
     e("Meat Pie", 320n, 25000),
@@ -81,7 +93,7 @@ const shops = [
     e("Secret Map", 40000n, 1),
   ),
 
-  s(
+  shop(
     "Faraway Piers",
     e("Copper Twine", 14000n, 1),
     e("Wormie Weight", 20000n, 1),
@@ -96,6 +108,82 @@ const shops = [
     e("Clover Stamp", 48000n, 1),
     e("Cattleprod Token", 620000n, 1),
     e("Talent Point Reset Fragment", 800n, 1),
+  ),
+
+  shop(
+    "Frostbite Towndra",
+    e("Mountain Bread", s(5, 60), 25000),
+    e("Yeti Ham", s(7, 60), 25000),
+    e("Sheepie Dairy", s(12, 40), 25000),
+    e("Cardboard Traps", g(2), 99),
+    e("Wax Skull", g(2), 99),
+    e("Weapon Upgrade Stone III", g(10), 12),
+    e("Armor Upgrade Stone III", g(6), 30),
+    e("Tool Upgrade Stone III", g(8), 21),
+    e("Decent Strength Potion", s(6), 20000),
+    e("Decent Speed Potion", s(16), 20000),
+    e("Decent Life Potion", s(8), 20000),
+    e("Prosperous Pouch", p(99, 99, 99, 96)),
+    e("Storage Chest 16", g(60)),
+    e("Storage Chest 17", g(80)),
+    e("Storage Chest 18", p(1, 40)),
+    e("Storage Chest 19", p(2)),
+    e("Storage Chest 20", p(3, 20)),
+    e("Storage Chest 21", p(5)),
+    e("Bottled Town Teleport", s(2), 60),
+    e("Talent Point Reset Fragment", s(8), 3),
+    e("Damaged Cog", d(20)),
+    e("Bottled World Town Teleport", p(4)),
+    e("Anvil Reset Whetstone", p(1, 20)),
+  ),
+
+  shop(
+    "Outer World Town",
+    e("Pile of Processor Chips", p(2, 50)),
+    e("Strung Jewels", p(10)),
+    e("Cupcake", s(60), 5000000),
+    e("Spicy Space Ribs", g(1, 60), 5000000),
+    e("Sappy DNA Splicer", p(24), 10),
+    e("Weapon Upgrade Stone IV", p(2, 40), 12),
+    e("Armor Upgrade Stone IV", p(1, 80), 30),
+    e("Tool Upgrade Stone IV", p(2, 20), 21),
+    e("Potent Strength Potion", g(1, 8), 300000),
+    e("Potent Speed Potion", g(3, 20), 300000),
+    e("Potent Life Potion", g(1, 60), 300000),
+    e("Potent EXP Potion", g(12), 300000),
+    e("Sack of Success", d(99, 99, 99, 99, 96)),
+    e("Egg Stamp", p(40)),
+    e("Spice Stamp", d(2)),
+    e("Sigil Stamp", d(28)),
+    e("Blue Tome Pages", v(40)),
+  ),
+
+  shop(
+    "Magma Rivertown",
+    e("Lemon Slice", g(3, 20), 7500000),
+    e("Grilled Cheese Nomwich", g(6, 40), 7500000),
+    e("Magma Barrel", p(12), 200000),
+    e("Weapon Upgrade Stone V", p(24), 12),
+    e("Armor Upgrade Stone V", p(12), 30),
+    e("Tool Upgrade Stone V", p(16), 21),
+    e("Refinery Stamp", d(1, 20)),
+    e("Red Tome Pages", starfire(40)),
+  ),
+
+  shop(
+    "Spirit Village",
+    e("BoneJoePickle", l(16)),
+    e("Crop Transfer Ticket", starfire(4)),
+    e("Raw Nigiri", g(28), 7500000),
+    e("Dumpling", p(2), 7500000),
+    e("Plasma Barrel", d(80), 200000),
+    e("Weapon Upgrade Stone VI", d(24), 12),
+    e("Armor Upgrade Stone VI", d(1, 80), 30),
+    e("Tool Upgrade Stone VI", d(1, 20), 21),
+    e("Forge Stamp", l(4)),
+    e("Storage Chest 26", dr(40)),
+    e("Storage Chest 27", go(10)),
+    e("Storage Chest 28", t(2, 80)),
   ),
 ];
 export default shops;

@@ -44,4 +44,9 @@ export const misc = [
   i("Galaxy Card Pack"),
   i("Smolderin Card Pack"),
   i("Dungeon Loot Dice"),
+
+  i("Pile of Processor Chips"),
+  i("Strung Jewels"),
+  i("Blue Tome Pages"),
+  i("Red Tome Pages"),
 ];

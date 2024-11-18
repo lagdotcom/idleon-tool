@@ -22,7 +22,6 @@
   }
 
   .header {
-    grid-area: header;
     font-weight: bold;
 
     img {
@@ -34,6 +33,10 @@
   .contents {
     display: grid;
     grid-template-columns: 1fr 1fr;
+
+    &.noSmall {
+      display: block;
+    }
 
     > .extra {
       border: 1px solid black;

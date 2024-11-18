@@ -1,3 +1,4 @@
+import cx from "classnames";
 import { useCallback, useState } from "react";
 import { Button } from "react-aria-components";
 
@@ -26,9 +27,12 @@ function DropperDisplay({
   return (
     <div className={styles.dropper}>
       <div className={styles.header}>
-        <img src={img} role="presentation" /> {name} ({area})
+        <img src={img} role="presentation" /> {name}
+        {area && ` (${area})`}
       </div>
-      <div className={styles.contents}>
+      <div
+        className={cx(styles.contents, { [styles.noSmall]: small.length < 1 })}
+      >
         <ul className={styles.wanted}>
           {big.map((d, n) => (
             <MiniItem key={n} name={d.item}>
@@ -36,7 +40,7 @@ function DropperDisplay({
             </MiniItem>
           ))}
         </ul>
-        {small.length && (
+        {small.length > 0 && (
           <div className={styles.extra}>
             <Button onPress={toggle}>Show/Hide Extra Drops</Button>
             {open && (
@@ -129,34 +133,38 @@ function ShopDisplay({
   return (
     <div className={styles.dropper}>
       <h3 className={styles.name}>{name}</h3>
-      <ul className={styles.wanted}>
-        {big.map((e, n) => (
-          <MiniItem key={n} name={e.item}>
-            <CoinsDisplay amount={e.cost} /> {e.stock}/day (total{" "}
-            <CoinsDisplay
-              amount={
-                e.cost *
-                BigInt((wanted.find((w) => w[0] === e.item) ?? ["", 0])[1])
-              }
-            />
-            )
-          </MiniItem>
-        ))}
-      </ul>
-      {small.length && (
-        <div className={styles.extra}>
-          <Button onPress={toggle}>Show/Hide Other Items</Button>
-          {open && (
-            <ul>
-              {small.map((e, n) => (
-                <MiniItem key={n} name={e.item}>
-                  <CoinsDisplay amount={e.cost} /> {e.stock}/day
-                </MiniItem>
-              ))}
-            </ul>
-          )}
-        </div>
-      )}
+      <div
+        className={cx(styles.contents, { [styles.noSmall]: small.length < 1 })}
+      >
+        <ul className={styles.wanted}>
+          {big.map((e, n) => (
+            <MiniItem key={n} name={e.item}>
+              <CoinsDisplay amount={e.cost} /> {e.stock}/day (total{" "}
+              <CoinsDisplay
+                amount={
+                  e.cost *
+                  BigInt((wanted.find((w) => w[0] === e.item) ?? ["", 0])[1])
+                }
+              />
+              )
+            </MiniItem>
+          ))}
+        </ul>
+        {small.length > 0 && (
+          <div className={styles.extra}>
+            <Button onPress={toggle}>Show/Hide Other Items</Button>
+            {open && (
+              <ul>
+                {small.map((e, n) => (
+                  <MiniItem key={n} name={e.item}>
+                    <CoinsDisplay amount={e.cost} /> {e.stock}/day
+                  </MiniItem>
+                ))}
+              </ul>
+            )}
+          </div>
+        )}
+      </div>
     </div>
   );
 }
