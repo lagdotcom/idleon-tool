@@ -1,4 +1,6 @@
+import { GItemName } from "../flavours";
 import { getItemMaker } from "./tools";
+import { GDropper } from "./types";
 
 const skull = getItemMaker("worship skulls");
 export const worshipSkulls = [
@@ -24,4 +26,20 @@ export const souls = [
   soul("Squishy Soul"),
   soul("Oozie Soul"),
   soul("Breezy Soul"),
+];
+
+const loc = (name: string, item: GItemName, area: string): GDropper => ({
+  type: "worship totem",
+  name,
+  area,
+  drops: [{ type: "item", item, qty: 1, chance: NaN }],
+});
+export const worshipTotems = [
+  loc("Goblin Gorfest", "Forest Soul", "Forest Outskirts"),
+  loc("Wakawaka War", "Dune Soul", "Up Up Down Down"),
+  loc("Acorn Assault", "Rooted Soul", "The Roots"),
+  loc("Frosty Firefight", "Frigid Soul", "Rollin' Tundra"),
+  loc("Clash of Cans", "Squishy Soul", "Mountainous Deugh"),
+  loc("Citric Conflict", "Oozie Soul", "OJ Bay"),
+  loc("Breezy Battle", "Breezy Soul", "Above the Clouds"),
 ];

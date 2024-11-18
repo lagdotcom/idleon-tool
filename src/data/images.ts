@@ -11,6 +11,7 @@ import _24HRTimeCandy from "../img/24_HR_Time_Candy.png";
 import _72HRTimeCandy from "../img/72_HR_Time_Candy.png";
 import _2021GiftmasBox from "../img/2021_Giftmas_Box.png";
 import Acorn from "../img/Acorn.png";
+import acornAssault from "../img/Acorn_Assault_Totem.gif";
 import acornTopper from "../img/Acorn_Topper.png";
 import adamsLeaf from "../img/Adam-s_Leaf.png";
 import adornmentOfTheHighPriest from "../img/Adornment_of_the_High_Priest.png";
@@ -180,6 +181,7 @@ import bottledWorldTownTeleport from "../img/Bottled_World_Town_Teleport.png";
 import boxStatue from "../img/Box_Statue.png";
 import boxingGloves from "../img/Boxing_Gloves.png";
 import brainstewStamps from "../img/Brainstew_Stamps.png";
+import breezyBattle from "../img/Breezy_Battle_Totem.gif";
 import breezySoul from "../img/Breezy_Soul.png";
 import breezySoulCard from "../img/Breezy_Soul_Card.png";
 import brokenMic from "../img/Broken_Mic.png";
@@ -281,9 +283,11 @@ import choppedLeek from "../img/Chopped_Leek.png";
 import choppinBagStamp from "../img/Choppin-_Bag_Stamp.png";
 import chromatiumFrogCard from "../img/Chromatium_Frog_Card.png";
 import cinderForgeCard from "../img/Cinder_Forge_Card.png";
+import citricConflict from "../img/Citric_Conflict_Totem.gif";
 import citringeCard from "../img/Citringe_Card.png";
 import claimingCashe from "../img/Claiming_Cashe.png";
 import clammieCard from "../img/Clammie_Card.png";
+import clashOfCans from "../img/Clash_of_Cans_Totem.gif";
 import classCertificate from "../img/Class_Certificate.png";
 import cloudsoundFollower from "../img/Cloudsound_Follower.png";
 import cloverStamp from "../img/Clover_Stamp.png";
@@ -611,6 +615,7 @@ import froge from "../img/Froge.png";
 import frogeCard from "../img/Froge_Card.png";
 import frostFlakeCard from "../img/Frost_Flake_Card.png";
 import frostPrince from "../img/Frost_Prince.png";
+import frostyFirefight from "../img/Frosty_Firefight_Totem.gif";
 import frozenObolOfChizoarsRage from "../img/Frozen_Obol_of_Chizoar-s_Rage.png";
 import frozenTartChain from "../img/Frozen_Tart_Chain.png";
 import fruitfly from "../img/Fruitfly.png";
@@ -674,6 +679,7 @@ import glublinMask from "../img/Glublin_Mask.png";
 import glumleeToken from "../img/Glumlee_Token.png";
 import glumleesSpecialTutorialOil from "../img/Glumlee-s_Special_Tutorial_Oil.png";
 import gnarledWand from "../img/Gnarled_Wand.png";
+import goblinGorfest from "../img/Goblin_Gorfest_Totem.gif";
 import godshardBar from "../img/Godshard_Bar.png";
 import godshardOre from "../img/Godshard_Ore.png";
 import godshardOreCard from "../img/Godshard_Ore_Card.png";
@@ -1648,6 +1654,7 @@ import volumetricMattyPouch from "../img/Volumetric_Matty_Pouch.png";
 import volumetricMiningPouch from "../img/Volumetric_Mining_Pouch.png";
 import volumetricSoulPouch from "../img/Volumetric_Soul_Pouch.png";
 import voodofish from "../img/Voodofish.png";
+import wakawakaWar from "../img/Wakawaka_War_Totem.gif";
 import wakkaCherry from "../img/Wakka_Cherry.png";
 import walkingStickCard from "../img/Walking_Stick_Card.png";
 import warpedHelmetUpgradeStone from "../img/Warped_Helmet_Upgrade_Stone.png";
@@ -3559,4 +3566,12 @@ export const imageURLs: Record<string, URLString> = Object.fromEntries([
   i("Strung Jewels", strungJewels),
   i("Blue Tome Pages", blueTomePages),
   i("Red Tome Pages", redTomePages),
+
+  i("Goblin Gorfest", goblinGorfest),
+  i("Wakawaka War", wakawakaWar),
+  i("Acorn Assault", acornAssault),
+  i("Frosty Firefight", frostyFirefight),
+  i("Clash of Cans", clashOfCans),
+  i("Citric Conflict", citricConflict),
+  i("Breezy Battle", breezyBattle),
 ]);

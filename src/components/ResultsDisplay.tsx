@@ -1,4 +1,3 @@
-import cx from "classnames";
 import { useCallback, useState } from "react";
 import { Button } from "react-aria-components";
 
@@ -30,9 +29,7 @@ function DropperDisplay({
         <img src={img} role="presentation" /> {name}
         {area && ` (${area})`}
       </div>
-      <div
-        className={cx(styles.contents, { [styles.noSmall]: small.length < 1 })}
-      >
+      <div className={styles.contents}>
         <ul className={styles.wanted}>
           {big.map((d, n) => (
             <MiniItem key={n} name={d.item}>
@@ -133,9 +130,7 @@ function ShopDisplay({
   return (
     <div className={styles.dropper}>
       <h3 className={styles.name}>{name}</h3>
-      <div
-        className={cx(styles.contents, { [styles.noSmall]: small.length < 1 })}
-      >
+      <div className={styles.contents}>
         <ul className={styles.wanted}>
           {big.map((e, n) => (
             <MiniItem key={n} name={e.item}>

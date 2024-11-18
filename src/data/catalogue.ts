@@ -4,7 +4,7 @@ import { bugCatchingNets, bugNests, bugs } from "./catching";
 import { hatchets, logsAndLeaves } from "./choppin";
 import { trees } from "./choppin";
 import { colosseumChests } from "./colosseum";
-import { refinerySalts } from "./construction";
+import { refineryRecipes, refinerySalts } from "./construction";
 import {
   accountConsumables,
   characterConsumables,
@@ -46,7 +46,7 @@ import {
 } from "./unlocks";
 import { premiumStones, upgradeStones } from "./upgrades";
 import { weapons } from "./weapons";
-import { souls, worshipSkulls } from "./worship";
+import { souls, worshipSkulls, worshipTotems } from "./worship";
 
 // https://idleon.wiki/wiki/Items
 export const items = [
@@ -128,6 +128,7 @@ export const droppers = [
   ...fishingSpots,
   ...bugNests,
   ...trappingLocations,
+  ...worshipTotems,
   ...randomEvents,
 ].map((d) => ({
   ...d,
@@ -135,4 +136,8 @@ export const droppers = [
 }));
 export type GExpandedDropper = (typeof droppers)[number];
 
-export const recipes = [...forgeRecipes, ...smithingRecipes];
+export const recipes = [
+  ...forgeRecipes,
+  ...smithingRecipes,
+  ...refineryRecipes,
+];

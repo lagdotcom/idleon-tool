@@ -63,7 +63,7 @@ export interface GItem {
   name: GItemName;
 }
 
-export type GRecipeType = "forge" | "smithing";
+export type GRecipeType = "forge" | "refinery" | "smithing";
 
 export interface GItemQty {
   item: GItemName;
@@ -99,7 +99,8 @@ export type GDropperType =
   | "node"
   | "random event"
   | "trapping location"
-  | "tree";
+  | "tree"
+  | "worship totem";
 
 export interface GDropper {
   type: GDropperType;
