@@ -21,7 +21,7 @@ export const weapons = [
   warrior("Wooden Spear"),
   warrior("Steel Axe", "TestObj7"),
   warrior("Royal Bayonet", "TestObj3"),
-  warrior("Enforced Slasher"),
+  warrior("Enforced Slasher", "EquipmentSword1"),
   warrior("The Ice Breaker"),
   warrior("Deuscythe"),
   warrior("Slimsharp Fin"),

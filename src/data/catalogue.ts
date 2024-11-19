@@ -4,7 +4,11 @@ import { bugCatchingNets, bugNests, bugs } from "./catching";
 import { hatchets, logsAndLeaves } from "./choppin";
 import { trees } from "./choppin";
 import { colosseumChests } from "./colosseum";
-import { refineryRecipes, refinerySalts } from "./construction";
+import {
+  extraConstructionRecipes,
+  refineryRecipes,
+  refinerySalts,
+} from "./construction";
 import {
   accountConsumables,
   characterConsumables,
@@ -140,4 +144,5 @@ export const recipes = [
   ...forgeRecipes,
   ...smithingRecipes,
   ...refineryRecipes,
+  ...extraConstructionRecipes,
 ];

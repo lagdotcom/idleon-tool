@@ -17,7 +17,7 @@ export const keychains = [
   i("Balloon Dog Chain"),
   i("Frozen Tart Chain", "EquipmentKeychain13"),
   i("Whatamelon Chain"),
-  i("9 Ball Chain"),
+  i("9 Ball Chain", "EquipmentKeychain15"),
   i("Pincer Hand Chain", "EquipmentKeychain16"),
   i("Gilded Key Chain"),
   i("Sushi Chain"),

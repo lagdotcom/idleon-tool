@@ -5,7 +5,7 @@ import { GDropper } from "./types";
 const skull = getItemMaker("worship skulls");
 export const worshipSkulls = [
   skull("Wax Skull", "WorshipSkull1"),
-  skull("Ceramic Skull"),
+  skull("Ceramic Skull", "WorshipSkull2"),
   skull("Slush Skull"),
   skull("Horned Skull"),
   skull("Prickle Skull"),

@@ -63,7 +63,7 @@ export interface GItem {
   name: GItemName;
 }
 
-export type GRecipeType = "forge" | "refinery" | "smithing";
+export type GRecipeType = "construction" | "forge" | "refinery" | "smithing";
 
 export interface GItemQty {
   item: GItemName;

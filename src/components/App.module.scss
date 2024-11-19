@@ -1,6 +1,7 @@
 .layout {
   display: grid;
   grid-template-areas: "left right" "todo right";
+  grid-template-columns: auto 400px;
   grid-template-rows: 1fr 100px;
   height: 100vh;
 }
@@ -16,7 +17,6 @@
 .right {
   grid-area: right;
   overflow-y: auto;
-  width: 400px;
 }
 
 .todo {

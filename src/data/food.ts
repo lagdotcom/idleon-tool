@@ -72,7 +72,7 @@ const golden = getItemMaker("golden food");
 export const goldenFood = [
   golden("Golden Peanut"),
   golden("Golden Jam", "FoodG1"),
-  golden("Golden Kebabs"),
+  golden("Golden Kebabs", "FoodG2"),
   golden("Golden Meat Pie", "FoodG3"),
   golden("Golden Nomwich", "FoodG4"),
   golden("Golden Ham"),

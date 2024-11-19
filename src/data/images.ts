@@ -542,6 +542,7 @@ import enforcedSlasher from "../img/Enforced_Slasher.png";
 import engravedBullet from "../img/Engraved_Bullet.png";
 import enragedSnakenhotepCard from "../img/Enraged_Snakenhotep_Card.png";
 import equinoxFish from "../img/Equinox_Fish.png";
+import equinoxMirror from "../img/Equinox_Mirror.png";
 import equinoxRing from "../img/Equinox_Ring.png";
 import equinoxWillowTree from "../img/Equinox_Willow_Tree.png";
 import ergonomicDNASplicer from "../img/Ergonomic_DNA_Splicer.png";
@@ -864,6 +865,7 @@ import jar from "../img/Jar.png";
 import jellyfish from "../img/Jellyfish.png";
 import jellyfishCard from "../img/Jellyfish_Card.png";
 import jobApplication from "../img/Job_Application.png";
+import journeymanRecipe from "../img/Journeyman_Recipe.png";
 import jumboShrimp from "../img/Jumbo_Shrimp.png";
 import jumboShrimpCard from "../img/Jumbo_Shrimp_Card.png";
 import jungleLogs from "../img/Jungle_Logs.png";
@@ -1238,6 +1240,7 @@ import redSporeCap from "../img/Red_Spore_Cap.png";
 import redTomePages from "../img/Red_Tome_Pages.png";
 import redoxSalts from "../img/Redox_Salts.png";
 import refineryStamp from "../img/Refinery_Stamp.png";
+import refurbishedCog from "../img/Refurbished_Cog.png";
 import reinforcedHeadband from "../img/Reinforced_Headband.png";
 import reinforcedNet from "../img/Reinforced_Net.png";
 import relicChain from "../img/Relic_Chain.png";
@@ -2096,6 +2099,7 @@ export const imageURLs: Record<string, URLString> = Object.fromEntries([
   i("Anvil Reset Whetstone", anvilResetWhetstone),
   i("Bottled Town Teleport", bottledTownTeleport),
   i("Bottled World Town Teleport", bottledWorldTownTeleport),
+  i("Equinox Mirror", equinoxMirror),
 
   i("Giftmas Box", giftmasBox),
   i("Summer Cooler", summerCooler),
@@ -2145,6 +2149,7 @@ export const imageURLs: Record<string, URLString> = Object.fromEntries([
   i("The Bobber Challenge Scroll", theBobberChallengeScroll),
   i("Dootophone", dootophone),
   i("Damaged Cog", damagedCog),
+  i("Refurbished Cog", refurbishedCog),
   i("Yondergreens Vote", yondergreensVote),
   i("Signed Contract", signedContract),
   i("Blunderhills NPC Completion Token", blunderhillsNPCCompletionToken),
@@ -2683,6 +2688,7 @@ export const imageURLs: Record<string, URLString> = Object.fromEntries([
   i("Amarok", amarokCard),
   i("Chaotic Amarok", chaoticAmarokCard),
   i("Radiant Amarok", radiantAmarokCard),
+
   i("Sandy Pot", sandyPotCard),
   i("Mimic", mimicCard),
   i("Crabcake", crabcakeCard),
@@ -2701,7 +2707,28 @@ export const imageURLs: Record<string, URLString> = Object.fromEntries([
   i("Efaunt", efauntCard),
   i("Chaotic Efaunt", chaoticEfauntCard),
   i("Gilded Efaunt", gildedEfauntCard),
+
   i("Sheepie", sheepieCard),
+  i("Frost Flake", frostFlakeCard),
+  i("Sir Stache", sirStacheCard),
+  i("Bloque", bloqueCard),
+  i("Mamooth", mamoothCard),
+  i("Snowman", snowmanCard),
+  i("Penguin", penguinCard),
+  i("Thermister", thermisterCard),
+  i("Quenchie", quenchieCard),
+  i("Cryosnake", cryosnakeCard),
+  i("Bop Box", bopBoxCard),
+  i("Neyeptune", neyeptuneCard),
+  i("Dedotated Ram", dedotatedRamCard),
+  i("Xylobone", xyloboneCard),
+  i("Bloodbone", bloodboneCard),
+  i("Crystal Cattle", crystalCattleCard),
+  i("Dilapidated Slush", dilapidatedSlushCard),
+  i("Chizoar", chizoarCard),
+  i("Chaotic Chizoar", chaoticChizoarCard),
+  i("Blighted Chizoar", blightedChizoarCard),
+
   i("Grandfrogger", grandfroggerCard),
   i("Rotting Grandfrogger", rottingGrandfroggerCard),
   i("Forlorn Grandfrogger", forlornGrandfroggerCard),
@@ -2967,6 +2994,8 @@ export const imageURLs: Record<string, URLString> = Object.fromEntries([
   i("Skullfish Pendant (Novice Recipe)", noviceRecipe),
   i("Star Talent Reset Potion (Novice Recipe)", noviceRecipe),
   i("Bucket of Slush (Apprentice Recipe)", apprenticeRecipe),
+  i("Midnight Stopwatch (Apprentice Recipe)", apprenticeRecipe),
+  i("Double Barreled DNA Splicer (Journeyman Recipe)", journeymanRecipe),
 
   i("Copper Band", copperBand),
   i("Pugilist Demise", pugilistDemise),

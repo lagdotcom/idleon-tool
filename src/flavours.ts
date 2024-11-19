@@ -6,6 +6,7 @@ type Flavour<T, FlavourT> = T & Flavouring<FlavourT>;
 
 export type Chance = Flavour<number, "Chance">;
 export type Coins = Flavour<bigint, "Coins">;
+export type Percentage = Flavour<number, "Percentage">;
 export type Quantity = Flavour<number, "Quantity">;
 
 export type GItemName = Flavour<string, "GItemName">;

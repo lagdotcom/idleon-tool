@@ -23,4 +23,7 @@ export const recipeItems = [
   i("Star Talent Reset Potion (Novice Recipe)"),
 
   i("Bucket of Slush (Apprentice Recipe)"),
+  i("Midnight Stopwatch (Apprentice Recipe)"),
+
+  i("Double Barreled DNA Splicer (Journeyman Recipe)"),
 ];

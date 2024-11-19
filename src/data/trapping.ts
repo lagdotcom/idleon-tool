@@ -1,4 +1,4 @@
-import { GItemName } from "../flavours";
+import { GItemName, Percentage } from "../flavours";
 import { getItemMaker } from "./tools";
 import { GDropper } from "./types";
 
@@ -18,9 +18,9 @@ export const trapBoxSets = [
 
 const critter = getItemMaker("critters");
 export const critters = [
-  critter("Froge"),
-  critter("Poison Froge"),
-  critter("Crabbo"),
+  critter("Froge", "Critter1"),
+  critter("Poison Froge", "Critter1A"),
+  critter("Crabbo", "Critter2"),
   critter("Mutant Crabbo"),
   critter("Scorpie"),
   critter("Crescent Scorpie"),
@@ -44,7 +44,7 @@ export const critters = [
 
 const loc = (
   item: GItemName,
-  shinyPercentage: number,
+  shinyPercentage: Percentage,
   shinyName: GItemName,
   area: string,
 ): GDropper => ({

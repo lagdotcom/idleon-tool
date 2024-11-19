@@ -46,6 +46,7 @@ export const characterConsumables = [
   char("Anvil Reset Whetstone"),
   char("Bottled Town Teleport", "rtt0"),
   char("Bottled World Town Teleport"),
+  char("Equinox Mirror"),
 ];
 
 const acc = getItemMaker("account");

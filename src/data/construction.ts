@@ -1,9 +1,10 @@
 import { getItemMaker, getRecipeMaker, mkIQ as n } from "./tools";
+import { GRecipe } from "./types";
 
 const i = getItemMaker("refinery salts");
 export const refinerySalts = [
   i("Redox Salts", "Refinery1"),
-  i("Explosive Salts"),
+  i("Explosive Salts", "Refinery2"),
   i("Spontaneity Salts"),
   i("Dioxide Synthesis"),
   i("Purple Salt"),
@@ -49,4 +50,9 @@ export const refineryRecipes = [
     n("Frigid Soul", 5),
     n("Purple Salt", 2),
   ),
+];
+
+const x = getRecipeMaker("construction");
+export const extraConstructionRecipes: GRecipe[] = [
+  x("Refurbished Cog", n("Damaged Cog")),
 ];

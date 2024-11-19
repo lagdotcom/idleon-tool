@@ -18,6 +18,7 @@ export const cards = [
   i("Nutto Card"),
   i("Crystal Carrot Card"),
   i("Wood Mushroom Card"),
+
   i("Sandy Pot Card"),
   i("Mimic Card"),
   i("Crabcake Card"),
@@ -32,6 +33,7 @@ export const cards = [
   i("Dig Doug Card"),
   i("Crystal Crabal Card"),
   i("Bandit Bob Card"),
+
   i("Copper Ore Card"),
   i("Iron Ore Card"),
   i("Gold Ore Card"),
@@ -45,6 +47,7 @@ export const cards = [
   i("Jellyfish Card"),
   i("Fly Card"),
   i("Butterfly Card"),
+
   i("Platinum Ore Card"),
   i("Dementia Ore Card"),
   i("Void Ore Card"),
@@ -60,6 +63,7 @@ export const cards = [
   i("Froge Card"),
   i("Crabbo Card"),
   i("Scorpie Card"),
+
   i("Sheepie Card"),
   i("Frost Flake Card"),
   i("Sir Stache Card"),
@@ -76,6 +80,7 @@ export const cards = [
   i("Xylobone Card"),
   i("Bloodbone Card"),
   i("Crystal Cattle Card"),
+
   i("Lustre Ore Card"),
   i("Starfire Ore Card"),
   i("Dreadlo Ore Card"),
@@ -116,6 +121,7 @@ export const cards = [
   i("Shellfish Card"),
   i("Jumbo Shrimp Card"),
   i("Caulifish Card"),
+
   i("Purp Mushroom Card"),
   i("TV Card"),
   i("Donut Card"),
@@ -144,6 +150,7 @@ export const cards = [
   i("Crawler Card"),
   i("Tremor Wurm Card"),
   i("Crystal Capybara Card"),
+
   i("Sprout Spirit Card"),
   i("Ricecake Card"),
   i("River Spirit Card"),
@@ -159,6 +166,7 @@ export const cards = [
   i("Minichief Spirit Card"),
   i("Samurai Guardian Card"),
   i("Crystal Candalight Card"),
+
   i("Poisonic Frog Card"),
   i("Globohopper Card"),
   i("King Frog Card"),
@@ -182,6 +190,7 @@ export const cards = [
   i("Glaciaxus Card"),
   i("Golden Glaciaxus Card"),
   i("Caustic Glaciaxus Card"),
+
   i("Baba Yaga Card"),
   i("Dr Defecaus Card"),
   i("Boop Card"),
@@ -209,6 +218,7 @@ export const cards = [
   i("Emperor Card"),
   i("Chaotic Emperor Card"),
   i("Sovereign Emperor Card"),
+
   i("Ghost (Event) Card"),
   i("Giftmas Blobulyte Card"),
   i("Meaning of Giftmas Card"),
