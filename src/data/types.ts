@@ -33,6 +33,7 @@ export type GItemCategory =
   | "logs & leaves"
   | "fish"
   | "bugs"
+  | "alchemy liquids"
   | "critters"
   | "souls"
   | "refinery salts"
@@ -63,7 +64,12 @@ export interface GItem {
   name: GItemName;
 }
 
-export type GRecipeType = "construction" | "forge" | "refinery" | "smithing";
+export type GRecipeType =
+  | "alchemy"
+  | "construction"
+  | "forge"
+  | "refinery"
+  | "smithing";
 
 export interface GItemQty {
   item: GItemName;
@@ -92,11 +98,13 @@ export interface GTableDrop {
 export type GDrop = GItemDrop | GTableDrop;
 
 export type GDropperType =
+  | "alchemy shop"
   | "bug nest"
   | "colosseum chest"
   | "fishing spot"
   | "monster"
   | "node"
+  | "post office"
   | "random event"
   | "trapping location"
   | "tree"
@@ -125,4 +133,12 @@ export interface GShopEntry {
 export interface GShop {
   name: string;
   stock: GShopEntry[];
+}
+
+export type GSinkType = "Alchemy" | "Post Office";
+
+export interface GSink {
+  type: GSinkType;
+  name: string;
+  inputs: GItemQty[];
 }

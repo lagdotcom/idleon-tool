@@ -1,7 +1,7 @@
 import { useCallback, useMemo, useState } from "react";
 import { Button } from "react-aria-components";
 
-import { droppers, GExpandedDropper, recipes } from "../data/catalogue";
+import { expandedDroppers, GExpandedDropper, recipes } from "../data/catalogue";
 import { materialProduction } from "../data/materials";
 import quests from "../data/quests";
 import shops from "../data/shops";
@@ -40,7 +40,7 @@ class Gatherer {
   want(wantItem: GItemName, wantQty: Quantity) {
     this.wanted[wantItem] = (this.wanted[wantItem] ?? 0) + wantQty;
 
-    const drop = droppers.filter((r) =>
+    const drop = expandedDroppers.filter((r) =>
       r.drops.find((d) => d.item === wantItem),
     );
     for (const dropper of drop) this.droppers.add(dropper);

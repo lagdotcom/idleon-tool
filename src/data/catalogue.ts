@@ -1,3 +1,9 @@
+import {
+  alchemyLiquids,
+  liquidDrops,
+  liquidRecipes,
+  liquidShop,
+} from "./alchemy";
 import { dnaSplicers } from "./breeding";
 import { cards } from "./cards";
 import { bugCatchingNets, bugNests, bugs } from "./catching";
@@ -28,6 +34,7 @@ import { monsters } from "./monsters";
 import { obols } from "./obols";
 import { pants } from "./pants";
 import { pendants } from "./pendants";
+import { postOfficeDrops, postOfficeOrders } from "./postOffice";
 import { capes, chatRings, nameTags, premiumHelmets } from "./premium";
 import { questItems } from "./questItems";
 import { randomEvents } from "./randomEvents";
@@ -82,6 +89,7 @@ export const items = [
   ...logsAndLeaves,
   ...fish,
   ...bugs,
+  ...alchemyLiquids,
   ...critters,
   ...souls,
   ...refinerySalts,
@@ -131,18 +139,25 @@ export const droppers = [
   ...trees,
   ...fishingSpots,
   ...bugNests,
+  ...liquidDrops,
+  ...postOfficeDrops,
   ...trappingLocations,
   ...worshipTotems,
   ...randomEvents,
-].map((d) => ({
+];
+
+export const expandedDroppers = droppers.map((d) => ({
   ...d,
   drops: expandDropTable(d.drops),
 }));
-export type GExpandedDropper = (typeof droppers)[number];
+export type GExpandedDropper = (typeof expandedDroppers)[number];
 
 export const recipes = [
   ...forgeRecipes,
   ...smithingRecipes,
+  ...liquidRecipes,
   ...refineryRecipes,
   ...extraConstructionRecipes,
 ];
+
+export const sinks = [...liquidShop, ...postOfficeOrders];

@@ -1,4 +1,4 @@
-import { Chance, Coins, GItemName, Quantity } from "../flavours";
+import { Chance, Coins, GItemName, Percentage, Quantity } from "../flavours";
 import { ItemCode } from "../toolbox/types";
 import {
   GDrop,
@@ -11,6 +11,8 @@ import {
   GQuest,
   GRecipe,
   GRecipeType,
+  GSink,
+  GSinkType,
   GTableDrop,
 } from "./types";
 
@@ -44,6 +46,17 @@ export const mkDrop = (
   item,
   qty,
   chance,
+});
+
+export const mkPercentageDrop = (
+  item: GItemName,
+  percentage: Percentage,
+  qty: Quantity = 1,
+): GItemDrop => ({
+  type: "item",
+  item,
+  qty,
+  chance: 100 / percentage,
 });
 
 export const mkTableDrop = (drops: GDrop[], chance: Chance): GTableDrop => ({
@@ -148,3 +161,7 @@ export const tydal = (
   s = 0,
   c = 0,
 ) => coins(c, s, g, p, d, v, l, sf, dr, go, su, t);
+
+export const getSinkMaker =
+  (type: GSinkType) =>
+  (name: string, ...inputs: GItemQty[]): GSink => ({ type, name, inputs });

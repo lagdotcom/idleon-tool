@@ -9,7 +9,7 @@ export const pants = [
   i("Dirty Coal Miner Baggy Soot Pants", "EquipmentPants18"),
   i("Bleached Designer Wode Patch Pants"),
   i("Fishing Overalls"),
-  i("Bandito Pantaloon"),
+  i("Bandito Pantaloon", "EquipmentPants23"),
   i("Gold Platelegs", "EquipmentPants4"),
   i("Adam's Leaf", "EquipmentPants16"),
   i("Amarok Hinds", "EquipmentPants17"),

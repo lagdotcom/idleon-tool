@@ -41,7 +41,7 @@ export const oresAndBars = [
   ob("Copper Bar", "CopperBar"),
   ob("Iron Bar", "IronBar"),
   ob("Gold Bar", "GoldBar"),
-  ob("Platinum Bar"),
+  ob("Platinum Bar", "PlatBar"),
   ob("Dementia Bar"),
   ob("Void Bar"),
   ob("Lustre Bar"),

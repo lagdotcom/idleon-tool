@@ -1,11 +1,16 @@
 import { GItemName, Percentage } from "../flavours";
-import { getItemMaker } from "./tools";
+import {
+  getDropperMaker,
+  getItemMaker,
+  mkDrop,
+  mkPercentageDrop,
+} from "./tools";
 import { GDropper } from "./types";
 
 const set = getItemMaker("trap box sets");
 export const trapBoxSets = [
   set("Cardboard Traps", "TrapBoxSet1"),
-  set("Silkskin Traps"),
+  set("Silkskin Traps", "TrapBoxSet2"),
   set("Wooden Traps"),
   set("Natural Traps"),
   set("Steel Traps"),
@@ -21,7 +26,7 @@ export const critters = [
   critter("Froge", "Critter1"),
   critter("Poison Froge", "Critter1A"),
   critter("Crabbo", "Critter2"),
-  critter("Mutant Crabbo"),
+  critter("Mutant Crabbo", "Critter2A"),
   critter("Scorpie"),
   critter("Crescent Scorpie"),
   critter("Mousey"),
@@ -42,31 +47,18 @@ export const critters = [
   critter("Tottoise"),
 ];
 
+const makeLocation = getDropperMaker("trapping location");
 const loc = (
   item: GItemName,
   shinyPercentage: Percentage,
   shinyName: GItemName,
   area: string,
-): GDropper => ({
-  type: "trapping location",
-  name: area,
-  area: "",
-  drops: [
-    {
-      type: "table",
-      chance: 1,
-      drops: [
-        { type: "item", item, qty: 1, chance: NaN },
-        {
-          type: "item",
-          item: shinyName,
-          qty: 1,
-          chance: 100 / shinyPercentage,
-        },
-      ],
-    },
-  ],
-});
+): GDropper =>
+  makeLocation(area, "", {
+    type: "table",
+    chance: 1,
+    drops: [mkDrop(item, NaN), mkPercentageDrop(shinyName, shinyPercentage)],
+  });
 
 export const trappingLocations = [
   loc("Froge", 5, "Poison Froge", "Jungle Perimeter"),

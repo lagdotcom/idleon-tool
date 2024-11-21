@@ -9,7 +9,7 @@ export const healthFood = [
   food("Saucy Weiner"),
   food("Kebab Sticks", "FoodHealth6"),
   food("Meat Pie", "FoodHealth7"),
-  food("Mountain Bread"),
+  food("Mountain Bread", "FoodHealth10"),
   food("Yeti Ham"),
   food("Sheepie Dairy"),
   food("Cupcake"),

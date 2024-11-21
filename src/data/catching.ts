@@ -33,7 +33,7 @@ const net = getItemMaker("bug catching nets");
 export const bugCatchingNets = [
   net("Copper Netted Net", "CatchingNet2"),
   net("Reinforced Net", "CatchingNet3"),
-  net("Golden Net"),
+  net("Golden Net", "CatchingNet4"),
   net("Platinet"),
   net("Dementia Net"),
   net("Void Imperium Net"),

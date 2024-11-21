@@ -9,7 +9,7 @@ export const stamps = [
   i("Target Stamp", "StampA5"),
   i("Shield Stamp"),
   i("Longsword Stamp"),
-  i("Kapow Stamp"),
+  i("Kapow Stamp", "StampA8"),
   i("Fist Stamp"),
   i("Battleaxe Stamp"),
   i("Agile Stamp"),

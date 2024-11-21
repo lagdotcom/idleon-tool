@@ -10,7 +10,8 @@
     "watch": "node scripts/watch.mjs",
     "start": "node scripts/watch.mjs",
     "start-prod": "node scripts/watch.mjs production",
-    "codes": "ts-node src/itemCodes.ts"
+    "codes": "ts-node src/itemCodes.ts",
+    "iinfo": "ts-node src/info.ts"
   },
   "dependencies": {
     "@emotion/react": "^11.13.3",
@@ -26,6 +27,7 @@
     "@types/eslint__js": "^8.42.3",
     "@types/node": "^22.9.0",
     "@types/react-dom": "^18.3.1",
+    "@types/readline-sync": "^1.4.8",
     "dotenv": "^16.4.5",
     "esbuild": "^0.24.0",
     "esbuild-sass-plugin": "^3.3.1",
@@ -35,6 +37,7 @@
     "eslint-plugin-react": "^7.37.2",
     "eslint-plugin-react-hooks": "^5.1.0-rc-fb9a90fa48-20240614",
     "eslint-plugin-simple-import-sort": "^12.1.1",
+    "levenshtein-edit-distance": "^3.0.1",
     "postcss": "^8.4.49",
     "postcss-modules": "^6.0.1",
     "prettier": "^3.3.3",

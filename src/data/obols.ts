@@ -35,7 +35,7 @@ export const obols = [
   i("Silver Obol of Megakill"),
   i("Silver Obol of Moderate Mining"),
   i("Silver Obol of Pocket Change"),
-  i("Silver Obol of Pop Pop"),
+  i("Silver Obol of Pop Pop", "ObolSilverPop"),
   i("Silver Obol of Puny Pikes"),
   i("Silver Obol of Trapping"),
   i("Silver Obol of Worship"),
