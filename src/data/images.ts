@@ -926,6 +926,7 @@ import lemonSlice from "../img/Lemon_Slice.png";
 import lemonyChoco from "../img/Lemony_Choco.png";
 import lightLantern from "../img/Light_Lantern.png";
 import lilMiningBaggyStamp from "../img/Lil-_Mining_Baggy_Stamp.png";
+import liquidNitrogen from "../img/Liquid_Nitrogen.png";
 import literalElephant from "../img/Literal_Elephant.png";
 import littleWoodenKatana from "../img/Little_Wooden_Katana.png";
 import loggerHeels from "../img/Logger_Heels.png";
@@ -1589,12 +1590,14 @@ import topHat from "../img/Top_Hat.png";
 import tornJeans from "../img/Torn_Jeans.png";
 import totallyNormalBag from "../img/Totally_Normal_and_not_fake_Bag.png";
 import tottoise from "../img/Tottoise.png";
+import toxicMercury from "../img/Toxic_Mercury.png";
 import toxicSludge from "../img/Toxic_Sludge.png";
 import tPPeteToken from "../img/TP_Pete_Token.png";
 import trafficCone from "../img/Traffic_Cone.png";
 import trailblazer from "../img/Trailblazer.png";
 import trashTunaNametag from "../img/Trash_Tuna_Nametag.png";
 import tremorWurmCard from "../img/Tremor_Wurm_Card.png";
+import trenchSeawater from "../img/Trench_Seawater.png";
 import triadEssenceStamp from "../img/Triad_Essence_Stamp.png";
 import trimmedRunePlatelegs from "../img/Trimmed_Rune_Platelegs.png";
 import tripleThreat from "../img/Triple_Threat.png";
@@ -1663,6 +1666,7 @@ import walkingStickCard from "../img/Walking_Stick_Card.png";
 import warpedHelmetUpgradeStone from "../img/Warped_Helmet_Upgrade_Stone.png";
 import warpedWeaponUpgradeStone from "../img/Warped_Weapon_Upgrade_Stone.png";
 import wartoothChain from "../img/Wartooth_Chain.png";
+import waterDroplets from "../img/Water_Droplets.png";
 import waxSkull from "../img/Wax_Skull.png";
 import wealthRing from "../img/Wealth_Ring.png";
 import wealthyWallet from "../img/Wealthy_Wallet.png";
@@ -3603,4 +3607,9 @@ export const imageURLs: Record<string, URLString> = Object.fromEntries([
   i("Clash of Cans", clashOfCans),
   i("Citric Conflict", citricConflict),
   i("Breezy Battle", breezyBattle),
+
+  i("Water Droplets", waterDroplets),
+  i("Liquid Nitrogen", liquidNitrogen),
+  i("Trench Seawater", trenchSeawater),
+  i("Toxic Mercury", toxicMercury),
 ]);
