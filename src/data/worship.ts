@@ -20,7 +20,7 @@ export const worshipSkulls = [
 const soul = getItemMaker("souls");
 export const souls = [
   soul("Forest Soul", "Soul1"),
-  soul("Dune Soul"),
+  soul("Dune Soul", "Soul2"),
   soul("Rooted Soul"),
   soul("Frigid Soul"),
   soul("Squishy Soul"),

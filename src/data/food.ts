@@ -78,7 +78,7 @@ export const goldenFood = [
   golden("Golden Ham"),
   golden("Golden Bread", "FoodG6"),
   golden("Golden Ribs"),
-  golden("Golden Cheese"),
+  golden("Golden Cheese", "FoodG8"),
   golden("Golden Grilled Cheese Nomwich"),
   golden("Golden Hampter Gummy Candy"),
   golden("Golden Nigiri"),

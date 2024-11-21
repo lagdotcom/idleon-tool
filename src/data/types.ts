@@ -135,7 +135,12 @@ export interface GShop {
   stock: GShopEntry[];
 }
 
-export type GSinkType = "Alchemy" | "Post Office";
+export type GSinkType =
+  | "alchemy bubble"
+  | "alchemy shop"
+  | "alchemy vial"
+  | "post office"
+  | "stamp";
 
 export interface GSink {
   type: GSinkType;

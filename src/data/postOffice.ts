@@ -5,7 +5,7 @@ import {
   mkPercentageDrop as pd,
 } from "./tools";
 
-const order = getSinkMaker("Post Office");
+const order = getSinkMaker("post office");
 export const postOfficeOrders = [
   order(
     "Simple Shippin'",

@@ -1,8 +1,8 @@
 import {
   alchemyLiquids,
-  liquidDrops,
-  liquidRecipes,
-  liquidShop,
+  alchemyDroppers,
+  alchemyRecipes,
+  alchemySinks,
 } from "./alchemy";
 import { dnaSplicers } from "./breeding";
 import { cards } from "./cards";
@@ -43,7 +43,7 @@ import { rings } from "./rings";
 import { shirts } from "./shirts";
 import { shoes } from "./shoes";
 import { smithingRecipes } from "./smithing";
-import { stamps } from "./stamps";
+import { stamps, stampSinks } from "./stamps";
 import { statues } from "./statues";
 import { specialTalentBooks } from "./talentBooks";
 import { critters, trapBoxSets, trappingLocations } from "./trapping";
@@ -139,7 +139,7 @@ export const droppers = [
   ...trees,
   ...fishingSpots,
   ...bugNests,
-  ...liquidDrops,
+  ...alchemyDroppers,
   ...postOfficeDrops,
   ...trappingLocations,
   ...worshipTotems,
@@ -155,9 +155,9 @@ export type GExpandedDropper = (typeof expandedDroppers)[number];
 export const recipes = [
   ...forgeRecipes,
   ...smithingRecipes,
-  ...liquidRecipes,
+  ...alchemyRecipes,
   ...refineryRecipes,
   ...extraConstructionRecipes,
 ];
 
-export const sinks = [...liquidShop, ...postOfficeOrders];
+export const sinks = [...stampSinks, ...alchemySinks, ...postOfficeOrders];

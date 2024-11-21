@@ -35,7 +35,7 @@ export const helmets = [
   i("Skulled Helmet of the Divine"),
   i("Marbiglass Headdress"),
   i("Crown of the Gods"),
-  i("White Headband"),
+  i("White Headband", "EquipmentHats5"),
   i("Green Headband", "EquipmentHats6"),
   i("Red Headband"),
   i("Purple Tupacband"),

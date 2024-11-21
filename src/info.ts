@@ -104,7 +104,7 @@ async function main() {
     const matches = sinks.filter((s) => s.inputs.find((q) => q.item === name));
     if (matches.length)
       console.log(
-        `Used in: ${matches.map((s) => `${s.name} (x${s.inputs.find((q) => q.item === name)?.qty})`).join(", ")}`,
+        `Used in: ${matches.map((s) => `${s.name} (${s.type})`).join(", ")}`,
       );
   }
 }

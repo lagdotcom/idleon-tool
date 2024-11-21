@@ -10,7 +10,7 @@ export const materials = [
   i("Chain Link", "CraftMat7"),
   i("Leather Hide", "CraftMat9"),
   i("Pinion Spur", "CraftMat8"),
-  i("Lugi Bracket"),
+  i("Lugi Bracket", "CraftMat10"),
   i("Purple Screw"),
   i("Thingymabob"),
   i("Tangled Cords"),
