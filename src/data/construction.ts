@@ -5,7 +5,7 @@ const i = getItemMaker("refinery salts");
 export const refinerySalts = [
   i("Redox Salts", "Refinery1"),
   i("Explosive Salts", "Refinery2"),
-  i("Spontaneity Salts"),
+  i("Spontaneity Salts", "Refinery3"),
   i("Dioxide Synthesis"),
   i("Purple Salt"),
   i("Nullo Salt"),

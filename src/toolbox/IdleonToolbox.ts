@@ -1,4 +1,28 @@
-import { BundleCode, CardCode, CharIndex, ClassCode, ItemCode } from "./types";
+import { Percentage } from "../flavours";
+import {
+  AccountName,
+  AFKTarget,
+  BubbleCode,
+  BundleCode,
+  CardCode,
+  CharIndex,
+  ClassCode,
+  CogCode,
+  CritterCode,
+  FishingAdornmentCode,
+  FishingLureCode,
+  InvBagCode,
+  InvStorageCode,
+  ItemCode,
+  MapCode,
+  MillisecondTimestamp,
+  MonsterCode,
+  NPCCode,
+  QuestCode,
+  Seconds,
+  StarSign,
+  UnixTimestamp,
+} from "./types";
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 export type EscapedJson<T> = string;
@@ -6,20 +30,20 @@ export type EscapedJson<T> = string;
 export type numberQ = `${number}`;
 
 export interface TimeAway {
-  Arcade: number;
-  GlobalTime: number;
-  Player: number;
-  Sailing: number;
-  Construction: number;
-  Printer: number;
-  Cauldron: number;
-  Cooking: number;
-  DailyRewards: number;
-  BookLib: number;
-  Pets: number;
-  ShopRestock: number;
-  PostOfficeRefresh: number;
-  Forge: number;
+  Arcade: UnixTimestamp;
+  GlobalTime: UnixTimestamp;
+  Player: UnixTimestamp;
+  Sailing: UnixTimestamp;
+  Construction: UnixTimestamp;
+  Printer: UnixTimestamp;
+  Cauldron: UnixTimestamp;
+  Cooking: UnixTimestamp;
+  DailyRewards: UnixTimestamp;
+  BookLib: UnixTimestamp;
+  Pets: UnixTimestamp;
+  ShopRestock: UnixTimestamp;
+  PostOfficeRefresh: UnixTimestamp;
+  Forge: UnixTimestamp;
 }
 
 export interface DataArray<T> {
@@ -81,36 +105,22 @@ export interface ObolInvMap {
   AGI: number;
 }
 
-export interface EMm1 {
-  Upgrade_Slots_Left: number;
-  Weapon_Power: number;
-  Speed: number;
-  Reach: number;
-  Power: number;
-  Defence: number;
-  STR: number;
-  AGI: number;
-  WIS: number;
-  LUK: number;
+export interface EnhanceInfo {
+  Weapon_Power?: number;
+  Speed?: number;
+  Reach?: number;
+  Power?: number;
+  Defence?: number;
+  STR?: number;
+  AGI?: number;
+  WIS?: number;
+  LUK?: number;
+  UQ1txt?: number;
+  UQ1val?: number;
+  UQ2val?: number;
+  UQ2txt?: number;
 }
-export interface EMm0 extends EMm1 {
-  UQ1val: number;
-  UQ2val: number;
-}
-
-export interface IMm {
-  Weapon_Power: number;
-  Speed: number;
-  Reach: number;
-  Power: number;
-  Defence: number;
-  STR: number;
-  AGI: number;
-  WIS: number;
-  LUK: number;
-  UQ1txt: number;
-  UQ2txt: number;
-}
+export type UpgradeInfo = EnhanceInfo & { Upgrade_Slots_Left: number };
 
 export type Guild = [
   number[],
@@ -173,6 +183,343 @@ export type Gaming = [
   number,
 ];
 
+export type PrinterInfo = [
+  number,
+  number,
+  number,
+  number,
+  number,
+
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+  ItemCode | "Blank",
+  number,
+];
+
+export type CYKeysAll = [
+  forestVillaKey: number,
+  efauntsTombKey: number,
+  chizoarsCavernKey: number,
+  trollsEnclaveKey: number,
+  kruksVolcanoKey: number,
+  number,
+  number,
+  number,
+];
+
+export interface BasicCogInfo {
+  a?: number; // + Build Rate/HR
+  b?: number; // + Construct EXP/HR
+  c?: number; // + Flaggy Rate/HR
+}
+export interface BoostCogInfo {
+  h: "adjacent" | "diagonal";
+  d?: Percentage; // +% Bonus Construct EXP
+  e?: Percentage; // +% Build Rate (to cogs)
+  g?: Percentage; // +% Flaggy Rate (to cogs)
+}
+export type CogInfo = BasicCogInfo | (BasicCogInfo & BoostCogInfo);
+
+export type ColosseumHighScores = [
+  number,
+  sandstone: number,
+  dewdrop: number,
+  chillsnap: number,
+  astro: number,
+  molten: number,
+  whimsical: number,
+  number,
+];
+
+export type MiniGameHighScores = [
+  chopping: number,
+  fishing: number,
+  catching: number,
+  mining: number,
+  number,
+  number,
+  number,
+  number,
+  number,
+  number,
+  number,
+  number,
+  number,
+  number,
+  number,
+  number,
+];
+
+export type ShrineInfo = [
+  map: MapCode,
+  number,
+  number,
+  level: number,
+  progress: number,
+  number,
+];
+
+export type TrapInfo = [
+  map: MapCode,
+  x: number,
+  y: number,
+  critter: CritterCode,
+  number,
+  number,
+  duration: Seconds,
+  number,
+  number,
+  number,
+];
+
 export interface DataJson {
   AchieveReg: EscapedJson<number[]>;
   AnvilCraftStatus: EscapedJson<number[][]>;
@@ -189,9 +536,9 @@ export interface DataJson {
   bun_i: number;
   BundlesReceived: EscapedJson<Record<BundleCode, 1>>;
   Captains: EscapedJson<number[][]>;
-  Cards0: EscapedJson<Record<string, number>>;
+  Cards0: EscapedJson<Record<CardCode, number>>;
   Cards1: EscapedJson<string[]>;
-  CauldronBubbles: EscapedJson<[0 | string, number, number][]>;
+  CauldronBubbles: EscapedJson<(BubbleCode | 0)[]>;
   CauldronInfo: DataArray<number>[];
   CauldronJobs0: EscapedJson<number[]>;
   CauldronJobs1: EscapedJson<number[]>;
@@ -201,10 +548,10 @@ export interface DataJson {
   ChestOrder: (ItemCode | "Blank" | "LockedInvSpace")[];
   ChestQuantity: number[];
   CloudsaveTimer: number;
-  CMm: EscapedJson<Record<numberQ, EMm0>>;
+  CMm: EscapedJson<Record<numberQ, EnhanceInfo>>;
   CMmLENGTH: number;
-  CogM: EscapedJson<Record<numberQ, { a: number; b: number; c: number }>>;
-  CogO: EscapedJson<string[]>;
+  CogM: EscapedJson<Record<numberQ, CogInfo>>;
+  CogO: EscapedJson<("Blank" | CogCode | `Player_${string}`)[]>;
   Cooking: EscapedJson<number[][]>;
   CSver: number;
   CYAFKdoubles: number;
@@ -216,7 +563,7 @@ export interface DataJson {
   CYDeliveryBoxStreak: number;
   CYGems: number;
   CYGoldPens: number;
-  CYKeysAll: number[];
+  CYKeysAll: CYKeysAll;
   CYNPC: number[];
   CYObolFragments: number;
   CYSilverPens: number;
@@ -226,9 +573,12 @@ export interface DataJson {
   DoOnceREAL: number;
   Dream: number[];
   DungUpg: EscapedJson<number[][]>;
-  FamValColosseumHighscores: number[];
-  FamValFishingToolkitOwned: DataArray<number>[];
-  FamValMinigameHiscores: number[];
+  FamValColosseumHighscores: ColosseumHighScores;
+  FamValFishingToolkitOwned: [
+    DataArray<FishingLureCode>,
+    DataArray<FishingAdornmentCode>,
+  ];
+  FamValMinigameHiscores: MiniGameHighScores;
   FamValWorldSelected: number;
   FarmCrop: EscapedJson<unknown>;
   FarmPlot: EscapedJson<[number[]]>;
@@ -248,13 +598,13 @@ export interface DataJson {
   Guild: EscapedJson<Guild>;
   HintStatus: EscapedJson<(1 | -1)[][]>;
   Holes: EscapedJson<number[][]>;
-  InvStorageUsed: EscapedJson<Record<numberQ, numberQ>>;
-  KRbest: EscapedJson<Record<string, number>>;
+  InvStorageUsed: EscapedJson<Record<InvStorageCode, numberQ>>;
+  KRbest: EscapedJson<Record<MonsterCode, number>>;
   Lab: EscapedJson<number[][]>;
   Meals: EscapedJson<number[][]>;
   MoneyBANK: number;
   Ninja: EscapedJson<unknown>;
-  ObolEqMAPz1: EscapedJson<unknown>;
+  ObolEqMAPz1: EscapedJson<Record<numberQ, unknown>>;
   ObolEqMAPz2: EscapedJson<unknown>;
   ObolEqO1: (
     | ItemCode
@@ -270,9 +620,9 @@ export interface DataJson {
   OptLacc: unknown[];
   Pets: EscapedJson<[string, number, number, number][]>;
   PetsStored: EscapedJson<[string, number, number, number][]>;
-  PostOfficeInfo: DataArray<number | string>[];
   PostOfficeInfo0: DataArray<string | number>[];
   PostOfficeInfo1: DataArray<number>[];
+  PostOfficeInfo2: DataArray<string | number>[];
   PrayOwned: EscapedJson<number[]>;
   Print: EscapedJson<("Blank" | 0)[]>;
   PrinterXtra: unknown[];
@@ -284,11 +634,11 @@ export interface DataJson {
   ServerGems: number;
   ServerGemsReceived: number;
   ShopStock: DataArray<number>[];
-  Shrine: EscapedJson<number[][]>;
+  Shrine: EscapedJson<ShrineInfo[]>;
   SSprog: EscapedJson<[string, number][]>;
   StampLv: DataArray<number>[];
   StampLvM: [StampLevel, StampLevel, StampLevel];
-  StarSg: EscapedJson<Record<string, 1>>;
+  StarSg: EscapedJson<Record<StarSign, 1>>;
   SteamAchieve: EscapedJson<number[]>;
   StuG: EscapedJson<number[]>;
   Summon: EscapedJson<number[][]>;
@@ -304,7 +654,7 @@ export interface DataJson {
   Tower: EscapedJson<number[]>;
   WeeklyBoss: EscapedJson<Record<string, number>>;
 
-  [key: `AFKtarget_${CharIndex}`]: string;
+  [key: `AFKtarget_${CharIndex}`]: AFKTarget;
   [key: `AnvilPA_${CharIndex}`]: DataArray<number>[];
   [key: `AnvilPAselect_${CharIndex}`]: number[];
   [key: `AnvilPAstats_${CharIndex}`]: number[];
@@ -317,9 +667,9 @@ export interface DataJson {
   [key: `CharacterClass_${CharIndex}`]: ClassCode;
   [key: `CharSAVED_${CharIndex}`]: number;
   [key: `CSetEq_${CharIndex}`]: EscapedJson<Record<string, number>>;
-  [key: `CurrentMap_${CharIndex}`]: number;
-  [key: `EMm0_${CharIndex}`]: EscapedJson<Record<numberQ, EMm0>>;
-  [key: `EMm1_${CharIndex}`]: EscapedJson<Record<numberQ, EMm1>>;
+  [key: `CurrentMap_${CharIndex}`]: MapCode;
+  [key: `EMm0_${CharIndex}`]: EscapedJson<Record<numberQ, UpgradeInfo>>;
+  [key: `EMm1_${CharIndex}`]: EscapedJson<Record<numberQ, UpgradeInfo>>;
   [key: `EMmLENGTH0_${CharIndex}`]: number;
   [key: `EMmLENGTH1_${CharIndex}`]: number;
   [key: `EquipOrder_${CharIndex}`]: DataArray<ItemCode | "Blank">[];
@@ -328,9 +678,9 @@ export interface DataJson {
   [key: `ExpReq0_${CharIndex}`]: number[];
   [key: `FoodCD_${CharIndex}`]: number[];
   [key: `FoodSlO_${CharIndex}`]: number;
-  [key: `IMm_${CharIndex}`]: EscapedJson<Record<numberQ, IMm>>;
+  [key: `IMm_${CharIndex}`]: EscapedJson<Record<numberQ, UpgradeInfo>>;
   [key: `IMmLENGTH_${CharIndex}`]: number;
-  [key: `InvBagsUsed_${CharIndex}`]: EscapedJson<Record<numberQ, number>>;
+  [key: `InvBagsUsed_${CharIndex}`]: EscapedJson<Record<InvBagCode, unknown>>;
   [key: `InventoryOrder_${CharIndex}`]: (
     | ItemCode
     | "Blank"
@@ -342,7 +692,7 @@ export interface DataJson {
   [key: `Lv0_${CharIndex}`]: number[];
   [key: `MaxCarryCap_${CharIndex}`]: EscapedJson<CarryCap>;
   [key: `Money_${CharIndex}`]: number;
-  [key: `NPCdialogue_${CharIndex}`]: EscapedJson<Record<string, number>>;
+  [key: `NPCdialogue_${CharIndex}`]: EscapedJson<Record<NPCCode, number>>;
   [key: `ObolEqMAP_${CharIndex}`]: EscapedJson<Record<numberQ, unknown>>;
   [key: `ObolEqO0_${CharIndex}`]: (
     | ItemCode
@@ -356,21 +706,32 @@ export interface DataJson {
   [key: `OptL_${CharIndex}`]: number[];
   [key: `OptL2_${CharIndex}`]: DataArray<number | string>[];
   [key: `PlayerStuff_${CharIndex}`]: EscapedJson<number[]>;
-  [key: `PldTraps_${CharIndex}`]: EscapedJson<number[][]>;
+  [key: `PldTraps_${CharIndex}`]: EscapedJson<TrapInfo[]>;
   [key: `POu_${CharIndex}`]: EscapedJson<number[]>;
   [key: `Prayers_${CharIndex}`]: EscapedJson<number[]>;
-  [key: `PTimeAway_${CharIndex}`]: number;
+  [key: `PTimeAway_${CharIndex}`]: UnixTimestamp;
   [key: `PVFishingSpotIndex_${CharIndex}`]: number;
-  [key: `PVFishingToolkit_${CharIndex}`]: [number, number];
+  [key: `PVFishingToolkit_${CharIndex}`]: [
+    FishingLureCode,
+    FishingAdornmentCode,
+  ];
   [key: `PVGender_${CharIndex}`]: number;
   [key: `PVInstaRevives_${CharIndex}`]: number;
   [key: `PVMinigamePlays_${CharIndex}`]: number;
-  [key: `PVStatList_${CharIndex}`]: number[];
+  [key: `PVStatList_${CharIndex}`]: [
+    strength: number,
+    agility: number,
+    wisdom: number,
+    luck: number,
+    primaryLevel: number,
+  ];
   [key: `PVtStarSign_${CharIndex}`]: string;
-  [key: `QuestComplete_${CharIndex}`]: EscapedJson<Record<string, -1 | 0 | 1>>;
+  [key: `QuestComplete_${CharIndex}`]: EscapedJson<
+    Record<QuestCode, -1 | 0 | 1>
+  >;
   [key: `QuestHm_${CharIndex}`]: DataArray<number | string>[];
   [key: `QuestStatus_${CharIndex}`]: EscapedJson<
-    Record<string, (number | numberQ)[]>
+    Record<QuestCode, (number | numberQ)[]>
   >;
   [key: `RespTime_${CharIndex}`]: number;
   [key: `SL_${CharIndex}`]: EscapedJson<Record<numberQ, number>>;
@@ -386,7 +747,7 @@ export interface IdleonToolboxJson {
     e: string;
     l: string[];
     o: number[];
-    t: number;
+    t: MillisecondTimestamp;
     x: number;
     y: number;
   };
@@ -404,7 +765,7 @@ export interface IdleonToolboxJson {
       [number, number, number],
     ];
     members: {
-      a: string;
+      a: AccountName;
       b: string;
       c: number;
       d: number;
@@ -466,11 +827,11 @@ export interface IdleonToolboxJson {
     TomeOn: number;
     TomePct: number[];
     voteCategories: number[];
-    votePercent: number[];
+    votePercent: Percentage[];
     WhateverKeyYouWant: string;
     worldCounts: number[];
     WorldSelRNG: number;
   };
-  accountCreateTime: number;
-  lastUpdated: number;
+  accountCreateTime: MillisecondTimestamp;
+  lastUpdated: MillisecondTimestamp;
 }

@@ -3,7 +3,7 @@ import { getItemMaker } from "./tools";
 const i = getItemMaker("keychains");
 export const keychains = [
   i("Simple Key Chain"),
-  i("Leafy Chain"),
+  i("Leafy Chain", "EquipmentKeychain1"),
   i("Red Sneaker Chain"),
   i("Wartooth Chain", "EquipmentKeychain3"),
   i("8 Ball Chain"),

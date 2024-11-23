@@ -38,7 +38,7 @@ export const monsterDrops = [
   i("Yellow Snowflake"),
   i("Moustache Comb", "SnowA3"),
   i("Ram Wool"),
-  i("Sticky Stick"),
+  i("Sticky Stick", "SnowB1"),
   i("Mamooth Tusk"),
   i("Ice Age 3"),
   i("Snow Ball"),
