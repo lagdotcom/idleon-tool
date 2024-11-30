@@ -19,22 +19,26 @@ export type MonsterTarget =
   | "crabcake"
   | "demonP"
   | "eye"
+  | "flake"
   | "frogBIG"
   | "frogG"
   | "jarSand"
+  | "mamoth"
   | "mimicA"
   | "moonman"
   | "mushG"
   | "mushW"
   | "plank"
   | "poopSmall"
+  | "potato"
   | "sandcastle"
   | "sandgiant"
   | "slimeG"
   | "snailZ"
   | "snowball"
   | "stache"
-  | "steak";
+  | "steak"
+  | "thermostat";
 
 export type MonsterCode =
   | MonsterTarget

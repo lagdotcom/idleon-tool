@@ -2,6 +2,7 @@ import { readFileSync } from "fs";
 
 import { items } from "./data/catalogue";
 import { IdleonToolboxJson } from "./toolbox/IdleonToolbox";
+import { getAllOwnedItems } from "./toolbox/tools";
 import { CharIndex } from "./toolbox/types";
 
 function* enumerate<T, I extends number = number>(
@@ -77,6 +78,11 @@ function main() {
 
     const name = items.find((i) => i.code === code)?.name;
     console.log(`${code} (${name ?? "???"})`);
+  }
+
+  console.log("\n-- Total Owned Items:");
+  for (const [name, qty] of getAllOwnedItems(json)) {
+    console.log(`${name} x${qty}`);
   }
 }
 main();

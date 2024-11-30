@@ -27,7 +27,7 @@ const rod = getItemMaker("fishing rods");
 export const fishingRods = [
   rod("Copper Fish Rod", "FishingRod2"),
   rod("Iron Fishing Rod", "FishingRod3"),
-  rod("Gold Fishing Rod"),
+  rod("Gold Fishing Rod", "FishingRod4"),
   rod("Plat Fishing Rod"),
   rod("Dementia Rod for Fishing"),
   rod("Void Imperium Rod"),

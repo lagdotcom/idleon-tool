@@ -19,13 +19,14 @@ import {
   DropTable17,
   DropTable18,
 } from "./tables";
-import { getDropperMaker, mkDrop as d, mkTableDrop as t } from "./tools";
+import { getAFKDropperMaker, mkDrop as d, mkTableDrop as t } from "./tools";
 
-const m = getDropperMaker("monster");
+const m = getAFKDropperMaker("monster");
 export const monsters = [
   m(
     "Green Mushroom",
     "Spore Meadows",
+    "mushG",
     d("Spore Cap", 4.55),
     d("Green Mushroom Card", 10000),
     d("Nomwich", 200, 3),
@@ -37,6 +38,7 @@ export const monsters = [
   m(
     "Red Mushroom",
     "Birch Enclave",
+    undefined,
     d("Red Spore Cap", 5),
     d("Red Mushroom Card", 10000),
     t(DropTable1, 192),
@@ -44,6 +46,7 @@ export const monsters = [
   m(
     "Frog",
     "Froggy Fields",
+    "frogG",
     d("Frog Leg", 4.76),
     d("Frog Card", 10000),
     d("Ketchup Bottle", 2),
@@ -56,6 +59,7 @@ export const monsters = [
   m(
     "Bored Bean",
     "Valley of the Beans",
+    "beanG",
     d("Bean Slices", 5),
     d("Bored Bean Card", 10300),
     d("Armor Upgrade Stone II", 20000),
@@ -65,6 +69,7 @@ export const monsters = [
   m(
     "Slime",
     "Jungle Perimeter",
+    "slimeG",
     d("Slime Sludge", 5.26),
     d("Slime Card", 10500),
     d("Goo Galoshes (Beginner Recipe)", 33300),
@@ -75,6 +80,7 @@ export const monsters = [
   m(
     "Baby Boa",
     "Winding Willows",
+    undefined,
     d("Snake Skin", 5.56),
     d("Baby Boa Card", 10600),
     d("Cheezy Pizza", 200, 3),
@@ -86,6 +92,7 @@ export const monsters = [
   m(
     "Carrotman",
     "Vegetable Patch",
+    "carrotO",
     d("Carrot Cube", 5.88),
     d("Carrotman Card", 11100),
     d("Cheezy Pizza", 167, 4),
@@ -95,6 +102,7 @@ export const monsters = [
   m(
     "Glublin",
     "Forest Outskirts",
+    undefined,
     d("Glublin Ear", 6.25),
     d("Glublin Card", 11600),
     d("Helmet Upgrade Stone I", 6670),
@@ -104,6 +112,7 @@ export const monsters = [
   m(
     "Wode Board",
     "Encroaching Forest Villas",
+    undefined,
     d("Plank", 6.67),
     d("Wode Board Card", 12500),
     d("Bleached Designer Wode Patch Pants (Beginner Recipe)", 33300),
@@ -114,6 +123,7 @@ export const monsters = [
   m(
     "Gigafrog",
     "Tucked Away",
+    "frogBIG",
     d("Bullfrog Horn", 7.14),
     d("Gigafrog Card", 14300),
     d("Battleaxe Stamp", 33300),
@@ -125,6 +135,7 @@ export const monsters = [
   m(
     "Poop",
     "Poopy Sewers",
+    "poopSmall",
     d("Corn Kernels", 4.17),
     d("Poop Card", 16700),
     d("Golden Plop", 20000),
@@ -135,16 +146,18 @@ export const monsters = [
   m(
     "Rat",
     "Rats Nest",
+    undefined,
     d("Rats Tail", 5.26),
     d("Rat Card", 20000),
     d("Employment Statistics", 10),
     d("Instablab Follower", 6.25),
     t(DropTable3b, 167),
   ),
-  m("Boop", "Meel's Crypt", d("Bonemeal", 2), d("Boop Card", 667)),
+  m("Boop", "Meel's Crypt", undefined, d("Bonemeal", 2), d("Boop Card", 667)),
   m(
     "Walking Stick",
     "The Base of the Bark",
+    undefined,
     d("Stick", 4.76),
     d("Walking Stick Card", 16700),
     d("Woodular Circle", 20000),
@@ -154,6 +167,7 @@ export const monsters = [
   m(
     "Nutto",
     "Hollowed Trunk",
+    "acorn",
     d("Acorn", 4.35),
     d("Nutto Card", 20000),
     t(DropTable3c, 154),
@@ -161,6 +175,7 @@ export const monsters = [
   m(
     "Wood Mushroom",
     "Where the Branches End",
+    "mushW",
     d("Red Frisbee", 100000),
     d("Woodular Circle", 13300),
     d("Wood Mushroom Card", 10000),
@@ -169,6 +184,7 @@ export const monsters = [
   m(
     "Crystal Carrot",
     "Blunder Hills",
+    undefined,
     d("Crystal Carrot Card", 100),
     d("Crystallin", 10),
     d("Quest Chungus (Special Talent Book)", 200),
@@ -183,6 +199,7 @@ export const monsters = [
   m(
     "Baba Yaga",
     "Birch Enclave",
+    undefined,
     d("Just Exp (Special Talent Book)", NaN),
     d("Frothy Malk (Special Talent Book)", NaN),
     d("Baba Yaga Card", 33.3),
@@ -196,6 +213,7 @@ export const monsters = [
   m(
     "Dr Defecaus",
     "The Office",
+    undefined,
     d("Just Exp (Special Talent Book)", NaN),
     d("Frothy Malk (Special Talent Book)", NaN),
     d("Dr Defecaus Card", 33.3),
@@ -210,6 +228,7 @@ export const monsters = [
   m(
     "Amarok",
     "Amarok Arena",
+    undefined,
     d("Desert Topaz", NaN),
     d("Magic Meatloaf", 20),
     d("Amarok Card", 25),
@@ -223,6 +242,7 @@ export const monsters = [
   m(
     "Chaotic Amarok",
     "Amarok Arena",
+    undefined,
     d("Magic Meatloaf", 10, 3),
     d("Chaotic Amarok Card", 50),
     d("Grandma Disguise", 250),
@@ -236,6 +256,7 @@ export const monsters = [
   m(
     "Radiant Amarok",
     "Amarok Arena",
+    undefined,
     d("Magic Meatloaf", 20, 10),
     d("Radiant Amarok Card", 50),
     d("Grandma Disguise", 83.3),
@@ -251,6 +272,7 @@ export const monsters = [
   m(
     "Sandy Pot",
     "Jar Bridge",
+    "jarSand",
     d("Pocket Sand", 4.55),
     d("Sandy Pot Card", 10000),
     d("Yellow Headband", 10000),
@@ -260,6 +282,7 @@ export const monsters = [
   m(
     "Mimic",
     "The Mimic Hole",
+    "mimicA",
     d("Megalodon Tooth", 4.72),
     d("Sesame Seed", 100),
     d("Casual Confidante", 10),
@@ -271,6 +294,7 @@ export const monsters = [
   m(
     "Crabcake",
     "Dessert Dunes",
+    "crabcake",
     d("Crabby Cakey", 4.88),
     d("Crabcake Card", 10000),
     d("Nuget Cake", 20000),
@@ -280,6 +304,7 @@ export const monsters = [
   m(
     "Mafioso",
     "The Grandioso Canyon",
+    "coconut",
     d("Coconotnotto", 5),
     d("Triumphant Treason", 13.3),
     d("Mafioso Card", 10000),
@@ -289,6 +314,7 @@ export const monsters = [
   m(
     "Sand Castle",
     "Shifty Sandbox",
+    "sandcastle",
     d("Furled Flag", 5.26),
     d("Claiming Cashe", 20),
     d("Sand Castle Card", 10000),
@@ -297,6 +323,7 @@ export const monsters = [
   m(
     "Pincermin",
     "Pincer Plateau",
+    "demonP",
     d("Pincer Arm", 5.56),
     d("Pincermin Card", 10000),
     d("Bolstered DNA Splicer (Recipe)", 333000),
@@ -305,6 +332,7 @@ export const monsters = [
   m(
     "Mashed Potato",
     "Slamabam Straightaway",
+    "potato",
     d("Potato Remains", 5.88),
     d("Mashed Potato Card", 10000),
     t(DropTable7, 256),
@@ -312,6 +340,7 @@ export const monsters = [
   m(
     "Tyson",
     "The Ring",
+    "steak",
     d("High Steaks", 5.56),
     d("Tyson Card", 10000),
     t(DropTable8, 313),
@@ -319,6 +348,7 @@ export const monsters = [
   m(
     "Moonmoon",
     "Up Up Down Down",
+    "moonman",
     d("Wakka Cherry", 6.06),
     d("Ghost", 2000),
     d("Moonmoon Card", 10000),
@@ -329,6 +359,7 @@ export const monsters = [
   m(
     "Sand Giant",
     "Sands of Time",
+    "sandgiant",
     d("Singlecle", 6.58),
     d("Sand Giant Card", 10000),
     d("Dootjat Eye (Novice Recipe)", 58800),
@@ -337,6 +368,7 @@ export const monsters = [
   m(
     "Snelbie",
     "Djonnuttown",
+    "snailZ",
     d("Shrapshell", 7.14),
     d("Snelbie Card", 10000),
     d("Fuscismatia", 500000),
@@ -345,12 +377,14 @@ export const monsters = [
   m(
     "Dig Doug",
     "Sandstone Colosseum",
+    undefined,
     d("Dig Doug Card", 25),
     t(DropTable7, 313),
   ),
   m(
     "Crystal Crabal",
     "Yum Yum Desert",
+    undefined,
     d("Crystal Crabal Card", 125),
     d("Crystallin", 10),
     d("Quest Chungus (Special Talent Book)", 200),
@@ -365,6 +399,7 @@ export const monsters = [
   m(
     "Biggie Hours",
     "The Mimic Hole / Sandstone Colosseum",
+    undefined,
     d("Pulsation (Special Talent Book)", NaN),
     d("Cardiovascular! (Special Talent Book)", NaN),
     d("Biggie Hours Card", 41.7),
@@ -379,6 +414,7 @@ export const monsters = [
   m(
     "King Doot",
     "Sands of Time",
+    undefined,
     d("Pulsation (Special Talent Book)", NaN),
     d("Cardiovascular! (Special Talent Book)", NaN),
     d("King Doot Card", 25),
@@ -395,6 +431,7 @@ export const monsters = [
   m(
     "Efaunt",
     "Efaunts Tomb",
+    undefined,
     d("Glacier Quartz", NaN),
     d("Efaunt Card", 40),
     d("Midnight Cookie", 14.3),
@@ -409,6 +446,7 @@ export const monsters = [
   m(
     "Chaotic Efaunt",
     "Efaunts Tomb",
+    undefined,
     d("Chaotic Efaunt Card", 62.5),
     d("Midnight Cookie", 14.3),
     d("Skeletal Obol of Efaunt's Gaze", 333),
@@ -421,6 +459,7 @@ export const monsters = [
   m(
     "Gilded Efaunt",
     "Efaunts Tomb",
+    undefined,
     d("Gilded Efaunt Card", 50),
     d("Midnight Cookie", 14.3),
     d("Skeletal Obol of Efaunt's Gaze", 55.6),
@@ -434,6 +473,7 @@ export const monsters = [
   m(
     "Sheepie",
     "Steep Sheep Ledge",
+    undefined,
     d("Floof Ploof", 6.25),
     d("Sheepie Card", 10000),
     d("Box Statue", 5000),
@@ -443,6 +483,7 @@ export const monsters = [
   m(
     "Frost Flake",
     "Snowfield Outskirts",
+    undefined,
     d("Melty Cube", 6.25),
     d("Frost Flake Card", 10000),
     d("Duplogs Stamp", 16700),
@@ -452,6 +493,7 @@ export const monsters = [
   m(
     "Sir Stache",
     "The Stache Split",
+    "stache",
     d("Moustache Comb", 6.25),
     d("Sir Stache Card", 10000),
     d("Decent Speed Potion", 500),
@@ -461,6 +503,7 @@ export const monsters = [
   m(
     "Bloque",
     "Refrigeration Station",
+    "bloque",
     d("Sticky Stick", 6.25),
     d("Bloque Card", 10000),
     d("Seesaw Statue", 5000),
@@ -470,6 +513,7 @@ export const monsters = [
   m(
     "Mamooth",
     "Mamooooth Mountain",
+    "mamoth",
     d("Mamooth Tusk", 6.25),
     d("Mamooth Card", 10000),
     d("Ice Age 3", 20000),
@@ -480,6 +524,7 @@ export const monsters = [
   m(
     "Snowman",
     "Rollin' Tundra",
+    "snowball",
     d("Snow Ball", 6.25),
     d("Snowman Card", 10000),
     d("Cool Diggy Tool Stamp", 40000),
@@ -490,6 +535,7 @@ export const monsters = [
   m(
     "Penguin",
     "Signature Slopes",
+    undefined,
     d("Pen", 6.25),
     d("Penguin Card", 10000),
     d("Signed Contract", 1000),
@@ -499,6 +545,7 @@ export const monsters = [
   m(
     "Thermister",
     "Thermonuclear Climb",
+    "thermostat",
     d("Cracked Glass", 6.25),
     d("Thermister Card", 10000),
     d("Swag Swingy Tool Stamp", 100000),
@@ -509,6 +556,7 @@ export const monsters = [
   m(
     "Quenchie",
     "Waterlogged Entrance",
+    undefined,
     d("Sippy Straw", 6.25),
     d("Quenchie Card", 10000),
     d("Twosoul Statue", 3330),
@@ -517,6 +565,7 @@ export const monsters = [
   m(
     "Cryosnake",
     "Cryo Catacombs",
+    undefined,
     d("Cryosnake Skin", 6.25),
     d("Cryosnake Card", 10000),
     d("Seesaw Statue", 3330),
@@ -525,6 +574,7 @@ export const monsters = [
   m(
     "Bop Box",
     "Overpass of Sound",
+    undefined,
     d("Audio Cord", 6.25),
     d("Bop Box Card", 10000),
     d("Yeti Ham", 143),
@@ -533,6 +583,7 @@ export const monsters = [
   m(
     "Neyeptune",
     "Crystal Basecamp",
+    undefined,
     d("Contact Lense", 6.25),
     d("Neyeptune Card", 10000),
     d("Black Lense", 20000),
@@ -541,6 +592,7 @@ export const monsters = [
   m(
     "Dedotated Ram",
     "Wam Wonderland",
+    undefined,
     d("Ram Wool", 6.25),
     d("Dedotated Ram Card", 10000),
     d("Neutron Ice Ring", 1000000),
@@ -550,12 +602,14 @@ export const monsters = [
   m(
     "Xylobone",
     "Chillsnap Colosseum",
+    undefined,
     d("Xylobone Card", 100),
     t(DropTable14, 100),
   ),
   m(
     "Bloodbone",
     "Hell Hath Frozen Over",
+    undefined,
     d("Blood Bone", 20),
     d("Equinox Mirror", 1000),
     d("Bloodbone Card", 10000),
@@ -564,6 +618,7 @@ export const monsters = [
   m(
     "Crystal Cattle",
     "Frostbite Tundra",
+    undefined,
     d("Crystal Cattle Card", 125),
     d("Crystallin", 10),
     d("Quest Chungus (Special Talent Book)", 200),
@@ -578,6 +633,7 @@ export const monsters = [
   m(
     "Dilapidated Slush",
     "Refrigeration Station",
+    undefined,
     d("Dilapidated Slush Card", 5),
     d("Slush Skull", 111),
     d("Slushy Obol of Much Dilapidation", 250),
@@ -590,6 +646,7 @@ export const monsters = [
   m(
     "Chizoar",
     "Chizoar's Cavern",
+    undefined,
     d("Chizoar Card", 143),
     d("Frozen Obol of Chizoar's Rage", 1250),
     d("Chizoars Blankie", 1000),
@@ -601,6 +658,7 @@ export const monsters = [
   m(
     "Chaotic Chizoar",
     "Chizoar's Cavern",
+    undefined,
     d("Chaotic Chizoar Card", 250),
     d("Frozen Obol of Chizoar's Rage", 500),
     d("Chizoars Blankie", 313),
@@ -612,6 +670,7 @@ export const monsters = [
   m(
     "Blighted Chizoar",
     "Chizoar's Cavern",
+    undefined,
     d("Blighted Chizoar Card", 500),
     d("Frozen Obol of Chizoar's Rage", 100),
     d("Chizoars Blankie", 71.4),
@@ -625,6 +684,7 @@ export const monsters = [
   m(
     "Grandfrogger",
     "Grandfrog's Gazebo",
+    undefined,
     d("Dungeon Credits", 1.25),
     d("Flurbo", 2),
     d("Grandfrogger Card", 25),
@@ -632,6 +692,7 @@ export const monsters = [
   m(
     "Rotting Grandfrogger",
     "Grandfrog's Gazebo",
+    undefined,
     d("Dungeon Credits", 1.25),
     d("Flurbo", 2),
     d("Rotting Grandfrogger Card", 40),
@@ -639,6 +700,7 @@ export const monsters = [
   m(
     "Forlorn Grandfrogger",
     "Grandfrog's Gazebo",
+    undefined,
     d("Dungeon Credits", 1.25),
     d("Flurbo", 2),
     d("Forlorn Grandfrogger Card", 40),
@@ -646,6 +708,7 @@ export const monsters = [
   m(
     "Vengeful Grandfrogger",
     "Grandfrog's Gazebo",
+    undefined,
     d("Dungeon Credits", 1.25),
     d("Flurbo", 2),
     d("Vengeful Grandfrogger Card", 40),

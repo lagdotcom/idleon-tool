@@ -171,6 +171,8 @@ function getQty(name: GItemName, wanted: [GItemName, Quantity][]) {
 
 export default function ResultsDisplay({
   droppers,
+  needed,
+  owned,
   produce,
   quests,
   recipes,
@@ -179,6 +181,8 @@ export default function ResultsDisplay({
   wanted,
 }: {
   droppers: GExpandedDropper[];
+  needed: [GItemName, Quantity][];
+  owned: [GItemName, Quantity][];
   produce: [GItemName, Quantity][];
   quests: GQuest[];
   recipes: GRecipe[];
@@ -186,15 +190,15 @@ export default function ResultsDisplay({
   unknown: [GItemName, Quantity][];
   wanted: [GItemName, Quantity][];
 }) {
-  const wantedItems = wanted.map((w) => w[0]);
+  const neededItems = wanted.map((w) => w[0]);
 
   return (
     <div className={styles.results}>
-      {wanted.length > 0 && (
+      {needed.length > 0 && (
         <div className={styles.section}>
-          <h2>Total Wanted</h2>
+          <h2>Still Needed</h2>
           <ul>
-            {wanted
+            {needed
               .sort((a, b) => a[0].localeCompare(b[0]))
               .map(([name, qty]) => (
                 <MiniItem key={name} name={name}>
@@ -260,8 +264,32 @@ export default function ResultsDisplay({
         <div className={styles.section}>
           <h2>Drops</h2>
           {droppers.map((d) => (
-            <DropperDisplay key={d.name} dropper={d} wanted={wantedItems} />
+            <DropperDisplay key={d.name} dropper={d} wanted={neededItems} />
           ))}
+        </div>
+      )}
+      {owned.length > 0 && (
+        <div className={styles.section}>
+          <h2>Already Owned</h2>
+          {owned
+            .sort((a, b) => a[0].localeCompare(b[0]))
+            .map(([name, qty]) => (
+              <MiniItem key={name} name={name}>
+                x{qty}
+              </MiniItem>
+            ))}
+        </div>
+      )}
+      {wanted.length > 0 && (
+        <div className={styles.section}>
+          <h2>Total Wanted</h2>
+          {wanted
+            .sort((a, b) => a[0].localeCompare(b[0]))
+            .map(([name, qty]) => (
+              <MiniItem key={name} name={name}>
+                x{qty}
+              </MiniItem>
+            ))}
         </div>
       )}
     </div>

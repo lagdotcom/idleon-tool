@@ -4,6 +4,7 @@ import { items as allItems } from "../data/catalogue";
 import { useAppDispatch } from "../state/hooks";
 import { saveSoon } from "../state/thunks";
 import { addTodo } from "../state/todo";
+import { array } from "../tools";
 import ItemCard, { ItemCardClickHandler } from "./ItemCard";
 
 function getCategorizedItems(filter?: string) {
@@ -14,9 +15,7 @@ function getCategorizedItems(filter?: string) {
           i.category.toLocaleLowerCase().includes(filter.toLocaleLowerCase()),
       )
     : allItems;
-  const categories = Array.from(
-    new Set(filteredItems.map((item) => item.category)),
-  );
+  const categories = array(new Set(filteredItems.map((item) => item.category)));
 
   return categories.map((category) => ({
     category,

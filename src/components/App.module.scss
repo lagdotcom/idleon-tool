@@ -19,6 +19,11 @@
   overflow-y: auto;
 }
 
+.top {
+  display: flex;
+  column-gap: 10px;
+}
+
 .todo {
   grid-area: todo;
   overflow-y: auto;

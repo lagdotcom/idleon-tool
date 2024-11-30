@@ -1,5 +1,5 @@
 import { Chance, Coins, GItemName, Quantity } from "../flavours";
-import { ItemCode } from "../toolbox/types";
+import { AFKTarget, ItemCode } from "../toolbox/types";
 
 export type GItemCategory =
   | "fisticuffs"
@@ -112,6 +112,7 @@ export type GDropperType =
 
 export interface GDropper {
   type: GDropperType;
+  afkTarget?: AFKTarget;
   name: string;
   area: string;
   drops: GDrop[];

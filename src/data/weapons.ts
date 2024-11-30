@@ -32,7 +32,7 @@ export const weapons = [
   warrior("Massive Godbreaker"),
 
   bow("Wooden Bow"),
-  bow("Birch Longbow"),
+  bow("Birch Longbow", "EquipmentBows3"),
   bow("Carrot Launcher", "EquipmentBows4"),
   bow("Spiked Menace", "EquipmentBows5"),
   bow("Pharaoh Bow"),

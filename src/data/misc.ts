@@ -35,7 +35,7 @@ export const misc = [
   i("Broken Weapon"),
   i("Dried Paint Blob"),
   i("Engraved Bullet"),
-  i("Silver Antique"),
+  i("Silver Antique", "Quest37"),
   i("2021 Giftmas Box"),
   i("Newbie Card Pack"),
   i("Ancient Card Pack"),

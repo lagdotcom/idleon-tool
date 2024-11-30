@@ -5,9 +5,10 @@ import {
 } from "@reduxjs/toolkit";
 
 import app from "./app";
+import owned from "./owned";
 import todo from "./todo";
 
-const reducer = combineReducers({ app, todo });
+const reducer = combineReducers({ app, owned, todo });
 export type RootState = ReturnType<typeof reducer>;
 
 export const createStore = (preloadedState?: RootState) =>

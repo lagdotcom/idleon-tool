@@ -1,5 +1,5 @@
 import { Chance, Coins, GItemName, Percentage, Quantity } from "../flavours";
-import { ItemCode } from "../toolbox/types";
+import { AFKTarget, ItemCode } from "../toolbox/types";
 import {
   GDrop,
   GDropper,
@@ -69,6 +69,21 @@ export const getDropperMaker =
   (type: GDropperType) =>
   (name: string, area: string, ...drops: GDrop[]): GDropper => ({
     type,
+    name,
+    area,
+    drops,
+  });
+
+export const getAFKDropperMaker =
+  (type: GDropperType) =>
+  (
+    name: string,
+    area: string,
+    afkTarget?: AFKTarget,
+    ...drops: GDrop[]
+  ): GDropper => ({
+    type,
+    afkTarget,
     name,
     area,
     drops,

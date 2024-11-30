@@ -5,6 +5,7 @@ import { droppers, items, recipes, sinks } from "./data/catalogue.ts";
 import shops from "./data/shops.ts";
 import { allDropTables } from "./data/tables.ts";
 import { GItem } from "./data/types.ts";
+import { entries } from "./tools.ts";
 
 async function findItem(value: string) {
   const exact = items.find(
@@ -57,7 +58,7 @@ async function main() {
   }
 
   {
-    const matches = Object.entries(allDropTables).filter(([, drops]) =>
+    const matches = entries(allDropTables).filter(([, drops]) =>
       drops.find((e) => e.type === "item" && e.item === name),
     );
     if (matches.length) {
