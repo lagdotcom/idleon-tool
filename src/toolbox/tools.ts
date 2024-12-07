@@ -40,7 +40,9 @@ export function getCharacter(json: IdleonToolboxJson, ci: CharIndex) {
     addQty(item, InventoryQty[i]),
   ).filter(isRealItemEntry);
 
-  const obols = json.data[`ObolEqO0_${ci}`].filter(isRealObol).map(addQty);
+  const obols = json.data[`ObolEqO0_${ci}`]
+    .filter(isRealObol)
+    .map((item) => addQty(item));
 
   return { equipment, inventory, obols };
 }
@@ -65,7 +67,7 @@ export function getAllOwnedItems(json: IdleonToolboxJson) {
   storage.forEach(add);
 
   const obolInventory = json.data.ObolInvOr.flatMap(extractDataArray)
-    .map((item) => ({ item, qty: 1 }))
+    .map((item) => addQty(item))
     .filter(isRealItemEntry);
   obolInventory.forEach(add);
 

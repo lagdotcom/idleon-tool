@@ -38,6 +38,15 @@ export const premiumHelmets = [
   helmet("Fanned Blossomage"),
   helmet("Dainty Brim"),
   helmet("Charcoal Hat"),
+
+  helmet("Pardoned Turkey"),
+  helmet("Paper Bag"),
+  helmet("Diamon Horns"),
+  helmet("Halloween Pumpkin"),
+  helmet("Strawbiggy"),
+  helmet("Dairy Dunk"),
+  helmet("Snowman"),
+  helmet("Husky Hat", "EquipmentHats109"),
 ];
 
 const ring = getItemMaker("chat rings");

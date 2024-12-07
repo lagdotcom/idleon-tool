@@ -81,8 +81,9 @@ function main() {
   }
 
   console.log("\n-- Total Owned Items:");
-  for (const [name, qty] of getAllOwnedItems(json)) {
-    console.log(`${name} x${qty}`);
+  for (const [code, qty] of getAllOwnedItems(json)) {
+    const name = items.find((i) => i.code === code)?.name;
+    console.log(`${code} (${name ?? "???"}) x${qty}`);
   }
 }
 main();

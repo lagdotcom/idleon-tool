@@ -12,7 +12,7 @@ export const pickaxes = [
   pick("Copper Pickaxe", "EquipmentTools2"),
   pick("Iron Pickaxe", "EquipmentTools3"),
   pick("Skewered Snek"),
-  pick("Poopy Pickaxe"),
+  pick("Poopy Pickaxe", "EquipmentTools10"),
   pick("Gold Pickaxe", "EquipmentTools5"),
   pick("Platinum Pickaxe", "EquipmentTools6"),
   pick("Dementia Pickaxe"),

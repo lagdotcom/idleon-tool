@@ -17,7 +17,7 @@ export const materials = [
   i("PVC Pipe"),
 
   i("Distilled Water", "PureWater"),
-  i("Dense Water"),
+  i("Dense Water", "PureWater2"),
 ];
 
 export const materialProduction = [

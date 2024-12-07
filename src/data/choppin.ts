@@ -22,7 +22,7 @@ export const hatchets = [
   hatchet("Iron Hatchet", "EquipmentToolsHatchet1"),
   hatchet("Grumbie the Hatchet Hammer"),
   hatchet("Golden Axe", "EquipmentToolsHatchet2"),
-  hatchet("Stinky Axe"),
+  hatchet("Stinky Axe", "EquipmentToolsHatchet2b"),
   hatchet("Plat Hatchet", "EquipmentToolsHatchet4"),
   hatchet("Dementia Dicer"),
   hatchet("Void Imperium Axe"),

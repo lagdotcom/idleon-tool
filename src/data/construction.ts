@@ -6,7 +6,7 @@ export const refinerySalts = [
   i("Redox Salts", "Refinery1"),
   i("Explosive Salts", "Refinery2"),
   i("Spontaneity Salts", "Refinery3"),
-  i("Dioxide Synthesis"),
+  i("Dioxide Synthesis", "Refinery4"),
   i("Purple Salt"),
   i("Nullo Salt"),
 ];

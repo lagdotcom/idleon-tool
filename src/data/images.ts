@@ -380,6 +380,7 @@ import cueTape from "../img/Cue_Tape.png";
 import cultistSkull from "../img/Cultist_Skull.png";
 import cupcake from "../img/Cupcake.png";
 import daintyBrim from "../img/Dainty_Brim.png";
+import dairyDunk from "../img/Dairy_Dunk.png";
 import damagedCog from "../img/Damaged_Cog.png";
 import damascusPlates from "../img/Damascus_Plates.png";
 import dandelioliTree from "../img/Dandelioli_Tree.png";
@@ -449,6 +450,7 @@ import diabolicalHeadcase from "../img/Diabolical_Headcase.png";
 import diabolicalOpticule from "../img/Diabolical_Opticule.png";
 import diabolicalToeTips from "../img/Diabolical_Toe_Tips.png";
 import diabolicalTrimedLegGuards from "../img/Diabolical_Trimed_Leg_Guards.png";
+import diamonHorns from "../img/Diamon_Horns.png";
 import diamondAxeStamp from "../img/Diamond_Axe_Stamp.png";
 import diamondDuck from "../img/Diamond_Duck.png";
 import diamondHonkerChain from "../img/Diamond_Honker_Chain.png";
@@ -769,6 +771,7 @@ import guildingTools from "../img/Guilding_Tools.png";
 import gummyBunny from "../img/Gummy_Bunny.png";
 import halfEatenDonut from "../img/Half_Eaten_Donut.png";
 import hallowedTailPendant from "../img/Hallowed_Tail_Pendant.png";
+import halloweenPumpkin from "../img/Halloween_Pumpkin.png";
 import hampter from "../img/Hampter.png";
 import hardBlunderhillsNPCToken from "../img/Hard_Blunderhills_NPC_Token.png";
 import hardFBTundraNPCToken from "../img/Hard_FB_Tundra_NPC_Token.png";
@@ -807,6 +810,7 @@ import hornChain from "../img/Horn_Chain.png";
 import hornedSkull from "../img/Horned_Skull.png";
 import hotDog from "../img/Hot_Dog.png";
 import hotdogHero from "../img/Hotdog_Hero.png";
+import huskyHat from "../img/Husky_Hat.png";
 import hyperDMGObol from "../img/Hyper_DMG_Obol.png";
 import hyperDMGObolB from "../img/Hyper_DMG_Obol_B.png";
 import hyperObolStack from "../img/Hyper_Obol_Stack.png";
@@ -1114,9 +1118,11 @@ import orangeTee from "../img/Orange_Tee.png";
 import owlio from "../img/Owlio.png";
 import owlioCard from "../img/Owlio_Card.png";
 import palmTree from "../img/Palm_Tree.png";
+import paperBag from "../img/Paper_Bag.png";
 import paperBoat from "../img/Paper_Boat.png";
 import papuaPiggeaToken from "../img/Papua_Piggea_Token.png";
 import parasite from "../img/Parasite.png";
+import pardonedTurkey from "../img/Pardoned_Turkey.png";
 import birthdayHat from "../img/Party_Hat.png";
 import peanut from "../img/Peanut.png";
 import pearlerShell from "../img/Pearler_Shell.png";
@@ -1409,6 +1415,7 @@ import snelbieCard from "../img/Snelbie_Card.png";
 import snoutsToken from "../img/Snouts_Token.png";
 import snowBall from "../img/Snow_Ball.png";
 import snowden from "../img/Snowden.png";
+import snowman from "../img/Snowman_-Premium_Helmet-.png";
 import snowmanCard from "../img/Snowman_Card.png";
 import sodaCanCard from "../img/Soda_Can_Card.png";
 import solesOfTheTroll from "../img/Soles_of_the_Troll.png";
@@ -1517,6 +1524,7 @@ import storageChest99B from "../img/Storage_Chest_99B.png";
 import storageChest99C from "../img/Storage_Chest_99C.png";
 import strangeRock from "../img/Strange_Rock.png";
 import strawHat from "../img/Straw_Hat.png";
+import strawbiggy from "../img/Strawbiggy.png";
 import strungBludgeon from "../img/Strung_Bludgeon.png";
 import strungJewels from "../img/Strung_Jewels.png";
 import strungToothOfTheDivine from "../img/Strung_Tooth_of_the_Divine.png";
@@ -2930,6 +2938,14 @@ export const imageURLs: Record<string, URLString> = Object.fromEntries([
   i("Fanned Blossomage", fannedBlossomage),
   i("Dainty Brim", daintyBrim),
   i("Charcoal Hat", charcoalHat),
+  i("Pardoned Turkey", pardonedTurkey),
+  i("Paper Bag", paperBag),
+  i("Diamon Horns", diamonHorns),
+  i("Halloween Pumpkin", halloweenPumpkin),
+  i("Strawbiggy", strawbiggy),
+  i("Dairy Dunk", dairyDunk),
+  i("Snowman", snowman),
+  i("Husky Hat", huskyHat),
 
   i("Leafy Ring", leafyRing),
   i("Bob Ring", bobRing),

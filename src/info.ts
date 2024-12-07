@@ -2,6 +2,7 @@ import { argv } from "process";
 import { question } from "readline-sync";
 
 import { droppers, items, recipes, sinks } from "./data/catalogue.ts";
+import quests from "./data/quests.ts";
 import shops from "./data/shops.ts";
 import { allDropTables } from "./data/tables.ts";
 import { GItem } from "./data/types.ts";
@@ -106,6 +107,14 @@ async function main() {
     if (matches.length)
       console.log(
         `Used in: ${matches.map((s) => `${s.name} (${s.type})`).join(", ")}`,
+      );
+  }
+
+  {
+    const matches = quests.filter((q) => q.inputs.find((i) => i.item === name));
+    if (matches.length)
+      console.log(
+        `Needed for: ${matches.map((q) => `${q.name} (${q.npc}) x${q.inputs.find((i) => i.item === name)?.qty}`).join(", ")}`,
       );
   }
 }

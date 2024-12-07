@@ -22,7 +22,7 @@ export const keychains = [
   i("Gilded Key Chain"),
   i("Sushi Chain"),
   i("Time Candy Chain"),
-  i("Star Blobulyte Galaxy Chain"),
+  i("Star Blobulyte Galaxy Chain", "EquipmentKeychain20"),
   i("Mmm Donut Chain"),
   i("Negative 7 Chain"),
   i("Diamond Honker Chain"),

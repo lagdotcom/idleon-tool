@@ -45,7 +45,7 @@ export const helmets = [
   i("Bored Beanie"),
   i("Shiny Bored Beanie"),
   i("Alien Headband"),
-  i("Grandma Disguise"),
+  i("Grandma Disguise", "EquipmentHats39"),
   i("Paper Boat"),
   i("Cowbo Galloneer", "EquipmentHats30"),
   i("Jar"),
