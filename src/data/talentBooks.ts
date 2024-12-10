@@ -2,6 +2,7 @@ import { getItemMaker } from "./tools";
 
 const i = getItemMaker("special talent books");
 export const specialTalentBooks = [
+  // TalentBook1
   i("Quest Chungus (Special Talent Book)"),
   i("Just Exp (Special Talent Book)"),
   i("Frothy Malk (Special Talent Book)"),

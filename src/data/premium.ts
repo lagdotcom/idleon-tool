@@ -56,7 +56,7 @@ export const chatRings = [
   ring("Bubble Ring"),
   ring("Love Ring"),
   ring("Wealth Ring"),
-  ring("Cthulhu's Ring"),
+  ring("Cthulu's Ring"),
   ring("Lava Sez Buy More Gems"),
   ring("HONK Ring"),
   ring("Equinox Ring"),
@@ -98,4 +98,5 @@ export const nameTags = [
   tag("Falloween Nametag"),
   tag("3rd Anniversary IdleOn Nametag"),
   tag("Megafeather Nametag"),
+  tag("Snowflake Nametag"),
 ];

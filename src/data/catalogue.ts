@@ -1,6 +1,6 @@
 import {
-  alchemyLiquids,
   alchemyDroppers,
+  alchemyLiquids,
   alchemyRecipes,
   alchemySinks,
 } from "./alchemy";
@@ -40,6 +40,7 @@ import { questItems } from "./questItems";
 import { randomEvents } from "./randomEvents";
 import { recipeItems } from "./recipes";
 import { rings } from "./rings";
+import { seasonalEvents } from "./seasonalEvents";
 import { shirts } from "./shirts";
 import { shoes } from "./shoes";
 import { smithingRecipes } from "./smithing";
@@ -144,6 +145,7 @@ export const droppers = [
   ...trappingLocations,
   ...worshipTotems,
   ...randomEvents,
+  ...seasonalEvents,
 ];
 
 export const expandedDroppers = droppers.map((d) => ({

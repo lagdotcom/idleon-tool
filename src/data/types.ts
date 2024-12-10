@@ -106,6 +106,7 @@ export type GDropperType =
   | "node"
   | "post office"
   | "random event"
+  | "seasonal event"
   | "trapping location"
   | "tree"
   | "worship totem";

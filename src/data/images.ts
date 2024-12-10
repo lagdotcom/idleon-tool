@@ -372,7 +372,7 @@ import crystalCustardCard from "../img/Crystal_Custard_Card.png";
 import crystalSkullOfEsquireVnoze from "../img/Crystal_Skull_of_Esquire_Vnoze.png";
 import crystallin from "../img/Crystallin.png";
 import crystalswineToken from "../img/Crystalswine_Token.png";
-import cthulhusRing from "../img/Cthulu-s_Ring.png";
+import cthulusRing from "../img/Cthulu-s_Ring.png";
 import cubedLogs from "../img/Cubed_Logs.png";
 import cubedLogsCard from "../img/Cubed_Logs_Card.png";
 import cubedTree from "../img/Cubed_Tree.png";
@@ -498,6 +498,8 @@ import duneSoulCard from "../img/Dune_Soul_Card.png";
 import dungBeat from "../img/Dung_Beat.png";
 import dungBeatCard from "../img/Dung_Beat_Card.png";
 import dungeonCardPack from "../img/Dungeon_Card_Pack.png";
+import dungeonCredits from "../img/Dungeon_Credits.png";
+import dungeonCreditsFlurboEdition from "../img/Dungeon_Credits_Flurbo_Edition.png";
 import dungeonLootDice from "../img/Dungeon_Loot_Dice.png";
 import duplogsStamp from "../img/Duplogs_Stamp.png";
 import dustMote from "../img/Dust_Mote.png";
@@ -543,6 +545,7 @@ import emptyOysterShell from "../img/Empty_Oyster_Shell.png";
 import enforcedSlasher from "../img/Enforced_Slasher.png";
 import engravedBullet from "../img/Engraved_Bullet.png";
 import enragedSnakenhotepCard from "../img/Enraged_Snakenhotep_Card.png";
+import epicSantaHat from "../img/Epic_Santa_Hat.png";
 import equinoxFish from "../img/Equinox_Fish.png";
 import equinoxMirror from "../img/Equinox_Mirror.png";
 import equinoxRing from "../img/Equinox_Ring.png";
@@ -714,6 +717,7 @@ import goldenCake from "../img/Golden_Cake.png";
 import goldenCheese from "../img/Golden_Cheese.png";
 import goldenDubloon from "../img/Golden_Dubloon.png";
 import goldenDumpling from "../img/Golden_Dumpling.png";
+import goldenGift from "../img/Golden_Gift.png";
 import goldenGiftmasBoxCard from "../img/Golden_Giftmas_Box_Card.png";
 import goldenGlaciaxusCard from "../img/Golden_Glaciaxus_Card.png";
 import goldenGrilledCheeseNomwich from "../img/Golden_Grilled_Cheese_Nomwich.png";
@@ -884,6 +888,7 @@ import ketchupBottle from "../img/Ketchup_Bottle.png";
 import keyToDesertChain from "../img/Key_to_Desert_Chain.png";
 import keyToMountainsChain from "../img/Key_to_Mountains_Chain.png";
 import keyToPurgatoryChain from "../img/Key_to_Purgatory_Chain.png";
+import keychainFragment from "../img/Keychain_Fragment.png";
 import kingDootCard from "../img/King_Doot_Card.png";
 import kingFrogCard from "../img/King_Frog_Card.png";
 import kingOfFood from "../img/King_of_Food.png";
@@ -1415,6 +1420,7 @@ import snelbieCard from "../img/Snelbie_Card.png";
 import snoutsToken from "../img/Snouts_Token.png";
 import snowBall from "../img/Snow_Ball.png";
 import snowden from "../img/Snowden.png";
+import snowflakeNametag from "../img/Snowflake_Nametag.png";
 import snowman from "../img/Snowman_-Premium_Helmet-.png";
 import snowmanCard from "../img/Snowman_Card.png";
 import sodaCanCard from "../img/Soda_Can_Card.png";
@@ -2558,6 +2564,7 @@ export const imageURLs: Record<string, URLString> = Object.fromEntries([
   i("Spring Baggie", springBaggie),
   i("Anniversary Box", anniversaryBox),
   i("Falloween Treat", falloweenTreat),
+  i("Golden Gift", goldenGift),
   i("Mayonnaise Bottle", mayonnaiseBottle),
   i("Broken Weapon", brokenWeapon),
   i("Dried Paint Blob", driedPaintBlob),
@@ -2952,7 +2959,7 @@ export const imageURLs: Record<string, URLString> = Object.fromEntries([
   i("Bubble Ring", bubbleRing),
   i("Love Ring", loveRing),
   i("Wealth Ring", wealthRing),
-  i("Cthulhu's Ring", cthulhusRing),
+  i("Cthulu's Ring", cthulusRing),
   i("Lava Sez Buy More Gems", lavaSezBuyMoreGems),
   i("HONK Ring", hONKRing),
   i("Equinox Ring", equinoxRing),
@@ -3628,4 +3635,12 @@ export const imageURLs: Record<string, URLString> = Object.fromEntries([
   i("Liquid Nitrogen", liquidNitrogen),
   i("Trench Seawater", trenchSeawater),
   i("Toxic Mercury", toxicMercury),
+
+  i("Dungeon Credits", dungeonCredits),
+  i("Dungeon Credits Flurbo Edition", dungeonCreditsFlurboEdition),
+  i("Keychain Fragment", keychainFragment),
+
+  i("Giftmas Present 2024", giftmasBox),
+  i("Epic Santa Hat", epicSantaHat),
+  i("Snowflake Nametag", snowflakeNametag),
 ]);

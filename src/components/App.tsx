@@ -1,6 +1,7 @@
 import { useCallback, useMemo, useState } from "react";
 import { Button } from "react-aria-components";
 
+import { alchemyProduction } from "../data/alchemy";
 import { expandedDroppers, GExpandedDropper, recipes } from "../data/catalogue";
 import { materialProduction } from "../data/materials";
 import quests from "../data/quests";
@@ -68,7 +69,7 @@ class Gatherer {
     const sl = array(shops).filter((s) => s.stock.find((e) => e.item === item));
     for (const shop of sl) this.shops.add(shop);
 
-    if (materialProduction.includes(item)) {
+    if (materialProduction.includes(item) || alchemyProduction.includes(item)) {
       this.produce[item] = (this.produce[item] ?? 0) + qty;
       return;
     }

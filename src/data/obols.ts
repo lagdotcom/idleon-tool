@@ -29,7 +29,7 @@ export const obols = [
   i("Silver Obol of Cards"),
   i("Silver Obol of Construction", "ObolSilverCons"),
   i("Silver Obol of Defence", "ObolSilverDef"),
-  i("Silver Obol of Double Sixes"),
+  i("Silver Obol of Double Sixes", "ObolSilverLuck"),
   i("Silver Obol of Experience", "ObolSilverEXP"),
   i("Silver Obol of Little Damage", "ObolSilverDamage"),
   i("Silver Obol of Megakill"),
@@ -38,7 +38,7 @@ export const obols = [
   i("Silver Obol of Pop Pop", "ObolSilverPop"),
   i("Silver Obol of Puny Pikes"),
   i("Silver Obol of Trapping"),
-  i("Silver Obol of Worship"),
+  i("Silver Obol of Worship", "ObolSilverWorship"),
 
   i("Gold STR Obol", "ObolGold0"),
   i("Gold AGI Obol", "ObolGold1"),

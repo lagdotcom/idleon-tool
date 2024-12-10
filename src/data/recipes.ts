@@ -13,6 +13,7 @@ export const recipeItems = [
   i("Fishing Overalls (Beginner Recipe)"),
   i("Bandito Pantaloon (Beginner Recipe)"),
 
+  // SmithingRecipes2
   i("Defenders Dignity (Novice Recipe)"),
   i("Strung Bludgeon (Novice Recipe)"),
   i("Polished Bludgeon (Novice Recipe)"),

@@ -2,6 +2,7 @@ import { getItemMaker } from "./tools";
 
 const i = getItemMaker("quest items");
 export const questItems = [
+  i("Crimson String"),
   i("Giftmas Box", "Quest92"),
   i("Summer Cooler"),
   i("Job Application"),
@@ -12,7 +13,7 @@ export const questItems = [
   i("BallJoePickle", "BallJoePickle"),
   i("BoneJoePickle"),
   i("Mining Certificate"),
-  i("Broken Mic"),
+  i("Broken Mic", "Quest16"),
   i("Loomi's Room Key", "Quest18"),
   i("Desert Topaz"),
   i("Glacier Quartz"),

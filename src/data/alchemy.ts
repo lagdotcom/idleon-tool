@@ -15,6 +15,13 @@ export const alchemyLiquids = [
   i("Toxic Mercury"),
 ];
 
+export const alchemyProduction = [
+  "Water Droplets",
+  "Liquid Nitrogen",
+  "Trench Seawater",
+  "Toxic Mercury",
+];
+
 const water = n("Water Droplets", NaN);
 const nitrogen = n("Liquid Nitrogen", NaN);
 const seawater = n("Trench Seawater", NaN);
