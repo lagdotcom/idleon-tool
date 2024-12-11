@@ -1,11 +1,10 @@
 import { argv } from "process";
 import { question } from "readline-sync";
 
-import { droppers, items, recipes, sinks } from "./data/catalogue.ts";
-import quests from "./data/quests.ts";
+import { droppers, items, quests, recipes, sinks } from "./data/catalogue.ts";
 import shops from "./data/shops.ts";
 import { allDropTables } from "./data/tables.ts";
-import { GItem } from "./data/types.ts";
+import { GDrop, GItem } from "./data/types.ts";
 import { entries } from "./tools.ts";
 
 async function findItem(value: string) {
@@ -40,6 +39,34 @@ async function findItem(value: string) {
   return bestItem;
 }
 
+function dropTableMatches(drops: GDrop[], dropTables: GDrop[][]) {
+  if (dropTables.find((z) => z === drops)) return true;
+
+  for (const z of drops) {
+    if (z.type === "table" && dropTableMatches(z.drops, dropTables))
+      return true;
+  }
+
+  return false;
+}
+
+function getDroppersWithDrops(dropTables: GDrop[][]) {
+  return droppers.filter((dr) =>
+    dr.drops.find(
+      (d) => d.type === "table" && dropTableMatches(d.drops, dropTables),
+    ),
+  );
+}
+
+const fslLength = 8;
+function fairlySmallList(items: string[]) {
+  if (items.length < fslLength) return items.join(", ");
+  return items
+    .slice(0, fslLength)
+    .concat(`...${items.length - fslLength} more`)
+    .join(", ");
+}
+
 async function main() {
   const search = argv.slice(2).join(" ").trim() || question("Item Name/Code: ");
   const item = await findItem(search.toLocaleLowerCase());
@@ -67,16 +94,11 @@ async function main() {
         `In Drop Tables: ${matches
           .map(
             ([tableName]) =>
-              `${tableName} (${droppers
-                .filter((dr) =>
-                  dr.drops.find(
-                    (d) =>
-                      d.type === "table" &&
-                      matches.find(([, drops]) => drops === d.drops),
-                  ),
-                )
-                .map((d) => d.name)
-                .join(", ")})`,
+              `${tableName} (${fairlySmallList(
+                getDroppersWithDrops(matches.map(([, drops]) => drops)).map(
+                  (d) => d.name,
+                ),
+              )})`,
           )
           .join(", ")}`,
       );

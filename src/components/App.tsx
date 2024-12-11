@@ -2,9 +2,13 @@ import { useCallback, useMemo, useState } from "react";
 import { Button } from "react-aria-components";
 
 import { alchemyProduction } from "../data/alchemy";
-import { expandedDroppers, GExpandedDropper, recipes } from "../data/catalogue";
+import {
+  expandedDroppers,
+  GExpandedDropper,
+  quests,
+  recipes,
+} from "../data/catalogue";
 import { materialProduction } from "../data/materials";
-import quests from "../data/quests";
 import shops from "../data/shops";
 import { GQuest, GRecipe, GShop } from "../data/types";
 import { GItemName, Quantity } from "../flavours";

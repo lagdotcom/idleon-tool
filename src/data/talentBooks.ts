@@ -15,4 +15,7 @@ export const specialTalentBooks = [
   i("Attacks On Simmer (Special Talent Book)"),
   i("Exp Converter (Special Talent Book)"),
   i("Toilet Paper Postage (Special Talent Book)"),
+  i("Stonks! (Special Talent Book)"),
+  i("Printer Sampling (Special Talent Book)"),
+  i("Shrine Architect (Special Talent Book)"),
 ];

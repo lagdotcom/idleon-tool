@@ -3278,6 +3278,9 @@ export const imageURLs: Record<string, URLString> = Object.fromEntries([
   i("Attacks On Simmer (Special Talent Book)", specialTalentBook),
   i("Exp Converter (Special Talent Book)", specialTalentBook),
   i("Toilet Paper Postage (Special Talent Book)", specialTalentBook),
+  i("Stonks! (Special Talent Book)", specialTalentBook),
+  i("Printer Sampling (Special Talent Book)", specialTalentBook),
+  i("Shrine Architect (Special Talent Book)", specialTalentBook),
 
   i("Cardboard Traps", cardboardTraps),
   i("Silkskin Traps", silkskinTraps),
