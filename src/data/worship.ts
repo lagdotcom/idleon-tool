@@ -21,7 +21,7 @@ const soul = getItemMaker("souls");
 export const souls = [
   soul("Forest Soul", "Soul1"),
   soul("Dune Soul", "Soul2"),
-  soul("Rooted Soul"),
+  soul("Rooted Soul", "Soul3"),
   soul("Frigid Soul"),
   soul("Squishy Soul"),
   soul("Oozie Soul"),

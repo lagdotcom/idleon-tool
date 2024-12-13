@@ -15,7 +15,7 @@ export const premiumHelmets = [
   helmet("Ele Sorcerer Pointed Hat"),
   helmet("Borzoi Topper"),
   helmet("Yellow Beanie"),
-  helmet("Bedsheet with Holes"),
+  helmet("Bedsheet with Holes", "EquipmentHats85"),
   helmet("Carrotman Mask"),
   helmet("Glublin Mask"),
   helmet("Bloque Mask"),

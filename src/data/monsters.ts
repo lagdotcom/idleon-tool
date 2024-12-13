@@ -535,7 +535,7 @@ export const monsters = [
   m(
     "Penguin",
     "Signature Slopes",
-    undefined,
+    "penguin",
     d("Pen", 6.25),
     d("Penguin Card", 10000),
     d("Signed Contract", 1000),
@@ -574,7 +574,7 @@ export const monsters = [
   m(
     "Bop Box",
     "Overpass of Sound",
-    undefined,
+    "speaker",
     d("Audio Cord", 6.25),
     d("Bop Box Card", 10000),
     d("Yeti Ham", 143),

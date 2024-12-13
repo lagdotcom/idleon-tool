@@ -531,6 +531,7 @@ import eggStamp from "../img/Egg_Stamp.png";
 import eggStatue from "../img/Egg_Statue.png";
 import egggulyteCard from "../img/Egggulyte_Card.png";
 import ehExPeeStatue from "../img/EhExPee_Statue.png";
+import elderlyPeanut from "../img/Elderly_Peanut.png";
 import eldritchCroakerCard from "../img/Eldritch_Croaker_Card.png";
 import eleSorcererPointedHat from "../img/Ele_Sorcerer_Pointed_Hat.png";
 import electricalWiring from "../img/Electrical_Wiring.png";
@@ -2222,6 +2223,7 @@ export const imageURLs: Record<string, URLString> = Object.fromEntries([
   i("Tundra Misc Completion Token", tundraMiscCompletionToken),
   i("Sesame Seed", sesameSeed),
   i("Blinding Lantern", blindingLantern),
+  i("Elderly Peanut", elderlyPeanut),
 
   i("Forest Villa Key", forestVillaKey),
   i("Efaunt's Tomb Key", efauntsTombKey),

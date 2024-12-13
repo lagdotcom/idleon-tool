@@ -28,6 +28,7 @@ export type MonsterTarget =
   | "moonman"
   | "mushG"
   | "mushW"
+  | "penguin"
   | "plank"
   | "poopSmall"
   | "potato"
@@ -36,6 +37,7 @@ export type MonsterTarget =
   | "slimeG"
   | "snailZ"
   | "snowball"
+  | "speaker"
   | "stache"
   | "steak"
   | "thermostat";

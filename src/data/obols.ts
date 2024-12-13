@@ -18,7 +18,7 @@ export const obols = [
   i("Bronze Obol of Puny Damage", "ObolBronzeDamage"),
   i("Bronze Obol of Small Swings"),
   i("Bronze Obol of Trapping", "ObolBronzeTrapping"),
-  i("Bronze Obol of Worship"),
+  i("Bronze Obol of Worship", "ObolBronzeWorship"),
 
   i("Silver STR Obol", "ObolSilver0"),
   i("Silver AGI Obol", "ObolSilver1"),

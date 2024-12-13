@@ -43,7 +43,10 @@ import { rings } from "./rings";
 import { seasonalEvents } from "./seasonalEvents";
 import { shirts } from "./shirts";
 import { shoes } from "./shoes";
-import { smithingRecipes } from "./smithing";
+import { smithingTab1 } from "./smithingTab1";
+import { smithingTab2 } from "./smithingTab2";
+import { smithingTab3 } from "./smithingTab3";
+import { smithingTab4 } from "./smithingTab4";
 import { stamps, stampSinks } from "./stamps";
 import { statues } from "./statues";
 import { specialTalentBooks } from "./talentBooks";
@@ -159,7 +162,10 @@ export type GExpandedDropper = (typeof expandedDroppers)[number];
 
 export const recipes = [
   ...forgeRecipes,
-  ...smithingRecipes,
+  ...smithingTab1,
+  ...smithingTab2,
+  ...smithingTab3,
+  ...smithingTab4,
   ...alchemyRecipes,
   ...refineryRecipes,
   ...extraConstructionRecipes,

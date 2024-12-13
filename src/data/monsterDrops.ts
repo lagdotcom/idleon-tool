@@ -46,7 +46,7 @@ export const monsterDrops = [
   i("Cracked Glass", "SnowB4"),
   i("Sippy Straw", "SnowC1"),
   i("Cryosnake Skin", "SnowC2"),
-  i("Audio Cord"),
+  i("Audio Cord", "SnowC3"),
   i("Contact Lense"),
   i("Black Lense"),
   i("Blood Bone"),
