@@ -98,5 +98,5 @@ export const nameTags = [
   tag("Falloween Nametag"),
   tag("3rd Anniversary IdleOn Nametag"),
   tag("Megafeather Nametag"),
-  tag("Snowflake Nametag"),
+  tag("Snowflake Nametag", "EquipmentNametag14"),
 ];

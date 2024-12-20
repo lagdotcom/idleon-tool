@@ -12,7 +12,7 @@ export const fish = [
   f("Hermit Can", "Fish2"),
   f("Jellyfish", "Fish3"),
   f("Bloach", "Fish4"),
-  f("Skelefish"),
+  f("Skelefish", "Fish5"),
   f("Sand Shark"),
   f("Manta Ray"),
   f("Kraken"),

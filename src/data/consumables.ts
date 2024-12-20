@@ -10,7 +10,7 @@ export const timeCandy = [
   candy("72 HR Time Candy", "Timecandy6"),
   candy("Steamy Time Candy"),
   candy("Spooky Time Candy"),
-  candy("Cosmic Time Candy"),
+  candy("Cosmic Time Candy", "Timecandy9"),
 ];
 
 const balloon = getItemMaker("exp balloons");
@@ -24,7 +24,7 @@ const char = getItemMaker("character");
 export const characterConsumables = [
   char("Basketball"),
   char("Secret Map"),
-  char("Event Point"),
+  char("Event Point", "Quest89"),
   char("Talent Point Reset Fragment", "ResetFrag"),
   char("Talent Point Reset Potion", "ResetCompleted"),
   char("Star Talent Reset Potion", "ResetCompletedS"),
@@ -67,4 +67,6 @@ export const accountConsumables = [
   acc("Dungeon Credits", "DungCredits1"),
   acc("Dungeon Credits Flurbo Edition"),
   acc("Keychain Fragment", "KeyFrag"),
+  acc("Pet Egg", "PetEgg"),
+  acc("Cooking Ladle", "Ladle"),
 ];

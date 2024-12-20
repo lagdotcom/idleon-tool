@@ -9,8 +9,8 @@ export const misc = [
   i("Bossius Obol Stack"),
   i("Hyper Obol Stack"),
 
-  i("Crude Oil"),
-  i("Toxic Sludge"),
+  i("Crude Oil", "OilBarrel1"),
+  i("Toxic Sludge", "OilBarrel2"),
   i("Radioactive Waste"),
   i("Eco Friendly Oil"),
   i("Magma Barrel"),
@@ -47,7 +47,7 @@ export const misc = [
   i("Dungeon Loot Dice", "GemP16"),
 
   i("Pile of Processor Chips"),
-  i("Strung Jewels"),
+  i("Strung Jewels", "Quest66"),
   i("Blue Tome Pages"),
   i("Red Tome Pages"),
 ];

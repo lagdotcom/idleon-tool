@@ -48,7 +48,7 @@ export const helmets = [
   i("Grandma Disguise", "EquipmentHats39"),
   i("Paper Boat"),
   i("Cowbo Galloneer", "EquipmentHats30"),
-  i("Jar"),
+  i("Jar", "EquipmentHats44"),
   i("Royal Turban"),
   i("Acorn Topper"),
   i("Nuget Cake Fedora"),
@@ -66,5 +66,5 @@ export const helmets = [
   i("Apple Launch Hat"),
   i("Funny Hat"),
   i("Meteorhead"),
-  i("Epic Santa Hat"),
+  i("Epic Santa Hat", "EquipmentHats111"),
 ];

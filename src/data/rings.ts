@@ -9,7 +9,7 @@ export const rings = [
   i("Silver Stopwatch", "EquipmentRings13"),
   i("Dooble Goopi"),
   i("Rex Ring", "EquipmentRings20"),
-  i("Defenders Dignity"),
+  i("Defenders Dignity", "EquipmentRings11"),
   i("Frisbee Ring"),
   i("Serrated Rex Ring", "EquipmentRings26"),
   i("Death Wish"),

@@ -19,7 +19,7 @@ export const bugs = [
   bug("Sentient Cereal", "Bug3"),
   bug("Fruitfly", "Bug4"),
   bug("Mosquisnow", "Bug5"),
-  bug("Flycicle"),
+  bug("Flycicle", "Bug6"),
   bug("Worker Bee"),
   bug("Fairy"),
   bug("Scarab"),

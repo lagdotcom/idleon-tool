@@ -2,9 +2,8 @@ import { getItemMaker } from "./tools";
 
 const i = getItemMaker("materials");
 export const materials = [
-  i("Cue Tape"),
-
   i("Thread", "CraftMat1"),
+  i("Cue Tape", "CraftMat3"),
   i("Trusty Nails", "CraftMat5"),
   i("Boring Brick", "CraftMat6"),
   i("Chain Link", "CraftMat7"),

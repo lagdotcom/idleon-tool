@@ -9,7 +9,7 @@ export const upgradeStones = [
   stone("Armor Upgrade Stone II", "StoneA2"),
   stone("Armor Upgrade Stone B", "StoneA2b"),
   stone("Armor Upgrade Stone III", "StoneA3"),
-  stone("Armor Upgrade Stone C"),
+  stone("Armor Upgrade Stone C", "StoneA3b"),
   stone("Armor Upgrade Stone IV", "StoneA4"),
   stone("Armor Upgrade Stone V", "StoneA5"),
   stone("Armor Upgrade Stone SK"),

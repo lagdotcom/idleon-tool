@@ -313,6 +313,7 @@ import contactLense from "../img/Contact_Lense.png";
 import containmentOfTheZrgyios from "../img/Containment_of_the_Zrgyios.png";
 import cookedMealStamp from "../img/Cooked_Meal_Stamp.png";
 import cookingClogs from "../img/Cooking_Clogs.png";
+import cookingLadle from "../img/Cooking_Ladle.png";
 import coolDiggyToolStamp from "../img/Cool_Diggy_Tool_Stamp.png";
 import copperBand from "../img/Copper_Band.png";
 import copperBar from "../img/Copper_Bar.png";
@@ -1138,6 +1139,7 @@ import pen from "../img/Pen.png";
 import penguinCard from "../img/Penguin_Card.png";
 import pentastudSlapper from "../img/Pentastud_Slapper.png";
 import persephonesBouquet from "../img/Persephones_Bouquet.png";
+import petEgg from "../img/Pet_Egg.png";
 import pharaohBow from "../img/Pharaoh_Bow.png";
 import phoenixWings from "../img/Phoenix_Wings.png";
 import phoneBox from "../img/Phone_Box.png";
@@ -3648,4 +3650,6 @@ export const imageURLs: Record<string, URLString> = Object.fromEntries([
   i("Giftmas Present 2024", giftmasBox),
   i("Epic Santa Hat", epicSantaHat),
   i("Snowflake Nametag", snowflakeNametag),
+  i("Pet Egg", petEgg),
+  i("Cooking Ladle", cookingLadle),
 ]);

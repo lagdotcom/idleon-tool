@@ -40,7 +40,8 @@ export type MonsterTarget =
   | "speaker"
   | "stache"
   | "steak"
-  | "thermostat";
+  | "thermostat"
+  | "w4a2";
 
 export type MonsterCode =
   | MonsterTarget
