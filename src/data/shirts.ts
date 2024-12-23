@@ -23,7 +23,7 @@ export const shirts = [
   i("Platinum Platbody"),
   i("Dementia Body"),
   i("Member Hoodie"),
-  i("Efaunt Ribcage"),
+  i("Efaunt Ribcage", "EquipmentShirts26"),
   i("Void Imperium Platebody"),
   i("Damascus Plates"),
   i("Evergreen Wraps"),

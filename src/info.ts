@@ -60,7 +60,7 @@ function getDroppersWithDrops(dropTables: GDrop[][]) {
 
 const fslLength = 8;
 function fairlySmallList(items: string[]) {
-  if (items.length < fslLength) return items.join(", ");
+  if (items.length <= fslLength) return items.join(", ");
   return items
     .slice(0, fslLength)
     .concat(`...${items.length - fslLength} more`)
@@ -96,7 +96,8 @@ async function main() {
             ([tableName]) =>
               `${tableName} (${fairlySmallList(
                 getDroppersWithDrops(matches.map(([, drops]) => drops)).map(
-                  (d) => d.name,
+                  (d) =>
+                    `${d.name} 1/${d.drops.find((x) => x.type === "table" && x.drops === allDropTables[tableName as keyof typeof allDropTables])?.chance}`,
                 ),
               )})`,
           )

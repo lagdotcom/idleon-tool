@@ -17,7 +17,7 @@ export const misc = [
   i("Plasma Barrel"),
   i("Glumlee's Special Tutorial Oil", "OilBarrel4"),
 
-  i("Googley Eyes"),
+  i("Googley Eyes", "Quest35"),
   i("Dootjat Eye"),
   i("Guild Giftbox"),
   i("Lovey Dovey Letter"),

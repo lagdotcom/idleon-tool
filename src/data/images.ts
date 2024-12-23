@@ -624,6 +624,7 @@ import frogeCard from "../img/Froge_Card.png";
 import frostFlakeCard from "../img/Frost_Flake_Card.png";
 import frostPrince from "../img/Frost_Prince.png";
 import frostyFirefight from "../img/Frosty_Firefight_Totem.gif";
+import frostymanNametag from "../img/Frostyman_Nametag.png";
 import frozenObolOfChizoarsRage from "../img/Frozen_Obol_of_Chizoar-s_Rage.png";
 import frozenTartChain from "../img/Frozen_Tart_Chain.png";
 import fruitfly from "../img/Fruitfly.png";
@@ -1140,6 +1141,7 @@ import penguinCard from "../img/Penguin_Card.png";
 import pentastudSlapper from "../img/Pentastud_Slapper.png";
 import persephonesBouquet from "../img/Persephones_Bouquet.png";
 import petEgg from "../img/Pet_Egg.png";
+import peteThePeanut from "../img/Pete_the_Peanut.png";
 import pharaohBow from "../img/Pharaoh_Bow.png";
 import phoenixWings from "../img/Phoenix_Wings.png";
 import phoneBox from "../img/Phone_Box.png";
@@ -2226,6 +2228,7 @@ export const imageURLs: Record<string, URLString> = Object.fromEntries([
   i("Sesame Seed", sesameSeed),
   i("Blinding Lantern", blindingLantern),
   i("Elderly Peanut", elderlyPeanut),
+  i("Pete the Peanut", peteThePeanut),
 
   i("Forest Villa Key", forestVillaKey),
   i("Efaunt's Tomb Key", efauntsTombKey),
@@ -3650,6 +3653,7 @@ export const imageURLs: Record<string, URLString> = Object.fromEntries([
   i("Giftmas Present 2024", giftmasBox),
   i("Epic Santa Hat", epicSantaHat),
   i("Snowflake Nametag", snowflakeNametag),
+  i("Frostyman Nametag", frostymanNametag),
   i("Pet Egg", petEgg),
   i("Cooking Ladle", cookingLadle),
 ]);

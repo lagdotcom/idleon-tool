@@ -12,7 +12,7 @@ export const trophies = [
   i("Critter Baron"),
   i("YumYum Sheriff"),
   i("Megalodon"),
-  i("Club Maestro"),
+  i("Club Maestro", "Trophy13"),
   i("Beach Bro"),
   i("Frost Prince"),
   i("Idle Skiller"),

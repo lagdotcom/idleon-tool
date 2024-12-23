@@ -109,4 +109,5 @@ export const questItems = [
   i("Secret Map", "Quest87"),
   i("Blinding Lantern", "Quest90"),
   i("Elderly Peanut", "Quest47"),
+  i("Pete the Peanut", "Quest48"),
 ];

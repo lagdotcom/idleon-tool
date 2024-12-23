@@ -37,7 +37,7 @@ export const logsAndLeaves = [
   ll("Grass Leaf", "Leaf1"),
   ll("Twisty Leaf", "Leaf2"),
   ll("Arctic Leaf", "Leaf3"),
-  ll("Galactic Leaf"),
+  ll("Galactic Leaf", "Leaf4"),
   ll("Magma Leaf"),
   ll("Spirit Leaf"),
 

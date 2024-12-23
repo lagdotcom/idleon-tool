@@ -17,7 +17,7 @@ const balloon = getItemMaker("exp balloons");
 export const expBalloons = [
   balloon("Small Experience Balloon", "ExpBalloon1"),
   balloon("Medium Experience Balloon", "ExpBalloon2"),
-  balloon("Large Experience Balloon"),
+  balloon("Large Experience Balloon", "ExpBalloon3"),
 ];
 
 const char = getItemMaker("character");
