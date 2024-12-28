@@ -57,7 +57,7 @@ export const accountConsumables = [
   acc("Troll's Enclave Key"),
   acc("Kruk's Volcano Key"),
   acc("Colosseum Ticket"),
-  acc("Silver Pen"),
+  acc("Silver Pen", "SilverPen"),
   acc("Gem", "PremiumGem"),
   acc("Talent Point Tab 1"),
   acc("Talent Point Tab 2"),
@@ -69,4 +69,5 @@ export const accountConsumables = [
   acc("Keychain Fragment", "KeyFrag"),
   acc("Pet Egg", "PetEgg"),
   acc("Cooking Ladle", "Ladle"),
+  acc("Cosmic Ball"),
 ];

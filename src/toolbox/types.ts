@@ -1,12 +1,107 @@
 export type BundleCode = "bun_i";
 
+/* unknown codes?
+  crabcakeB
+  frogD
+  frogGG
+  frogGR
+  frogGR2
+  frogGR3
+  frogGR4
+  frogP
+  frogR
+  frogW
+  frogY
+  iceBossZ
+  iceBossZ2
+  iceBossZ3
+  iceknight
+  mushP"
+  mushR"
+  potatoB
+  rocky
+  sheepB
+  shovelY
+  skele2
+  slimeR
+  snakeY
+  snakeZ
+  snakeZ2
+  snakeZ3
+  steakR
+  target
+  totem
+*/
+
 // etc.
 export type NPCCode =
+  | "Bandit_Bob"
+  | "Bellows"
+  | "Bill_Brr"
+  | "Builder_Bird"
+  | "Carpenter_Cardinal"
+  | "Carpetiem"
+  | "Centurion"
+  | "Clown"
+  | "Coastiolyte"
+  | "Constructor_Crow"
+  | "Cowbo_Jones"
+  | "Crystalswine"
+  | "Dazey"
+  | "Desert_Davey"
+  | "Djonnut"
+  | "Dog_Bone"
+  | "Egggulyte"
+  | "Eliteus"
+  | "Falloween_Pumpkin"
+  | "Fishpaste97"
+  | "Funguy"
+  | "Gangster_Gus"
+  | "Giftmas_Blobulyte"
+  | "Glumlee"
+  | "Gobo"
+  | "Goldric"
+  | "Grasslands_Gary"
+  | "Hamish"
+  | "Hoggindaz"
+  | "Iceland_Irwin"
+  | "Krunk"
+  | "Lonely_Hunter"
   | "Loominadi"
-  | "Stiltzcho"
+  | "Lord_of_the_Hunt"
+  | "Loveulyte"
+  | "Meel"
+  | "Mr_Pigibank"
+  | "Mutton"
+  | "Nebula_Neddy"
+  | "Obol_Altar"
+  | "Oinkin"
+  | "Omar_Da_Ogar"
+  | "Papua_Piggea"
+  | "Picnic_Stowaway"
+  | "Postboy_Pablob"
   | "Promotheus"
+  | "Scripticus"
+  | "Scubidew"
+  | "Shuvelle"
+  | "Snake_Jar"
   | "Snouts"
-  | "Postboy_Pablob";
+  | "Speccius"
+  | "Sprout"
+  | "Stiltzcho"
+  | "TP_Pete"
+  | "Telescope"
+  | "Tiki_Chief"
+  | "Toadstall"
+  | "Town_Marble"
+  | "Typhoon"
+  | "Walupiggy"
+  | "Wellington"
+  | "Whattso"
+  | "Woodsman"
+  | "XxX_Cattleprod_XxX"
+  | "Yondergreen"
+  | "questDisp";
 
 export type MonsterTarget =
   | "acorn"
@@ -22,6 +117,8 @@ export type MonsterTarget =
   | "flake"
   | "frogBIG"
   | "frogG"
+  | "glass"
+  | "goblinG"
   | "jarSand"
   | "mamoth"
   | "mimicA"
@@ -29,32 +126,84 @@ export type MonsterTarget =
   | "mushG"
   | "mushW"
   | "penguin"
+  | "pincermin"
   | "plank"
   | "poopSmall"
   | "potato"
+  | "ram"
+  | "ratB"
   | "sandcastle"
   | "sandgiant"
+  | "sheep"
   | "slimeG"
+  | "snakeB"
+  | "snakeG"
   | "snailZ"
   | "snowball"
   | "speaker"
   | "stache"
   | "steak"
   | "thermostat"
-  | "w4a2";
+  | "w4a2"
+  | "w4a3"
+  | "w4b1"
+  | "w4b2"
+  | "w4b3"
+  | "w4b4"
+  | "w4b5"
+  | "w5a1"
+  | "w5a2"
+  | "w5a3"
+  | "w5a4"
+  | "w5a5"
+  | "w5b1"
+  | "w5b2"
+  | "w5b3"
+  | "w5b4"
+  | "w5b5"
+  | "w5b6"
+  | "w5c1"
+  | "w5c2"
+  | "w6a1"
+  | "w6a2"
+  | "w6a3"
+  | "w6a4"
+  | "w6a5"
+  | "w6b1"
+  | "w6b2"
+  | "w6b3"
+  | "w6b4"
+  | "w6c1"
+  | "w6c2"
+  | "w6d1"
+  | "w6d2"
+  | "w6d3";
+
+export type MiniBossCode =
+  | "babayaga"
+  | "babaMummy"
+  | "babaHour"
+  | "poopBig"
+  | "mini3a"
+  | "mini4a"
+  | "mini5a"
+  | "mini6a";
 
 export type MonsterCode =
   | MonsterTarget
+  | MiniBossCode
   | "Crystal0"
   | "Crystal1"
   | "Crystal2"
   | "Crystal3"
   | "Crystal4"
   | "Crystal5"
+  | "poopD"
   | "wolfA"
   | "wolfB"
   | "wolfC"
-  | "babayaga"
+  | "shovelR"
+  | "skele"
   | "Boss2A"
   | "Boss2B"
   | "Boss2C"
@@ -110,7 +259,16 @@ export type EventCardCode =
   | "EasterEvent2"
   | "SummerEvent1"
   | "SummerEvent2"
-  | "fallEvent1";
+  | "fallEvent1"
+  | "loveEvent"
+  | "loveEvent2"
+  | "loveEvent3"
+  | "springEvent1"
+  | "springEvent2"
+  | "xmasEvent"
+  | "xmasEvent2"
+  | "xmasEvent3"
+  | "ghost";
 export type FishingSpotCode = "FishSmall";
 export type FishCode =
   | "Fish1"
@@ -125,6 +283,7 @@ export type FishCode =
   | "Fish10"
   | "Fish11"
   | "Fish12";
+export type ForgeCode = "ForgeA" | "ForgeB";
 export type OreCode =
   | "Copper"
   | "Iron"
@@ -168,6 +327,7 @@ export type AFKTarget = MonsterTarget | DropperCode;
 export type CardCode =
   | MonsterCode
   | "Bandit_Bob"
+  | ForgeCode
   | OreCode
   | TreeCode
   | FishCode
@@ -175,6 +335,18 @@ export type CardCode =
   | CritterCardCode
   | SoulCardCode
   | EventCardCode;
+
+export type PetCode =
+  | "beanG"
+  | "crabcake"
+  | "frogG"
+  | "jarSand"
+  | "mimicA"
+  | "mushR"
+  | "Pet0"
+  | "Pet1"
+  | "slimeG"
+  | "snakeG";
 
 export enum ClassCode {
   Journeyman = 2,

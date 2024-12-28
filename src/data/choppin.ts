@@ -17,7 +17,7 @@ const hatchet = getItemMaker("hatchets");
 const ll = getItemMaker("logs & leaves");
 
 export const hatchets = [
-  hatchet("Old Hatchet"),
+  hatchet("Old Hatchet", "EquipmentToolsHatchet0"),
   hatchet("Copper Chopper", "EquipmentToolsHatchet3"),
   hatchet("Iron Hatchet", "EquipmentToolsHatchet1"),
   hatchet("Grumbie the Hatchet Hammer"),

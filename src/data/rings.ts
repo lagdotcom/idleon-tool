@@ -20,7 +20,7 @@ export const rings = [
   i("Dawn Stopwatch"),
   i("Midnight Stopwatch"),
   i("Neutron Ice Ring"),
-  i("Lab Ring"),
+  i("Lab Ring", "EquipmentRings24"),
   i("Chef Ring"),
   i("Souped Lab Ring"),
   i("Tenacity Ring"),

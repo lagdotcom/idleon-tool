@@ -18,6 +18,7 @@ import {
   MillisecondTimestamp,
   MonsterCode,
   NPCCode,
+  PetCode,
   QuestCode,
   Seconds,
   StarSign,
@@ -55,7 +56,7 @@ export type StampLevel = DataArray<number | numberQ>;
 
 export type Refinery = [
   number[], // times?
-  string[], // names?
+  "Blank"[], // names?
   [number, number, number, number, number, number, number, number],
   [number, number, number, number, number],
   [number, number, number, number, number],
@@ -152,7 +153,14 @@ export type Territory = [
   number,
   number,
   number,
-  string,
+  (
+    | "Blank"
+    | "CookingSpice0"
+    | "CookingSpice1"
+    | "CookingSpice2"
+    | "CookingSpice3"
+    | "CookingSpice4"
+  ),
   number,
   string,
   number,
@@ -618,14 +626,14 @@ export interface DataJson {
   ObolInvOr: DataArray<ItemCode | "Blank" | "LockedInvSpace">[];
   ObolInvOwn: number[];
   OptLacc: unknown[];
-  Pets: EscapedJson<[string, number, number, number][]>;
-  PetsStored: EscapedJson<[string, number, number, number][]>;
+  Pets: EscapedJson<[PetCode, number, number, number][]>;
+  PetsStored: EscapedJson<[PetCode, number, number, number][]>;
   PostOfficeInfo0: DataArray<string | number>[];
   PostOfficeInfo1: DataArray<number>[];
   PostOfficeInfo2: DataArray<string | number>[];
   PrayOwned: EscapedJson<number[]>;
-  Print: EscapedJson<("Blank" | 0)[]>;
-  PrinterXtra: unknown[];
+  Print: EscapedJson<("Blank" | ItemCode | 0)[]>;
+  PrinterXtra: ("Blank" | ItemCode | 0)[];
   Refinery: EscapedJson<Refinery>;
   Rift: Rift;
   SailChests: EscapedJson<[]>;

@@ -94,4 +94,25 @@ export const seasonalEvents = [
       10,
     ),
   ),
+
+  m(
+    "Giftmas 2024 Wheel",
+    "Blunder Hills",
+    t(
+      [
+        d("Event Point", 1, 10),
+        d("Cosmic Ball", 1, 15),
+        d("Frostyman Nametag", 1),
+      ],
+      87.7,
+    ),
+    t(
+      [d("Event Point", 1, 5), d("Cosmic Ball", 1, 5), d("Holiday Chest", 1)],
+      26.9,
+    ),
+    t([d("Event Point", 1, 3), d("Cosmic Ball", 1, 2)], 9.52),
+    t([d("Event Point", 1, 2), d("Cosmic Ball", 1, 1)], 5.17),
+    t([d("Event Point", 1, 1)], 4.1),
+    t([d("Event Point", 1, 1)], 2.45),
+  ),
 ];

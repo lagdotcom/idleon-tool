@@ -20,7 +20,7 @@ export const shirts = [
   i("Studded Hide", "EquipmentShirts5"),
   i("Feral Leathering", "EquipmentShirts23"),
   i("Furled Robes", "EquipmentShirts22"),
-  i("Platinum Platbody"),
+  i("Platinum Platbody", "EquipmentShirts14"),
   i("Dementia Body"),
   i("Member Hoodie"),
   i("Efaunt Ribcage", "EquipmentShirts26"),

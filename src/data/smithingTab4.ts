@@ -91,5 +91,24 @@ export const smithingTab4 = [
   ),
   r("Massive Bug Pouch", n("Worker Bee", 110000), n("Dioxide Synthesis", 500)),
 
-  // TODO 17-64
+  r(
+    "Meaty Traps",
+    n("Jade Scarab", 10),
+    n("Steel Traps"),
+    n("Dioxide Synthesis", 1000),
+  ),
+  r("Massive Critter Pouch", n("Honker", 100000), n("Dioxide Synthesis", 1000)),
+  r(
+    "Glauss Skull",
+    n("Frigid Soul", 40000),
+    n("Manifested Skull"),
+    n("Dioxide Synthesis", 1000),
+  ),
+  r(
+    "Massive Soul Pouch",
+    n("Frigid Soul", 90000),
+    n("Dioxide Synthesis", 1000),
+  ),
+
+  // TODO 21-64
 ];

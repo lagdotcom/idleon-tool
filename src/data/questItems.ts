@@ -54,7 +54,7 @@ export const questItems = [
   i("Refurbished Cog"),
   i("Yondergreens Vote", "Quest60"),
   i("Bill Brr's Vote", "Quest61"),
-  i("Signed Contract"),
+  i("Signed Contract", "Quest62"),
   i("Blunderhills NPC Completion Token"),
   i("Blunder Skills Completion Token"),
   i("Blunderhills Misc Completion Token"),
@@ -110,4 +110,5 @@ export const questItems = [
   i("Blinding Lantern", "Quest90"),
   i("Elderly Peanut", "Quest47"),
   i("Pete the Peanut", "Quest48"),
+  i("Worship Floppy Disc", "Quest93"),
 ];

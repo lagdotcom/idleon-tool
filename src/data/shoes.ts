@@ -18,7 +18,7 @@ export const shoes = [
   i("Void Imperium Kicks"),
   i("Chizoar Walkers"),
   i("Cooking Clogs", "EquipmentShoes30"),
-  i("Laboratory Scrubs"),
+  i("Laboratory Scrubs", "EquipmentShoes32"),
   i("Spaggy Westerados"),
   i("Lustre Shieldshoe"),
   i("Fiberous Footings"),

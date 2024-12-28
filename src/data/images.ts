@@ -332,6 +332,7 @@ import copperVein from "../img/Copper_Vein.png";
 import corgiTopper from "../img/Corgi_Topper.png";
 import cornKernels from "../img/Corn_Kernels.png";
 import corporatubeSub from "../img/Corporatube_Sub.png";
+import cosmicBall from "../img/Cosmic_Ball.png";
 import cosmicStorageChest from "../img/Cosmic_Storage_Chest.png";
 import cosmicTimeCandy from "../img/Cosmic_Time_Candy.png";
 import cowboGalloneer from "../img/Cowbo_Galloneer.png";
@@ -807,6 +808,7 @@ import hideyBoxStamp from "../img/Hidey_Box_Stamp.png";
 import highIQLumberStamp from "../img/High_IQ_Lumber_Stamp.png";
 import highSteaks from "../img/High_Steaks.png";
 import hoggiToken from "../img/Hoggi_Token.png";
+import holidayChest from "../img/Holiday_Chest.png";
 import holyMackerelStamp from "../img/Holy_Mackerel_Stamp.png";
 import holyPearl from "../img/Holy_Pearl.png";
 import hONKRing from "../img/HONK_Ring.png";
@@ -1723,6 +1725,7 @@ import workerBee from "../img/Worker_Bee.png";
 import workerBeeCard from "../img/Worker_Bee_Card.png";
 import wormieSlices from "../img/Wormie_Slices.png";
 import wormieWeight from "../img/Wormie_Weight.png";
+import worshipFloppyDisc from "../img/Worship_Floppy_Disc.png";
 import wranglerOfTheQoxzul from "../img/Wrangler_of_the_Qoxzul.png";
 import wrigglyBall from "../img/Wriggly_Ball.png";
 import wurmTail from "../img/Wurm_Tail.png";
@@ -3509,6 +3512,7 @@ export const imageURLs: Record<string, URLString> = Object.fromEntries([
   i("Storage Chest 99", storageChest99),
   i("Storage Chest 99B", storageChest99B),
   i("Storage Chest 99C", storageChest99C),
+  i("Holiday Chest", holidayChest),
 
   i("Easter Armor Stone", easterArmorStone),
   i("Summer Armor Stone", summerArmorStone),
@@ -3656,4 +3660,6 @@ export const imageURLs: Record<string, URLString> = Object.fromEntries([
   i("Frostyman Nametag", frostymanNametag),
   i("Pet Egg", petEgg),
   i("Cooking Ladle", cookingLadle),
+  i("Cosmic Ball", cosmicBall),
+  i("Worship Floppy Disc", worshipFloppyDisc),
 ]);
