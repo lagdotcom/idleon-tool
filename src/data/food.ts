@@ -18,7 +18,7 @@ export const healthFood = [
   food("Grilled Cheese Nomwich"),
   food("Raw Nigiri"),
   food("Dumpling"),
-  food("Cranberry Jam"),
+  food("Cranberry Jam", "FoodHealth5"),
   food("Milk Choco"),
   food("Magic Meatloaf", "Meatloaf"),
 ];

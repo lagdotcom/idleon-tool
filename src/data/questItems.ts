@@ -48,7 +48,7 @@ export const questItems = [
   i("Player Rating With Letter P", "Quest33"),
   i("Player Rating With Letter S"),
   i("Flowies", "Quest41"),
-  i("The Bobber Challenge Scroll"),
+  i("The Bobber Challenge Scroll", "Quest46"),
   i("Dootophone"),
   i("Damaged Cog"),
   i("Refurbished Cog"),

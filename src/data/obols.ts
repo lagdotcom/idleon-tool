@@ -110,11 +110,11 @@ export const obols = [
 
   i("Frozen Obol of Chizoar's Rage"),
   i("Granite Obol of Amarok's Stare"),
-  i("Grumpy Obol of the Grandfrogger"),
+  i("Grumpy Obol of the Grandfrogger", "ObolFrog"),
   i("Jagged Obol of Massive Trolling"),
   i("Magma Obol of Big Time Domeo"),
   i("Molten Obol of Dead Divine"),
   i("Skeletal Obol of Efaunt's Gaze"),
-  i("Slushy Obol of Much Dilapidation"),
+  i("Slushy Obol of Much Dilapidation", "ObolSlush"),
   i("Vigilant Obol of Ice Guard"),
 ];

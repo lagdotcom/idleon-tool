@@ -115,7 +115,9 @@ async function main() {
   }
 
   {
-    const matches = recipes.filter((r) => r.input.find((q) => q.item === name));
+    const matches = recipes.filter(
+      (r) => r.input.find((q) => q.item === name) || r.output === name,
+    );
     if (matches.length) {
       console.log("In Recipes:");
       for (const r of matches)
