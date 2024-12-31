@@ -48,7 +48,7 @@ export const weapons = [
   wand("Gnarled Wand"),
   wand("Quarterstaff"),
   wand("Starlight", "EquipmentWands5"),
-  wand("Crows Nest"),
+  wand("Crows Nest", "EquipmentWands6"),
   wand("Spriggly Storm"),
   wand("Grey Gatsby"),
   wand("Skullslip Hallow"),

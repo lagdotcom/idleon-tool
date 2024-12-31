@@ -52,7 +52,7 @@ export const boostFood = [
   boost("Icing Ironbite", "FoodMining1"),
   boost("Giftybread Man", "FoodEvent1"),
   boost("Stained Pearl"),
-  boost("Saucy Logfries"),
+  boost("Saucy Logfries", "FoodChoppin1"),
   boost("Chogg Nog", "FoodEvent2"),
   boost("Slurpin Herm", "FoodFish1"),
   boost("Candy Canes", "FoodEvent3"),
