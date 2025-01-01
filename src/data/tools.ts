@@ -32,6 +32,10 @@ export const getRecipeMaker =
     output,
   });
 
+export const mkIQMaker =
+  (item: GItemName) =>
+  (qty: Quantity): GItemQty => ({ item, qty });
+
 export const mkIQ = (item: GItemName, qty: Quantity = 1): GItemQty => ({
   item,
   qty,
