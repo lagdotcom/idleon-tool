@@ -30,7 +30,7 @@ export const questItems = [
   i("Dog Bone", "Quest12"),
   i("Empty Box"),
   i("Employment Statistics"),
-  i("Red Frisbee"),
+  i("Red Frisbee", "Quest15"),
   i("Golden Dubloon", "Quest19"),
   i("Signed Arrest Warrant"),
   i("Time Thingy", "Quest21"),

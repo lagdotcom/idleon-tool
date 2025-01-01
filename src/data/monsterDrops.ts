@@ -57,7 +57,7 @@ export const monsterDrops = [
   i("Genie Lamp", "GalaxyA4"),
   i("Bottle Cap", "GalaxyB1"),
   i("Wurm Tail", "GalaxyB2"),
-  i("Tongue Bone"),
+  i("Tongue Bone", "GalaxyB3"),
   i("Crumpled Wrapper"),
   i("Smol Worm"),
   i("Empty Oyster Shell"),

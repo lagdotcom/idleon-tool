@@ -344,6 +344,4 @@ export const smithingTab3 = [
     n("Ice Age 3", 10),
     n("Dioxide Synthesis", 100),
   ),
-
-  // TODO tabs 4-6
 ];

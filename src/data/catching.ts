@@ -20,13 +20,13 @@ export const bugs = [
   bug("Fruitfly", "Bug4"),
   bug("Mosquisnow", "Bug5"),
   bug("Flycicle", "Bug6"),
-  bug("Worker Bee"),
-  bug("Fairy"),
-  bug("Scarab"),
-  bug("Dust Mote"),
-  bug("Dream Particulate"),
-  bug("Ladybug"),
-  bug("Firefly"),
+  bug("Worker Bee", "Bug7"),
+  bug("Fairy", "Bug8"),
+  bug("Scarab", "Bug9"),
+  bug("Dust Mote", "Bug10"),
+  bug("Dream Particulate", "Bug11"),
+  bug("Ladybug", "Bug12"),
+  bug("Firefly", "Bug13"),
 ];
 
 const net = getItemMaker("bug catching nets");
@@ -34,14 +34,14 @@ export const bugCatchingNets = [
   net("Copper Netted Net", "CatchingNet2"),
   net("Reinforced Net", "CatchingNet3"),
   net("Golden Net", "CatchingNet4"),
-  net("Platinet"),
-  net("Dementia Net"),
-  net("Void Imperium Net"),
-  net("Lustre Netting"),
-  net("Starfire Trim Netting"),
-  net("Dreadlo Matted Netting"),
-  net("Marbiglass Netting"),
-  net("Wrangler of the Qoxzul"),
+  net("Platinet", "CatchingNet5"),
+  net("Dementia Net", "CatchingNet6"),
+  net("Void Imperium Net", "CatchingNet7"),
+  net("Lustre Netting", "CatchingNet8"),
+  net("Starfire Trim Netting", "CatchingNet9"),
+  net("Dreadlo Matted Netting", "CatchingNet10"),
+  net("Marbiglass Netting", "CatchingNet11"),
+  net("Wrangler of the Qoxzul", "CatchingNet12"),
 ];
 
 const nest = getDropperMaker("bug nest");
