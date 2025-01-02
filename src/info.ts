@@ -142,5 +142,15 @@ async function main() {
         `Needed for: ${matches.map((q) => `${q.name} (${q.npc}) x${q.inputs.find((i) => i.item === name)?.qty}`).join(", ")}`,
       );
   }
+
+  {
+    const matches = quests.filter((q) =>
+      q.outputs.find((i) => i.item === name),
+    );
+    if (matches.length)
+      console.log(
+        `Awarded by: ${matches.map((q) => `${q.name} (${q.npc}) x${q.outputs.find((i) => i.item === name)?.qty}`).join(", ")}`,
+      );
+  }
 }
 void main();

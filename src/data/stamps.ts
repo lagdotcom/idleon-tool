@@ -23,7 +23,7 @@ export const stamps = [
   i("Polearm Stamp"),
   i("Violence Stamp"),
   i("Buckler Stamp"),
-  i("Hermes Stamp"),
+  i("Hermes Stamp", "StampA22"),
   i("Sukka Foo"),
   i("Arcane Stamp"),
   i("Avast Yar Stamp"),

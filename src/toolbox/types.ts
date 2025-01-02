@@ -322,7 +322,7 @@ export type TreeCode =
   | "Tree13";
 
 export type DropperCode = FishingSpotCode | TreeCode;
-export type AFKTarget = MonsterTarget | DropperCode;
+export type AFKTarget = MonsterTarget | DropperCode | "Cooking";
 
 export type CardCode =
   | MonsterCode
@@ -830,6 +830,44 @@ export enum FishingLureCode {
 export enum FishingAdornmentCode {
   Adornment0 = 0,
   Adornment11 = 11,
+}
+
+export enum AnvilItem {
+  Thread,
+  TrustyNails,
+  BoringBrick,
+  ChainLink,
+  LeatherHide,
+  PinionSpur,
+  LugiBracket,
+  PurpleScrew,
+  Thingymabob,
+  TangledCords,
+  PVCPipe,
+}
+
+export enum PrayerIndex {
+  BigBrainTime,
+  SkilledDimwit,
+  UnendingEnergy,
+  ShinySwitch,
+  ZergRushogen,
+  TachionOfTheTitans,
+  BalanceOfPrecision,
+  MidasMinded,
+  Jawbreaker,
+  TheRoyalSampler,
+  AntifunSpirit,
+  CircularCriticals,
+  RuckSack,
+  FibersOfAbsence,
+  VacuousTissue,
+  BeefyForReal,
+  BalanceOfPain,
+  BalanceOfProficiency,
+  Glitterbug,
+
+  NONE = -1,
 }
 
 // https://spin.atomicobject.com/typescript-flexible-nominal-typing/

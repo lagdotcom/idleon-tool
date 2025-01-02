@@ -12,13 +12,13 @@ export const trapBoxSets = [
   set("Cardboard Traps", "TrapBoxSet1"),
   set("Silkskin Traps", "TrapBoxSet2"),
   set("Wooden Traps", "TrapBoxSet3"),
-  set("Natural Traps"),
-  set("Steel Traps"),
-  set("Meaty Traps"),
-  set("Royal Traps"),
-  set("Egalitarian Traps"),
-  set("Forbidden Traps"),
-  set("Containment of the Zrgyios"),
+  set("Natural Traps", "TrapBoxSet4"),
+  set("Steel Traps", "TrapBoxSet5"),
+  set("Meaty Traps", "TrapBoxSet6"),
+  set("Royal Traps", "TrapBoxSet7"),
+  set("Egalitarian Traps", "TrapBoxSet8"),
+  set("Forbidden Traps", "TrapBoxSet9"),
+  set("Containment of the Zrgyios", "TrapBoxSet10"),
 ];
 
 const critter = getItemMaker("critters");
@@ -41,10 +41,10 @@ export const critters = [
   critter("Jade Scarab", "Critter8A"),
   critter("Honker", "Critter9"),
   critter("Diamond Duck", "Critter9A"),
-  critter("Blobfish"),
-  critter("Voodofish"),
-  critter("Tuttle"),
-  critter("Tottoise"),
+  critter("Blobfish", "Critter10"),
+  critter("Voodofish", "Critter10A"),
+  critter("Tuttle", "Critter11"),
+  critter("Tottoise", "Critter11A"),
 ];
 
 const makeLocation = getDropperMaker("trapping location");

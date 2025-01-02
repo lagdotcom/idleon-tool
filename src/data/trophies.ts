@@ -3,7 +3,7 @@ import { getItemMaker } from "./tools";
 const i = getItemMaker("trophies");
 export const trophies = [
   i("King of Food"),
-  i("Lucky Lad"),
+  i("Lucky Lad", "Trophy2"),
   i("Club Member", "Trophy3"),
   i("Dice Dynamo"),
   i("Blunder Hero"),

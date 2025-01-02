@@ -104,7 +104,7 @@ export const monsterDrops = [
   i("Ripped Tunic", "EfauntDrop1"),
   i("Ribbed Tunic", "EfauntDrop2"),
   i("Chizoar Spike", "Chiz0"),
-  i("Chizoar Stalagmite"),
+  i("Chizoar Stalagmite", "Chiz1"),
   i("Troll Scales"),
   i("Kruk Tooth"),
   i("Kruk Cavity Tooth"),

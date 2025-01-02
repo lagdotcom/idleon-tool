@@ -2,6 +2,7 @@ import { Percentage } from "../flavours";
 import {
   AccountName,
   AFKTarget,
+  AnvilItem,
   BubbleCode,
   BundleCode,
   CardCode,
@@ -19,6 +20,7 @@ import {
   MonsterCode,
   NPCCode,
   PetCode,
+  PrayerIndex,
   QuestCode,
   Seconds,
   StarSign,
@@ -528,6 +530,43 @@ export type TrapInfo = [
   number,
 ];
 
+export type AnvilPAStats = [
+  points: number,
+  boughtWithMoney: number,
+  boughtWithMaterials: number,
+  bonusExp: number,
+  speed: number,
+  capacity: number,
+];
+
+export type LevelInfo = [
+  classLevel: number,
+  mining: number,
+  smithing: number,
+  choppin: number,
+  fishing: number,
+  alchemy: number,
+  catching: number,
+  trapping: number,
+  construction: number,
+  worship: number,
+  cooking: number,
+  breeding: number,
+  laboratory: number,
+  number,
+  number,
+  number,
+  number,
+  number,
+  number,
+  number,
+  number,
+  number,
+  number,
+  number,
+  number,
+];
+
 export interface DataJson {
   AchieveReg: EscapedJson<number[]>;
   AnvilCraftStatus: EscapedJson<number[][]>;
@@ -664,8 +703,8 @@ export interface DataJson {
 
   [key: `AFKtarget_${CharIndex}`]: AFKTarget;
   [key: `AnvilPA_${CharIndex}`]: DataArray<number>[];
-  [key: `AnvilPAselect_${CharIndex}`]: number[];
-  [key: `AnvilPAstats_${CharIndex}`]: number[];
+  [key: `AnvilPAselect_${CharIndex}`]: AnvilItem[];
+  [key: `AnvilPAstats_${CharIndex}`]: AnvilPAStats;
   [key: `AtkCD_${CharIndex}`]: EscapedJson<Record<numberQ, number>>;
   [key: `AttackLoadout_${CharIndex}`]: EscapedJson<("Null" | number)[][]>;
   [key: `AttackLoadoutpre_${CharIndex}`]: EscapedJson<("Null" | number)[][]>;
@@ -697,7 +736,7 @@ export interface DataJson {
   [key: `ItemQTY_${CharIndex}`]: number[];
   [key: `KLA_${CharIndex}`]: EscapedJson<number[][]>;
   [key: `LockedSlots_${CharIndex}`]: number[];
-  [key: `Lv0_${CharIndex}`]: number[];
+  [key: `Lv0_${CharIndex}`]: LevelInfo;
   [key: `MaxCarryCap_${CharIndex}`]: EscapedJson<CarryCap>;
   [key: `Money_${CharIndex}`]: number;
   [key: `NPCdialogue_${CharIndex}`]: EscapedJson<Record<NPCCode, number>>;
@@ -716,7 +755,7 @@ export interface DataJson {
   [key: `PlayerStuff_${CharIndex}`]: EscapedJson<number[]>;
   [key: `PldTraps_${CharIndex}`]: EscapedJson<TrapInfo[]>;
   [key: `POu_${CharIndex}`]: EscapedJson<number[]>;
-  [key: `Prayers_${CharIndex}`]: EscapedJson<number[]>;
+  [key: `Prayers_${CharIndex}`]: EscapedJson<PrayerIndex[]>;
   [key: `PTimeAway_${CharIndex}`]: UnixTimestamp;
   [key: `PVFishingSpotIndex_${CharIndex}`]: number;
   [key: `PVFishingToolkit_${CharIndex}`]: [
