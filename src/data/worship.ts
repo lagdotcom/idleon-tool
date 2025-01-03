@@ -7,7 +7,7 @@ export const worshipSkulls = [
   skull("Wax Skull", "WorshipSkull1"),
   skull("Ceramic Skull", "WorshipSkull2"),
   skull("Slush Skull"),
-  skull("Horned Skull"),
+  skull("Horned Skull", "WorshipSkull3"),
   skull("Prickle Skull"),
   skull("Manifested Skull"),
   skull("Glauss Skull"),
@@ -22,10 +22,10 @@ export const souls = [
   soul("Forest Soul", "Soul1"),
   soul("Dune Soul", "Soul2"),
   soul("Rooted Soul", "Soul3"),
-  soul("Frigid Soul"),
-  soul("Squishy Soul"),
-  soul("Oozie Soul"),
-  soul("Breezy Soul"),
+  soul("Frigid Soul", "Soul4"),
+  soul("Squishy Soul", "Soul5"),
+  soul("Oozie Soul", "Soul6"),
+  soul("Breezy Soul", "Soul7"),
 ];
 
 const loc = (name: string, item: GItemName, area: string): GDropper => ({

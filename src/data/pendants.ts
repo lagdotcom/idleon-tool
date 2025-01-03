@@ -11,7 +11,7 @@ export const pendants = [
   i("Tarantulight", "EquipmentPendant12"),
   i("Cedar Pendant", "EquipmentPendant19"),
   i("Chaotic Amarok Pendant"),
-  i("Polished Bludgeon"),
+  i("Polished Bludgeon", "EquipmentPendant26"),
   i("Fishhead Pendant"),
   i("Skullfish Pendant"),
   i("Fuscismatia"),
