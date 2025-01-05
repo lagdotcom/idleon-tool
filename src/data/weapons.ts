@@ -35,7 +35,7 @@ export const weapons = [
   bow("Birch Longbow", "EquipmentBows3"),
   bow("Carrot Launcher", "EquipmentBows4"),
   bow("Spiked Menace", "EquipmentBows5"),
-  bow("Pharaoh Bow"),
+  bow("Pharaoh Bow", "EquipmentBows6"),
   bow("Blizzard Bow"),
   bow("Blackhole Bow"),
   bow("Shardsure Leif"),
