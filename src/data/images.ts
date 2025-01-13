@@ -126,6 +126,7 @@ import biggieHoursCard from "../img/Biggie_Hours_Card.png";
 import biggoleMoleCard from "../img/Biggole_Mole_Card.png";
 import biggoleWurmCard from "../img/Biggole_Wurm_Card.png";
 import billBrrToken from "../img/Bill_Brr_Token.png";
+import billBrrsVote from "../img/Bill_Brr-s_Vote.png";
 import birchLongbow from "../img/Birch_Longbow.png";
 import birchTree from "../img/Birch_Tree.png";
 import birthdayCard from "../img/Birthday_Card.png";
@@ -1340,6 +1341,7 @@ import shiveringSack from "../img/Shivering_Sack.png";
 import shogunHelmet from "../img/Shogun_Helmet.png";
 import shrapshell from "../img/Shrapshell.png";
 import shuvelleToken from "../img/Shuvelle_Token.png";
+import shuvellesVote from "../img/Shuvelle-s_Vote.png";
 import siegeCaptainCap from "../img/Siege_Captain_Cap.png";
 import sigilStamp from "../img/Sigil_Stamp.png";
 import signedArrestWarrant from "../img/Signed_Arrest_Warrant.png";
@@ -2176,7 +2178,9 @@ export const imageURLs: Record<string, URLString> = Object.fromEntries([
   i("Dootophone", dootophone),
   i("Damaged Cog", damagedCog),
   i("Refurbished Cog", refurbishedCog),
+  i("Shuvelle's Vote", shuvellesVote),
   i("Yondergreens Vote", yondergreensVote),
+  i("Bill Brr's Vote", billBrrsVote),
   i("Signed Contract", signedContract),
   i("Blunderhills NPC Completion Token", blunderhillsNPCCompletionToken),
   i("Blunder Skills Completion Token", blunderSkillsCompletionToken),

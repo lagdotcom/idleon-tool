@@ -82,7 +82,7 @@ export const stamps = [
   i("Ladle Stamp"),
   i("Nest Eggs Stamp"),
   i("Egg Stamp"),
-  i("Lab Tube Stamp"),
+  i("Lab Tube Stamp", "StampB42"),
   i("Sailboat Stamp"),
   i("Gamejoy Stamp"),
   i("Divine Stamp"),

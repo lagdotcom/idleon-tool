@@ -9,7 +9,7 @@ export const weapons = [
   fist("Boxing Gloves"),
   fist("The Stingers", "EquipmentPunching2"),
   fist("Bandage Wraps", "EquipmentPunching3"),
-  fist("Uninflated Glove"),
+  fist("Uninflated Glove", "EquipmentPunching4"),
   fist("Eclectic Ordeal"),
   fist("Knuckle Sabers"),
   fist("Diabolical Gauntlet"),

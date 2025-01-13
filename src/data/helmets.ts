@@ -11,7 +11,7 @@ export const helmets = [
   i("Copper Helmet", "EquipmentHats17"),
   i("Militia Helm", "EquipmentHats20"),
   i("Thief Hood", "EquipmentHats3"),
-  i("Top Hat"),
+  i("Top Hat", "EquipmentHats16"),
   i("Birthday Hat"),
   i("Iron Helmet", "EquipmentHats18"),
   i("Amarok Helmet", "EquipmentHats22"),

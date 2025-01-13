@@ -12,7 +12,7 @@ export const rings = [
   i("Defenders Dignity", "EquipmentRings11"),
   i("Frisbee Ring", "EquipmentRings12"),
   i("Serrated Rex Ring", "EquipmentRings26"),
-  i("Death Wish"),
+  i("Death Wish", "EquipmentRings6"),
   i("Sanic Ring"),
   i("Bejeweled Ring"),
   i("Protectors Pride"),
