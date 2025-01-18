@@ -50,7 +50,7 @@ export const obols = [
   i("Golden Obol of Crazy Carp"),
   i("Golden Obol of Defence", "ObolGoldDef"),
   i("Golden Obol of Diligent Digging"),
-  i("Golden Obol of Experience"),
+  i("Golden Obol of Experience", "ObolGoldEXP"),
   i("Golden Obol of Huge Hackin"),
   i("Golden Obol of Insane Insects"),
   i("Golden Obol of Plentiful Riches", "ObolGoldMoney"),

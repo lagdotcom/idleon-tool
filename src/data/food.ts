@@ -63,7 +63,7 @@ export const boostFood = [
   boost("Soulble Gum"),
   boost("Bullet", "Bullet"),
   boost("FMJ Bullet"),
-  boost("Coldseeker Bullet"),
+  boost("Coldseeker Bullet", "Bullet3"),
   boost("Midnight Cookie", "MidnightCookie"),
   boost("Cherry Choco"),
 ];
