@@ -50,7 +50,7 @@ export const logsAndLeaves = [
   ll("Veiny Logs", "StumpTree"),
   ll("Tundra Logs", "SaharanFoal"),
   ll("Wispy Lumber", "Tree7"),
-  ll("Alien Hive Chunk"),
+  ll("Alien Hive Chunk", "AlienTree"),
   ll("Cubed Logs"),
   ll("Maple Logs"),
   ll("Dandielogs"),

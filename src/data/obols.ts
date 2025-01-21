@@ -102,7 +102,7 @@ export const obols = [
   i("Hyper DMG Obol"),
   i("Hyper DMG Obol B"),
   i("Hyper Pyre Obol"),
-  i("Hyper Pyre Obol B"),
+  i("Hyper Pyre Obol B", "ObolHyperB1"),
   i("Hyper Six Obol"),
   i("Hyper Six Obol B"),
   i("Hyper Skull Obol"),

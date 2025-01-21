@@ -8,6 +8,7 @@ export const misc = [
   i("Marvelous Obol Stack"),
   i("Bossius Obol Stack"),
   i("Hyper Obol Stack"),
+  i("Hyper Obol Stack Square Edition", "GemP35"),
 
   i("Crude Oil", "OilBarrel1"),
   i("Toxic Sludge", "OilBarrel2"),
@@ -27,7 +28,7 @@ export const misc = [
   i("Goldegg Capsule"),
   i("Beach Oyster"),
   i("Phone Box"),
-  i("Gem Envelope"),
+  i("Gem Envelope", "Quest71"),
   i("Spring Baggie"),
   i("Anniversary Box"),
   i("Falloween Treat"),

@@ -824,6 +824,7 @@ import huskyHat from "../img/Husky_Hat.png";
 import hyperDMGObol from "../img/Hyper_DMG_Obol.png";
 import hyperDMGObolB from "../img/Hyper_DMG_Obol_B.png";
 import hyperObolStack from "../img/Hyper_Obol_Stack.png";
+import hyperObolStackSquareEdition from "../img/Hyper_Obol_Stack_Square_Edition.png";
 import hyperPyreObol from "../img/Hyper_Pyre_Obol.png";
 import hyperPyreObolB from "../img/Hyper_Pyre_Obol_B.png";
 import hyperSixObol from "../img/Hyper_Six_Obol.png";
@@ -2555,6 +2556,7 @@ export const imageURLs: Record<string, URLString> = Object.fromEntries([
   i("Marvelous Obol Stack", marvelousObolStack),
   i("Bossius Obol Stack", bossiusObolStack),
   i("Hyper Obol Stack", hyperObolStack),
+  i("Hyper Obol Stack Square Edition", hyperObolStackSquareEdition),
 
   i("Crude Oil", crudeOil),
   i("Toxic Sludge", toxicSludge),

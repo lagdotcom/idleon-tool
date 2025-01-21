@@ -5,7 +5,7 @@ export const pendants = [
   i("Little Wooden Katana"),
   i("Sleek Shank", "EquipmentPendant10"),
   i("Crescent Moon Pendant"),
-  i("Deathbloom Flower Pendant"),
+  i("Deathbloom Flower Pendant", "EquipmentPendant31"),
   i("Carrot Horror", "EquipmentPendant11"),
   i("Strung Bludgeon"),
   i("Tarantulight", "EquipmentPendant12"),
