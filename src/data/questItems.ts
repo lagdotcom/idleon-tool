@@ -106,7 +106,7 @@ export const questItems = [
   i("Tundra NPC Completion Token"),
   i("Tundra Skills Completion Token"),
   i("Tundra Misc Completion Token"),
-  i("Sesame Seed"),
+  i("Sesame Seed", "Quest45"),
   i("Secret Map", "Quest87"),
   i("Blinding Lantern", "Quest90"),
   i("Elderly Peanut", "Quest47"),

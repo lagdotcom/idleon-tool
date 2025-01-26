@@ -13,7 +13,7 @@ export const shoes = [
   i("Gold Boots", "EquipmentShoes3"),
   i("Amarok Paws", "EquipmentShoes20"),
   i("Platinum Boots", "EquipmentShoes4"),
-  i("Dementia Boots"),
+  i("Dementia Boots", "EquipmentShoes5"),
   i("Efaunts Broken Ankles", "EquipmentShoes21"),
   i("Void Imperium Kicks"),
   i("Chizoar Walkers"),

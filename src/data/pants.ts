@@ -14,7 +14,7 @@ export const pants = [
   i("Adam's Leaf", "EquipmentPants16"),
   i("Amarok Hinds", "EquipmentPants17"),
   i("Platinum Shins", "EquipmentPants5"),
-  i("Dementia Shins"),
+  i("Dementia Shins", "EquipmentPants6"),
   i("Efaunt Hipilium", "EquipmentPants20"),
   i("Trimmed Rune Platelegs"),
   i("Void Imperium Shardshins"),

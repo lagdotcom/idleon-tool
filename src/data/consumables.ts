@@ -30,7 +30,7 @@ export const characterConsumables = [
   char("Star Talent Reset Potion", "ResetCompletedS"),
   char("Sub Class Swap Token"),
   char("Elite Class Swap Token"),
-  char("Post Office Box Reseto Magnifico"),
+  char("Post Office Box Reseto Magnifico", "ResetBox"),
   char("Hat Premiumifier"),
   char("Premium Stone Refunder"),
   char("Premium Bonus Swapper"),
@@ -46,7 +46,7 @@ export const characterConsumables = [
   char("Anvil Reset Whetstone"),
   char("Bottled Town Teleport", "rtt0"),
   char("Bottled World Town Teleport"),
-  char("Equinox Mirror"),
+  char("Equinox Mirror", "Quest78"),
 ];
 
 const acc = getItemMaker("account");

@@ -10,7 +10,7 @@ export const pendants = [
   i("Strung Bludgeon"),
   i("Tarantulight", "EquipmentPendant12"),
   i("Cedar Pendant", "EquipmentPendant19"),
-  i("Chaotic Amarok Pendant"),
+  i("Chaotic Amarok Pendant", "EquipmentPendant17"),
   i("Polished Bludgeon", "EquipmentPendant26"),
   i("Fishhead Pendant"),
   i("Skullfish Pendant"),

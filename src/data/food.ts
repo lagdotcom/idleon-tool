@@ -57,7 +57,7 @@ export const boostFood = [
   boost("Slurpin Herm", "FoodFish1"),
   boost("Candy Canes", "FoodEvent3"),
   boost("Aqua Pearl"),
-  boost("Buttered Toasted Butter"),
+  boost("Buttered Toasted Butter", "FoodCatch1"),
   boost("Mistleberries", "FoodEvent4"),
   boost("Critter Numnums"),
   boost("Soulble Gum"),

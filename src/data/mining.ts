@@ -36,7 +36,7 @@ export const oresAndBars = [
   ob("Starfire Ore"),
   ob("Dreadlo Ore"),
   ob("Godshard Ore"),
-  ob("Marble Ore"),
+  ob("Marble Ore", "Marble"),
 
   ob("Copper Bar", "CopperBar"),
   ob("Iron Bar", "IronBar"),
