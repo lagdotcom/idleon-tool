@@ -164,7 +164,7 @@ function ShopDisplay({
   );
 }
 
-function getQty(name: GItemName, wanted: [GItemName, Quantity][]) {
+function getWantedQty(name: GItemName, wanted: [GItemName, Quantity][]) {
   const entry = wanted.find((w) => w[0] === name);
   if (entry) return entry[1];
 }
@@ -239,7 +239,7 @@ export default function ResultsDisplay({
             <RecipeDisplay
               key={r.output}
               recipe={r}
-              qty={getQty(r.output, wanted)}
+              qty={getWantedQty(r.output, needed)}
             />
           ))}
         </div>

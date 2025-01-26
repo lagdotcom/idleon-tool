@@ -17,7 +17,7 @@ import { OwnedState } from "../state/owned";
 import { selectOwned, selectTodo } from "../state/selectors";
 import { saveSoon } from "../state/thunks";
 import { addTodo, TodoState } from "../state/todo";
-import { array, entries } from "../tools";
+import { addQty, array, entries, getQty } from "../tools";
 import styles from "./App.module.scss";
 import FilterField from "./FilterField";
 import ItemPicker from "./ItemPicker";
@@ -27,24 +27,12 @@ import SavingIndicator from "./SavingIndicator";
 import UploadButton from "./UploadButton";
 
 class Gatherer {
-  droppers: Set<GExpandedDropper>;
   haveAlready: Map<GItemName, Quantity>;
-  produce: TodoState;
-  quests: Set<GQuest>;
-  recipes: Set<GRecipe>;
-  shops: Set<GShop>;
-  unknown: TodoState;
-  totalWanted: TodoState;
+  totalWanted: Map<GItemName, Quantity>;
 
   constructor() {
-    this.droppers = new Set();
     this.haveAlready = new Map();
-    this.produce = {};
-    this.quests = new Set();
-    this.recipes = new Set();
-    this.shops = new Set();
-    this.unknown = {};
-    this.totalWanted = {};
+    this.totalWanted = new Map();
   }
 
   have(item: GItemName, qty: Quantity) {
@@ -52,68 +40,110 @@ class Gatherer {
   }
 
   want(item: GItemName, qty: Quantity) {
-    this.totalWanted[item] = (this.totalWanted[item] ?? 0) + qty;
+    addQty(this.totalWanted, item, qty);
+  }
+
+  private source(item: GItemName, qty: Quantity) {
+    const myDroppers = new Set<GExpandedDropper>();
+    const myQuests = new Set<GQuest>();
+    const myRecipes = new Set<GRecipe>();
+    const myWants = new Map<GItemName, Quantity>();
+    const myShops = new Set<GShop>();
+    let myProduce = 0;
+    let myUnknown = 0;
 
     const drop = expandedDroppers.filter((r) =>
       r.drops.find((d) => d.item === item),
     );
-    for (const dropper of drop) this.droppers.add(dropper);
+    for (const dropper of drop) myDroppers.add(dropper);
 
     const ql = array(quests).filter((q) =>
       q.outputs.find((n) => n.item === item),
     );
-    for (const quest of ql) this.quests.add(quest);
+    for (const quest of ql) myQuests.add(quest);
 
     const recipe = recipes.find((r) => r.output === item);
     if (recipe) {
-      this.recipes.add(recipe);
-      for (const i of recipe.input) this.want(i.item, i.qty * qty);
+      myRecipes.add(recipe);
+      for (const i of recipe.input) addQty(myWants, i.item, i.qty * qty);
     }
 
     const sl = array(shops).filter((s) => s.stock.find((e) => e.item === item));
-    for (const shop of sl) this.shops.add(shop);
+    for (const shop of sl) myShops.add(shop);
 
-    if (materialProduction.includes(item) || alchemyProduction.includes(item)) {
-      this.produce[item] = (this.produce[item] ?? 0) + qty;
-      return;
-    }
+    if (materialProduction.includes(item) || alchemyProduction.includes(item))
+      myProduce = qty;
+    else if (!drop.length && !ql.length && !recipe && !sl.length)
+      myUnknown = qty;
 
-    if (!drop.length && !ql.length && !recipe && !sl.length)
-      this.unknown[item] = (this.unknown[item] ?? 0) + qty;
+    return {
+      droppers: myDroppers,
+      quests: myQuests,
+      recipes: myRecipes,
+      wants: myWants,
+      shops: myShops,
+      produce: myProduce,
+      unknown: myUnknown,
+    };
   }
 
   results() {
-    const {
-      droppers,
-      haveAlready,
-      produce,
-      quests,
-      recipes,
-      shops,
-      totalWanted,
-      unknown,
-    } = this;
+    const { totalWanted, haveAlready } = this;
 
-    const owned: [GItemName, Quantity][] = [];
-    const needed: [GItemName, Quantity][] = [];
-    const wanted = entries(totalWanted);
-    for (const [item, qty] of wanted) {
-      const got = haveAlready.get(item) ?? 0;
-      const need = qty - got;
-      if (need > 0) needed.push([item, need]);
-      if (got > 0) owned.push([item, got]);
+    const droppers = new Set<GExpandedDropper>();
+    const quests = new Set<GQuest>();
+    const recipes = new Set<GRecipe>();
+    const shops = new Set<GShop>();
+    const produce = new Map<GItemName, Quantity>();
+    const unknown = new Map<GItemName, Quantity>();
+
+    const owned = new Map<GItemName, Quantity>();
+    const needed = new Map<GItemName, Quantity>();
+    const processed = new Map<GItemName, Quantity>();
+    const wantedQueue = array(totalWanted);
+    while (wantedQueue.length) {
+      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+      const [item, qty] = wantedQueue.shift()!;
+
+      const alreadyProcessed = getQty(processed, item);
+      const totalQty: Quantity = alreadyProcessed + qty;
+      const alreadyOwned = getQty(haveAlready, item);
+      const surplus: Quantity = alreadyOwned - totalQty;
+
+      if (surplus >= 0) {
+        owned.set(item, totalQty);
+      } else {
+        if (alreadyOwned) owned.set(item, alreadyOwned);
+        const stillNeed = -surplus;
+        needed.set(item, stillNeed);
+
+        const toProcess = Math.min(qty, stillNeed);
+        const s = this.source(item, toProcess);
+
+        for (const x of s.droppers) droppers.add(x);
+        if (s.produce) addQty(produce, item, s.produce);
+        for (const x of s.quests) quests.add(x);
+        for (const x of s.recipes) recipes.add(x);
+        for (const x of s.shops) shops.add(x);
+        if (s.unknown) addQty(unknown, item, s.unknown);
+
+        for (const [wantItem, wantQty] of s.wants)
+          wantedQueue.push([wantItem, wantQty]);
+      }
+
+      processed.set(item, totalQty);
     }
 
     return {
       droppers: array(droppers).sort((a, b) => a.name.localeCompare(b.name)),
-      needed,
-      owned,
-      produce: entries(produce),
-      quests: array(quests),
+      needed: array(needed),
+      owned: array(owned),
+      produce: array(produce),
+      quests: array(quests).sort((a, b) => a.name.localeCompare(b.name)),
       recipes: array(recipes).sort((a, b) => a.output.localeCompare(b.output)),
-      shops: array(shops),
-      unknown: entries(unknown),
-      wanted,
+      shops: array(shops).sort((a, b) => a.name.localeCompare(b.name)),
+      unknown: array(unknown),
+      wanted: array(processed),
     };
   }
 }

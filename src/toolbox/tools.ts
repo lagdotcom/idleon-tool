@@ -1,5 +1,5 @@
 import { Quantity } from "../flavours";
-import { naturals } from "../tools";
+import { addQty, naturals } from "../tools";
 import { DataArray, IdleonToolboxJson } from "./IdleonToolbox";
 import { CharIndex, ItemCode } from "./types";
 
@@ -7,7 +7,7 @@ function extractDataArray<T>(array: DataArray<T>) {
   return naturals(array.length).map((i) => array[`${i}`]);
 }
 
-function addQty<T>(item: T, qty: Quantity = 1) {
+function toQty<T>(item: T, qty: Quantity = 1) {
   return { item, qty };
 }
 
@@ -31,18 +31,18 @@ export function getCharacter(json: IdleonToolboxJson, ci: CharIndex) {
   const EquipOrder = json.data[`EquipOrder_${ci}`].flatMap(extractDataArray);
   const EquipQty = json.data[`EquipQTY_${ci}`].flatMap(extractDataArray);
   const equipment = EquipOrder.map((item, i) =>
-    addQty(item, EquipQty[i]),
+    toQty(item, EquipQty[i]),
   ).filter(isRealItemEntry);
 
   const Inventory = json.data[`InventoryOrder_${ci}`];
   const InventoryQty = json.data[`ItemQTY_${ci}`];
   const inventory = Inventory.map((item, i) =>
-    addQty(item, InventoryQty[i]),
+    toQty(item, InventoryQty[i]),
   ).filter(isRealItemEntry);
 
   const obols = json.data[`ObolEqO0_${ci}`]
     .filter(isRealObol)
-    .map((item) => addQty(item));
+    .map((item) => toQty(item));
 
   return { equipment, inventory, obols };
 }
@@ -51,7 +51,7 @@ export function getAllOwnedItems(json: IdleonToolboxJson) {
   const counts = new Map<ItemCode, Quantity>();
 
   const add = ({ item, qty }: { item: ItemCode; qty: Quantity }) =>
-    counts.set(item, qty + (counts.get(item) ?? 0));
+    addQty(counts, item, qty);
 
   for (let ci: CharIndex = 0; ci < json.charNames.length; ci++) {
     const { equipment, inventory, obols } = getCharacter(json, ci);
@@ -62,17 +62,17 @@ export function getAllOwnedItems(json: IdleonToolboxJson) {
   }
 
   const storage = json.data.ChestOrder.map((item, i) =>
-    addQty(item, json.data.ChestQuantity[i]),
+    toQty(item, json.data.ChestQuantity[i]),
   ).filter(isRealItemEntry);
   storage.forEach(add);
 
   const obolInventory = json.data.ObolInvOr.flatMap(extractDataArray)
-    .map((item) => addQty(item))
+    .map((item) => toQty(item))
     .filter(isRealItemEntry);
   obolInventory.forEach(add);
 
   const obols = json.data.ObolEqO1.filter(isRealObol).map((item) =>
-    addQty(item),
+    toQty(item),
   );
   obols.forEach(add);
 
