@@ -97,7 +97,7 @@ export const monsterDrops = [
   i("Royal Yolk"),
   i("Royal Fabric"),
   i("Royal Headpiece"),
-  i("Baba Yaga Baby Eggs"),
+  i("Baba Yaga Baby Eggs", "BabaYagaETC"),
   i("Minuteglass", "Hgg"),
   i("Amarok Slab", "Quest17"),
   i("Chaotic Amarok Slab", "Quest29"),

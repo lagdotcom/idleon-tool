@@ -116,5 +116,5 @@ export const obols = [
   i("Molten Obol of Dead Divine"),
   i("Skeletal Obol of Efaunt's Gaze"),
   i("Slushy Obol of Much Dilapidation", "ObolSlush"),
-  i("Vigilant Obol of Ice Guard"),
+  i("Vigilant Obol of Ice Guard", "ObolKnight"),
 ];
