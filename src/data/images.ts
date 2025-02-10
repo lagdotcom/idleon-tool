@@ -1159,6 +1159,7 @@ import pincerminCard from "../img/Pincermin_Card.png";
 import pingy from "../img/Pingy.png";
 import pingyCard from "../img/Pingy_Card.png";
 import pinionSpur from "../img/Pinion_Spur.png";
+import pinkBeanie from "../img/Pink_Beanie.png";
 import pinkHeadband from "../img/Pink_Headband.png";
 import plank from "../img/Plank.png";
 import planktop from "../img/Planktop.png";
@@ -1650,6 +1651,7 @@ import twosoulStatue from "../img/Twosoul_Statue.png";
 import tysonCard from "../img/Tyson_Card.png";
 import ultraUnboxer from "../img/Ultra_Unboxer.png";
 import uninflatedGlove from "../img/Uninflated_Glove.png";
+import valenslimeChest from "../img/Valenslime_Chest.png";
 import valentslimeCard from "../img/Valentslime_Card.png";
 import valvePatentedCircleThingies from "../img/Valve_Patented_Circle_Thingies.png";
 import veinyLogs from "../img/Veiny_Logs.png";
@@ -2981,6 +2983,7 @@ export const imageURLs: Record<string, URLString> = Object.fromEntries([
   i("Dairy Dunk", dairyDunk),
   i("Snowman", snowman),
   i("Husky Hat", huskyHat),
+  i("Pink Beanie", pinkBeanie),
 
   i("Leafy Ring", leafyRing),
   i("Bob Ring", bobRing),
@@ -3551,6 +3554,7 @@ export const imageURLs: Record<string, URLString> = Object.fromEntries([
   i("Storage Chest 99B", storageChest99B),
   i("Storage Chest 99C", storageChest99C),
   i("Holiday Chest", holidayChest),
+  i("Valenslime Chest", valenslimeChest),
 
   i("Easter Armor Stone", easterArmorStone),
   i("Summer Armor Stone", summerArmorStone),

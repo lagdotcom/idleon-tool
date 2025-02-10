@@ -175,6 +175,7 @@ export const storageChests = [
   chest("Ninja Chest"),
   chest("Cosmic Storage Chest"),
   chest("Holiday Chest"),
+  chest("Valenslime Chest", "InvStorageL"),
   chest("Storage Chest 90"),
   chest("Storage Chest 91"),
   chest("Storage Chest 92"),

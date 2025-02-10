@@ -67,4 +67,5 @@ export const helmets = [
   i("Funny Hat"),
   i("Meteorhead"),
   i("Epic Santa Hat", "EquipmentHats111"),
+  i("Pink Beanie", "EquipmentHats113"),
 ];
