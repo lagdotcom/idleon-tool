@@ -113,7 +113,7 @@ export const stamps = [
   i("Talent S Stamp"),
   i("Multikill Stamp"),
   i("Biblio Stamp"),
-  i("DNA Stamp"),
+  i("DNA Stamp", "StampC21"),
   i("Refinery Stamp"),
   i("Atomic Stamp"),
 ];

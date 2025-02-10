@@ -11,9 +11,9 @@ export const materials = [
   i("Pinion Spur", "CraftMat8"),
   i("Lugi Bracket", "CraftMat10"),
   i("Purple Screw", "CraftMat11"),
-  i("Thingymabob"),
-  i("Tangled Cords"),
-  i("PVC Pipe"),
+  i("Thingymabob", "CraftMat12"),
+  i("Tangled Cords", "CraftMat13"),
+  i("PVC Pipe", "CraftMat14"),
 
   i("Distilled Water", "PureWater"),
   i("Dense Water", "PureWater2"),
