@@ -22,4 +22,5 @@ export const pendants = [
   i("Persephones Bouquet"),
   i("Strung Tooth of the Divine"),
   i("The Divine Scarf"),
+  i("Slimy Necklace", "EquipmentPendant32"),
 ];

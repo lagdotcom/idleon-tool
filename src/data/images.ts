@@ -1401,6 +1401,7 @@ import sleekShank from "../img/Sleek_Shank.png";
 import slimeCard from "../img/Slime_Card.png";
 import slimeSludge from "../img/Slime_Sludge.png";
 import slimsharpFin from "../img/Slimsharp_Fin.png";
+import slimyNecklace from "../img/Slimy_Necklace.png";
 import slurpinHerm from "../img/Slurpin_Herm.png";
 import slushSkull from "../img/Slush_Skull.png";
 import slushyObolOfMuchDilapidation from "../img/Slushy_Obol_of_Much_Dilapidation.png";
@@ -2938,6 +2939,7 @@ export const imageURLs: Record<string, URLString> = Object.fromEntries([
   i("Persephones Bouquet", persephonesBouquet),
   i("Strung Tooth of the Divine", strungToothOfTheDivine),
   i("The Divine Scarf", theDivineScarf),
+  i("Slimy Necklace", slimyNecklace),
 
   i("Bandit Bob Mask", banditBobMask),
   i("Invisible Hat", invisibleHat),

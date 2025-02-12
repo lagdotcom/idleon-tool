@@ -7,7 +7,7 @@ export const premiumHelmets = [
   helmet("Hotdog Hero"),
   helmet("Parasite"),
   helmet("Giftmas Tree"),
-  helmet("Pop Cat"),
+  helmet("Pop Cat", "EquipmentHats47"),
   helmet("The Classic"),
   helmet("Green Beanie"),
   helmet("Big Bunny"),

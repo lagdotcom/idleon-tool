@@ -4,7 +4,7 @@ const i = getItemMaker("shoes");
 export const shoes = [
   i("Flip Flops", "EquipmentShoes9"),
   i("Copper Boots", "EquipmentShoes1"),
-  i("Goo Galoshes"),
+  i("Goo Galoshes", "EquipmentShoes7"),
   i("Iron Boots", "EquipmentShoes15"),
   i("Cavern Trekkers", "EquipmentShoes16"),
   i("Logger Heels", "EquipmentShoes17"),
