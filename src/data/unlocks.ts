@@ -143,7 +143,7 @@ export const storageChests = [
   chest("Storage Chest 1"),
   chest("Storage Chest 2"),
   chest("Storage Chest 3"),
-  chest("Storage Chest 4"),
+  chest("Storage Chest 4", "InvStorage4"),
   chest("Storage Chest 5"),
   chest("Storage Chest 6"),
   chest("Storage Chest 7"),

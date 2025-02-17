@@ -4,7 +4,7 @@ const i = getItemMaker("shirts");
 export const shirts = [
   i("Spore Tee", "EquipmentShirts16"),
   i("Black Tee"),
-  i("Orange Tee"),
+  i("Orange Tee", "EquipmentShirts1"),
   i("Green Tee"),
   i("Purple Tee"),
   i("Blue Tee"),

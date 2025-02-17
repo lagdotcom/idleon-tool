@@ -27,7 +27,7 @@ export const misc = [
   i("Gummy Bunny"),
   i("Goldegg Capsule"),
   i("Beach Oyster"),
-  i("Phone Box"),
+  i("Phone Box", "Quest70"),
   i("Gem Envelope", "Quest71"),
   i("Spring Baggie"),
   i("Anniversary Box"),

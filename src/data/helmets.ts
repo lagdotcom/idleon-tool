@@ -3,7 +3,7 @@ import { getItemMaker } from "./tools";
 const i = getItemMaker("helmets");
 export const helmets = [
   i("Grey Beret"),
-  i("Traffic Cone"),
+  i("Traffic Cone", "EquipmentHats12"),
   i("Propeller Cap"),
   i("Baseball Hat"),
   i("Farmer Brim"),

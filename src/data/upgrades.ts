@@ -3,7 +3,7 @@ import { getItemMaker } from "./tools";
 const stone = getItemMaker("upgrade stones");
 export const upgradeStones = [
   stone("Easter Armor Stone"),
-  stone("Summer Armor Stone"),
+  stone("Summer Armor Stone", "StoneAeB"),
   stone("Armor Upgrade Stone I", "StoneA1"),
   stone("Armor Upgrade Stone G", "StoneA1b"),
   stone("Armor Upgrade Stone II", "StoneA2"),
@@ -15,7 +15,7 @@ export const upgradeStones = [
   stone("Armor Upgrade Stone SK"),
   stone("Armor Upgrade Stone VI"),
   stone("Easter Weapon Stone"),
-  stone("Summer Weapon Stone"),
+  stone("Summer Weapon Stone", "StoneWeb"),
   stone("Weapon Upgrade Stone I", "StoneW1"),
   stone("Weapon Upgrade Stone II", "StoneW2"),
   stone("Weapon Upgrade Stone III", "StoneW3"),

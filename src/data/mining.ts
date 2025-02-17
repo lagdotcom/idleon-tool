@@ -8,7 +8,7 @@ import {
 
 const pick = getItemMaker("pickaxes");
 export const pickaxes = [
-  pick("Junk Pickaxe"),
+  pick("Junk Pickaxe", "EquipmentTools1"),
   pick("Copper Pickaxe", "EquipmentTools2"),
   pick("Iron Pickaxe", "EquipmentTools3"),
   pick("Skewered Snek"),

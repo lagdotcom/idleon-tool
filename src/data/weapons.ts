@@ -6,7 +6,7 @@ const bow = getItemMaker("bows");
 const wand = getItemMaker("wands");
 
 export const weapons = [
-  fist("Boxing Gloves"),
+  fist("Boxing Gloves", "EquipmentPunching1"),
   fist("The Stingers", "EquipmentPunching2"),
   fist("Bandage Wraps", "EquipmentPunching3"),
   fist("Uninflated Glove", "EquipmentPunching4"),
