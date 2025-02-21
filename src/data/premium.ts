@@ -47,6 +47,7 @@ export const premiumHelmets = [
   helmet("Dairy Dunk"),
   helmet("Snowman"),
   helmet("Husky Hat", "EquipmentHats109"),
+  helmet("Ice Cream Sundae", "EquipmentHatsBeg1"),
 ];
 
 const ring = getItemMaker("chat rings");
@@ -74,7 +75,7 @@ export const capes = [
   cape("Blighted Chizoar Shard Cape"),
   cape("Cascading Scaled Cape of Krieg"),
   cape("Molten Cloak"),
-  cape("Giant Rose"),
+  cape("Giant Rose", "EquipmentCape8"),
   cape("Giant Violet"),
   cape("Giant Starflower"),
   cape("Riftwalker Wings"),

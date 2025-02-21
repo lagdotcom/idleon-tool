@@ -832,6 +832,7 @@ import hyperSixObolB from "../img/Hyper_Six_Obol_B.png";
 import hyperSkullObol from "../img/Hyper_Skull_Obol.png";
 import hyperSkullObolB from "../img/Hyper_Skull_Obol_B.png";
 import iceAge3 from "../img/Ice_Age_3.png";
+import iceCreamSundae from "../img/Ice_Cream_Sundae.png";
 import iceGuardCard from "../img/Ice_Guard_Card.png";
 import iceGuardHelmet from "../img/Ice_Guard_Helmet.png";
 import icefish from "../img/Icefish.png";
@@ -2986,6 +2987,7 @@ export const imageURLs: Record<string, URLString> = Object.fromEntries([
   i("Snowman", snowman),
   i("Husky Hat", huskyHat),
   i("Pink Beanie", pinkBeanie),
+  i("Ice Cream Sundae", iceCreamSundae),
 
   i("Leafy Ring", leafyRing),
   i("Bob Ring", bobRing),

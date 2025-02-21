@@ -24,7 +24,7 @@ export const obols = [
   i("Silver AGI Obol", "ObolSilver1"),
   i("Silver WIS Obol", "ObolSilver2"),
   i("Silver LUK Obol", "ObolSilver3"),
-  i("Silver Obol of Big Bark"),
+  i("Silver Obol of Big Bark", "ObolSilverChoppin"),
   i("Silver Obol of Big Bugs", "ObolSilverCatching"),
   i("Silver Obol of Cards", "ObolSilverCard"),
   i("Silver Obol of Construction", "ObolSilverCons"),
