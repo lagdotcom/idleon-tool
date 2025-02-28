@@ -57,7 +57,7 @@ export const helmets = [
   i("The Crow Perch"),
 
   i("Ice Guard Helmet"),
-  i("Big Pretty Bow"),
+  i("Big Pretty Bow", "EquipmentHats51"),
   i("Bunny Ears"),
   i("Summer Shell"),
   i("Santa Hat"),

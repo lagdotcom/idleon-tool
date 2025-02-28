@@ -50,7 +50,7 @@ export const questItems = [
   i("Flowies", "Quest41"),
   i("The Bobber Challenge Scroll", "Quest46"),
   i("Dootophone"),
-  i("Damaged Cog"),
+  i("Damaged Cog", "Quest57"),
   i("Refurbished Cog"),
   i("Shuvelle's Vote", "Quest59"),
   i("Yondergreens Vote", "Quest60"),
@@ -112,4 +112,6 @@ export const questItems = [
   i("Elderly Peanut", "Quest47"),
   i("Pete the Peanut", "Quest48"),
   i("Worship Floppy Disc", "Quest93"),
+  i("Bottled Wind", "Quest72"),
+  i("Gaming Fertilizer", "Quest73"),
 ];

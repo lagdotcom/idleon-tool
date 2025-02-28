@@ -32,7 +32,7 @@ export const oresAndBars = [
   ob("Platinum Ore", "Plat"),
   ob("Dementia Ore", "Dementia"),
   ob("Void Ore", "Void"),
-  ob("Lustre Ore"),
+  ob("Lustre Ore", "Lustre"),
   ob("Starfire Ore"),
   ob("Dreadlo Ore"),
   ob("Godshard Ore"),
@@ -44,11 +44,11 @@ export const oresAndBars = [
   ob("Platinum Bar", "PlatBar"),
   ob("Dementia Bar", "DementiaBar"),
   ob("Void Bar", "VoidBar"),
-  ob("Lustre Bar"),
+  ob("Lustre Bar", "LustreBar"),
   ob("Starfire Bar"),
   ob("Dreadlo Bar"),
   ob("Godshard Bar"),
-  ob("Marble Bar"),
+  ob("Marble Bar", "MarbleBar"),
 ];
 
 const node = getDropperMaker("node");

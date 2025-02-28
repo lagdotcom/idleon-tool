@@ -14,6 +14,7 @@ import Acorn from "../img/Acorn.png";
 import acornAssault from "../img/Acorn_Assault_Totem.gif";
 import acornTopper from "../img/Acorn_Topper.png";
 import adamsLeaf from "../img/Adam-s_Leaf.png";
+import adeptRecipe from "../img/Adept_Recipe.png";
 import adornmentOfTheHighPriest from "../img/Adornment_of_the_High_Priest.png";
 import agileStamp from "../img/Agile_Stamp.png";
 import alchGoBrrrStamp from "../img/Alch_Go_Brrr_Stamp.png";
@@ -178,6 +179,7 @@ import borzoiTopper from "../img/Borzoi_Topper.png";
 import bossiusObolStack from "../img/Bossius_Obol_Stack.png";
 import bottleCap from "../img/Bottle_Cap.png";
 import bottledTownTeleport from "../img/Bottled_Town_Teleport.png";
+import bottledWind from "../img/Bottled_Wind.png";
 import bottledWorldTownTeleport from "../img/Bottled_World_Town_Teleport.png";
 import boxStatue from "../img/Box_Statue.png";
 import boxingGloves from "../img/Boxing_Gloves.png";
@@ -643,6 +645,7 @@ import galacticLeaf from "../img/Galactic_Leaf.png";
 import galaxialAmethyst from "../img/Galaxial_Amethyst.png";
 import galaxyCardPack from "../img/Galaxy_Card_Pack.png";
 import gamejoyStamp from "../img/Gamejoy_Stamp.png";
+import gamingFertilizer from "../img/Gaming_Fertilizer.png";
 import gargantuanBugPouch from "../img/Gargantuan_Bug_Pouch.png";
 import gargantuanChoppingPouch from "../img/Gargantuan_Chopping_Pouch.png";
 import gargantuanCrittaPouch from "../img/Gargantuan_Critta_Pouch.png";
@@ -3058,6 +3061,7 @@ export const imageURLs: Record<string, URLString> = Object.fromEntries([
   i("Bucket of Slush (Apprentice Recipe)", apprenticeRecipe),
   i("Midnight Stopwatch (Apprentice Recipe)", apprenticeRecipe),
   i("Double Barreled DNA Splicer (Journeyman Recipe)", journeymanRecipe),
+  i("Colossal Matty Pouch (Adept Recipe)", adeptRecipe),
 
   i("Copper Band", copperBand),
   i("Pugilist Demise", pugilistDemise),
@@ -3708,4 +3712,6 @@ export const imageURLs: Record<string, URLString> = Object.fromEntries([
   i("Cooking Ladle", cookingLadle),
   i("Cosmic Ball", cosmicBall),
   i("Worship Floppy Disc", worshipFloppyDisc),
+  i("Bottled Wind", bottledWind),
+  i("Gaming Fertilizer", gamingFertilizer),
 ]);

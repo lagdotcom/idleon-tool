@@ -25,7 +25,7 @@ export const hatchets = [
   hatchet("Stinky Axe", "EquipmentToolsHatchet2b"),
   hatchet("Plat Hatchet", "EquipmentToolsHatchet4"),
   hatchet("Dementia Dicer"),
-  hatchet("Void Imperium Axe"),
+  hatchet("Void Imperium Axe", "EquipmentToolsHatchet7"),
   hatchet("Lustre Logger"),
   hatchet("Starfire Hatchet"),
   hatchet("Dreadlo Hatchet"),
@@ -38,7 +38,7 @@ export const logsAndLeaves = [
   ll("Twisty Leaf", "Leaf2"),
   ll("Arctic Leaf", "Leaf3"),
   ll("Galactic Leaf", "Leaf4"),
-  ll("Magma Leaf"),
+  ll("Magma Leaf", "Leaf5"),
   ll("Spirit Leaf"),
 
   ll("Oak Logs", "OakTree"),

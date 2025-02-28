@@ -2,6 +2,7 @@ import { getItemMaker } from "./tools";
 
 const i = getItemMaker("anvil recipes");
 export const recipeItems = [
+  // SmithingRecipes1
   i("Copper Band (Beginner Recipe)"),
   i("Iron Boots (Beginner Recipe)"),
   i("Steel Band (Beginner Recipe)"),
@@ -23,8 +24,13 @@ export const recipeItems = [
   i("Skullfish Pendant (Novice Recipe)"),
   i("Star Talent Reset Potion (Novice Recipe)"),
 
+  // SmithingRecipes3
   i("Bucket of Slush (Apprentice Recipe)"),
   i("Midnight Stopwatch (Apprentice Recipe)"),
 
+  // SmithingRecipes4
   i("Double Barreled DNA Splicer (Journeyman Recipe)"),
+
+  // SmithingRecipes5
+  i("Colossal Matty Pouch (Adept Recipe)"),
 ];

@@ -36,7 +36,7 @@ export const characterConsumables = [
   char("Premium Bonus Swapper"),
   char("Gold Food Coupon", "Gfoodcoupon"),
   char("Resource Coupon"),
-  char("Really Really Resource Coupon"),
+  char("Really Really Resource Coupon", "ItemsCoupon2"),
   char("Black Pearl", "Pearl4"),
   char("Divinity Pearl", "Pearl6"),
   char("Holy Pearl", "Pearl5"),

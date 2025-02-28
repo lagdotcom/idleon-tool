@@ -45,7 +45,7 @@ export const obols = [
   i("Gold WIS Obol", "ObolGold2"),
   i("Gold LUK Obol", "ObolGold3"),
   i("Golden Obol of Big Boy Damage", "ObolGoldDamage"),
-  i("Golden Obol of Cards"),
+  i("Golden Obol of Cards", "ObolGoldCard"),
   i("Golden Obol of Construction", "ObolGoldCons"),
   i("Golden Obol of Crazy Carp"),
   i("Golden Obol of Defence", "ObolGoldDef"),
@@ -108,7 +108,7 @@ export const obols = [
   i("Hyper Skull Obol"),
   i("Hyper Skull Obol B"),
 
-  i("Frozen Obol of Chizoar's Rage"),
+  i("Frozen Obol of Chizoar's Rage", "ObolChizoarA"),
   i("Granite Obol of Amarok's Stare", "ObolAmarokA"),
   i("Grumpy Obol of the Grandfrogger", "ObolFrog"),
   i("Jagged Obol of Massive Trolling"),
