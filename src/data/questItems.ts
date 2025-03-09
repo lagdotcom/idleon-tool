@@ -114,4 +114,7 @@ export const questItems = [
   i("Worship Floppy Disc", "Quest93"),
   i("Bottled Wind", "Quest72"),
   i("Gaming Fertilizer", "Quest73"),
+  i("Compost Bag", "Quest81"),
+  i("Summoner Stone", "Quest82"),
+  i("Sand of Time", "GemP30"),
 ];

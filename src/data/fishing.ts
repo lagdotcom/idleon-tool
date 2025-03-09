@@ -30,7 +30,7 @@ export const fishingRods = [
   rod("Gold Fishing Rod", "FishingRod4"),
   rod("Plat Fishing Rod", "FishingRod5"),
   rod("Dementia Rod for Fishing", "FishingRod6"),
-  rod("Void Imperium Rod"),
+  rod("Void Imperium Rod", "FishingRod7"),
   rod("Lustre Rod"),
   rod("Starfire Rod"),
   rod("Dreadlo Rod"),

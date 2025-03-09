@@ -54,9 +54,9 @@ export const obols = [
   i("Golden Obol of Huge Hackin"),
   i("Golden Obol of Insane Insects"),
   i("Golden Obol of Plentiful Riches", "ObolGoldMoney"),
-  i("Golden Obol of Poppity Pop"),
+  i("Golden Obol of Poppity Pop", "ObolGoldPop"),
   i("Golden Obol of Trapping"),
-  i("Golden Obol of Triple Sixes"),
+  i("Golden Obol of Triple Sixes", "ObolGoldLuck"),
   i("Golden Obol of Ultrakill"),
   i("Golden Obol of Worship"),
 

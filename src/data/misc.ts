@@ -14,7 +14,7 @@ export const misc = [
   i("Toxic Sludge", "OilBarrel2"),
   i("Radioactive Waste", "OilBarrel3"),
   i("Eco Friendly Oil"),
-  i("Magma Barrel"),
+  i("Magma Barrel", "OilBarrel6"),
   i("Plasma Barrel"),
   i("Glumlee's Special Tutorial Oil", "OilBarrel4"),
 

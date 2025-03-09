@@ -308,6 +308,7 @@ import colossalMattyPouch from "../img/Colossal_Matty_Pouch.png";
 import colossalMiningPouch from "../img/Colossal_Mining_Pouch.png";
 import colossalSoulPouch from "../img/Colossal_Soul_Pouch.png";
 import colosseumTicket from "../img/Colosseum_Ticket.png";
+import compostBag from "../img/Compost_Bag.png";
 import compostStatue from "../img/Compost_Statue.png";
 import condensedZap from "../img/Condensed_Zap.png";
 import conjocharmoStamp from "../img/Conjocharmo_Stamp.png";
@@ -1300,6 +1301,7 @@ import sailboatStamp from "../img/Sailboat_Stamp.png";
 import samuraiGuardianCard from "../img/Samurai_Guardian_Card.png";
 import sandCastleCard from "../img/Sand_Castle_Card.png";
 import sandGiantCard from "../img/Sand_Giant_Card.png";
+import sandOfTime from "../img/Sand_of_Time.png";
 import sandShark from "../img/Sand_Shark.png";
 import sandSharkCard from "../img/Sand_Shark_Card.png";
 import sandyPotCard from "../img/Sandy_Pot_Card.png";
@@ -1564,6 +1566,7 @@ import summerShovelNametag from "../img/Summer_Shovel_Nametag.png";
 import summerSpiritCard from "../img/Summer_Spirit_Card.png";
 import summerToolUpgradeStone from "../img/Summer_Tool_Upgrade_Stone.png";
 import summerWeaponStone from "../img/Summer_Weapon_Stone.png";
+import summonerStone from "../img/Summoner_Stone.png";
 import summonerStoneStamp from "../img/Summoner_Stone_Stamp.png";
 import sundriedGlass from "../img/Sundried_Glass.png";
 import sushiChain from "../img/Sushi_Chain.png";
@@ -3714,4 +3717,7 @@ export const imageURLs: Record<string, URLString> = Object.fromEntries([
   i("Worship Floppy Disc", worshipFloppyDisc),
   i("Bottled Wind", bottledWind),
   i("Gaming Fertilizer", gamingFertilizer),
+  i("Compost Bag", compostBag),
+  i("Summoner Stone", summonerStone),
+  i("Sand of Time", sandOfTime),
 ]);

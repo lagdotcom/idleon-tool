@@ -9,7 +9,7 @@ export const trophies = [
   i("Blunder Hero", "Trophy6"),
   i("Trailblazer"),
   i("Ultra Unboxer"),
-  i("Critter Baron"),
+  i("Critter Baron", "Trophy10"),
   i("YumYum Sheriff"),
   i("Megalodon"),
   i("Club Maestro", "Trophy13"),
