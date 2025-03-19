@@ -20,7 +20,7 @@ export const misc = [
 
   i("Googley Eyes", "Quest35"),
   i("Dootjat Eye"),
-  i("Guild Giftbox"),
+  i("Guild Giftbox", "Quest38"),
   i("Lovey Dovey Letter", "Quest39"),
   i("Choco Box", "Quest40"),
   i("Egg Capsule"),

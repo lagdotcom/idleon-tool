@@ -82,7 +82,7 @@ export const goldenFood = [
   golden("Golden Grilled Cheese Nomwich", "FoodG9"),
   golden("Golden Hampter Gummy Candy", "FoodG10"),
   golden("Golden Nigiri", "FoodG11"),
-  golden("Golden Dumpling"),
+  golden("Golden Dumpling", "FoodG12"),
   golden("Golden Cake", "FoodG13"),
   golden("Butter Bar", "ButterBar"),
 ];

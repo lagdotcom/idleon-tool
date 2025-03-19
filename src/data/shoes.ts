@@ -15,7 +15,7 @@ export const shoes = [
   i("Platinum Boots", "EquipmentShoes4"),
   i("Dementia Boots", "EquipmentShoes5"),
   i("Efaunts Broken Ankles", "EquipmentShoes21"),
-  i("Void Imperium Kicks"),
+  i("Void Imperium Kicks", "EquipmentShoes22"),
   i("Chizoar Walkers"),
   i("Cooking Clogs", "EquipmentShoes30"),
   i("Laboratory Scrubs", "EquipmentShoes32"),

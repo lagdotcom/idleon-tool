@@ -17,7 +17,7 @@ export const pants = [
   i("Dementia Shins", "EquipmentPants6"),
   i("Efaunt Hipilium", "EquipmentPants20"),
   i("Trimmed Rune Platelegs"),
-  i("Void Imperium Shardshins"),
+  i("Void Imperium Shardshins", "EquipmentPants21"),
   i("Chizoar Scaled Leggings"),
   i("Lustre Scales"),
   i("Diabolical Trimed Leg Guards"),

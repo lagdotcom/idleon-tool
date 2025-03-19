@@ -26,7 +26,7 @@ export const hatchets = [
   hatchet("Plat Hatchet", "EquipmentToolsHatchet4"),
   hatchet("Dementia Dicer"),
   hatchet("Void Imperium Axe", "EquipmentToolsHatchet7"),
-  hatchet("Lustre Logger"),
+  hatchet("Lustre Logger", "EquipmentToolsHatchet6"),
   hatchet("Starfire Hatchet"),
   hatchet("Dreadlo Hatchet"),
   hatchet("Marbiglass Hatchet"),

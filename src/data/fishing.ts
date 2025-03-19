@@ -20,7 +20,7 @@ export const fish = [
   f("Shellfish"),
   f("Jumbo Shrimp"),
   f("Caulifish"),
-  f("Equinox Fish"),
+  f("Equinox Fish", "Fish13"),
 ];
 
 const rod = getItemMaker("fishing rods");
@@ -31,7 +31,7 @@ export const fishingRods = [
   rod("Plat Fishing Rod", "FishingRod5"),
   rod("Dementia Rod for Fishing", "FishingRod6"),
   rod("Void Imperium Rod", "FishingRod7"),
-  rod("Lustre Rod"),
+  rod("Lustre Rod", "FishingRod8"),
   rod("Starfire Rod"),
   rod("Dreadlo Rod"),
   rod("Marbiglass Rod"),
@@ -41,10 +41,10 @@ export const fishingRods = [
 const acc = getItemMaker("fishing accessories");
 export const fishingAccessories = [
   acc("Gold Twine"),
-  acc("Platinum Twine"),
+  acc("Platinum Twine", "Line4"),
   acc("Scripticus Spoons"),
   acc("Its a Boy Celebration"),
-  acc("Its a Girl Celebration"),
+  acc("Its a Girl Celebration", "Line13"),
   acc("Its Alright Celebration"),
   acc("Iron Hook"),
   acc("Basic Bobber"),
@@ -53,7 +53,7 @@ export const fishingAccessories = [
   acc("Electrical Wiring"),
   acc("Wiener Links", "Line8"),
   acc("Zeus Gon Fishin"),
-  acc("Dualhook Prongs"),
+  acc("Dualhook Prongs", "Weight4"),
   acc("One Pound of Feathers"),
   acc("Massless Unit for Physics Questions"),
   acc("Literal Elephant"),
