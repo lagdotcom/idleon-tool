@@ -70,4 +70,6 @@ export const accountConsumables = [
   acc("Pet Egg", "PetEgg"),
   acc("Cooking Ladle", "Ladle"),
   acc("Cosmic Ball"),
+  acc("Garbage"),
+  acc("Sailing Gold Bar"),
 ];

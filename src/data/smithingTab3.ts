@@ -310,7 +310,7 @@ export const smithingTab3 = [
   ),
   r("Hard FB Tundra NPC Token", n("Bellows Token"), n("Bill Brr Token")),
   r(
-    "Chizors Caustic Scarf",
+    "Chizoars Caustic Scarf",
     n("Chizoars Blankie"),
     n("Chizoar Stalagmite", 15),
     n("Chizoar Spike", 30),

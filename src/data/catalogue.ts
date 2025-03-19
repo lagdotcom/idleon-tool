@@ -21,11 +21,24 @@ import {
   expBalloons,
   timeCandy,
 } from "./consumables";
-import { fish, fishingAccessories, fishingRods, fishingSpots } from "./fishing";
+import { cookingFoods } from "./cooking";
+import {
+  fish,
+  fishingAccessories,
+  fishingRods,
+  fishingSpots,
+  islandExpeditionsRecipes,
+} from "./fishing";
 import { boostFood, goldenFood, healthFood } from "./food";
 import { forgeRecipes } from "./forge";
 import { helmets } from "./helmets";
 import { keychains } from "./keychains";
+import {
+  jewelRecipes,
+  labChips,
+  labJewels,
+  nanochipRecipes,
+} from "./laboratory";
 import { materials } from "./materials";
 import { nodes, oresAndBars, pickaxes } from "./mining";
 import { misc } from "./misc";
@@ -47,6 +60,7 @@ import { smithingTab1 } from "./smithingTab1";
 import { smithingTab2 } from "./smithingTab2";
 import { smithingTab3 } from "./smithingTab3";
 import { smithingTab4 } from "./smithingTab4";
+import { smithingTab5 } from "./smithingTab5";
 import { stamps, stampSinks } from "./stamps";
 import { statues } from "./statues";
 import { specialTalentBooks } from "./talentBooks";
@@ -103,6 +117,9 @@ export const items = [
   ...critters,
   ...souls,
   ...refinerySalts,
+  ...cookingFoods,
+  ...labJewels,
+  ...labChips,
   ...healthFood,
   ...boostFood,
   ...goldenFood,
@@ -169,9 +186,13 @@ export const recipes = [
   ...smithingTab2,
   ...smithingTab3,
   ...smithingTab4,
+  ...smithingTab5,
   ...alchemyRecipes,
   ...refineryRecipes,
   ...extraConstructionRecipes,
+  ...jewelRecipes,
+  ...nanochipRecipes,
+  ...islandExpeditionsRecipes,
 ];
 
 export const sinks = [...stampSinks, ...alchemySinks, ...postOfficeOrders];

@@ -37,6 +37,9 @@ export type GItemCategory =
   | "critters"
   | "souls"
   | "refinery salts"
+  | "cooking foods"
+  | "laboratory jewels"
+  | "laboratory nanochips"
   | "health food"
   | "boost food"
   | "golden food"
@@ -68,6 +71,8 @@ export type GRecipeType =
   | "alchemy"
   | "construction"
   | "forge"
+  | "island expeditions"
+  | "laboratory"
   | "refinery"
   | "smithing";
 

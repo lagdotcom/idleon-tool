@@ -2,7 +2,9 @@ import { DropTable9 } from "./tables";
 import {
   getDropperMaker,
   getItemMaker,
+  getRecipeMaker,
   mkDrop as d,
+  mkIQ as n,
   mkTableDrop as t,
 } from "./tools";
 
@@ -111,4 +113,15 @@ export const fishingSpots = [
     d("Caulifish Card", 40000),
     t(DropTable9, 83.3),
   ),
+];
+
+const r = getRecipeMaker("island expeditions");
+export const islandExpeditionsRecipes = [
+  r("Skelefish Stamp", n("Garbage", 20)),
+  r("Amplestample Stamp", n("Garbage", 40)),
+  r("Golden Sixes Stamp", n("Garbage", 80)),
+  r("Stat Wallstreet Stamp", n("Garbage", 300)),
+  r("Filthy Damage (Special Talent Book)", n("Garbage", 450)),
+  r("Trash Tuna Nametag", n("Garbage", 1500)),
+  r("Rando Event Looty (Special Talent Book)", n("Message Bottle", 200)),
 ];

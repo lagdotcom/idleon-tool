@@ -374,7 +374,7 @@ export const DropTable30 = [
 
 export const DropTable31 = [
   d("Essence Statue", 143),
-  d("Capitalist Stats Stamp", 8330),
+  d("Captalist Stats Stamp", 8330),
   d("Cloudsound Follower", 2, 8),
   d("Corporatube Sub", 5, 3),
   t(SuperDropTable6, 200),

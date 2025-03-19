@@ -28,6 +28,7 @@ import amarokHelmet from "../img/Amarok_Helmet.png";
 import amarokHinds from "../img/Amarok_Hinds.png";
 import amarokPaws from "../img/Amarok_Paws.png";
 import amarokSlab from "../img/Amarok_Slab.png";
+import amethystRhinestone from "../img/Amethyst_Rhinestone.png";
 import amplestampleStamp from "../img/Amplestample_Stamp.png";
 import ancientCardPack from "../img/Ancient_Card_Pack.png";
 import angelWings from "../img/Angel_Wings.png";
@@ -43,6 +44,7 @@ import anvilTab4 from "../img/Anvil_Tab_4.png";
 import anvilTab5 from "../img/Anvil_Tab_5.png";
 import anvilTab6 from "../img/Anvil_Tab_6.png";
 import anvilZoomerStamp from "../img/Anvil_Zoomer_Stamp.png";
+import apple from "../img/Apple.png";
 import appleLaunchHat from "../img/Apple_Launch_Hat.png";
 import apprenticeRecipe from "../img/Apprentice_Recipe.png";
 import aquaPearl from "../img/Aqua_Pearl.png";
@@ -128,9 +130,12 @@ import biggoleMoleCard from "../img/Biggole_Mole_Card.png";
 import biggoleWurmCard from "../img/Biggole_Wurm_Card.png";
 import billBrrToken from "../img/Bill_Brr_Token.png";
 import billBrrsVote from "../img/Bill_Brr-s_Vote.png";
+import billJackPepper from "../img/Bill_Jack_Pepper.png";
 import birchLongbow from "../img/Birch_Longbow.png";
 import birchTree from "../img/Birch_Tree.png";
 import birthdayCard from "../img/Birthday_Card.png";
+import blackDiamondRhinestone from "../img/Black_Diamond_Rhinestone.png";
+import blackDiamondUlthurite from "../img/Black_Diamond_Ulthurite.png";
 import blackLense from "../img/Black_Lense.png";
 import blackPearl from "../img/Black_Pearl.png";
 import blackTee from "../img/Black_Tee.png";
@@ -216,18 +221,24 @@ import bullfrogHorn from "../img/Bullfrog_Horn.png";
 import bullseyeStamp from "../img/Bullseye_Stamp.png";
 import bullseyeStatue from "../img/Bullseye_Statue.png";
 import bummoBag from "../img/Bummo_Bag.png";
+import bunchaBanana from "../img/Buncha_Banana.png";
 import bunny from "../img/Bunny.png";
 import bunnyCard from "../img/Bunny_Card.png";
 import bunnyEars from "../img/Bunny_Ears.png";
+import buntCake from "../img/Bunt_Cake.png";
+import burnedMarshmallow from "../img/Burned_Marshmallow.png";
 import butterBar from "../img/Butter_Bar.png";
 import butteredToastedButter from "../img/Buttered_Toasted_Butter.png";
 import butterfly from "../img/Butterfly.png";
 import butterflyBar from "../img/Butterfly_Bar.png";
 import butterflyCard from "../img/Butterfly_Card.png";
 import buzzBuzzStamp from "../img/Buzz_Buzz_Stamp.png";
+import cabbage from "../img/Cabbage.png";
 import cactopunkCard from "../img/Cactopunk_Card.png";
 import cactusChain from "../img/Cactus_Chain.png";
 import candyCanes from "../img/Candy_Canes.png";
+import cannoli from "../img/Cannoli.png";
+import canopy from "../img/Canopy.png";
 import capitalistCase from "../img/Capitalist_Case.png";
 import captalistStatsStamp from "../img/Captalist_Stats_Stamp.png";
 import cardStamp from "../img/Card_Stamp.png";
@@ -246,6 +257,7 @@ import cattleprodToken from "../img/Cattleprod_Token.png";
 import cauldronStatue from "../img/Cauldron_Statue.png";
 import caulifish from "../img/Caulifish.png";
 import caulifishCard from "../img/Caulifish_Card.png";
+import cauliflower from "../img/Cauliflower.png";
 import causticGlaciaxusCard from "../img/Caustic_Glaciaxus_Card.png";
 import cavernTrekkers from "../img/Cavern_Trekkers.png";
 import cedarPendant from "../img/Cedar_Pendant.png";
@@ -261,7 +273,9 @@ import chaoticEmperorCard from "../img/Chaotic_Emperor_Card.png";
 import chaoticKattlekrukCard from "../img/Chaotic_Kattlekruk_Card.png";
 import chaoticTrollCard from "../img/Chaotic_Troll_Card.png";
 import charcoalHat from "../img/Charcoal_Hat.png";
+import cheese from "../img/Cheese.png";
 import cheeseNubCard from "../img/Cheese_Nub_Card.png";
+import cheesyBread from "../img/Cheesy_Bread.png";
 import cheesyChest from "../img/Cheesy_Chest.png";
 import cheesyCrumbs from "../img/Cheesy_Crumbs.png";
 import cheezyPizza from "../img/Cheezy_Pizza.png";
@@ -281,6 +295,8 @@ import chizoarsCausticScarf from "../img/Chizoars_Caustic_Scarf.png";
 import choccieCard from "../img/Choccie_Card.png";
 import choccoBoxCard from "../img/Chocco_Box_Card.png";
 import chocoBox from "../img/Choco_Box.png";
+import chocolateTruffle from "../img/Chocolate_Truffle.png";
+import chocolateyChip from "../img/Chocolatey_Chip.png";
 import choggNog from "../img/Chogg_Nog.png";
 import choppedLeek from "../img/Chopped_Leek.png";
 import choppinBagStamp from "../img/Choppin-_Bag_Stamp.png";
@@ -311,6 +327,10 @@ import colosseumTicket from "../img/Colosseum_Ticket.png";
 import compostBag from "../img/Compost_Bag.png";
 import compostStatue from "../img/Compost_Statue.png";
 import condensedZap from "../img/Condensed_Zap.png";
+import conductiveMotherboard from "../img/Conductive_Motherboard.png";
+import conductiveNanochip from "../img/Conductive_Nanochip.png";
+import conductiveProcessor from "../img/Conductive_Processor.png";
+import conductiveSoftware from "../img/Conductive_Software.png";
 import conjocharmoStamp from "../img/Conjocharmo_Stamp.png";
 import conquistadorPlume from "../img/Conquistador_Plume.png";
 import contactLense from "../img/Contact_Lense.png";
@@ -334,11 +354,14 @@ import copperPlatelegs from "../img/Copper_Platelegs.png";
 import copperTwine from "../img/Copper_Twine.png";
 import copperVein from "../img/Copper_Vein.png";
 import corgiTopper from "../img/Corgi_Topper.png";
+import corn from "../img/Corn.png";
 import cornKernels from "../img/Corn_Kernels.png";
+import corndog from "../img/Corndog.png";
 import corporatubeSub from "../img/Corporatube_Sub.png";
 import cosmicBall from "../img/Cosmic_Ball.png";
 import cosmicStorageChest from "../img/Cosmic_Storage_Chest.png";
 import cosmicTimeCandy from "../img/Cosmic_Time_Candy.png";
+import cottonCandy from "../img/Cotton_Candy.png";
 import cowboGalloneer from "../img/Cowbo_Galloneer.png";
 import cowboJonesToken from "../img/Cowbo_Jones_Token.png";
 import crabbo from "../img/Crabbo.png";
@@ -359,8 +382,10 @@ import crawlerCard from "../img/Crawler_Card.png";
 import crescentMoonPendant from "../img/Crescent_Moon_Pendant.png";
 import crescentScorpie from "../img/Crescent_Scorpie.png";
 import crescentSpudCard from "../img/Crescent_Spud_Card.png";
+import crimsonString from "../img/Crimson_String.png";
 import critterBaron from "../img/Critter_Baron.png";
 import critterNumnums from "../img/Critter_Numnums.png";
+import croissant from "../img/Croissant.png";
 import cropEvoStamp from "../img/Crop_Evo_Stamp.png";
 import cropTransferTicket from "../img/Crop_Transfer_Ticket.png";
 import crownOfTheGods from "../img/Crown_of_the_Gods.png";
@@ -392,6 +417,7 @@ import damascusPlates from "../img/Damascus_Plates.png";
 import dandelioliTree from "../img/Dandelioli_Tree.png";
 import dandielogs from "../img/Dandielogs.png";
 import dandielogsCard from "../img/Dandielogs_Card.png";
+import dango from "../img/Dango.png";
 import dankPaypayChest from "../img/Dank_Paypay_Chest.png";
 import darkLantern from "../img/Dark_Lantern.png";
 import darkTriadEssenceStamp from "../img/Dark_Triad_Essence_Stamp.png";
@@ -474,11 +500,13 @@ import dNAStamp from "../img/DNA_Stamp.png";
 import dogBone from "../img/Dog_Bone.png";
 import dogBoneToken from "../img/Dog_Bone_Token.png";
 import domeoMagmusCard from "../img/Domeo_Magmus_Card.png";
+import donut from "../img/Donut.png";
 import donutCard from "../img/Donut_Card.png";
 import doobleGoopi from "../img/Dooble_Goopi.png";
 import dootjatEye from "../img/Dootjat_Eye.png";
 import dootophone from "../img/Dootophone.png";
 import doubleBarreledDNASplicer from "../img/Double_Barreled_DNA_Splicer.png";
+import doubleCherry from "../img/Double_Cherry.png";
 import doublestringGodshooter from "../img/Doublestring_Godshooter.png";
 import drDefecausCard from "../img/Dr_Defecaus_Card.png";
 import dreadloBar from "../img/Dreadlo_Bar.png";
@@ -508,6 +536,7 @@ import dungeonCredits from "../img/Dungeon_Credits.png";
 import dungeonCreditsFlurboEdition from "../img/Dungeon_Credits_Flurbo_Edition.png";
 import dungeonLootDice from "../img/Dungeon_Loot_Dice.png";
 import duplogsStamp from "../img/Duplogs_Stamp.png";
+import durianFruit from "../img/Durian_Fruit.png";
 import dustMote from "../img/Dust_Mote.png";
 import dustMoteCard from "../img/Dust_Mote_Card.png";
 import dynamite from "../img/Dynamite.png";
@@ -520,6 +549,7 @@ import easyFBTundraNPCToken from "../img/Easy_FB_Tundra_NPC_Token.png";
 import easyYumyumDezNPCToken from "../img/Easy_Yumyum_Dez_NPC_Token.png";
 import eclecticOrdeal from "../img/Eclectic_Ordeal.png";
 import ecoFriendlyOil from "../img/Eco_Friendly_Oil.png";
+import eel from "../img/Eel.png";
 import efauntCard from "../img/Efaunt_Card.png";
 import efauntHelmet from "../img/Efaunt_Helmet.png";
 import efauntHipilium from "../img/Efaunt_Hipilium.png";
@@ -531,11 +561,13 @@ import effervescentEucalyptusTree from "../img/Effervescent_Eucalyptus_Tree.png"
 import effervescentLogs from "../img/Effervescent_Logs.png";
 import effervescentLogsCard from "../img/Effervescent_Logs_Card.png";
 import egalitarianTraps from "../img/Egalitarian_Traps.png";
+import egg from "../img/Egg.png";
 import eggCapsule from "../img/Egg_Capsule.png";
 import eggCapsuleCard from "../img/Egg_Capsule_Card.png";
 import eggStamp from "../img/Egg_Stamp.png";
 import eggStatue from "../img/Egg_Statue.png";
 import egggulyteCard from "../img/Egggulyte_Card.png";
+import eggplant from "../img/Eggplant.png";
 import ehExPeeStatue from "../img/EhExPee_Statue.png";
 import elderlyPeanut from "../img/Elderly_Peanut.png";
 import eldritchCroakerCard from "../img/Eldritch_Croaker_Card.png";
@@ -545,6 +577,11 @@ import elegantSpear from "../img/Elegant_Spear.png";
 import elegantineRobes from "../img/Elegantine_Robes.png";
 import elfTwistRing from "../img/Elf_Twist_Ring.png";
 import eliteClassSwapToken from "../img/Elite_Class_Swap_Token.png";
+import emeraldNavette from "../img/Emerald_Navette.png";
+import emeraldPyramite from "../img/Emerald_Pyramite.png";
+import emeraldRhinestone from "../img/Emerald_Rhinestone.png";
+import emeraldRhombol from "../img/Emerald_Rhombol.png";
+import emeraldUlthurite from "../img/Emerald_Ulthurite.png";
 import emperorCard from "../img/Emperor_Card.png";
 import employmentStatistics from "../img/Employment_Statistics.png";
 import emptyBox from "../img/Empty_Box.png";
@@ -619,6 +656,9 @@ import forestVillaKey from "../img/Forest_Villa_Key.png";
 import forestVillasFlyerThingy from "../img/Forest_Villas_Flyer_Thingy.png";
 import forgeStamp from "../img/Forge_Stamp.png";
 import forlornGrandfroggerCard from "../img/Forlorn_Grandfrogger_Card.png";
+import fortuneCookie from "../img/Fortune_Cookie.png";
+import frazzleberry from "../img/Frazzleberry.png";
+import frenkFries from "../img/Frenk_Fries.png";
 import frigidSoul from "../img/Frigid_Soul.png";
 import frigidSoulCard from "../img/Frigid_Soul_Card.png";
 import frisbeeRing from "../img/Frisbee_Ring.png";
@@ -645,8 +685,13 @@ import fuscismatia from "../img/Fuscismatia.png";
 import galacticLeaf from "../img/Galactic_Leaf.png";
 import galaxialAmethyst from "../img/Galaxial_Amethyst.png";
 import galaxyCardPack from "../img/Galaxy_Card_Pack.png";
+import galvanicMotherboard from "../img/Galvanic_Motherboard.png";
+import galvanicNanochip from "../img/Galvanic_Nanochip.png";
+import galvanicProcessor from "../img/Galvanic_Processor.png";
+import galvanicSoftware from "../img/Galvanic_Software.png";
 import gamejoyStamp from "../img/Gamejoy_Stamp.png";
 import gamingFertilizer from "../img/Gaming_Fertilizer.png";
+import garbage from "../img/Garbage.png";
 import gargantuanBugPouch from "../img/Gargantuan_Bug_Pouch.png";
 import gargantuanChoppingPouch from "../img/Gargantuan_Chopping_Pouch.png";
 import gargantuanCrittaPouch from "../img/Gargantuan_Critta_Pouch.png";
@@ -655,6 +700,8 @@ import gargantuanFoodPouch from "../img/Gargantuan_Food_Pouch.png";
 import gargantuanMattyPouch from "../img/Gargantuan_Matty_Pouch.png";
 import gargantuanMiningPouch from "../img/Gargantuan_Mining_Pouch.png";
 import gargantuanSoulPouch from "../img/Gargantuan_Soul_Pouch.png";
+import garlicBread from "../img/Garlic_Bread.png";
+import garliclessBread from "../img/Garlicless_Bread.png";
 import gelChunk from "../img/Gel_Chunk.png";
 import gelatinousChest from "../img/Gelatinous_Chest.png";
 import gelatinousCuboidCard from "../img/Gelatinous_Cuboid_Card.png";
@@ -667,6 +714,7 @@ import giantNightshade from "../img/Giant_Nightshade.png";
 import giantRose from "../img/Giant_Rose.png";
 import giantRoseCard from "../img/Giant_Rose_Card.png";
 import giantStarflower from "../img/Giant_Starflower.png";
+import giantTomato from "../img/Giant_Tomato.png";
 import giantViolet from "../img/Giant_Violet.png";
 import giftmasBlobulyteCard from "../img/Giftmas_Blobulyte_Card.png";
 import giftmasBox from "../img/Giftmas_Box.png";
@@ -775,6 +823,10 @@ import greyBeret from "../img/Grey_Beret.png";
 import greyGatsby from "../img/Grey_Gatsby.png";
 import grilledCheeseNomwich from "../img/Grilled_Cheese_Nomwich.png";
 import groceryBag from "../img/Grocery_Bag.png";
+import groundedMotherboard from "../img/Grounded_Motherboard.png";
+import groundedNanochip from "../img/Grounded_Nanochip.png";
+import groundedProcessor from "../img/Grounded_Processor.png";
+import groundedSoftware from "../img/Grounded_Software.png";
 import grumbieTheHatchetHammer from "../img/Grumbie_the_Hatchet_Hammer.png";
 import grumbloCard from "../img/Grumblo_Card.png";
 import grumpyObolOfTheGrandfrogger from "../img/Grumpy_Obol_of_the_Grandfrogger.png";
@@ -792,6 +844,7 @@ import hardHat from "../img/Hard_Hat.png";
 import hardYumyumDezNPCToken from "../img/Hard_Yumyum_Dez_NPC_Token.png";
 import hatPremiumifier from "../img/Hat_Premiumifier.png";
 import hatchetStamp from "../img/Hatchet_Stamp.png";
+import headChefBread from "../img/Head_Chef_Bread.png";
 import healthStatue from "../img/Health_Statue.png";
 import heartStamp from "../img/Heart_Stamp.png";
 import heiressHeaddress from "../img/Heiress_Headdress.png";
@@ -904,6 +957,7 @@ import keychainFragment from "../img/Keychain_Fragment.png";
 import kingDootCard from "../img/King_Doot_Card.png";
 import kingFrogCard from "../img/King_Frog_Card.png";
 import kingOfFood from "../img/King_of_Food.png";
+import kiwiFruit from "../img/Kiwi_Fruit.png";
 import knuckleSabers from "../img/Knuckle_Sabers.png";
 import kraken from "../img/Kraken.png";
 import krakenCard from "../img/Kraken_Card.png";
@@ -929,6 +983,7 @@ import largeFishingSpot from "../img/Large_Fishing_Spot.gif";
 import largeFoodPouch from "../img/Large_Food_Pouch.png";
 import largeMaterialsPouch from "../img/Large_Materials_Pouch.png";
 import largeMiningPouch from "../img/Large_Mining_Pouch.png";
+import largePohayoh from "../img/Large_Pohayoh.png";
 import largeSoulPouch from "../img/Large_Soul_Pouch.png";
 import lavaSezBuyMoreGems from "../img/Lava_Sez_Buy_More_Gems.png";
 import lavaSlimerCard from "../img/Lava_Slimer_Card.png";
@@ -942,6 +997,7 @@ import leafyRing from "../img/Leafy_Ring.png";
 import leafyVines from "../img/Leafy_Vines.png";
 import leatherCap from "../img/Leather_Cap.png";
 import leatherHide from "../img/Leather_Hide.png";
+import leek from "../img/Leek.png";
 import leekSpiritCard from "../img/Leek_Spirit_Card.png";
 import lemonSlice from "../img/Lemon_Slice.png";
 import lemonyChoco from "../img/Lemony_Choco.png";
@@ -1015,11 +1071,13 @@ import marbleOre from "../img/Marble_Ore.png";
 import marbleVein from "../img/Marble_Vein.png";
 import markOfMember from "../img/Mark_of_Member.png";
 import marvelousObolStack from "../img/Marvelous_Obol_Stack.png";
+import mashedPotato from "../img/Mashed_Potato.png";
 import mashedPotatoCard from "../img/Mashed_Potato_Card.png";
 import masonJarStamp from "../img/Mason_Jar_Stamp.png";
 import massiveBugPouch from "../img/Massive_Bug_Pouch.png";
 import massiveChoppinPouch from "../img/Massive_Choppin_Pouch.png";
 import massiveCritterPouch from "../img/Massive_Critter_Pouch.png";
+import massiveFig from "../img/Massive_Fig.png";
 import massiveFishPouch from "../img/Massive_Fish_Pouch.png";
 import massiveFoodPouch from "../img/Massive_Food_Pouch.png";
 import massiveGodbreaker from "../img/Massive_Godbreaker.png";
@@ -1029,6 +1087,7 @@ import massiveSoulPouch from "../img/Massive_Soul_Pouch.png";
 import massiveTrollCard from "../img/Massive_Troll_Card.png";
 import masslessUnitForPhysicsQuestions from "../img/Massless_Unit_for_Physics_Questions.png";
 import masterOfNothing from "../img/Master_of_Nothing.png";
+import masterRecipe from "../img/Master_Recipe.png";
 import mattyBagStamp from "../img/Matty_Bag_Stamp.png";
 import maxoSlappoStamp from "../img/Maxo_Slappo_Stamp.png";
 import mayonnaiseBottle from "../img/Mayonnaise_Bottle.png";
@@ -1046,6 +1105,7 @@ import megalodon from "../img/Megalodon.png";
 import megalodonTooth from "../img/Megalodon_Tooth.png";
 import meltyCube from "../img/Melty_Cube.png";
 import memberHoodie from "../img/Member_Hoodie.png";
+import messageBottle from "../img/Message_Bottle.png";
 import meteorhead from "../img/Meteorhead.png";
 import meteorite from "../img/Meteorite.png";
 import meteoriteRing from "../img/Meteorite_Ring.png";
@@ -1065,6 +1125,7 @@ import minisculeFoodPouch from "../img/Miniscule_Food_Pouch.png";
 import mintoChoco from "../img/Minto_Choco.png";
 import minuteglass from "../img/Minuteglass.png";
 import misterBrightsideCard from "../img/Mister_Brightside_Card.png";
+import misterloinSteak from "../img/Misterloin_Steak.png";
 import mistleberries from "../img/Mistleberries.png";
 import mittensOfTheGods from "../img/Mittens_of_the_Gods.png";
 import mmmDonutChain from "../img/Mmm_Donut_Chain.png";
@@ -1090,6 +1151,7 @@ import murmilloHelm from "../img/Murmillo_Helm.png";
 import mustardBottle from "../img/Mustard_Bottle.png";
 import mutantCrabbo from "../img/Mutant_Crabbo.png";
 import mutatedMushCard from "../img/Mutated_Mush_Card.png";
+import mutton from "../img/Mutton.png";
 import muttonStatue from "../img/Mutton_Statue.png";
 import mysteryUpgradeStoneI from "../img/Mystery_Upgrade_Stone_I.png";
 import mysteryUpgradeStoneII from "../img/Mystery_Upgrade_Stone_II.png";
@@ -1114,6 +1176,7 @@ import nugetCake from "../img/Nuget_Cake.png";
 import nugetCakeFedora from "../img/Nuget_Cake_Fedora.png";
 import nulloSalt from "../img/Nullo_Salt.png";
 import nuttoCard from "../img/Nutto_Card.png";
+import nyanborgir from "../img/Nyanborgir.png";
 import oakLogs from "../img/Oak_Logs.png";
 import oakLogsCard from "../img/Oak_Logs_Card.png";
 import oakTree from "../img/Oak_Tree.png";
@@ -1121,20 +1184,26 @@ import obolFragment from "../img/Obol_Fragment.png";
 import oceanicRing from "../img/Oceanic_Ring.png";
 import oceanmanStatue from "../img/Oceanman_Statue.png";
 import octodarCard from "../img/Octodar_Card.png";
+import octoplop from "../img/Octoplop.png";
 import oJJuice from "../img/OJ_Juice.png";
 import olReliableStatue from "../img/Ol_Reliable_Statue.png";
 import oldHatchet from "../img/Old_Hatchet.png";
+import omegaMotherboard from "../img/Omega_Motherboard.png";
+import omegaNanochip from "../img/Omega_Nanochip.png";
 import oneOfTheDivine from "../img/One_of_the_Divine.png";
 import onePoundOfFeathers from "../img/One_Pound_of_Feathers.png";
 import onePoundOfSteel from "../img/One_Pound_of_Steel.png";
+import onion from "../img/Onion.png";
 import onyxTools from "../img/Onyx_Tools.png";
 import oozieSoul from "../img/Oozie_Soul.png";
 import oozieSoulCard from "../img/Oozie_Soul_Card.png";
+import orange from "../img/Orange.png";
 import orangeSlice from "../img/Orange_Slice.png";
 import orangeTee from "../img/Orange_Tee.png";
 import owlio from "../img/Owlio.png";
 import owlioCard from "../img/Owlio_Card.png";
 import palmTree from "../img/Palm_Tree.png";
+import pancakes from "../img/Pancakes.png";
 import paperBag from "../img/Paper_Bag.png";
 import paperBoat from "../img/Paper_Boat.png";
 import papuaPiggeaToken from "../img/Papua_Piggea_Token.png";
@@ -1156,6 +1225,7 @@ import phoenixWings from "../img/Phoenix_Wings.png";
 import phoneBox from "../img/Phone_Box.png";
 import pickaxeStamp from "../img/Pickaxe_Stamp.png";
 import picnicToken from "../img/Picnic_Token.png";
+import pie from "../img/Pie.png";
 import piggyChain from "../img/Piggy_Chain.png";
 import pileOfProcessorChips from "../img/Pile_of_Processor_Chips.png";
 import pincerArm from "../img/Pincer_Arm.png";
@@ -1166,6 +1236,7 @@ import pingyCard from "../img/Pingy_Card.png";
 import pinionSpur from "../img/Pinion_Spur.png";
 import pinkBeanie from "../img/Pink_Beanie.png";
 import pinkHeadband from "../img/Pink_Headband.png";
+import pizza from "../img/Pizza.png";
 import plank from "../img/Plank.png";
 import planktop from "../img/Planktop.png";
 import plasmaBarrel from "../img/Plasma_Barrel.png";
@@ -1203,15 +1274,20 @@ import platinumSTRObol from "../img/Platinum_STR_Obol.png";
 import platinumTwine from "../img/Platinum_Twine.png";
 import platinumVein from "../img/Platinum_Vein.png";
 import platinumWISObol from "../img/Platinum_WIS_Obol.png";
+import plumpcakes from "../img/Plumpcakes.png";
 import pocketSand from "../img/Pocket_Sand.png";
 import poisonFroge from "../img/Poison_Froge.png";
 import poisonicFrogCard from "../img/Poisonic_Frog_Card.png";
+import pokerChip from "../img/Poker_Chip.png";
 import polearmStamp from "../img/Polearm_Stamp.png";
 import polishedBludgeon from "../img/Polished_Bludgeon.png";
 import poopCard from "../img/Poop_Card.png";
 import poopyPickaxe from "../img/Poopy_Pickaxe.png";
 import popCat from "../img/Pop_Cat.png";
+import poppedCorn from "../img/Popped_Corn.png";
 import postOfficeBoxResetoMagnifico from "../img/Post_Office_Box_Reseto_Magnifico.png";
+import potatoChip from "../img/Potato_Chip.png";
+import potatoPeaPastry from "../img/Potato_Pea_Pastry.png";
 import potatoRemains from "../img/Potato_Remains.png";
 import potentEXPPotion from "../img/Potent_EXP_Potion.png";
 import potentLifePotion from "../img/Potent_Life_Potion.png";
@@ -1229,22 +1305,33 @@ import premiumLUKStone from "../img/Premium_LUK_Stone.png";
 import premiumStoneRefunder from "../img/Premium_Stone_Refunder.png";
 import premiumSTRStone from "../img/Premium_STR_Stone.png";
 import premiumWISStone from "../img/Premium_WIS_Stone.png";
+import pretzel from "../img/Pretzel.png";
 import prickleSkull from "../img/Prickle_Skull.png";
 import pristineLongbow from "../img/Pristine_Longbow.png";
 import propellerCap from "../img/Propeller_Cap.png";
 import prosperousPouch from "../img/Prosperous_Pouch.png";
 import protectorsPride from "../img/Protectors_Pride.png";
 import pugilistDemise from "../img/Pugilist_Demise.png";
+import pumpkin from "../img/Pumpkin.png";
 import purbunni from "../img/Purbunni.png";
+import pureOpalNavette from "../img/Pure_Opal_Navette.png";
+import pureOpalRhinestone from "../img/Pure_Opal_Rhinestone.png";
+import pureOpalRhombol from "../img/Pure_Opal_Rhombol.png";
 import purgatoryStalkerCard from "../img/Purgatory_Stalker_Card.png";
 import purpFrogeStamp from "../img/Purp_Froge_Stamp.png";
 import purpMushroomCard from "../img/Purp_Mushroom_Card.png";
 import purpleMushCap from "../img/Purple_Mush_Cap.png";
+import purpleNavette from "../img/Purple_Navette.png";
+import purpleRhombol from "../img/Purple_Rhombol.png";
 import purpleSalt from "../img/Purple_Salt.png";
 import purpleScrew from "../img/Purple_Screw.png";
 import purpleTee from "../img/Purple_Tee.png";
 import purpleTupacband from "../img/Purple_Tupacband.png";
 import pvcPipe from "../img/PVC_Pipe.png";
+import pyriteNavette from "../img/Pyrite_Navette.png";
+import pyritePyramite from "../img/Pyrite_Pyramite.png";
+import pyriteRhinestone from "../img/Pyrite_Rhinestone.png";
+import pyriteRhombol from "../img/Pyrite_Rhombol.png";
 import qualityObolStack from "../img/Quality_Obol_Stack.png";
 import quarterstaff from "../img/Quarterstaff.png";
 import quenchieCard from "../img/Quenchie_Card.png";
@@ -1255,6 +1342,7 @@ import radiantAmarokCard from "../img/Radiant_Amarok_Card.png";
 import radioactiveWaste from "../img/Radioactive_Waste.png";
 import ramWool from "../img/Ram_Wool.png";
 import ratCard from "../img/Rat_Card.png";
+import ratatouey from "../img/Ratatouey.png";
 import ratsTail from "../img/Rats_Tail.png";
 import rawNigiri from "../img/Raw_Nigiri.png";
 import realCivilEngineerHelmet from "../img/Real_Civil_Engineer_Helmet.png";
@@ -1275,6 +1363,7 @@ import resourceCoupon from "../img/Resource_Coupon.png";
 import rexRing from "../img/Rex_Ring.png";
 import ribbedTunic from "../img/Ribbed_Tunic.png";
 import riceCake from "../img/Rice_Cake.png";
+import riceball from "../img/Riceball.png";
 import ricecakeCard from "../img/Ricecake_Card.png";
 import riftwalkerNametag from "../img/Riftwalker_Nametag.png";
 import riftwalkerWings from "../img/Riftwalker_Wings.png";
@@ -1298,6 +1387,8 @@ import sackOfSuccess from "../img/Sack_of_Success.png";
 import sacrilegiousKattlekrukCard from "../img/Sacrilegious_Kattlekruk_Card.png";
 import saharanFoal from "../img/Saharan_Foal.png";
 import sailboatStamp from "../img/Sailboat_Stamp.png";
+import sailingGoldBar from "../img/Sailing_Gold_Bar.png";
+import salad from "../img/Salad.png";
 import samuraiGuardianCard from "../img/Samurai_Guardian_Card.png";
 import sandCastleCard from "../img/Sand_Castle_Card.png";
 import sandGiantCard from "../img/Sand_Giant_Card.png";
@@ -1308,11 +1399,17 @@ import sandyPotCard from "../img/Sandy_Pot_Card.png";
 import sandySatchel from "../img/Sandy_Satchel.png";
 import sanicRing from "../img/Sanic_Ring.png";
 import santaHat from "../img/Santa_Hat.png";
+import sapphireNavette from "../img/Sapphire_Navette.png";
+import sapphirePyramite from "../img/Sapphire_Pyramite.png";
+import sapphireRhinestone from "../img/Sapphire_Rhinestone.png";
+import sapphireRhombol from "../img/Sapphire_Rhombol.png";
 import sappyDNASplicer from "../img/Sappy_DNA_Splicer.png";
 import sasheSidestamp from "../img/Sashe_Sidestamp.png";
 import saucyLogfries from "../img/Saucy_Logfries.png";
 import saucyWeiner from "../img/Saucy_Weiner.png";
+import sausySausage from "../img/Sausy_Sausage.png";
 import sawStamp from "../img/Saw_Stamp.png";
+import sawdust from "../img/Sawdust.png";
 import scarab from "../img/Scarab.png";
 import scarabCard from "../img/Scarab_Card.png";
 import scarabNest from "../img/Scarab_Nest.png";
@@ -1323,6 +1420,8 @@ import scoutingReport from "../img/Scouting_Report.png";
 import scripticusSpoons from "../img/Scripticus_Spoons.png";
 import scubidewToken from "../img/Scubidew_Token.png";
 import sculptingTools from "../img/Sculpting_Tools.png";
+import seaUrchin from "../img/Sea_Urchin.png";
+import seasonedMarrow from "../img/Seasoned_Marrow.png";
 import secretMap from "../img/Secret_Map.png";
 import sedimentCoreGrunkler from "../img/Sediment_Core_Grunkler.png";
 import seesawStatue from "../img/Seesaw_Statue.png";
@@ -1354,6 +1453,10 @@ import siegeCaptainCap from "../img/Siege_Captain_Cap.png";
 import sigilStamp from "../img/Sigil_Stamp.png";
 import signedArrestWarrant from "../img/Signed_Arrest_Warrant.png";
 import signedContract from "../img/Signed_Contract.png";
+import silkrodeMotherboard from "../img/Silkrode_Motherboard.png";
+import silkrodeNanochip from "../img/Silkrode_Nanochip.png";
+import silkrodeProcessor from "../img/Silkrode_Processor.png";
+import silkrodeSoftware from "../img/Silkrode_Software.png";
 import silkskinTraps from "../img/Silkskin_Traps.png";
 import silverAGIObol from "../img/Silver_AGI_Obol.png";
 import silverAntique from "../img/Silver_Antique.png";
@@ -1441,12 +1544,15 @@ import snowden from "../img/Snowden.png";
 import snowflakeNametag from "../img/Snowflake_Nametag.png";
 import snowman from "../img/Snowman_-Premium_Helmet-.png";
 import snowmanCard from "../img/Snowman_Card.png";
+import soda from "../img/Soda.png";
 import sodaCanCard from "../img/Soda_Can_Card.png";
 import solesOfTheTroll from "../img/Soles_of_the_Troll.png";
 import soulbleGum from "../img/Soulble_Gum.png";
 import soupedLabRing from "../img/Souped_Lab_Ring.png";
+import sourishFish from "../img/Sourish_Fish.png";
 import sovereignEmperorCard from "../img/Sovereign_Emperor_Card.png";
 import spaggyWesterados from "../img/Spaggy_Westerados.png";
+import spaghetti from "../img/Spaghetti.png";
 import sparkyMarbleStaff from "../img/Sparky_Marble_Staff.png";
 import specialTalentBook from "../img/Special_Talent_Book.png";
 import speedStatue from "../img/Speed_Statue.png";
@@ -1499,6 +1605,7 @@ import steelBand from "../img/Steel_Band.png";
 import steelTraps from "../img/Steel_Traps.png";
 import steveSword from "../img/Steve_Sword.png";
 import stick from "../img/Stick.png";
+import stickyBun from "../img/Sticky_Bun.png";
 import stickyStick from "../img/Sticky_Stick.png";
 import stiltPole from "../img/Stilt_Pole.png";
 import stiltedSeekerCard from "../img/Stilted_Seeker_Card.png";
@@ -1570,6 +1677,7 @@ import summonerStone from "../img/Summoner_Stone.png";
 import summonerStoneStamp from "../img/Summoner_Stone_Stamp.png";
 import sundriedGlass from "../img/Sundried_Glass.png";
 import sushiChain from "../img/Sushi_Chain.png";
+import sushiRoll from "../img/Sushi_Roll.png";
 import swagSwingyToolStamp from "../img/Swag_Swingy_Tool_Stamp.png";
 import swordStamp from "../img/Sword_Stamp.png";
 import tacoChain from "../img/Taco_Chain.png";
@@ -1649,6 +1757,7 @@ import tundraLogsCard from "../img/Tundra_Logs_Card.png";
 import tundraMiscCompletionToken from "../img/Tundra_Misc_Completion_Token.png";
 import tundraNPCCompletionToken from "../img/Tundra_NPC_Completion_Token.png";
 import tundraSkillsCompletionToken from "../img/Tundra_Skills_Completion_Token.png";
+import turkeyALaThank from "../img/Turkey_a_la_Thank.png";
 import tuttle from "../img/Tuttle.png";
 import tvCard from "../img/TV_Card.png";
 import tVRemote from "../img/TV_Remote.png";
@@ -1712,19 +1821,23 @@ import weaponUpgradeStoneIV from "../img/Weapon_Upgrade_Stone_IV.png";
 import weaponUpgradeStoneSK from "../img/Weapon_Upgrade_Stone_SK.png";
 import weaponUpgradeStoneV from "../img/Weapon_Upgrade_Stone_V.png";
 import weaponUpgradeStoneVI from "../img/Weapon_Upgrade_Stone_VI.png";
+import weddingCake from "../img/Wedding_Cake.png";
 import wellingtonToken from "../img/Wellington_Token.png";
 import whatamelonChain from "../img/Whatamelon_Chain.png";
 import whattsoToken from "../img/Whattso_Token.png";
+import whippedCocoa from "../img/Whipped_Cocoa.png";
 import whiteEssenceStamp from "../img/White_Essence_Stamp.png";
 import whiteHeadband from "../img/White_Headband.png";
 import wienerLinks from "../img/Wiener_Links.png";
 import wigBandana from "../img/Wig_Bandana.png";
+import wildBoar from "../img/Wild_Boar.png";
 import willowLogs from "../img/Willow_Logs.png";
 import wispyLumber from "../img/Wispy_Lumber.png";
 import wispyLumberCard from "../img/Wispy_Lumber_Card.png";
 import wispyTree from "../img/Wispy_Tree.png";
 import witchHat from "../img/Witch_Hat.png";
 import wodeBoardCard from "../img/Wode_Board_Card.png";
+import woodChip from "../img/Wood_Chip.png";
 import woodMushroomCard from "../img/Wood_Mushroom_Card.png";
 import woodenAorticMass from "../img/Wooden_Aortic_Mass.png";
 import woodenBow from "../img/Wooden_Bow.png";
@@ -1740,6 +1853,7 @@ import wormieSlices from "../img/Wormie_Slices.png";
 import wormieWeight from "../img/Wormie_Weight.png";
 import worshipFloppyDisc from "../img/Worship_Floppy_Disc.png";
 import wranglerOfTheQoxzul from "../img/Wrangler_of_the_Qoxzul.png";
+import wrathGrapes from "../img/Wrath_Grapes.png";
 import wrigglyBall from "../img/Wriggly_Ball.png";
 import wurmTail from "../img/Wurm_Tail.png";
 import xyloboneCard from "../img/Xylobone_Card.png";
@@ -1749,6 +1863,7 @@ import yellowSnowflake from "../img/Yellow_Snowflake.png";
 import yetiHam from "../img/Yeti_Ham.png";
 import yondergreenToken from "../img/Yondergreen_Token.png";
 import yondergreensVote from "../img/Yondergreens_Vote.png";
+import yumiPeachring from "../img/Yumi_Peachring.png";
 import yumyumDesertNPCCompletionToken from "../img/Yumyum_Desert_NPC_Completion_Token.png";
 import yumyumMiscCompletionToken from "../img/Yumyum_Misc_Completion_Token.png";
 import yumYumSheriff from "../img/YumYum_Sheriff.png";
@@ -2152,6 +2267,7 @@ export const imageURLs: Record<string, URLString> = Object.fromEntries([
   i("Bottled World Town Teleport", bottledWorldTownTeleport),
   i("Equinox Mirror", equinoxMirror),
 
+  i("Crimson String", crimsonString),
   i("Giftmas Box", giftmasBox),
   i("Summer Cooler", summerCooler),
   i("Job Application", jobApplication),
@@ -2786,6 +2902,63 @@ export const imageURLs: Record<string, URLString> = Object.fromEntries([
   i("Chaotic Chizoar", chaoticChizoarCard),
   i("Blighted Chizoar", blightedChizoarCard),
 
+  i("Purp Mushroom", purpMushroomCard),
+  i("TV", tvCard),
+  i("Donut", donutCard),
+  i("Demon Genie", demonGenieCard),
+  i("Soda Can", sodaCanCard),
+  i("Flying Worm", flyingWormCard),
+  i("Gelatinous Cuboid", gelatinousCuboidCard),
+  i("Choccie", choccieCard),
+  i("Biggole Wurm", biggoleWurmCard),
+  i("Clammie", clammieCard),
+  i("Octodar", octodarCard),
+  i("Flombeige", flombeigeCard),
+  i("Stilted Seeker", stiltedSeekerCard),
+  i("Crystal Custard", crystalCustardCard),
+  i("Massive Troll", massiveTrollCard),
+  i("Chaotic Troll", chaoticTrollCard),
+  i("Blitzkrieg Troll", blitzkriegTrollCard),
+
+  i("Suggma", suggmaCard),
+  i("Maccie", maccieCard),
+  i("Mister Brightside", misterBrightsideCard),
+  i("Cheese Nub", cheeseNubCard),
+  i("Stiltmole", stiltmoleCard),
+  i("Molti", moltiCard),
+  i("Purgatory Stalker", purgatoryStalkerCard),
+  i("Citringe", citringeCard),
+  i("Lampar", lamparCard),
+  i("Fire Spirit", fireSpiritCard),
+  i("Biggole Mole", biggoleMoleCard),
+  i("Crawler", crawlerCard),
+  i("Tremor Wurm", tremorWurmCard),
+  i("Crystal Capybara", crystalCapybaraCard),
+  i("Domeo Magmus", domeoMagmusCard),
+  i("Kattlekruk", kattlekrukCard),
+  i("Chaotic Kattlekruk", chaoticKattlekrukCard),
+  i("Sacrilegious Kattlekruk", sacrilegiousKattlekrukCard),
+
+  i("Sprout Spirit", sproutSpiritCard),
+  i("Ricecake", ricecakeCard),
+  i("River Spirit", riverSpiritCard),
+  i("Baby Troll", babyTrollCard),
+  i("Woodlin Spirit", woodlinSpiritCard),
+  i("Bamboo Spirit", bambooSpiritCard),
+  i("Lantern Spirit", lanternSpiritCard),
+  i("Mama Troll", mamaTrollCard),
+  i("Leek Spirit", leekSpiritCard),
+  i("Ceramic Spirit", ceramicSpiritCard),
+  i("Skydoggie Spirit", skydoggieSpiritCard),
+  i("Royal Egg", royalEggCard),
+  i("Minichief Spirit", minichiefSpiritCard),
+  i("Samurai Guardian", samuraiGuardianCard),
+  i("Crystal Candalight", crystalCandalightCard),
+  i("Demented Spiritlord", dementedSpiritlordCard),
+  i("Emperor", emperorCard),
+  i("Chaotic Emperor", chaoticEmperorCard),
+  i("Sovereign Emperor", sovereignEmperorCard),
+
   i("Grandfrogger", grandfroggerCard),
   i("Rotting Grandfrogger", rottingGrandfroggerCard),
   i("Forlorn Grandfrogger", forlornGrandfroggerCard),
@@ -3043,28 +3216,59 @@ export const imageURLs: Record<string, URLString> = Object.fromEntries([
   i("Snake Swarm", skeweredSnek),
   i("Angry Frogs", grumpyObolOfTheGrandfrogger),
 
-  i("Copper Band (Beginner Recipe)", beginnerRecipe),
-  i("Iron Boots (Beginner Recipe)", beginnerRecipe),
-  i("Steel Band (Beginner Recipe)", beginnerRecipe),
-  i("Goo Galoshes (Beginner Recipe)", beginnerRecipe),
-  i("Fur Shirt (Beginner Recipe)", beginnerRecipe),
-  i("Double Goopi (Beginner Recipe)", beginnerRecipe),
-  i("Bleached Designer Wode Patch Pants (Beginner Recipe)", beginnerRecipe),
-  i("Serrated Rex Ring (Beginner Recipe)", beginnerRecipe),
-  i("Fishing Overalls (Beginner Recipe)", beginnerRecipe),
   i("Bandito Pantaloon (Beginner Recipe)", beginnerRecipe),
+  i("Bleached Designer Wode Patch Pants (Beginner Recipe)", beginnerRecipe),
+  i("Copper Band (Beginner Recipe)", beginnerRecipe),
+  i("Double Goopi (Beginner Recipe)", beginnerRecipe),
+  i("Fishing Overalls (Beginner Recipe)", beginnerRecipe),
+  i("Fur Shirt (Beginner Recipe)", beginnerRecipe),
+  i("Goo Galoshes (Beginner Recipe)", beginnerRecipe),
+  i("Iron Boots (Beginner Recipe)", beginnerRecipe),
+  i("Serrated Rex Ring (Beginner Recipe)", beginnerRecipe),
+  i("Steel Band (Beginner Recipe)", beginnerRecipe),
   i("Defenders Dignity (Novice Recipe)", noviceRecipe),
-  i("Strung Bludgeon (Novice Recipe)", noviceRecipe),
-  i("Polished Bludgeon (Novice Recipe)", noviceRecipe),
-  i("Googley Eyes (Novice Recipe)", noviceRecipe),
   i("Dootjat Eye (Novice Recipe)", noviceRecipe),
+  i("Googley Eyes (Novice Recipe)", noviceRecipe),
+  i("Polished Bludgeon (Novice Recipe)", noviceRecipe),
   i("Protectors Pride (Novice Recipe)", noviceRecipe),
   i("Skullfish Pendant (Novice Recipe)", noviceRecipe),
   i("Star Talent Reset Potion (Novice Recipe)", noviceRecipe),
+  i("Strung Bludgeon (Novice Recipe)", noviceRecipe),
   i("Bucket of Slush (Apprentice Recipe)", apprenticeRecipe),
+  i("Dawn Stopwatch (Apprentice Recipe)", apprenticeRecipe),
   i("Midnight Stopwatch (Apprentice Recipe)", apprenticeRecipe),
+  i("Bolstered DNA Splicer (Journeyman Recipe)", journeymanRecipe),
   i("Double Barreled DNA Splicer (Journeyman Recipe)", journeymanRecipe),
+  i("Ergonomic DNA Splicer (Journeyman Recipe)", journeymanRecipe),
+  i("Souped Lab Ring (Journeyman Recipe)", journeymanRecipe),
+  i("Cattle Core Soothsayer Staff (Adept Recipe)", adeptRecipe),
+  i("Coldseeker Bullet (Adept Recipe)", adeptRecipe),
+  i("Colossal Food Pouch (Adept Recipe)", adeptRecipe),
   i("Colossal Matty Pouch (Adept Recipe)", adeptRecipe),
+  i("Magma Core Battleskirt (Adept Recipe)", adeptRecipe),
+  i("Magma Core Headdress (Adept Recipe)", adeptRecipe),
+  i("Magma Core Lavarunners (Adept Recipe)", adeptRecipe),
+  i("Magma Core Wavemaille (Adept Recipe)", adeptRecipe),
+  i("Magma Maul (Adept Recipe)", adeptRecipe),
+  i("Molten Core Knucklers (Adept Recipe)", adeptRecipe),
+  i("Sediment Core Grunkler (Adept Recipe)", adeptRecipe),
+  i("Crown of the Gods (Master Recipe)", masterRecipe),
+  i("Demented Emperor Opal (Master Recipe)", masterRecipe),
+  i("Divvy Slippers (Master Recipe)", masterRecipe),
+  i("Doublestring Godshooter (Master Recipe)", masterRecipe),
+  i("Drip of the Gods (Master Recipe)", masterRecipe),
+  i("Elegant Spear (Master Recipe)", masterRecipe),
+  i("Golden Cake (Master Recipe)", masterRecipe),
+  i("Magnifique Godcaster (Master Recipe)", masterRecipe),
+  i("Massive Godbreaker (Master Recipe)", masterRecipe),
+  i("Mittens of the Gods (Master Recipe)", masterRecipe),
+  i("Pentastud Slapper (Master Recipe)", masterRecipe),
+  i("Pristine Longbow (Master Recipe)", masterRecipe),
+  i("Robe of the Gods (Master Recipe)", masterRecipe),
+  i("Shiny Bored Beanie (Master Recipe)", masterRecipe),
+  i("Sparky Marble Staff (Master Recipe)", masterRecipe),
+  i("Tatters of the Gods (Master Recipe)", masterRecipe),
+  i("Zero Point Stopwatch (Master Recipe)", masterRecipe),
 
   i("Copper Band", copperBand),
   i("Pugilist Demise", pugilistDemise),
@@ -3720,4 +3924,121 @@ export const imageURLs: Record<string, URLString> = Object.fromEntries([
   i("Compost Bag", compostBag),
   i("Summoner Stone", summonerStone),
   i("Sand of Time", sandOfTime),
+
+  i("Garbage", garbage),
+  i("Message Bottle", messageBottle),
+  i("Sailing Gold Bar", sailingGoldBar),
+
+  i("Amethyst Rhinestone", amethystRhinestone),
+  i("Purple Navette", purpleNavette),
+  i("Purple Rhombol", purpleRhombol),
+  i("Sapphire Rhinestone", sapphireRhinestone),
+  i("Sapphire Navette", sapphireNavette),
+  i("Sapphire Rhombol", sapphireRhombol),
+  i("Sapphire Pyramite", sapphirePyramite),
+  i("Pyrite Rhinestone", pyriteRhinestone),
+  i("Pyrite Navette", pyriteNavette),
+  i("Pyrite Rhombol", pyriteRhombol),
+  i("Pyrite Pyramite", pyritePyramite),
+  i("Emerald Rhinestone", emeraldRhinestone),
+  i("Emerald Navette", emeraldNavette),
+  i("Emerald Rhombol", emeraldRhombol),
+  i("Emerald Pyramite", emeraldPyramite),
+  i("Emerald Ulthurite", emeraldUlthurite),
+  i("Black Diamond Rhinestone", blackDiamondRhinestone),
+  i("Black Diamond Ulthurite", blackDiamondUlthurite),
+  i("Pure Opal Rhinestone", pureOpalRhinestone),
+  i("Pure Opal Navette", pureOpalNavette),
+  i("Pure Opal Rhombol", pureOpalRhombol),
+
+  i("Grounded Nanochip", groundedNanochip),
+  i("Grounded Motherboard", groundedMotherboard),
+  i("Grounded Software", groundedSoftware),
+  i("Grounded Processor", groundedProcessor),
+  i("Potato Chip", potatoChip),
+  i("Conductive Nanochip", conductiveNanochip),
+  i("Conductive Motherboard", conductiveMotherboard),
+  i("Conductive Software", conductiveSoftware),
+  i("Conductive Processor", conductiveProcessor),
+  i("Chocolatey Chip", chocolateyChip),
+  i("Galvanic Nanochip", galvanicNanochip),
+  i("Galvanic Motherboard", galvanicMotherboard),
+  i("Galvanic Software", galvanicSoftware),
+  i("Galvanic Processor", galvanicProcessor),
+  i("Wood Chip", woodChip),
+  i("Silkrode Nanochip", silkrodeNanochip),
+  i("Silkrode Motherboard", silkrodeMotherboard),
+  i("Silkrode Software", silkrodeSoftware),
+  i("Silkrode Processor", silkrodeProcessor),
+  i("Poker Chip", pokerChip),
+  i("Omega Nanochip", omegaNanochip),
+  i("Omega Motherboard", omegaMotherboard),
+
+  i("Turkey a la Thank", turkeyALaThank),
+  i("Egg", egg),
+  i("Salad", salad),
+  i("Pie", pie),
+  i("Frenk Fries", frenkFries),
+  i("Spaghetti", spaghetti),
+  i("Corn", corn),
+  i("Garlic Bread", garlicBread),
+  i("Garlicless Bread", garliclessBread),
+  i("Pizza", pizza),
+  i("Apple", apple),
+  i("Pancakes", pancakes),
+  i("Corndog", corndog),
+  i("Cabbage", cabbage),
+  i("Potato Pea Pastry", potatoPeaPastry),
+  i("Dango", dango),
+  i("Sourish Fish", sourishFish),
+  i("Octoplop", octoplop),
+  i("Croissant", croissant),
+  i("Canopy", canopy),
+  i("Cannoli", cannoli),
+  i("Cheese", cheese),
+  i("Sawdust", sawdust),
+  i("Eggplant", eggplant),
+  i("Cheesy Bread", cheesyBread),
+  i("Wild Boar", wildBoar),
+  i("Donut", donut),
+  i("Riceball", riceball),
+  i("Cauliflower", cauliflower),
+  i("Durian Fruit", durianFruit),
+  i("Orange", orange),
+  i("Bunt Cake", buntCake),
+  i("Chocolate Truffle", chocolateTruffle),
+  i("Leek", leek),
+  i("Fortune Cookie", fortuneCookie),
+  i("Pretzel", pretzel),
+  i("Sea Urchin", seaUrchin),
+  i("Mashed Potato", mashedPotato),
+  i("Mutton", mutton),
+  i("Wedding Cake", weddingCake),
+  i("Eel", eel),
+  i("Whipped Cocoa", whippedCocoa),
+  i("Onion", onion),
+  i("Soda", soda),
+  i("Sushi Roll", sushiRoll),
+  i("Buncha Banana", bunchaBanana),
+  i("Pumpkin", pumpkin),
+  i("Cotton Candy", cottonCandy),
+  i("Massive Fig", massiveFig),
+  i("Head Chef Bread", headChefBread),
+  i("Kiwi Fruit", kiwiFruit),
+  i("Popped Corn", poppedCorn),
+  i("Double Cherry", doubleCherry),
+  i("Ratatouey", ratatouey),
+  i("Giant Tomato", giantTomato),
+  i("Wrath Grapes", wrathGrapes),
+  i("Sausy Sausage", sausySausage),
+  i("Seasoned Marrow", seasonedMarrow),
+  i("Sticky Bun", stickyBun),
+  i("Frazzleberry", frazzleberry),
+  i("Misterloin Steak", misterloinSteak),
+  i("Large Pohayoh", largePohayoh),
+  i("Bill Jack Pepper", billJackPepper),
+  i("Burned Marshmallow", burnedMarshmallow),
+  i("Yumi Peachring", yumiPeachring),
+  i("Plumpcakes", plumpcakes),
+  i("Nyanborgir", nyanborgir),
 ]);

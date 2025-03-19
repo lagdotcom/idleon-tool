@@ -8,6 +8,7 @@ import {
   quests,
   recipes,
 } from "../data/catalogue";
+import { cookingProduction } from "../data/cooking";
 import { materialProduction } from "../data/materials";
 import shops from "../data/shops";
 import { GQuest, GRecipe, GShop } from "../data/types";
@@ -71,7 +72,11 @@ class Gatherer {
     const sl = array(shops).filter((s) => s.stock.find((e) => e.item === item));
     for (const shop of sl) myShops.add(shop);
 
-    if (materialProduction.includes(item) || alchemyProduction.includes(item))
+    if (
+      materialProduction.includes(item) ||
+      alchemyProduction.includes(item) ||
+      cookingProduction.includes(item)
+    )
       myProduce = qty;
     else if (!drop.length && !ql.length && !recipe && !sl.length)
       myUnknown = qty;

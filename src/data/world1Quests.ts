@@ -62,7 +62,7 @@ export const world1Quests = [
     [
       n("Blunderhills NPC Completion Token"),
       n("Blunder Skills Completion Token"),
-      n("Blunderhills Misc Completion Task"),
+      n("Blunderhills Misc Completion Token"),
     ],
     [n("Blunder Hero")],
   ),
