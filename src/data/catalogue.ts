@@ -65,6 +65,8 @@ import { world1Quests } from "./world1Quests";
 import { world2Quests } from "./world2Quests";
 import { world3Quests } from "./world3Quests";
 import { world4Quests } from "./world4Quests";
+import { world5Quests } from "./world5Quests";
+import { world6Quests } from "./world6Quests";
 import { souls, worshipSkulls, worshipTotems } from "./worship";
 
 // https://idleon.wiki/wiki/Items
@@ -179,4 +181,6 @@ export const quests = [
   ...world2Quests,
   ...world3Quests,
   ...world4Quests,
+  ...world5Quests,
+  ...world6Quests,
 ];
