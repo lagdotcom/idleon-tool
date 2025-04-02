@@ -25,7 +25,7 @@ export const helmets = [
   i("Void Imperium Helmet", "EquipmentHats54"),
   i("Mark of Member"),
   i("Murmillo Helm"),
-  i("Conquistador Plume"),
+  i("Conquistador Plume", "EquipmentHats59"),
   i("Adornment of the High Priest"),
   i("Chizoar Helmet"),
   i("Lustre Veil"),

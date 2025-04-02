@@ -87,7 +87,7 @@ export const monsterDrops = [
   i("Bamboo", "SpiA3"),
   i("Leafy Horn", "SpiA4"),
   i("Wooden Aortic Mass", "SpiA5"),
-  i("Leafy Branch"),
+  i("Leafy Branch", "SpiB1"),
   i("Light Lantern"),
   i("Dark Lantern"),
   i("Troll Flower"),

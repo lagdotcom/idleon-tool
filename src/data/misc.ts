@@ -15,7 +15,7 @@ export const misc = [
   i("Radioactive Waste", "OilBarrel3"),
   i("Eco Friendly Oil"),
   i("Magma Barrel", "OilBarrel6"),
-  i("Plasma Barrel"),
+  i("Plasma Barrel", "OilBarrel7"),
   i("Glumlee's Special Tutorial Oil", "OilBarrel4"),
 
   i("Googley Eyes", "Quest35"),
@@ -30,7 +30,7 @@ export const misc = [
   i("Phone Box", "Quest70"),
   i("Gem Envelope", "Quest71"),
   i("Spring Baggie"),
-  i("Anniversary Box"),
+  i("Anniversary Box", "Quest85"),
   i("Falloween Treat"),
   i("Golden Gift", "Quest91"),
   i("Mayonnaise Bottle"),
@@ -46,6 +46,7 @@ export const misc = [
   i("Galaxy Card Pack", "CardPack5"),
   i("Smolderin Card Pack", "CardPack6"),
   i("Dungeon Loot Dice", "GemP16"),
+  i("Birthday Candle", "Quest95"),
 
   i("Pile of Processor Chips"),
   i("Strung Jewels", "Quest66"),

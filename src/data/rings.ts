@@ -31,6 +31,6 @@ export const rings = [
   i("Nebula Killer Ring"),
   i("Magma Killer Ring"),
   i("Shallow Watering", "EquipmentRingsFishing1"),
-  i("Oceanic Ring"),
+  i("Oceanic Ring", "EquipmentRingsFishing2"),
   i("Deepwater Trench Ring"),
 ];

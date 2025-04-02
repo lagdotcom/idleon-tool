@@ -99,7 +99,7 @@ export const obols = [
   i("Dementia Obol of Worship"),
   i("Dementia Obol of WOWOWOWWO"),
 
-  i("Hyper DMG Obol"),
+  i("Hyper DMG Obol", "ObolHyperB2"),
   i("Hyper DMG Obol B"),
   i("Hyper Pyre Obol"),
   i("Hyper Pyre Obol B", "ObolHyperB1"),
@@ -114,7 +114,7 @@ export const obols = [
   i("Jagged Obol of Massive Trolling"),
   i("Magma Obol of Big Time Domeo"),
   i("Molten Obol of Dead Divine"),
-  i("Skeletal Obol of Efaunt's Gaze"),
+  i("Skeletal Obol of Efaunt's Gaze", "ObolEfauntA"),
   i("Slushy Obol of Much Dilapidation", "ObolSlush"),
   i("Vigilant Obol of Ice Guard", "ObolKnight"),
 ];

@@ -133,6 +133,7 @@ import billBrrsVote from "../img/Bill_Brr-s_Vote.png";
 import billJackPepper from "../img/Bill_Jack_Pepper.png";
 import birchLongbow from "../img/Birch_Longbow.png";
 import birchTree from "../img/Birch_Tree.png";
+import birthdayCandle from "../img/Birthday_Candle.png";
 import birthdayCard from "../img/Birthday_Card.png";
 import blackDiamondRhinestone from "../img/Black_Diamond_Rhinestone.png";
 import blackDiamondUlthurite from "../img/Black_Diamond_Ulthurite.png";
@@ -2732,6 +2733,7 @@ export const imageURLs: Record<string, URLString> = Object.fromEntries([
   i("Galaxy Card Pack", galaxyCardPack),
   i("Smolderin Card Pack", smolderinCardPack),
   i("Dungeon Loot Dice", dungeonLootDice),
+  i("Birthday Candle", birthdayCandle),
 
   i("Spore Cap", sporeCap),
   i("Frog Leg", frogLeg),

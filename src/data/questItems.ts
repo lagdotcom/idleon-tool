@@ -51,7 +51,7 @@ export const questItems = [
   i("The Bobber Challenge Scroll", "Quest46"),
   i("Dootophone"),
   i("Damaged Cog", "Quest57"),
-  i("Refurbished Cog"),
+  i("Refurbished Cog", "Quest58"),
   i("Shuvelle's Vote", "Quest59"),
   i("Yondergreens Vote", "Quest60"),
   i("Bill Brr's Vote", "Quest61"),
