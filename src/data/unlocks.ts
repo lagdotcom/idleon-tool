@@ -31,6 +31,7 @@ export const inventoryBags = [
   bag("Shivering Sack"),
   bag("Mamooth Hide Bag"),
   bag("Peeper Pouch"),
+  bag("4th Anniversary Bag", "InvBag112"),
   bag("Inventory Bag U"),
   bag("Inventory Bag V"),
   bag("Inventory Bag W"),

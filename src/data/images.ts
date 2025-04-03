@@ -4,6 +4,7 @@ import _2HRTimeCandy from "../img/2_HR_Time_Candy.png";
 import _3rdAnniversaryIceCreamTopper from "../img/3rd_Anniversary_Ice_Cream_Topper.png";
 import thirdAnniversaryIdleOnNametag from "../img/3rd_Anniversary_IdleOn_Nametag.png";
 import _4HRTimeCandy from "../img/4_HR_Time_Candy.png";
+import _4thAnniversaryBag from "../img/4th_Anniversary_Bag.png";
 import eightBallChain from "../img/8_Ball_Chain.png";
 import nineBallChain from "../img/9_Ball_Chain.png";
 import _12HRTimeCandy from "../img/12_HR_Time_Candy.png";
@@ -3630,6 +3631,7 @@ export const imageURLs: Record<string, URLString> = Object.fromEntries([
   i("Shivering Sack", shiveringSack),
   i("Mamooth Hide Bag", mamoothHideBag),
   i("Peeper Pouch", peeperPouch),
+  i("4th Anniversary Bag", _4thAnniversaryBag),
   i("Inventory Bag U", inventoryBagU),
   i("Inventory Bag V", inventoryBagV),
   i("Inventory Bag W", inventoryBagW),

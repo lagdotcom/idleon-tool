@@ -31,7 +31,7 @@ export const characterConsumables = [
   char("Sub Class Swap Token"),
   char("Elite Class Swap Token"),
   char("Post Office Box Reseto Magnifico", "ResetBox"),
-  char("Hat Premiumifier"),
+  char("Hat Premiumifier", "Ht"),
   char("Premium Stone Refunder"),
   char("Premium Bonus Swapper"),
   char("Gold Food Coupon", "Gfoodcoupon"),
@@ -51,11 +51,11 @@ export const characterConsumables = [
 
 const acc = getItemMaker("account");
 export const accountConsumables = [
-  acc("Forest Villa Key"),
+  acc("Forest Villa Key", "Key1"),
   acc("Efaunt's Tomb Key", "Key2"),
-  acc("Chizoar's Cavern Key"),
-  acc("Troll's Enclave Key"),
-  acc("Kruk's Volcano Key"),
+  acc("Chizoar's Cavern Key", "Key3"),
+  acc("Troll's Enclave Key", "Key4"),
+  acc("Kruk's Volcano Key", "Key5"),
   acc("Colosseum Ticket"),
   acc("Silver Pen", "SilverPen"),
   acc("Gem", "PremiumGem"),

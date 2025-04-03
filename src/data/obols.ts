@@ -78,7 +78,7 @@ export const obols = [
   i("Platinum Obol of Trapping"),
   i("Platinum Obol of Tremendous Trout"),
   i("Platinum Obol of Worship"),
-  i("Platinum Obol of Yahtzee Sixes"),
+  i("Platinum Obol of Yahtzee Sixes", "ObolPlatinumLuck"),
 
   i("Dementia STR Obol", "ObolDementia0"),
   i("Dementia AGI Obol", "ObolDementia1"),
