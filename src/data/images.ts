@@ -2,9 +2,10 @@ import { URLString } from "../flavours";
 import _1HRTimeCandy from "../img/1_HR_Time_Candy.png";
 import _2HRTimeCandy from "../img/2_HR_Time_Candy.png";
 import _3rdAnniversaryIceCreamTopper from "../img/3rd_Anniversary_Ice_Cream_Topper.png";
-import thirdAnniversaryIdleOnNametag from "../img/3rd_Anniversary_IdleOn_Nametag.png";
+import _3rdAnniversaryIdleOnNametag from "../img/3rd_Anniversary_IdleOn_Nametag.png";
 import _4HRTimeCandy from "../img/4_HR_Time_Candy.png";
 import _4thAnniversaryBag from "../img/4th_Anniversary_Bag.png";
+import _4thAnniversaryIdleOnNametag from "../img/4th_Anniversary_IdleOn_Nametag.png";
 import eightBallChain from "../img/8_Ball_Chain.png";
 import nineBallChain from "../img/9_Ball_Chain.png";
 import _12HRTimeCandy from "../img/12_HR_Time_Candy.png";
@@ -615,6 +616,7 @@ import falloweenPumpkinCard from "../img/Falloween_Pumpkin_Card.png";
 import falloweenTreat from "../img/Falloween_Treat.png";
 import fannedBlossomage from "../img/Fanned_Blossomage.png";
 import farmerBrim from "../img/Farmer_Brim.png";
+import farmerBrimest from "../img/Farmer_Brimest.png";
 import fatAlbert from "../img/Fat_Albert.png";
 import feastyStatue from "../img/Feasty_Statue.png";
 import featherStamp from "../img/Feather_Stamp.png";
@@ -1200,6 +1202,7 @@ import onyxTools from "../img/Onyx_Tools.png";
 import oozieSoul from "../img/Oozie_Soul.png";
 import oozieSoulCard from "../img/Oozie_Soul_Card.png";
 import orange from "../img/Orange.png";
+import orangeBeanie from "../img/Orange_Beanie.png";
 import orangeSlice from "../img/Orange_Slice.png";
 import orangeTee from "../img/Orange_Tee.png";
 import owlio from "../img/Owlio.png";
@@ -1557,6 +1560,7 @@ import spaggyWesterados from "../img/Spaggy_Westerados.png";
 import spaghetti from "../img/Spaghetti.png";
 import sparkyMarbleStaff from "../img/Sparky_Marble_Staff.png";
 import specialTalentBook from "../img/Special_Talent_Book.png";
+import spectacular4thYearNametag from "../img/Spectacular_4th_Year_Nametag.png";
 import speedStatue from "../img/Speed_Statue.png";
 import spiceStamp from "../img/Spice_Stamp.png";
 import spicySpaceRibs from "../img/Spicy_Space_Ribs.png";
@@ -3170,6 +3174,8 @@ export const imageURLs: Record<string, URLString> = Object.fromEntries([
   i("Husky Hat", huskyHat),
   i("Pink Beanie", pinkBeanie),
   i("Ice Cream Sundae", iceCreamSundae),
+  i("Orange Beanie", orangeBeanie),
+  i("Farmer Brimest", farmerBrimest),
 
   i("Leafy Ring", leafyRing),
   i("Bob Ring", bobRing),
@@ -3210,8 +3216,10 @@ export const imageURLs: Record<string, URLString> = Object.fromEntries([
   i("Island Adventurer Nametag", islandAdventurerNametag),
   i("Summer Shovel Nametag", summerShovelNametag),
   i("Falloween Nametag", falloweenNametag),
-  i("3rd Anniversary IdleOn Nametag", thirdAnniversaryIdleOnNametag),
+  i("3rd Anniversary IdleOn Nametag", _3rdAnniversaryIdleOnNametag),
   i("Megafeather Nametag", megafeatherNametag),
+  i("Spectacular 4th Year Nametag", spectacular4thYearNametag),
+  i("4th Anniversary IdleOn Nametag", _4thAnniversaryIdleOnNametag),
 
   i("Meteorite", meteoriteRing),
   i("Mega Grumblo", grumbieTheHatchetHammer),

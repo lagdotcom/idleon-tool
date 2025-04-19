@@ -40,7 +40,7 @@ export const premiumHelmets = [
   helmet("Charcoal Hat"),
 
   helmet("Pardoned Turkey"),
-  helmet("Paper Bag"),
+  helmet("Paper Bag", "EquipmentHats33"),
   helmet("Diamon Horns"),
   helmet("Halloween Pumpkin"),
   helmet("Strawbiggy"),
@@ -48,6 +48,8 @@ export const premiumHelmets = [
   helmet("Snowman"),
   helmet("Husky Hat", "EquipmentHats109"),
   helmet("Ice Cream Sundae", "EquipmentHatsBeg1"),
+  helmet("Orange Beanie", "EquipmentHats117"),
+  helmet("Farmer Brimest", "EquipmentHats24"),
 ];
 
 const ring = getItemMaker("chat rings");
@@ -101,4 +103,6 @@ export const nameTags = [
   tag("Megafeather Nametag"),
   tag("Snowflake Nametag", "EquipmentNametag14"),
   tag("Frostyman Nametag", "EquipmentNametag15"),
+  tag("Spectacular 4th Year Nametag", "EquipmentNametag17"),
+  tag("4th Anniversary IdleOn Nametag", "EquipmentNametag18"),
 ];

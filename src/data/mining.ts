@@ -19,7 +19,7 @@ export const pickaxes = [
   pick("Void Imperium Pik", "EquipmentTools11"),
   pick("Lustre Pickaxe", "EquipmentTools8"),
   pick("Starfire Pickaxe"),
-  pick("Dreadlo Pickolo"),
+  pick("Dreadlo Pickolo", "EquipmentTools9"),
   pick("Marbiglass Pickaxe"),
   pick("Destroyer of the Mollo Gomme"),
 ];
@@ -35,7 +35,7 @@ export const oresAndBars = [
   ob("Lustre Ore", "Lustre"),
   ob("Starfire Ore", "Starfire"),
   ob("Dreadlo Ore", "Dreadlo"),
-  ob("Godshard Ore"),
+  ob("Godshard Ore", "Godshard"),
   ob("Marble Ore", "Marble"),
 
   ob("Copper Bar", "CopperBar"),

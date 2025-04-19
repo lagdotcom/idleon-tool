@@ -28,7 +28,7 @@ export const hatchets = [
   hatchet("Void Imperium Axe", "EquipmentToolsHatchet7"),
   hatchet("Lustre Logger", "EquipmentToolsHatchet6"),
   hatchet("Starfire Hatchet"),
-  hatchet("Dreadlo Hatchet"),
+  hatchet("Dreadlo Hatchet", "EquipmentToolsHatchet9"),
   hatchet("Marbiglass Hatchet"),
   hatchet("Annihilator of the Yggdrasil"),
 ];
@@ -55,7 +55,7 @@ export const logsAndLeaves = [
   ll("Maple Logs", "Tree9"),
   ll("Dandielogs", "Tree10"),
   ll("Willow Logs"),
-  ll("Bamboo Logs"),
+  ll("Bamboo Logs", "Tree12"),
   ll("Effervescent Logs"),
 ];
 

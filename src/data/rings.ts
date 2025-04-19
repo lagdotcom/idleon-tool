@@ -22,7 +22,7 @@ export const rings = [
   i("Neutron Ice Ring", "EquipmentRings23"),
   i("Lab Ring", "EquipmentRings24"),
   i("Chef Ring", "EquipmentRings25"),
-  i("Souped Lab Ring"),
+  i("Souped Lab Ring", "EquipmentRings30"),
   i("Tenacity Ring"),
   i("Zero Point Stopwatch"),
   i("Demented Emperor Opal"),

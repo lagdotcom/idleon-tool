@@ -31,7 +31,7 @@ export const shirts = [
   i("Chizoar Bodyplate"),
   i("Lustre Chestplate"),
   i("Diabolical Abdomen"),
-  i("Trollish Garb"),
+  i("Trollish Garb", "EquipmentShirts34"),
   i("Magma Core Wavemaille"),
   i("Serrated Chest of the Divine"),
   i("Marbiglass Tunic"),

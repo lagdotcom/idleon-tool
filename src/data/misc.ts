@@ -4,7 +4,7 @@ const i = getItemMaker("misc");
 export const misc = [
   i("Golden Oyster"),
   i("Obol Fragment"),
-  i("Quality Obol Stack"),
+  i("Quality Obol Stack", "GemP9"),
   i("Marvelous Obol Stack"),
   i("Bossius Obol Stack"),
   i("Hyper Obol Stack"),
